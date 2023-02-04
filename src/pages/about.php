@@ -1,6 +1,3 @@
-
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/about.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/about.css">
+    <link rel="stylesheet" type="text/css" href="../../css/navigation.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-    <section class="sec1">
+    <?php 
+    include "../../includes/navigation.php"; 
+    ?>
+    <section class="sec1 mt_45">
         <div class="about-1">
             <h1>
                 ABOUT US
@@ -90,7 +91,8 @@
 
 
     </section>
-    
+    <script src="../../script/navigation.js"> 
+    </script>
 </body>
 </html>
 

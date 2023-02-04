@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +10,7 @@
 <body>
     <div class="top_navigation">
         <div class="top_nav_left">
-            <a href="#"><img src="../resource/icon/paypal.png" alt="Logo"></a>
+            <a href="#"><img src="../../resource/icon/paypal.png" alt="Logo"></a>
         </div>
         <div class="top_nav_right">
             <ul>
@@ -24,7 +23,7 @@
         </div>
     </div>
     
-    <script src="../script/navigation.js">
+    <script src="../../script/navigation.js">
 
     </script>
 

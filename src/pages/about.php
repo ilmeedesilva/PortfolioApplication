@@ -13,7 +13,7 @@
     <?php 
     include "../../includes/navigation.php"; 
     ?>
-    <section class="sec1 mt_170">
+    <section class="sec1 mt_45">
         <div class="about-1">
             <h1>
                 ABOUT US

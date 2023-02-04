@@ -1,0 +1,35 @@
+.project{
+    display: flex;
+    flex-direction: column;
+}
+.title_top h1{
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+.project_item_wrapper img{
+    width: 100%;
+}
+.blog_wrapper{
+    position: relative;
+}
+.blue_cover{
+    background-color: lightblue;
+    position: absolute;
+    width: 350px;
+    height: 234px;
+    opacity: 0;
+}
+.blue_cover:hover{
+    opacity: 0.3;
+}
+/* .sub_details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+.sub_details p:last-child{
+    font-size: 12px;
+}
+.sub_details p{
+    color: #888;
+}

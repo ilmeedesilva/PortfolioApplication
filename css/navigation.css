@@ -5,7 +5,11 @@
     justify-content: space-between;
     width: 100%;
     background-color: #ffffff;  
-    z-index: 40; 
+    z-index: 40;
+    height: 50px; 
+}
+.top_navigation {
+    height: 50px !important;
 }
 .top_navigation_scroll{
     position: fixed;

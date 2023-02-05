@@ -14,7 +14,7 @@
     include "../../includes/navigation.php"; 
     ?>
     <section class="sec1 mt_45">
-    <img class = "img1" src="../../resource/image/img_about.jpg" title="About us" height="300px" width="1345px" >
+    <img class = "img1" src="../../resource/image/img_about.jpg" title="About us" alt="About us" >
         <div class="about-1">
             <h1>
                 ABOUT US
@@ -27,105 +27,97 @@
             </p>
         </div>
 
-        <div class="list-item">
-            <div class="first-list">
+        <div class="list">
+        <div class="list1">
             <ul>
                 <li><a href="#" class="active_link">CEO Message</a></li>
                 <li><a href="#">Cooparate Data</a></li>
                 <li><a href="#">Cooparate Structure</a></li>
             </ul>
-            </div>
-            <div class="second-list">
-                <ul>
+        </div>
+        <div class="list1">
+            <ul>
                 <li><a href="#">Group</a></li>
                 <li><a href="#">Publications</a></li>
                 <li><a href="#">Project History</a></li>
-                </ul>
-            </div>
+            </ul>
+        </div>
         </div>
         
-
-
-        <div class="about-2">
-            <div class="content_box-lg"> 
-                <div class="container">
-                    <div class="horizon">
-                        <!-- <div class="col"> -->
-                            <div class="about-item text-center">
-                                <i class="fa fa-book">
-                                </i>
-                                <h3>
-                                    VISION
-                                </h3>
-                                <hr>
-                                <p>
-                                We are experts who integrate the skills, 
-                                knowledge and experience needed to bring our clients' ideas to life.
-                                </p>
-                            </div>
-                            <div class="images">
-                            <img class="img2" src="../../resource/image/img_vision.jpg" title="Vision" height="280px" width="400px" >
-                            </div>
-                    </div>
-
-                    <div class="horizon wrapper">
-
-                        <!-- </div> -->
-                        <!-- <div class="col"> -->
-                            <div class="images">
-                            <img class="img2" src="../../resource/image/img_tagline.jpg" title="Tagline" height="280px" width="400px" >
-                            </div>
-
-                            <div class="about-item text-center">
-                                <i class="fa fa-globe">
-                                </i>
-                                <h3>
-                                    TAGLINE
-                                </h3>
-                                <hr>
-                                <p>
-                                    Lorem ipsum, dolor s
-                                    usantium modi consequuntur dolore ea ex recusandae
-                                     provident dolorem pariatur,
-                                    s libero cumque, alias inventore aperiam amet? Ratione
-                                     officia magni doloribus.
-                                </p>
-                            </div>
-                            
-                    </div>
-
-                    <div class="horizon">
-
-                        <!-- </div> -->
-                        <!-- <div class="col"> -->
-                            <div class="about-item text-center">
-                                <i class="fa fa-pencil">
-                                </i>
-                                <h3>
-                                    MOTTO
-                                </h3>
-                                <hr>
-                                <p>
-                                    Lorem ipsum, dolor s
-                                    usantium modi consequuntur dolore ea ex recusandae
-                                    provident dolorem pariatur,
-                                    s libero cumque, alias inventore aperiam amet? Ra
-                                    tione officia magni doloribus.
-                                </p>
-                            </div>
-                            <div class="images">
-                            <img class="img2" src="../../resource/image/img_motto.jpg" title="Motto" height="280px" width="400px" >
-                            </div>
-
-                    </div>
-
-                    <!-- </div> -->
-
-                </div>
+        
+        <div class="section_wrapper">
+            <div class="text_section">
+                <h5>
+                    Vision
+                </h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vitae, ea qui
+                     enim molestias aut ipsam, v
+                    oluptatum natus reiciendis eligendi a tempore voluptates numquam tempora. A sit ne
+                    que dolore delectus!
+                </p>
+                <button>
+                    Read More
+                </button>
 
             </div>
+
+            <div class="image_section">
+            <img  src="../../resource/image/img_vision.jpg" title="Vision" alt="Vision">
+            </div>
+
         </div>
 
+
+        <div class="section_wrapper">
+            
+
+            <div class="image_section image_section_left">
+            <img  src="../../resource/image/img_tagline.jpg" title="Tagline" alt="Tagline">
+            </div>
+
+
+            <div class="text_section text_section_right">
+                <h5>
+                    TagLine
+                </h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vitae, ea qui
+                     enim molestias aut ipsam, v
+                    oluptatum natus reiciendis eligendi a tempore voluptates numquam tempora. A sit ne
+                    que dolore delectus!
+                </p>
+                <button>
+                    Read More
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="section_wrapper">
+            <div class="text_section">
+                <h5>
+                    Motto
+                </h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vitae, ea qui
+                     enim molestias aut ipsam, v
+                    oluptatum natus reiciendis eligendi a tempore voluptates numquam tempora. A sit ne
+                    que dolore delectus!
+                </p>
+                <button>
+                    Read More
+                </button>
+
+            </div>
+
+            <div class="image_section">
+            <img  src="../../resource/image/img_motto.jpg" title="Motto" alt="Motto" >
+            </div>
+
+        </div>
+   
 
     </section>
     <script src="../../script/navigation.js"> 

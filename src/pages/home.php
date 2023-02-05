@@ -8,7 +8,7 @@
     <title>SE Girls Protfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="../../css/navigation.css">
-    <link rel="stylesheet" href="../../css/home.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     
 </head>
@@ -133,6 +133,39 @@
         </div>
     </div>
  </div>
+
+ <div  class="row">
+  <div class="col-12 col-md-12 col-lg-4">
+    <div class="card text-center">
+    <div class="box-body">
+    <i class="bi bi-layers"></i>
+    <h3 class="box-title">Project 1</h3>
+    <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+</div>
+
+<div  class="row">
+  <div class="col-12 col-md-12 col-lg-4">
+    <div class="card text-center">
+    <div class="box-body">
+    <i class="bi bi-layers"></i>
+    <h3 class="box-title">Project 1</h3>
+    <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+</div>
+
+<div  class="row">
+  <div class="col-12 col-md-12 col-lg-4">
+    <div class="card text-center">
+    <div class="box-body">
+    <i class="bi bi-layers"></i>
+    <h3 class="box-title">Project 1</h3>
+    <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+</div>
 </section>
 
 <!--End  My Project-->

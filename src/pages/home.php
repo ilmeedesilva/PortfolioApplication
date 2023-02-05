@@ -122,7 +122,7 @@
 <!--End service section-->
 
 <!--Start My Project-->
-<div id="project" class="services section-padding">
+<section id="Project" class="project section-padding">
     <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -133,40 +133,36 @@
             </div>
         </div>
     </div>
- </div>
-
- <div  class="row">
+    <div  class="row">
   <div class="col-12 col-md-12 col-lg-4">
     <div class="card text-center">
-    <div class="box-body">
-    <i class="bi bi-layers"></i>
-    <h3 class="box-title">Project 1</h3>
+    <div class="project-body">
+    <img src="../../resource\image\proj1.jpg">
+    <div class="content-wrapper"><h3 class="box-title">Project 1</h3>
     <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
+</div></div>
   </div>
 </div>
 
-<div  class="row">
   <div class="col-12 col-md-12 col-lg-4">
     <div class="card text-center">
-    <div class="box-body">
-    <i class="bi bi-layers"></i>
-    <h3 class="box-title">Project 1</h3>
+    <div class="project-body">
+    <img src="../../resource\image\proj2.jpg">
+    <div class="content-wrapper"><h3 class="box-title">Project 2</h3>
     <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
+</div></div>
   </div>
 </div>
-
-<div  class="row">
-  <div class="col-12 col-md-12 col-lg-4">
-    <div class="card text-center">
-    <div class="box-body">
-    <i class="bi bi-layers"></i>
-    <h3 class="box-title">Project 1</h3>
+<div class="col-12 col-md-12 col-lg-4">
+  <div class="card text-center">
+    <div class="project-body">
+    <img src="../../resource\image\proj3..jpg">
+    <div class="content-wrapper"><h3 class="box-title">Project 3</h3>
     <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
+</div></div>
   </div>
 </div>
+  </div>
 </section>
 
 <!--End  My Project-->

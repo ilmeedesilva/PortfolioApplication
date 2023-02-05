@@ -26,6 +26,26 @@
                  perspiciatis illo et?
             </p>
         </div>
+
+        <div class="list-item">
+            <div class="first-list">
+            <ul>
+                <li><a href="#" class="active_link">CEO Message</a></li>
+                <li><a href="#">Cooparate Data</a></li>
+                <li><a href="#">Cooparate Structure</a></li>
+            </ul>
+            </div>
+            <div class="second-list">
+                <ul>
+                <li><a href="#">Group</a></li>
+                <li><a href="#">Publications</a></li>
+                <li><a href="#">Project History</a></li>
+                </ul>
+            </div>
+        </div>
+        
+
+
         <div class="about-2">
             <div class="content_box-lg"> 
                 <div class="container">
@@ -45,7 +65,7 @@
                                 </p>
                             </div>
                             <div class="images">
-                            <img class="img2" src="../../resource/image/img_vision.jpg" title="Vision" height="220px" width="400px" >
+                            <img class="img2" src="../../resource/image/img_vision.jpg" title="Vision" height="280px" width="400px" >
                             </div>
                     </div>
 
@@ -54,7 +74,7 @@
                         <!-- </div> -->
                         <!-- <div class="col"> -->
                             <div class="images">
-                            <img class="img2" src="../../resource/image/img_vision.jpg" title="Vision" height="220px" width="400px" >
+                            <img class="img2" src="../../resource/image/img_tagline.jpg" title="Tagline" height="280px" width="400px" >
                             </div>
 
                             <div class="about-item text-center">
@@ -95,7 +115,7 @@
                                 </p>
                             </div>
                             <div class="images">
-                            <img class="img2" src="../../resource/image/img_vision.jpg" title="Vision" height="220px" width="400px" >
+                            <img class="img2" src="../../resource/image/img_motto.jpg" title="Motto" height="280px" width="400px" >
                             </div>
 
                     </div>

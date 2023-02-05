@@ -1,19 +1,4 @@
 
-*{
-    font-family: "calibri";
-    font-size: 18px;
-}
-
-body{
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box; 
-}
-
-.mt_45{
-    margin-top: 45px;
-}
-
 .carousel-item {
     height: 100vh;
     min-height: 300px;
@@ -116,7 +101,7 @@ section#about {
 
 .sub-heading h5 {
     background: -webkit-linear-gradient(#fd4766, #7644ff );
-    -webkit-background-clip: text; 
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
 }
@@ -192,4 +177,3 @@ div#project {
         padding:10px 15px;
      }
 }
-

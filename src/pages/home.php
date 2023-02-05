@@ -19,14 +19,14 @@
 
     <!--start carousel-->
 
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="carousel" class="carousel slide mt_45" data-bs-ride="carousel ">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="../../resource\image\img5.jpg" class="d-block w-100" alt="Banner1">
       <div class="carousel-caption">
         <h4>Find the perfect own <i>Design</i></h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p><a href="#"class="btn-banner mt3">Learn More</a></p>
+        <a href="#"class="btn-banner mt3">Learn More</a>
       </div>
     </div>
     <div class="carousel-item">
@@ -34,7 +34,7 @@
       <div class="carousel-caption">
         <h4>Let's Started</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <p><a href="#"class="btn-banner mt3"> Learn More</a></p>
+        <a href="#"class="btn-banner mt3"> Learn More</a>
       </div>
     </div>
   </div>
@@ -63,7 +63,7 @@
       <div class="about-text sub-heading">
       <h5>Welcome</h5>
         <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p><a href="#"class="btn">Learn More</a></p>      
       </div>
     </div>
@@ -126,9 +126,9 @@
         <div class="row">
           <div class="col-md-12">
              <div class="section-header text-center sub-heading">
-              <h5>My completed Projects</h5>
+              <h5>My completed Project</h5>
               <h2>Recent Works</h2> 
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br/>tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
         </div>
     </div>

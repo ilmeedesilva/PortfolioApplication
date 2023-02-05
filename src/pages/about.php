@@ -14,6 +14,7 @@
     include "../../includes/navigation.php"; 
     ?>
     <section class="sec1 mt_45">
+    <img src="../../resource/image/img_about.jpg" title="About us" height="300px" width="1345px" >
         <div class="about-1">
             <h1>
                 ABOUT US
@@ -25,11 +26,31 @@
                  perspiciatis illo et?
             </p>
         </div>
+
+        <div class="list-item">
+            <div class="first-list">
+            <ul>
+                <li><a href="#" class="active_link">CEO Message</a></li>
+                <li><a href="#">Cooparate Data</a></li>
+                <li><a href="#">Cooparate Structure</a></li>
+            </ul>
+            </div>
+            <div class="second-list">
+                <ul>
+                <li><a href="#">Group</a></li>
+                <li><a href="#">Publications</a></li>
+                <li><a href="#">Project History</a></li>
+                </ul>
+            </div>
+        </div>
+        
+
+
         <div class="about-2">
-            <div class="content_box">
+            <div class="content_box-lg"> 
                 <div class="container">
-                    <div class="row">
-                        <div class="col">
+                    <div class="horizon">
+                        <!-- <div class="col"> -->
                             <div class="about-item text-center">
                                 <i class=" fa fa-book">
                                 </i>
@@ -43,9 +64,19 @@
                                     s libero cumque, alias inventore aperiam amet? Ratione officia magni doloribus.
                                 </p>
                             </div>
+                            <div class="images">
+                            <img class="img2" src="../../resource/image/img_vision.jpg" title="Vision" height="280px" width="400px" >
+                            </div>
+                    </div>
 
-                        </div>
-                        <div class="col">
+                    <div class="horizon wrapper">
+
+                        <!-- </div> -->
+                        <!-- <div class="col"> -->
+                            <div class="images">
+                            <img class="img2" src="../../resource/image/img_tagline.jpg" title="Tagline" height="280px" width="400px" >
+                            </div>
+
                             <div class="about-item text-center">
                                 <i class="fa fa-globe">
                                 </i>
@@ -61,9 +92,13 @@
                                      officia magni doloribus.
                                 </p>
                             </div>
+                            
+                    </div>
 
-                        </div>
-                        <div class="col">
+                    <div class="horizon">
+
+                        <!-- </div> -->
+                        <!-- <div class="col"> -->
                             <div class="about-item text-center">
                                 <i class="fa fa-pencil">
                                 </i>
@@ -79,10 +114,13 @@
                                     tione officia magni doloribus.
                                 </p>
                             </div>
-
-                        </div>
+                            <div class="images">
+                            <img class="img2" src="../../resource/image/img_motto.jpg" title="Motto" height="280px" width="400px" >
+                            </div>
 
                     </div>
+
+                    <!-- </div> -->
 
                 </div>
 

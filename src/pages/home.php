@@ -73,6 +73,31 @@
 </section>
 <!--End About section-->
 
+<!--Start call to action section-->
+<section id="CTA-section" class="call section-padding">
+<div class="cta-section">
+  <div class="background-img">
+
+  </div>
+
+  <div class="cta-content">
+    <div class="cta-col col_1">
+        <div class="col-content">
+          <h2>Enough Talk, <br/>Let's Build Something Together</h2>
+        </div>
+    </div>
+    <div class="cta-col col_2">
+        <div class="btn-holder">
+        <a href="Contact.php"class="primary_btn cta_btn">Call Me</a>
+        </div>
+      </div>
+  </div>
+
+</div>
+
+</section>
+
+<!--End call to action section-->
 
 <!--Start service section-->
 <div id="services" class="services section-padding">

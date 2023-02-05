@@ -83,7 +83,7 @@
   <div class="cta-content">
     <div class="cta-col col_1">
         <div class="col-content">
-          <h2>Enough Talk, <br/>Let's Build Something Together</h2>
+          <h2>Enough Talk, <br/>Let's Build Something Together!</h2>
         </div>
     </div>
     <div class="cta-col col_2">

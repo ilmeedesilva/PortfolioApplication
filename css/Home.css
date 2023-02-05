@@ -63,7 +63,6 @@ a.btn-banner:hover {
     padding: 10px 15px;
 }
 
-/*
 a.btn{
     background: transparent;
     border: 1px solid #ff0018;
@@ -76,7 +75,7 @@ a.btn:hover{
     background: #ff0018;
     border: 1px solid #ff0018;
     color: #fff;
-}*/
+}
 
 /*about section*/
 img.img-fluid {

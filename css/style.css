@@ -116,7 +116,7 @@ section#about {
 
 .sub-heading h5 {
     background: -webkit-linear-gradient(#fd4766, #7644ff );
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
     font-weight: 600;
 }

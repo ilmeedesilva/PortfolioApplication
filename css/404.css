@@ -1,0 +1,62 @@
+.all_wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    border: 1px solid #e4e4e4;
+    padding:20px;
+    justify-content: space-between;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px 2px #d6d6d6;
+}
+
+.notfound_wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;  
+    height: 500px;
+}
+.notfound_img{
+     /* background-color: blueviolet; */
+    /* padding: 50px; */
+}
+.notfound_img img{
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+}
+.notfound_content{
+    width: 400px;
+    /* background-color: gray;  */
+    padding: 80px;
+    margin-left: 3s0px;
+    margin-bottom: 30px;
+}
+.notfound_content h1{
+    font-size: 170px;
+    margin: 0;
+    font-weight: bold;
+}
+.notfound_content h2{
+    margin: 0;
+    font-weight: bold;
+}
+.notfound_content p{
+    font-size: 16px;
+    margin: 15px 0px;
+    width: 400px;
+}
+.notfound_content button{
+    width: 100px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 24px;
+    background-color: #10b2d2;
+    color: #fff;
+}
+.notfound_content button:hover{
+    background-color: #59c0d4;
+}

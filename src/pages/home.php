@@ -126,9 +126,9 @@
         <div class="row">
           <div class="col-md-12">
              <div class="section-header text-center sub-heading">
-              <h5>My completed Projects</h5>
+              <h5>My completed Project</h5>
               <h2>Recent Works</h2> 
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br/>tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
         </div>
     </div>

@@ -14,7 +14,7 @@
     include "../../includes/navigation.php"; 
     ?>
     <section class="sec1 mt_45">
-    <img src="../../resource/image/img_about.jpg" title="About us" height="300px" width="1345px" >
+    <img class = "img1" src="../../resource/image/img_about.jpg" title="About us" height="300px" width="1345px" >
         <div class="about-1">
             <h1>
                 ABOUT US
@@ -52,16 +52,15 @@
                     <div class="horizon">
                         <!-- <div class="col"> -->
                             <div class="about-item text-center">
-                                <i class=" fa fa-book">
+                                <i class="fa fa-book">
                                 </i>
                                 <h3>
-                                    BRAND VISION
+                                    VISION
                                 </h3>
                                 <hr>
                                 <p>
-                                    Lorem ipsum, dolor s
-                                    usantium modi consequuntur dolore ea ex recusandae provident dolorem pariatur,
-                                    s libero cumque, alias inventore aperiam amet? Ratione officia magni doloribus.
+                                We are experts who integrate the skills, 
+                                knowledge and experience needed to bring our clients' ideas to life.
                                 </p>
                             </div>
                             <div class="images">
@@ -81,7 +80,7 @@
                                 <i class="fa fa-globe">
                                 </i>
                                 <h3>
-                                    BRAND TAGLINE
+                                    TAGLINE
                                 </h3>
                                 <hr>
                                 <p>

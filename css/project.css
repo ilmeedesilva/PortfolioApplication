@@ -12,6 +12,9 @@
 .blog_wrapper{
     position: relative;
 }
+.blog_wrapper h3{
+    text-align: justify;
+} 
 .blue_cover{
     background-color: lightblue;
     position: absolute;

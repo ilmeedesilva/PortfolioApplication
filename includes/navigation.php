@@ -23,7 +23,7 @@
         </div>
     </div>
     
-    <script src="../../script/navigation.js">
+    <script src="../script/navigation.js">
 
     </script>
 

@@ -7,9 +7,7 @@ body{
     background-color: #fff;
 }
 
-/* .mt_170{
-    margin-top: 100px;
-} */
+
 
 .about-1{
     margin: 30px;
@@ -33,6 +31,47 @@ body{
     flex-direction: column;
 }
 
+.list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #ffffff;  
+    z-index: 40; 
+    font-size: large;
+    margin-bottom: 50px;
+}
+
+.first-list ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.second-list ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.list-item ul li{
+    list-style: none;
+    margin: 0;
+    margin-right: 40px;
+}
+
+.list-item ul li a:hover{
+    color: #c00f76;
+}
+
+.list-item ul li a{
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+    color: black;
+}
+
 .horizon{
     display: flex;
     flex-direction: row;
@@ -43,15 +82,12 @@ body{
     padding: 20px 0px;
 }
 
-
+.about-2{
+    margin-bottom: 20px;
+}
 
 
 .about-item{
-    /* margin-bottom: 20px;
-    margin-top: 20px;
-    margin-right: 50px;
-    margin-left: 50px; */
-
     background-color: rgb(85, 6, 61);
     padding: 200px,100px;
     box-shadow: 0 0 9px rgba(0,0, 0, 0.6);

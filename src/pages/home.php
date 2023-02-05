@@ -8,7 +8,7 @@
     <title>SE Girls Protfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="../../css/navigation.css">
-    <link rel="stylesheet" href="../../css/home.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     
 </head>
@@ -64,7 +64,7 @@
       <h5>Welcome</h5>
         <h2>About Me</h2>
         <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p><a href="#"class="btn">Learn More</a></p>      
+        <p><a href="about.php"class="btn">Learn More</a></p>      
       </div>
     </div>
   </div>
@@ -133,6 +133,39 @@
         </div>
     </div>
  </div>
+
+ <div  class="row">
+  <div class="col-12 col-md-12 col-lg-4">
+    <div class="card text-center">
+    <div class="box-body">
+    <i class="bi bi-layers"></i>
+    <h3 class="box-title">Project 1</h3>
+    <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+</div>
+
+<div  class="row">
+  <div class="col-12 col-md-12 col-lg-4">
+    <div class="card text-center">
+    <div class="box-body">
+    <i class="bi bi-layers"></i>
+    <h3 class="box-title">Project 1</h3>
+    <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+</div>
+
+<div  class="row">
+  <div class="col-12 col-md-12 col-lg-4">
+    <div class="card text-center">
+    <div class="box-body">
+    <i class="bi bi-layers"></i>
+    <h3 class="box-title">Project 1</h3>
+    <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  </div>
+</div>
 </section>
 
 <!--End  My Project-->

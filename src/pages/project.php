@@ -55,6 +55,44 @@
         </div>
     </div>
 
+    <div class="add_project_wrapper">
+        <div class="img_upload_container">
+            <div class="title">
+                <h5>Upload Image</h5>
+            </div>
+            <div class="img_uploader">
+                <label for="">
+                    <img src="../../resource/icon/uploadimg.png" alt="upload">
+                    <input type="file" accept="image/*">
+                </label>
+                <p>Click here to upload</p>
+            </div>
+        </div>
+        <div class="form_wrapper">
+            <form action="">
+                <div class="input_item">
+                    <label for="">Project Name</label><br>
+                    <input type="text" placeholder="Enter Project Name">
+                    <p class="error_txt"></p>
+                </div>  
+                <div class="input_item">
+                    <label for="">Project Completed Date</label><br>
+                    <input type="date">
+                    <p class="error_txt"></p>
+                </div> 
+                <div class="input_item">
+                    <label for="">Description</label><br>
+                    <textarea name="" id="" cols="50" rows="5"></textarea>
+                    <p class="error_txt"></p>
+                </div>  
+                <div class="form_control">
+                    <button class="save_btn">Save</button>
+                    <button class="clear_btn">Clear</button>
+                </div> 
+            </form>
+        </div>
+    </div>
+
     <script src="../../script/navigation.js"> 
     </script>
 </body>

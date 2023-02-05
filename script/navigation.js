@@ -17,7 +17,7 @@ function handleActiveNavLink(item)
 }
 
 navlinks.forEach((item)=>{
-    item.addEventListener("click", ()=>{handleActiveNavLink(item)})
+    item.addEventListener("click", ()=>{ handleActiveNavLink(item)})
 })
 
 window.onscroll = function() {

@@ -25,7 +25,7 @@
 
         </div>
         <div class="page_main_img">
-            <img class="img1" src="../../resource/image/img_about.jpg" title="About us" alt="About us">
+            <img class="img1" src="../../resource/image/projects.jpg" title="About us" alt="About us">
         </div>
     </div>
     <div class="main_section_wrapper">

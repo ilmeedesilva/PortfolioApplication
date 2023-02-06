@@ -119,7 +119,7 @@ section#about {
 }
 /*CTA Section*/
 #CTA-section {
-  background-image: url("../../PortfolioApplication/resource/image/Banner.jpg");
+  background-image: url("../resource/image/Banner.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #323232;

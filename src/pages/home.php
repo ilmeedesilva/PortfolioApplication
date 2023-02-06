@@ -8,6 +8,7 @@
   <title>SE Girls Protfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" type="text/css" href="../../css/navigation.css">
+  <link rel="stylesheet" type="text/css" href="../../css/footer.css">
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/Home.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -106,19 +107,21 @@
   <!--End call to action section-->
 
   <!--Start service section-->
-  <div id="services" class="services section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="section-header text-center sub-heading">
-            <h5>Our Services</h5>
-            <h2>Services provide for you.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua.</p>
+  <div class="main_section_wrapper">
+    <div id="services" class="services section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center sub-heading">
+              <h5>Our Services</h5>
+              <h2>Services provide for you.</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do eiusmod tempor incididunt ut
+                labore
+                et dolore magna aliqua.</p>
+            </div>
           </div>
         </div>
       </div>
-
       <div class="row">
         <div class="col-12 col-md-12 col-lg-4">
           <div class="card text-center">
@@ -156,66 +159,67 @@
           </div>
         </div>
       </div>
-      </section>
-      <!--End service section-->
+    </div>
+  </div>
+  <!--End service section-->
 
-      <!--Start My Project-->
-      <section id="Project" class="project section-padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="section-header text-center sub-heading">
-                <h5>My completed Project</h5>
-                <h2>Recent Works</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />tempor incididunt ut labore et dolore
-                  magna aliqua.</p>
+  <!--Start My Project-->
+  <section id="Project" class="project section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-header text-center sub-heading">
+            <h5>My completed Project</h5>
+            <h2>Recent Works</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />tempor incididunt ut labore et dolore
+              magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="card text-center">
+            <div class="project-body">
+              <img src="../../resource\image\proj1.jpg">
+              <div class="content-wrapper">
+                <h3 class="box-title">Project 1</h3>
+                <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut
+                  labore et dolore magna aliqua.</p>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12 col-md-12 col-lg-4">
-              <div class="card text-center">
-                <div class="project-body">
-                  <img src="../../resource\image\proj1.jpg">
-                  <div class="content-wrapper">
-                    <h3 class="box-title">Project 1</h3>
-                    <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut
-                      labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        </div>
 
-            <div class="col-12 col-md-12 col-lg-4">
-              <div class="card text-center">
-                <div class="project-body">
-                  <img src="../../resource\image\proj2.jpg">
-                  <div class="content-wrapper">
-                    <h3 class="box-title">Project 2</h3>
-                    <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut
-                      labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-12 col-lg-4">
-              <div class="card text-center">
-                <div class="project-body">
-                  <img src="../../resource\image\proj3..jpg">
-                  <div class="content-wrapper">
-                    <h3 class="box-title">Project 3</h3>
-                    <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut
-                      labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="card text-center">
+            <div class="project-body">
+              <img src="../../resource\image\proj2.jpg">
+              <div class="content-wrapper">
+                <h3 class="box-title">Project 2</h3>
+                <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut
+                  labore et dolore magna aliqua.</p>
               </div>
             </div>
           </div>
-      </section>
+        </div>
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="card text-center">
+            <div class="project-body">
+              <img src="../../resource\image\proj3..jpg">
+              <div class="content-wrapper">
+                <h3 class="box-title">Project 3</h3>
+                <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut
+                  labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <?php include('../../includes/footer.php'); ?>
+  <!--End  My Project-->
 
-      <!--End  My Project-->
-
-      <script src="../../script/navigation.js"> </script>
+  <script src="../../script/navigation.js"> </script>
 </body>
 
 </html>

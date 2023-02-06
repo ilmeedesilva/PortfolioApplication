@@ -1,266 +1,274 @@
 .carousel-item {
-    height: 100vh;
-    min-height: 300px;
+  height: 100vh;
+  min-height: 300px;
 }
 
 .carousel-caption h4 {
-    font-size: 50px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 700;
-    margin-top: 25px;
-    text-shadow: 0px 0px 2px #484848;
-    font-family: "Inter", sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-top: 25px;
+  text-shadow: 0px 0px 2px #484848;
+  font-family: "Inter", sans-serif;
 }
 
 .carousel-caption p {
-    width: 60%;
-    margin: auto;
-    font-size: 25px;
-    line-height: 1.9;
-    letter-spacing: 5;
-    font-weight: 500;
+  width: 60%;
+  margin: auto;
+  font-size: 25px;
+  line-height: 1.9;
+  letter-spacing: 5;
+  font-weight: 500;
 }
 
 .carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 10.25rem;
-    left: 15%;
-    padding-top: 0;
-    color: #fff;
-    text-align: center;
+  position: absolute;
+  top: 35%;
+  right: 15%;
+  bottom: 10.25rem;
+  left: 15%;
+  padding-top: 0;
+  color: #fff;
+  text-align: center;
 }
 
 .carousel-inner::before {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 a.btn-banner {
-    background: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    font-weight: 500;
-    font-size: 18px;
-    border-radius: 0px;
-    text-decoration: none;
-    padding: 10px 15px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 0px;
+  text-decoration: none;
+  padding: 10px 15px;
 }
 
 a.btn-banner:hover {
-    background: #fff !important;
-    border: 1px solid #fff;
-    color: #ff0018;
-    font-weight: 500;
-    font-size: 18px;
-    border-radius: 0px;
-    text-decoration: none;
-    padding: 10px 15px;
+  background: #fff !important;
+  border: 1px solid #fff;
+  color: #ff0018;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 0px;
+  text-decoration: none;
+  padding: 10px 15px;
 }
 
-a.btn{
-    background: transparent;
-    border: 1px solid #ff0018;
-    color: #ff0018;
-    font-weight: 500;
-    font-size: 18px;
-    border-radius: 5px;
+a.btn {
+  background: transparent;
+  border: 1px solid #ff0018;
+  color: #ff0018;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
 }
-a.btn:hover{
-    background: #ff0018;
-    border: 1px solid #ff0018;
-    color: #fff;
+a.btn:hover {
+  background: #ff0018;
+  border: 1px solid #ff0018;
+  color: #fff;
 }
 
 /*about section*/
 img.img-fluid {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 section#about {
-    padding: 100px 0px;
+  padding: 100px 0px;
 }
 
 .about-text h2 {
-    font-weight: 700;
-    font-size: 50px;
+  font-weight: 700;
+  font-size: 50px;
 }
 
 .about-text {
-    padding-right: 50px;
-    text-align: justify;
+  padding-right: 50px;
+  text-align: justify;
 }
 
 section#about {
-    width: 80% !important;
-    margin: 0px auto;
+  width: 80% !important;
+  margin: 0px auto;
 }
 
 .col-lg-8.col-md-12.col-12.ps-lg-5.mt-md-5 {
-    margin-top: 0px !important;
+  margin-top: 0px !important;
 }
 
 .sub-heading h5 {
-    background: -webkit-linear-gradient(#fd4766, #7644ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 600;
+  background: -webkit-linear-gradient(#fd4766, #7644ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
 
 .sub-heading h2 {
-    font-weight: 700;
-    font-size: 50px;
+  font-weight: 700;
+  font-size: 50px;
 }
 /*CTA Section*/
 #CTA-section {
-    background-image: url('../../PortfolioApplication/resource/image/Banner.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #323232;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    height: 30vh;
-    background-blend-mode: overlay;
+  background-image: url("../../PortfolioApplication/resource/image/Banner.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #323232;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  background-blend-mode: overlay;
 }
-.cta-content{
-    z-index: 1;
-    position:relative;
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
+.cta-content {
+  z-index: 1;
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
 }
 .col-content h2 {
-    font-size: 50px;
-    letter-spacing: 2px;
-    margin: 30px 0px 35px 0px;
-    color: #fff;
-    font-weight: 700;
+  font-size: 50px;
+  letter-spacing: 2px;
+  margin: 30px 0px 35px 0px;
+  color: #fff;
+  font-weight: 700;
 }
-.btn-holder{
-    float: right;
+.btn-holder {
+  float: right;
 }
-.cta-col{
-    margin-bottom: 15px;
-    width: 100%;
-    float: left;
+.cta-col {
+  margin-bottom: 15px;
+  width: 100%;
+  float: left;
 }
 
 .col_2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    float: right;
-    width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  width: 20%;
 }
 a.cta_btn {
-    padding: 12px 30px;
+  padding: 12px 30px;
 }
-@media(min-width:768px)
-{
-    .cta-content{
-        text-align: left;
-    }
-    .cta-col{
-        min-height: 185px;
-    }
-    .col_1{width: 60%;
-    }
-    col_2{
-        width: 38%;
-    }
+@media (min-width: 768px) {
+  .cta-content {
+    text-align: left;
+  }
+  .cta-col {
+    min-height: 185px;
+  }
+  .col_1 {
+    width: 60%;
+  }
+  col_2 {
+    width: 38%;
+  }
 }
 /*Services*/
 div#services {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 .services .box-body {
-    font-size: 50px;
+  font-size: 50px;
+  cursor: pointer;
+  transition: 1s all ease;
 }
 
 i.bi-layers::before {
-    color: #7644ff;
-    font-size: 45px;
-    font-weight: 400;
-    margin-bottom: 23px;
+  color: #7644ff;
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 23px;
 }
 
 i.bi.bi-display::before {
-    color: #ff0003;
-    font-size: 45px;
-    font-weight: 400;
-    margin-bottom: 23px;
+  color: #ff0003;
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 23px;
 }
 
 i.bi.bi-x-diamond::before {
-    color: #7644ff;
-    font-size: 45px;
-    font-weight: 400;
-    margin-bottom: 23px;
+  color: #7644ff;
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 23px;
 }
 
 .box-body {
-    background: #0c0c0c;
-    color: #fff;
-    padding: 40px 30px 20px 30px;
-    border-radius: 5px;
+  background: #ffffff;
+  color: #787878;
+  padding: 40px 30px 20px 30px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 9px 2px #ededed;
 }
 
 h3.box-title {
-    margin-bottom: 19px;
-    font-weight: 600;
-    font-size: 25px;
+  margin-bottom: 19px;
+  font-weight: 600;
+  font-size: 25px;
 }
 
 p.box-content {
-    font-weight: normal;
-    text-align: justify;
-    font-size: 16px;
+  font-weight: normal;
+  text-align: justify;
+  font-size: 16px;
 }
 
 /*Project*/
 div#project {
-    padding: 100px 0px;
+  padding: 100px 0px;
 }
 
 section#Project {
-    padding: 100px 0px !important;
+  padding: 100px 0px !important;
 }
 
 .box-body:hover {
-    padding: 20px !important;
+  background-color: #137be3;
+  color: #ffffff;
+  /* padding: 20px !important; */
+  box-shadow: 0 2px 12px 2px #ededed;
 }
 
 .project-body img {
-    background: fixed;
-    width: 100% !important;
+  background: fixed;
+  width: 100% !important;
 }
 
 .content-wrapper {
-    padding: 20px 30px 10px 30px;
+  padding: 20px 30px 10px 30px;
 }
 
 /*Responsive*/
-@media only screen and (max-width:767px) {
-    .carousel-caption {
-        bottom: 125px;
-    }
+@media only screen and (max-width: 767px) {
+  .carousel-caption {
+    bottom: 125px;
+  }
 
-    .carousel-caption h4 {
-        font-size: 17px;
-    }
+  .carousel-caption h4 {
+    font-size: 17px;
+  }
 
-    .carousel-caption p {
-        width: 100%;
-        line-height: 1.5;
-    }
+  .carousel-caption p {
+    width: 100%;
+    line-height: 1.2;
+  }
 
-    .carousel-caption a {
-        padding: 10px 15px;
-    }
+  .carousel-caption a {
+    padding: 10px 15px;
+  }
 }

@@ -147,6 +147,7 @@
             </div>
         </div>
     </div>
+    <?php include('../../includes/footer.php'); ?>
     <script src="../../script/navigation.js">
     </script>
 </body>

@@ -12,6 +12,45 @@
     <div class="admin_page_header_text">
         <h3>User Settings</h3>
     </div>
+
+    <div class="admin_settings_wrapper">
+
+        <div class="collapse_section collapse_Section_active">
+            <div class="collapse_section_header">
+                <h4>Add New User</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body"></div>
+        </div>
+
+        <div class="collapse_section">
+            <div class="collapse_section_header">
+                <h4>Edit User</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body"></div>
+        </div>
+
+        <div class="collapse_section">
+            <div class="collapse_section_header">
+                <h4>Users List</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body"></div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <script src="../../script/collapse.js"></script>
+
+
+
+
 </body>
 
 </html>

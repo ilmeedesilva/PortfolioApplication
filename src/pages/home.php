@@ -21,7 +21,6 @@
   </script>
 
   <!--start carousel-->
-
   <div id="carousel" class="carousel slide" data-bs-ride="carousel ">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -52,7 +51,6 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
   <!--end carousel-->
 
   <!--start About section-->
@@ -103,7 +101,6 @@
     </div>
 
   </section>
-
   <!--End call to action section-->
 
   <!--Start service section-->
@@ -214,6 +211,10 @@
             </div>
           </div>
         </div>
+      
+      </div>
+      <div class="btn-wrapper">
+      <a href="project.php" class="primary_btn cta_btn">View More</a>
       </div>
   </section>
   <?php include('../../includes/footer.php'); ?>

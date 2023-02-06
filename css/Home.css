@@ -230,17 +230,16 @@ p.box-content {
 
 /*Project*/
 div#project {
-  padding: 100px 0px;
+  padding: 80px 0px;
 }
 
 section#Project {
-  padding: 100px 0px !important;
+  padding: 0px 0px 100px 0px!important;
 }
 
 .box-body:hover {
   background-color: #137be3;
   color: #ffffff;
-  /* padding: 20px !important; */
   box-shadow: 0 2px 12px 2px #ededed;
 }
 
@@ -252,7 +251,14 @@ section#Project {
 .content-wrapper {
   padding: 20px 30px 10px 30px;
 }
-
+.btn-wrapper {
+  float: none;
+  margin: 0px auto;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding-top: 50px;
+}
 /*Responsive*/
 @media only screen and (max-width: 767px) {
   .carousel-caption {

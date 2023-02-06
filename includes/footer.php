@@ -68,7 +68,7 @@
         </div>
         <div class="footer_bottom_section">
             <div class="status">
-                <p>all right reserve @2023</p>
+                <p>all rights reserved @2023</p>
             </div>
         </div>
     </div>

@@ -1,50 +1,60 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/about.css">
     <link rel="stylesheet" type="text/css" href="../../css/navigation.css">
     <link rel="stylesheet" href="../../css/style.css">
 </head>
+
 <body>
-    <?php 
-    include "../../includes/navigation.php"; 
+    <?php
+    include "../../includes/navigation.php";
     ?>
-    <section class="sec1 mt_45">
-    <img class = "img1" src="../../resource/image/img_about.jpg" title="About us" alt="About us" >
-        <div class="about-1">
-            <h1>
-                ABOUT US
-            </h1>
+    <div class="main_section_full_wrapper project_img_wrapper">
+        <div class="page_header_title">
+            <h5>ABOUT</h5>
+        </div>
+        <div class="gray_wrapper">
+
+        </div>
+        <img class="img1" src="../../resource/image/img_about.jpg" title="About us" alt="About us">
+    </div>
+    <div class="main_section_wrapper">
+
+        <div class="main_section_wrapper mt_45">
+
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Minima atque, corporis dolorem magni quibusdam in consequatur doloribus 
-                 quos quo quas deserunt aliquam nesciunt perspiciatis earum neque? Deserunt 
-                 perspiciatis illo et?
+                Minima atque, corporis dolorem magni quibusdam in consequatur doloribus
+                quos quo quas deserunt aliquam nesciunt perspiciatis earum neque? Deserunt
+                perspiciatis illo et?
             </p>
         </div>
 
         <div class="list">
-        <div class="list1">
-            <ul>
-                <li><a href="#" class="active_link">CEO Message</a></li>
-                <li><a href="#">Cooparate Data</a></li>
-                <li><a href="#">Cooparate Structure</a></li>
-            </ul>
+            <div class="list1">
+                <ul>
+                    <li><a href="#" class="active_link">CEO Message</a></li>
+                    <li><a href="#">Cooparate Data</a></li>
+                    <li><a href="#">Cooparate Structure</a></li>
+                </ul>
+            </div>
+            <div class="list1">
+                <ul>
+                    <li><a href="#">Group</a></li>
+                    <li><a href="#">Publications</a></li>
+                    <li><a href="#">Project History</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="list1">
-            <ul>
-                <li><a href="#">Group</a></li>
-                <li><a href="#">Publications</a></li>
-                <li><a href="#">Project History</a></li>
-            </ul>
-        </div>
-        </div>
-        
-        
+
+
         <div class="section_wrapper">
             <div class="text_section">
                 <h5>
@@ -52,7 +62,7 @@
                 </h5>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vitae, ea qui
-                     enim molestias aut ipsam, v
+                    enim molestias aut ipsam, v
                     oluptatum natus reiciendis eligendi a tempore voluptates numquam tempora. A sit ne
                     que dolore delectus!
                 </p>
@@ -63,17 +73,17 @@
             </div>
 
             <div class="image_section">
-            <img  src="../../resource/image/img_vision.jpg" title="Vision" alt="Vision">
+                <img src="../../resource/image/img_vision.jpg" title="Vision" alt="Vision">
             </div>
 
         </div>
 
 
         <div class="section_wrapper">
-            
+
 
             <div class="image_section image_section_left">
-            <img  src="../../resource/image/img_tagline.jpg" title="Tagline" alt="Tagline">
+                <img src="../../resource/image/img_tagline.jpg" title="Tagline" alt="Tagline">
             </div>
 
 
@@ -83,7 +93,7 @@
                 </h5>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vitae, ea qui
-                     enim molestias aut ipsam, v
+                    enim molestias aut ipsam, v
                     oluptatum natus reiciendis eligendi a tempore voluptates numquam tempora. A sit ne
                     que dolore delectus!
                 </p>
@@ -102,7 +112,7 @@
                 </h5>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vitae, ea qui
-                     enim molestias aut ipsam, v
+                    enim molestias aut ipsam, v
                     oluptatum natus reiciendis eligendi a tempore voluptates numquam tempora. A sit ne
                     que dolore delectus!
                 </p>
@@ -113,15 +123,15 @@
             </div>
 
             <div class="image_section">
-            <img  src="../../resource/image/img_motto.jpg" title="Motto" alt="Motto" >
+                <img src="../../resource/image/img_motto.jpg" title="Motto" alt="Motto">
             </div>
 
         </div>
-   
 
-    </section>
-    <script src="../../script/navigation.js"> 
+
+    </div>
+    <script src="../../script/navigation.js">
     </script>
 </body>
-</html>
 
+</html>

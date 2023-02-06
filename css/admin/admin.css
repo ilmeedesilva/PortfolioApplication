@@ -116,12 +116,13 @@
 
 .collapse_Section_active .collapse_section_body {
   min-height: 100px;
+  padding: 8px;
 }
 
 .collapse_section_body {
   width: 100%;
   min-height: 0px;
-  padding: 8px;
+
   background-color: #ededed;
   border-radius: 8px;
   border-top-left-radius: 0;

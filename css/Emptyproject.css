@@ -1,0 +1,25 @@
+section#emt_Section {
+    flex-direction: row;
+    width: 400px;
+    padding: 20px;
+    justify-content: space-between;
+    margin: 40px auto;
+    box-shadow: 0 2px 15px 2px #d6d6d6;
+    border-radius: 4px;
+    height: 350px;
+}
+.empty-icon h3 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+p.box-content {
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+.container {
+    text-align: center;
+}

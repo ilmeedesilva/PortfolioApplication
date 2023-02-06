@@ -116,9 +116,69 @@ section#about {
     font-weight: 700;
     font-size: 50px;
 }
+/*CTA Section*/
+#CTA-section {
+    background-image: url('../../PortfolioApplication/resource/image/Banner.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #323232;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    background-blend-mode: overlay;
+}
+.cta-content{
+    z-index: 1;
+    position:relative;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.col-content h2 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin: 30px 0px 35px 0px;
+    color: #fff;
+    font-weight: 700;
+}
+.btn-holder{
+    float: right;
+}
+.cta-col{
+    margin-bottom: 15px;
+    width: 100%;
+    float: left;
+}
 
+.col_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    width: 20%;
+}
+a.cta_btn {
+    padding: 12px 30px;
+}
+@media(min-width:768px)
+{
+    .cta-content{
+        text-align: left;
+    }
+    .cta-col{
+        min-height: 185px;
+    }
+    .col_1{width: 60%;
+    }
+    col_2{
+        width: 38%;
+    }
+}
 /*Services*/
-
+div#services {
+    padding-top: 100px;
+}
 .services .box-body {
     font-size: 50px;
 }

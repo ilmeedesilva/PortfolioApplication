@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <link rel="stylesheet" href="../css/navigation.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <div class="top_navigation">
         <div class="top_nav_left">
-            <a href="#"><img src="../../resource/icon/paypal.png" alt="Logo"></a>
+            <a href="../../src/pages/home.php"><img src="../../resource/icon/paypal.png" alt="Logo"></a>
         </div>
         <div class="top_nav_right">
             <ul>
@@ -22,10 +24,11 @@
             </ul>
         </div>
     </div>
-    
+
     <script src="../script/navigation.js">
 
     </script>
 
 </body>
+
 </html>

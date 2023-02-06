@@ -95,7 +95,7 @@
         </div>
         <div class="cta-col col_2">
           <div class="btn-holder">
-            <a href="Contact.php" class="primary_btn cta_btn">Call Me</a>
+            <a href="contact.php" class="primary_btn cta_btn">Call Me</a>
           </div>
         </div>
       </div>

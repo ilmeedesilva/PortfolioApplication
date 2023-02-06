@@ -1,0 +1,50 @@
+label {
+  color: #4c49b9 !important;
+}
+input,
+select {
+  border-radius: 50px !important;
+}
+
+input,
+select {
+  color: #b5bddb;
+}
+
+input,
+textarea,
+select {
+  margin-top: 8px;
+  background-color: #f4f6fc;
+  padding: 12px !important;
+  font-size: 16px !important;
+  border: none !important;
+}
+
+input:focus-visible {
+  border: 1px solid #f4f6fc !important;
+}
+
+input::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #b5bddb;
+}
+
+input::-moz-placeholder,
+select::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #b5bddb;
+}
+
+input::-ms-input-placeholder,
+select::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #b5bddb;
+}
+
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: #b5bddb;
+}

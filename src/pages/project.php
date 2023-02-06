@@ -109,7 +109,7 @@
         </div>
 
 
-        <div class="add_project_wrapper">
+        <!-- <div class="add_project_wrapper">
             <div class="img_upload_container">
                 <div class="title">
                     <h5>Upload Image</h5>
@@ -145,7 +145,7 @@
                     </div>
                 </form>
             </div>
-        </div>
+        </div> -->
     </div>
     <?php include('../../includes/footer.php'); ?>
     <script src="../../script/navigation.js">

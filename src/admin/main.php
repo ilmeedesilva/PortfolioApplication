@@ -34,7 +34,7 @@
             </ul>
             <div class="log_out">
                 <ul>
-                    <a href="main.php?page=project">
+                    <a href="../pages/home.php">
                         <li> <img src="../../resource/icon/logout.png" alt="project icon">Logout</li>
                     </a>
                 </ul>
@@ -64,7 +64,7 @@
                         include 'adminUser.php';
                         break;
                     // case 'logout':
-                    //     include 'logout.php';
+                    //     include '../pages/home.php';
                     //     break;
                     default:
                         include 'adminHome.php';

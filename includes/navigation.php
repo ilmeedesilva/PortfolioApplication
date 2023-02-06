@@ -19,7 +19,7 @@
                 <li><a href="../../src/pages/home.php" class="active_link">Home</a></li>
                 <li><a href="../../src/pages/project.php">Project</a></li>
                 <li><a href="../../src/pages/about.php">About</a></li>
-                <li><a href="#">Extra</a></li>
+                <li><a href="../../src/admin/main.php">Extra</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>

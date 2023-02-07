@@ -84,6 +84,8 @@ saveBtn.addEventListener("click", (e) => {
     dateErro.innerHTML = "*project date cannont be empty";
   } else if (selectedDate > currentDate) {
     dateErro.innerHTML = "*Date cannot be a future date";
+  }
+  else{
     dateErro.innerHTML = "";
   }
   if (!projDesc.value) {

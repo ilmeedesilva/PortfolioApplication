@@ -72,7 +72,7 @@ const selectedFile = (doc) => {
 
 saveBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  const selectedDate = new Date(this.value);
+  const selectedDate = new Date(projDate.value);
   const currentDate = new Date();
 
   if (!projName.value) {
@@ -82,7 +82,7 @@ saveBtn.addEventListener("click", (e) => {
   }
   if (!projDate.value) {
     dateErro.innerHTML = "*project date cannont be empty";
-  } else if (selectedDate > currentDate) {
+  } else if (selectedDate < currentDate) {
     dateErro.innerHTML = "*Date cannot be a future date";
   }
   else{

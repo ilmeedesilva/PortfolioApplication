@@ -34,23 +34,23 @@
             <form action="">
                 <div class="input_item">
                     <label for="">Name</label><br>
-                    <input type="text" placeholder="Enter Name">
-                    <p class="error_txt"></p>
+                    <input type="text" placeholder="Enter Name" name="name">
+                    <p class="error_txt name_txt_er"></p>
                 </div>
                 <div class="input_item">
                     <label for="">Email</label><br>
-                    <input type="text" placeholder="example@gmail.com">
-                    <p class="error_txt"></p>
+                    <input type="text" placeholder="example@gmail.com" name="email">
+                    <p class="error_txt email_txt_er"></p>
                 </div>
                 <div class="input_item">
                     <label for="">Contact No</label><br>
-                    <input type="number" placeholder="0700000000">
-                    <p class="error_txt"></p>
+                    <input type="number" placeholder="0700000000" name="tel">
+                    <p class="error_txt tel_txt_er"></p>
                 </div>
                 <div class="input_item">
                     <label for="">Message</label><br>
-                    <textarea name="" id="" cols="50" rows="5" placeholder="Enter your message here"></textarea>
-                    <p class="error_txt"></p>
+                    <textarea id="" cols="50" rows="5" placeholder="Enter your message here" name="msg"></textarea>
+                    <p class="error_txt msg_txt_er" ></p>
                 </div>
                 <div class="form_control">
                     <button class="save_btn">Save</button>
@@ -82,6 +82,8 @@
 
     <?php include('../../includes/footer.php'); ?>
     <script src="../../script/navigation.js">
+    </script>
+    <script src="../../script/contactForm.js">
     </script>
 </body>
 

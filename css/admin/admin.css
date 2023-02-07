@@ -211,6 +211,10 @@ input[type="file"] {
 .form_wrapper textarea {
   border: 1px solid #e2e2e2;
   border-radius: 8px;
+  padding: 8px;
+}
+textarea::placeholder {
+  font-size: 14px;
 }
 .form_wrapper label {
   font-weight: 700;
@@ -253,6 +257,12 @@ input[type="file"] {
 }
 
 /* UPDATE project styles */
+
+.update_project_desc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 .table_wrapper {
   display: flex;
@@ -309,14 +319,27 @@ input[type="file"] {
   border-radius: 30px;
   box-sizing: border-box;
 }
-
-.img-area {
-  position: relative;
-  width: 100%;
-  height: 240px;
-  margin-bottom: 30px;
-  border-radius: 15px;
-  overflow: hidden;
+.desc_wrapper textarea {
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+}
+.desc_wrapper label {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.desc_wrapper {
+  padding: 32px;
+}
+.desc_wrapper textarea {
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  padding: 8px;
+}
+.btn_save_control {
+  margin: 20px auto;
+}
+.btn_save_control {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -563,4 +586,7 @@ form.slider_update textarea {
   font-size: 15px !important;
   text-align: center;
   margin: 0px auto;
+}
+.btn_save_control .save_btn:hover {
+  background-color: #59c0d4;
 }

@@ -34,7 +34,7 @@
         </div>
         <div class="status_descrip">
             <h6>SUCCESS</h6>
-            <p>WE WILL CONTACT YOU SOON AS POSSIBLE</p>
+            <p>WE WILL CONTACT YOU SHORTLY</p>
         </div>
     </div>
     <div class="contact_wrapper">
@@ -59,7 +59,7 @@
                 </div>
                 <div class="input_item">
                     <label for="">Message</label><br>
-                    <textarea id="" cols="50" rows="5" placeholder="Enter your message here" name="msg"></textarea>
+                    <textarea id="" cols="50" rows="5" placeholder="Enter your message here..." name="msg"></textarea>
                     <p class="error_txt msg_txt_er"></p>
                 </div>
                 <div class="form_control">

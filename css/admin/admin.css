@@ -176,9 +176,25 @@
   width: 60px;
   height: auto;
 }
-.img_uploader input[type="file"] {
-  display: none;
+input[type="file"] {
+  position: absolute;
+  opacity: 0;
 }
+
+.img_uploader_wrapper {
+  display: inline-block;
+  position: relative;
+  background-image: url(../../resource/icon/uploadimg.png);
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.file_name {
+  color: gray;
+}
+
 .form_wrapper input {
   border: 1px solid #e2e2e2;
   padding: 8px;
@@ -226,4 +242,12 @@
 }
 .form_control .clear_btn:hover {
   background-color: #ebebeb;
+}
+
+.error_txt {
+  font-family: calibri;
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 12px;
+  color: #dd3f42 !important;
 }

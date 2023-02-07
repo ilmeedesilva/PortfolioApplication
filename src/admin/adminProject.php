@@ -20,43 +20,45 @@
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
-            <div class="add_project_wrapper">
-            <div class="img_upload_container">
-                <div class="title">
-                    <h5>Upload Image</h5>
+                <div class="add_project_wrapper">
+                    <div class="img_upload_container">
+                        <div class="title">
+                            <h5>Upload Image</h5>
+                        </div>
+                        <div class="img_uploader">
+                            <label for="" class="img_uploader_wrapper">
+                                <input type="file" accept="image/*" class="image_uploader"
+                                    onchange="selectedFile(this)">
+                            </label>
+                            <p class="file_name"></p>
+                            <p class="error_txt error_img"></p>
+                            <p>Click here to upload</p>
+                        </div>
+                    </div>
+                    <div class="form_wrapper">
+                        <form action="">
+                            <div class="input_item">
+                                <label for="">Project Name</label><br>
+                                <input type="text" placeholder="Enter Project Name">
+                                <p class="error_txt"></p>
+                            </div>
+                            <div class="input_item">
+                                <label for="">Project Completed Date</label><br>
+                                <input type="date">
+                                <p class="error_txt"></p>
+                            </div>
+                            <div class="input_item">
+                                <label for="">Description</label><br>
+                                <textarea name="" id="" cols="50" rows="5"></textarea>
+                                <p class="error_txt"></p>
+                            </div>
+                            <div class="form_control">
+                                <button class="save_btn">Save</button>
+                                <button class="clear_btn">Clear</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="img_uploader">
-                    <label for="">
-                        <img src="../../resource/icon/uploadimg.png" alt="upload">
-                        <input type="file" accept="image/*">
-                    </label>
-                    <p>Click here to upload</p>
-                </div>
-            </div>
-            <div class="form_wrapper">
-                <form action="">
-                    <div class="input_item">
-                        <label for="">Project Name</label><br>
-                        <input type="text" placeholder="Enter Project Name">
-                        <p class="error_txt"></p>
-                    </div>
-                    <div class="input_item">
-                        <label for="">Project Completed Date</label><br>
-                        <input type="date">
-                        <p class="error_txt"></p>
-                    </div>
-                    <div class="input_item">
-                        <label for="">Description</label><br>
-                        <textarea name="" id="" cols="50" rows="5"></textarea>
-                        <p class="error_txt"></p>
-                    </div>
-                    <div class="form_control">
-                        <button class="save_btn">Save</button>
-                        <button class="clear_btn">Clear</button>
-                    </div>
-                </form>
-            </div>
-        </div>
             </div>
         </div>
 
@@ -82,7 +84,7 @@
 
 
     <script src="../../script/collapse.js"></script>
-
+    <script src="../../script/project.js"></script>
 
 
 </body>

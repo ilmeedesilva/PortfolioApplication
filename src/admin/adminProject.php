@@ -33,7 +33,7 @@
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
-                <div class="update_about">
+                <div class="update_project_desc">
                     <div class="desc_wrapper">
                         <div class="input_item">
                             <label for="">Description</label><br>

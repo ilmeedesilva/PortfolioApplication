@@ -25,7 +25,7 @@
                     <div class="desc_wrapper">
                         <div class="input_item">
                             <label for="">Description</label><br>
-                            <textarea name="" id="" cols="55" rows="7"></textarea>
+                            <textarea name="" id="" cols="50" rows="6" placeholder="Type your description here..."></textarea>
                             <p class="error_txt"></p>
                         </div>
                     </div>

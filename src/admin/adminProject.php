@@ -62,7 +62,7 @@
                             </div>
                             <div class="input_item">
                                 <label for="descr">Description</label><br>
-                                <textarea name="descr" cols="50" rows="5"></textarea>
+                                <textarea name="descr" cols="50" rows="5" placeholder="Type your description here..."></textarea>
                                 <p class="error_txt desc_error"></p>
                             </div>
                             <div class="form_control">

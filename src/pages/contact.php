@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/navigation.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/form.css">
+    <link rel="stylesheet" href="../../css/popup.css">
 </head>
 
 <body>
@@ -25,6 +26,15 @@
         </div>
         <div class="page_main_img">
             <img class="img1" src="../../resource/image/contact-banner.jpeg" title="Contact us" alt="Contact us">
+        </div>
+    </div>
+    <div class="status_popup_wrapper popup_hide">
+        <div class="status_icon">
+            <img src="../../resource/icon/success.png" alt="status">
+        </div>
+        <div class="status_descrip">
+            <h6>SUCCESS</h6>
+            <p>WE WILL CONTACT YOU SOON AS POSSIBLE</p>
         </div>
     </div>
     <div class="contact_wrapper">
@@ -50,7 +60,7 @@
                 <div class="input_item">
                     <label for="">Message</label><br>
                     <textarea id="" cols="50" rows="5" placeholder="Enter your message here" name="msg"></textarea>
-                    <p class="error_txt msg_txt_er" ></p>
+                    <p class="error_txt msg_txt_er"></p>
                 </div>
                 <div class="form_control">
                     <button class="save_btn">Save</button>
@@ -60,19 +70,19 @@
         <div class="details_container">
             <div class="information">
                 <h2>Contact Information</h2>
-                <div class="contact_info_address">
+                <div class="contact_info contact_info_address">
                     <p class="street_no">No. 01</p>
                     <P class="street_name">Udahamulla</P>
                     <p class="city">Nugegoda</p>
                     <p class="country">Sri Lanka</p><br>
                 </div>
-                <div class="contact_info_phone">
+                <div class="contact_info contact_info_phone">
                     <p class="no1">Call us: 0775556667</p>
                 </div>
-                <div class="contact_info_email">
+                <div class="contact_info contact_info_email">
                     <p class="email">emailaddress@gmail.com</p>
                 </div>
-                <div class="contact_info_openingTag">
+                <div class="contact_info contact_info_openingTag">
                     <p class="open_title">We're open from Monday - Friday</p>
                     <p class="open_title">9.00 am - 6.00 pm</p>
                 </div>

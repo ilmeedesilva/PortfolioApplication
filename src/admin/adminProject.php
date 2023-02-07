@@ -6,9 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects Settings</title>
+    <link rel="stylesheet" href="../../css/popup.css">
 </head>
 
 <body>
+
+
+    <div class="status_popup_wrapper popup_hide">
+        <div class="status_icon">
+            <img src="../../resource/icon/success.png" alt="status">
+        </div>
+        <div class="status_descrip">
+            <h6>SUCCESS</h6>
+            <p>WE WILL CONTACT YOU SOON AS POSSIBLE</p>
+        </div>
+    </div>
+
     <div class="admin_page_header_text">
         <h3>Projects Settings</h3>
     </div>
@@ -38,19 +51,19 @@
                     <div class="form_wrapper">
                         <form action="">
                             <div class="input_item">
-                                <label for="">Project Name</label><br>
-                                <input type="text" placeholder="Enter Project Name">
-                                <p class="error_txt"></p>
+                                <label for="projectName">Project Name</label><br>
+                                <input type="text" name="projectName" placeholder="Enter Project Name">
+                                <p class="error_txt proj_error"></p>
                             </div>
                             <div class="input_item">
-                                <label for="">Project Completed Date</label><br>
-                                <input type="date">
-                                <p class="error_txt"></p>
+                                <label for="date">Project Completed Date</label><br>
+                                <input type="date" name="date">
+                                <p class="error_txt date_error"></p>
                             </div>
                             <div class="input_item">
-                                <label for="">Description</label><br>
-                                <textarea name="" id="" cols="50" rows="5"></textarea>
-                                <p class="error_txt"></p>
+                                <label for="descr">Description</label><br>
+                                <textarea name="descr" cols="50" rows="5"></textarea>
+                                <p class="error_txt desc_error"></p>
                             </div>
                             <div class="form_control">
                                 <button class="save_btn">Save</button>

@@ -37,7 +37,7 @@
             </div>
             <div class="content_bottom project_item_wrapper">
                 <div class="container blog_container">
-                    <div class="col blog_wrapper">
+                    <!-- <div class="col blog_wrapper">
                         <div class="blog-top-section">
                             <div class="blue_cover"></div>
                             <div class="blog_img">
@@ -57,9 +57,9 @@
 
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="col blog_wrapper">
+                    <!-- <div class="col blog_wrapper">
                         <div class="blog-top-section">
                             <div class="blue_cover"></div>
                             <div class="blog_img">
@@ -79,11 +79,11 @@
 
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
 
-                    <div class="col blog_wrapper">
+                    <!-- <div class="col blog_wrapper">
                         <div class="blog-top-section">
                             <div class="blue_cover"></div>
                             <div class="blog_img">
@@ -103,7 +103,7 @@
 
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -149,6 +149,8 @@
     </div>
     <?php include('../../includes/footer.php'); ?>
     <script src="../../script/navigation.js">
+    </script>
+    <script src="../../script/getData.js">
     </script>
 </body>
 

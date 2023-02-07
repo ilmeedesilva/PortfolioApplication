@@ -116,19 +116,34 @@
 
 .collapse_Section_active .collapse_section_body {
   min-height: 100px;
+  max-height: fit-content;
   padding: 8px;
+  opacity: 1;
+  animation: heightReducer 2s;
 }
 
 .collapse_section_body {
   width: 100%;
   min-height: 0px;
-
+  max-height: 0;
+  opacity: 1;
+  overflow: hidden;
   background-color: #ededed;
   border-radius: 8px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   opacity: 1;
+  animation: heightReducer 2s;
   transition: 500ms all ease-in-out;
+}
+
+@keyframes mymove {
+  from {
+    max-height: fit-content;
+  }
+  to {
+    max-height: 0;
+  }
 }
 
 /* project styles */

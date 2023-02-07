@@ -43,6 +43,9 @@
   border-radius: 8px;
   padding: 0;
   margin-right: 12px;
+  min-width: 300px;
+  max-width: 300px;
+  margin-bottom: 12px;
 }
 
 .blog_wrapper:hover {
@@ -55,6 +58,13 @@
 
 .blog-top-section {
   position: relative;
+  width: 100%;
+}
+
+.blog-top-section .blog_img img {
+  width: 100%;
+  min-height: auto;
+  max-height: 300px;
 }
 
 .blue_cover {
@@ -70,11 +80,17 @@
 
 .blog-bottom-section {
   padding: 12px;
+  width: 100%;
 }
 
 .sub_details p {
   color: #888;
   margin: 0;
+  font-size: 16px;
+  max-width: 150px;
+  white-space: normal;
+  height: 42px;
+  overflow: hidden;
 }
 
 .sub_details p:last-child {
@@ -83,7 +99,6 @@
 
 .sub_details .date {
   display: flex;
-  align-items: center;
   justify-content: center;
   width: 100px;
   height: auto;

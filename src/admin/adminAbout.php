@@ -20,7 +20,20 @@
                 <h4>Update about</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
-            <div class="collapse_section_body"></div>
+            <div class="collapse_section_body">
+                <div class="update_about">
+                    <div class="desc_wrapper">
+                        <div class="input_item">
+                            <label for="">Description</label><br>
+                            <textarea name="" id="" cols="55" rows="7"></textarea>
+                            <p class="error_txt"></p>
+                        </div>
+                    </div>
+                    <div class="btn_save_control">
+                    <button class="save_btn">Save</button>
+                    </div>
+                </div> 
+            </div>
         </div>
 
         <div class="collapse_section">

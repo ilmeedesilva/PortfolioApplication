@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects Settings</title>
-    <link rel="stylesheet" href="../../css/popup.css">
 </head>
 
 <body>
@@ -80,7 +79,30 @@
                 <h4>Update Project</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
-            <div class="collapse_section_body"></div>
+            <div class="collapse_section_body">
+                <div class="table_wrapper">
+                    <table>
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Created Date</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>ABCD Project</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
+                            <td>10-08-2022</td>
+                            <td><button class="control_btn">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>EFGH Project</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
+                            <td>02-14-2022</td>
+                            <td><button class="control_btn">Edit</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
 
         <div class="collapse_section">
@@ -88,7 +110,30 @@
                 <h4>Delete Project</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
-            <div class="collapse_section_body"></div>
+            <div class="collapse_section_body">
+            <div class="table_wrapper">
+                    <table>
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Created Date</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>ABCD Project</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
+                            <td>10-08-2022</td>
+                            <td><button class="control_btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>EFGH Project</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
+                            <td>02-14-2022</td>
+                            <td><button class="control_btn">Delete</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
 
     </div>

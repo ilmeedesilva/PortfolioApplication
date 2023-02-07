@@ -27,6 +27,26 @@
     </div>
     <div class="admin_settings_wrapper">
 
+    <div class="collapse_section collapse_Section_active">
+            <div class="collapse_section_header">
+                <h4>Update project description</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body">
+                <div class="update_about">
+                    <div class="desc_wrapper">
+                        <div class="input_item">
+                            <label for="">Description</label><br>
+                            <textarea name="" id="" cols="50" rows="6" placeholder="Type your description here..."></textarea>
+                            <p class="error_txt"></p>
+                        </div>
+                    </div>
+                    <div class="btn_save_control">
+                    <button class="save_btn">Save</button>
+                    </div>
+                </div> 
+            </div>
+        </div>        
         <div class="collapse_section collapse_Section_active">
             <div class="collapse_section_header">
                 <h4>Add New Project</h4>

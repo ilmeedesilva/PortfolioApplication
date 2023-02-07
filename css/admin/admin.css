@@ -258,6 +258,12 @@ textarea::placeholder {
 
 /* UPDATE project styles */
 
+.update_project_desc{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .table_wrapper{
   display: flex;
   flex-direction: row;
@@ -349,3 +355,4 @@ textarea::placeholder {
 .btn_save_control .save_btn:hover {
   background-color: #59c0d4;
 }
+

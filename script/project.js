@@ -32,7 +32,7 @@ const displayPopUp = (res) => {
     background.style.backgroundColor = "#e9374d";
     icon.src = "../../resource/icon/fail.png";
     header1.innerHTML = "FAILED";
-    detail.innerHTML = "SOMTHING WHENT WRONG PLEASE TRY AGAIN";
+    detail.innerHTML = "SOMTHING WHENT WRONG! PLEASE TRY AGAIN";
   }
   window.scrollTo({
     top: 0,
@@ -55,15 +55,16 @@ const selectedFile = (doc) => {
   const file = doc.files[0];
   const fileType = file.type;
   const fileSize = file.size;
-  fileName.innerHTML = `${file.name}, size: ${file.size} bytes`;
+  const filesizeinMB = (file.size/1000).toFixed(2);
+  fileName.innerHTML = `${file.name}, size: ${filesizeinMB} KB`;
   if (fileType) {
-    imgErrorTxt.innerHTML = "must include an image";
+    imgErrorTxt.innerHTML = "*Must include an image";
   }
   if (fileType !== "image/jpeg" && fileType !== "image/png") {
-    imgErrorTxt.innerHTML = "Invalid file type, only jpeg and png are allowed";
+    imgErrorTxt.innerHTML = "*Invalid file type, only jpeg and png are allowed";
     return;
-  } else if (fileSize > 2000000) {
-    imgErrorTxt.innerHTML = "File size must be less than 2 MB";
+  } else if (fileSize > 1000000) {
+    imgErrorTxt.innerHTML = "*File size must be less than 1MB";
   } else {
     imgErrorTxt.innerHTML = "";
   }
@@ -75,26 +76,26 @@ saveBtn.addEventListener("click", (e) => {
   const currentDate = new Date();
 
   if (!projName.value) {
-    projNameErro.innerHTML = "project name cannont be empty";
+    projNameErro.innerHTML = "*project name cannont be empty";
   } else {
     projNameErro.innerHTML = "";
   }
   if (!projDate.value) {
-    dateErro.innerHTML = "project date cannont be empty";
+    dateErro.innerHTML = "*project date cannont be empty";
   } else if (selectedDate > currentDate) {
-    dateErro.innerHTML = "Date cannot be a future date";
+    dateErro.innerHTML = "*Date cannot be a future date";
     dateErro.innerHTML = "";
   }
   if (!projDesc.value) {
-    descNameErro.innerHTML = "description cannot be empty";
+    descNameErro.innerHTML = "*Description cannot be empty";
   } else if (projDesc.value < 10 || projDesc.value > 500) {
     descNameErro.innerHTML =
-      "Description should contain more than ten characters and less than 500 characters";
+      "*Description should contain more than 10 characters and less than 500 characters";
   } else {
     descNameErro.innerHTML = "";
   }
   if (!fileInput.value) {
-    imgErrorTxt.innerHTML = "must include an image";
+    imgErrorTxt.innerHTML = "*Must include an image";
   } else {
     imgErrorTxt.innerHTML = "";
   }

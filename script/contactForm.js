@@ -34,13 +34,13 @@ const displayPopUp = (res) => {
     background.style.backgroundColor = "#75cf0f";
     icon.src = "../../resource/icon/success.png";
     header1.innerHTML = "SUCCESS";
-    detail.innerHTML = "WE WILL CONTACT YOU SOON AS POSSIBLE";
+    detail.innerHTML = "WE WILL CONTACT YOU SHORTLY";
     clearInputFields();
   } else {
     background.style.backgroundColor = "#e9374d";
     icon.src = "../../resource/icon/fail.png";
     header1.innerHTML = "FAILED";
-    detail.innerHTML = "SOMTHING WHENT WRONG PLEASE TRY AGAIN";
+    detail.innerHTML = "SOMTHING WENT WRONG! PLEASE TRY AGAIN";
   }
   window.scrollTo({
     top: 0,
@@ -59,38 +59,38 @@ submit_button.addEventListener("click", (e) => {
   e.preventDefault();
 
   if (!name_input.value) {
-    name_error.innerHTML = "Name cannot be empty";
+    name_error.innerHTML = "*Name cannot be empty";
   } else if (!name_input.value.match(/^[a-zA-Z\s]+$/)) {
-    name_error.innerHTML = "Name should not contain numbers";
+    name_error.innerHTML = "*Name should not contain numbers";
   } else if (!(name_input.value.length > 2)) {
-    name_error.innerHTML = "Name should contain more than 2 characters";
+    name_error.innerHTML = "*Name should contain more than 2 characters";
   } else {
     name_error.innerHTML = "";
   }
 
   if (!email_input.value) {
-    email_error.innerHTML = "Email cannot be empty";
+    email_error.innerHTML = "*Email cannot be empty";
   } else if (
     !email_input.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)
   ) {
-    email_error.innerHTML = "Enter a valid email address";
+    email_error.innerHTML = "*Enter a valid email address";
   } else {
     email_error.innerHTML = "";
   }
 
   if (!tel_input.value) {
-    tel_error.innerHTML = "Telephone number cannot be empty";
+    tel_error.innerHTML = "*Telephone number cannot be empty";
   } else if (!tel_input.value.match(/^\d{10}$/)) {
-    tel_error.innerHTML = "Enter a valid Telephone number";
+    tel_error.innerHTML = "*Enter a valid Telephone number";
   } else {
     tel_error.innerHTML = "";
   }
 
   if (!msg_input.value) {
-    msg_error.innerHTML = "Message cannot be empty";
+    msg_error.innerHTML = "*Message cannot be empty";
   } else if (msg_input.value.length <= 9 || msg_input.value.length > 500) {
     msg_error.innerHTML =
-      "Message should contain more than ten characters and less than 500 characters";
+      "*Message should contain more than 10 characters and less than 500 characters";
   } else {
     msg_error.innerHTML = "";
   }

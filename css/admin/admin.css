@@ -211,6 +211,10 @@ input[type="file"] {
 .form_wrapper textarea {
   border: 1px solid #e2e2e2;
   border-radius: 8px;
+  padding: 8px;
+}
+textarea::placeholder {
+  font-size: 14px;
 }
 .form_wrapper label {
   font-weight: 700;
@@ -319,6 +323,11 @@ input[type="file"] {
 }
 .desc_wrapper{
   padding: 32px;
+}
+.desc_wrapper textarea{
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  padding: 8px;
 }
 .btn_save_control{
   margin: 20px auto;

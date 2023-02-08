@@ -590,3 +590,64 @@ form.slider_update textarea {
 .btn_save_control .save_btn:hover {
   background-color: #59c0d4;
 }
+
+/* mail */
+
+.mail_item_wrapper {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: 4px auto;
+}
+
+.mail_item_wrapper p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.mail_item_wrapper p span {
+  color: #697786;
+}
+
+.mail_header {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #eaf0f7;
+  cursor: pointer;
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.mail_header:hover {
+  background-color: #d8e4f5;
+}
+
+.mail_body {
+  display: flex;
+  min-height: 100px;
+  background-color: gray;
+  padding: 8px;
+  transition: 500ms all ease-in;
+}
+
+.mail_body_hidden {
+  display: none;
+  transition: height 1s;
+}
+
+.empty {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty p {
+  color: #6f7384;
+}

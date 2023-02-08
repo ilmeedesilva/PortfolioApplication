@@ -58,6 +58,7 @@ const displayPopUp = (res) => {
 submit_button.addEventListener("click", (e) => {
   e.preventDefault();
 
+  console.log("msg_input - ", msg_input.value);
   if (!name_input.value) {
     name_error.innerHTML = "*Name cannot be empty";
   } else if (!name_input.value.match(/^[a-zA-Z\s]+$/)) {

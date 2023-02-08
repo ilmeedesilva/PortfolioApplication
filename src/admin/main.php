@@ -28,9 +28,13 @@
                 <a href="main.php?page=about">
                     <li> <img src="../../resource/icon/about.png" alt="project icon"> About</li>
                 </a>
+                <a href="main.php?page=mail">
+                    <li> <img src="../../resource/icon/email.png" alt="project icon"> Mail</li>
+                </a>
                 <a href="main.php?page=user">
                     <li> <img src="../../resource/icon/user.png" alt="project icon"> User</li>
                 </a>
+
             </ul>
             <div class="log_out">
                 <ul>
@@ -62,6 +66,9 @@
                     //     break;
                     case 'user':
                         include 'adminUser.php';
+                        break;
+                    case 'mail':
+                        include 'adminMail.php';
                         break;
                     // case 'logout':
                     //     include '../pages/home.php';

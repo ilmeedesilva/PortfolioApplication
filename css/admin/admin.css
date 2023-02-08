@@ -350,6 +350,7 @@ textarea::placeholder {
   border-radius: 30px;
   box-sizing: border-box;
 }
+
 .desc_wrapper textarea {
   border: 1px solid #e2e2e2;
   border-radius: 8px;

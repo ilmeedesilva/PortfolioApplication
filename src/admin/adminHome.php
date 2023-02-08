@@ -65,17 +65,17 @@
                         <div class="form_wrappe">
                             <div class="box">
                                 <label for="address">Street No:
-                                    <input type="text" name="street_no" id="address" placeholder="Street No">
+                                    <input type="text" name="street_no" id="address" placeholder="ex: No. 01">
                                     <p class="error_txt street_no_error"></p>
                             </div>
                             <div class="box">
                                 <label for="address">City:
-                                    <input type="text" name="city_no" id="address">
-                                    <p class="error_txt city_no_error"></p>
+                                    <input type="text" name="city_no" id="address" placeholder="ex: Colombo 01">
+                                    <p class="error_txt city_error"></p>
                             </div>
                             <div class="box">
                                 <label for="address">Country:
-                                    <input type="text" name="country" id="address">
+                                    <input type="text" name="country" id="address" placeholder="ex: Sri Lanka">
                                     <p class="error_txt country_error"></p>
                             </div>
                         </div>
@@ -83,22 +83,23 @@
                         <div class="form_wrappe">
                             <div class="box">
                                 <label for="email">Email:
-                                    <input type="email" name="mail" id="email">
+                                    <input type="email" name="mail" id="email" placeholder="example@gmail.com">
                                     <p class="error_txt mail_error"></p>
                             </div>
                             <div class="box">
-                                <label for="phone1">Phone1:
-                                    <input type="text" name="phone1" id="tel" require>
+                                <label for="phone1">Contact No 1:
+                                    <input type="text" name="phone1" id="tel" require placeholder="0700000000">
                                     <p class="error_txt phone1_error"></p>
                             </div>
                             <div class="box">
-                                <label for="phone2">Phone2:
-                                    <input type="text" name="phone2" id="tel" require>
+                                <label for="phone2">Contact No 2:
+                                    <input type="text" name="phone2" id="tel" require placeholder="0700000000">
                                     <p class="error_txt phone2_error"></p>
                             </div>
                         </div>
                         <div class="column btn-col">
-                            <input type="submit" name="" class="primary_btn contact_info_save_btn" value="Save">
+                            <button class="primary_btn contact_info_save_btn">Save</button>
+                            <!-- <button class="primary_btn contact_info_save_btn">Save</button> -->
                         </div>
                     </div>
                 </section>
@@ -116,12 +117,13 @@
                         <h3>Slider 1</h3>
                         <div class="layout">
                             <label for="title">Title:
-                                <input type="text" name="slider1Title" id="Title">
+                                <input type="text" name="slider1Title" id="Title" placeholder="ex: New title">
                                 <p class="error_txt slider1Title_error"></p>
                         </div>
                         <div class="Description">
                             <label for="Description">Description:
-                                <textarea id="slider1Desc" name="slider1Desc" rows="4" cols="50"></textarea>
+                                <textarea id="slider1Desc" name="slider1Desc" rows="4" cols="50"
+                                    placeholder="Enter your description here..."></textarea>
                                 <p class="error_txt slider1Desc_error"></p>
                         </div>
 
@@ -130,12 +132,13 @@
                         <h3>Slider 2</h3>
                         <div class="layout">
                             <label for="header">Title:
-                                <input type="text" name="slider2Title" id="Title">
+                                <input type="text" name="slider2Title" id="Title" placeholder="ex: New title">
                                 <p class="error_txt slider2Title_error"></p>
                         </div>
                         <div class="Description">
                             <label for="Description">Description:
-                                <textarea id="w3review" name="slider2Desc" rows="4" cols="50"></textarea>
+                                <textarea id="w3review" name="slider2Desc" rows="4" cols="50"
+                                    placeholder="Enter your description here..."></textarea>
                                 <p class="error_txt slider2Desc_error"></p>
                         </div>
 
@@ -144,12 +147,13 @@
                         <h3>Slider 3</h3>
                         <div class="layout">
                             <label for="header">Title:
-                                <input type="text" name="slider3Title" id="Title">
+                                <input type="text" name="slider3Title" id="Title" placeholder="ex: New title">
                                 <p class="error_txt slider3Title_error"></p>
                         </div>
                         <div class="Description">
                             <label for="Description">Description:
-                                <textarea id="w3review" name="slider3Desc" rows="4" cols="50"></textarea>
+                                <textarea id="w3review" name="slider3Desc" rows="4" cols="50"
+                                    placeholder="Enter your description here..."></textarea>
                                 <p class="error_txt slider3Desc_error"></p>
                         </div>
 
@@ -221,16 +225,12 @@
                 </div>
             </div>
         </div>
-
     </div>
     </div>
     </div>
-
-
-
-
     <script src="../../script/collapse.js"></script>
     <script src="../../script/setLogo.js"></script>
+    <script src="../../script/updateContactInfo.js"></script>
 </body>
 
 </html>

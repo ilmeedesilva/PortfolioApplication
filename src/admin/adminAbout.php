@@ -40,7 +40,8 @@
                         <form action="">
                             <div class="input_item">
                                 <label for="descr">Description</label><br>
-                                <textarea name="descr" cols="50" rows="5" placeholder="Type your description here..."></textarea>
+                                <textarea name="descr" cols="50" rows="5"
+                                    placeholder="Type your description here..."></textarea>
                                 <p class="error_txt desc_error"></p>
                             </div>
                             <div class="form_control">
@@ -54,12 +55,13 @@
                     <div class="desc_wrapper">
                         <div class="input_item">
                             <label for="">Description</label><br>
-                            <textarea name="" id="" cols="50" rows="6" placeholder="Type your description here..."></textarea>
+                            <textarea name="" id="" cols="50" rows="6"
+                                placeholder="Type your description here..."></textarea>
                             <p class="error_txt"></p>
                         </div>
                     </div>
                     <div class="btn_save_control">
-                    <button class="save_btn">Save</button>
+                        <button class="save_btn primary_btn">Save</button>
                     </div>
                 </div>  -->
             </div>
@@ -71,7 +73,7 @@
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
-            <div class="add_project_wrapper">
+                <div class="add_project_wrapper">
                     <div class="img_upload_container">
                         <div class="title">
                             <h5>Upload Image</h5>
@@ -90,7 +92,8 @@
                         <form action="">
                             <div class="input_item">
                                 <label for="descr">Description</label><br>
-                                <textarea name="descr" cols="50" rows="5" placeholder="Type your description here..."></textarea>
+                                <textarea name="descr" cols="50" rows="5"
+                                    placeholder="Type your description here..."></textarea>
                                 <p class="error_txt desc_error"></p>
                             </div>
                             <div class="form_control">
@@ -109,7 +112,7 @@
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
-            <div class="add_project_wrapper">
+                <div class="add_project_wrapper">
                     <div class="img_upload_container">
                         <div class="title">
                             <h5>Upload Image</h5>
@@ -128,7 +131,8 @@
                         <form action="">
                             <div class="input_item">
                                 <label for="descr">Description</label><br>
-                                <textarea name="descr" cols="50" rows="5" placeholder="Type your description here..."></textarea>
+                                <textarea name="descr" cols="50" rows="5"
+                                    placeholder="Type your description here..."></textarea>
                                 <p class="error_txt desc_error"></p>
                             </div>
                             <div class="form_control">
@@ -147,7 +151,7 @@
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
-            <div class="add_project_wrapper">
+                <div class="add_project_wrapper">
                     <div class="img_upload_container">
                         <div class="title">
                             <h5>Upload Image</h5>
@@ -166,7 +170,8 @@
                         <form action="">
                             <div class="input_item">
                                 <label for="descr">Description</label><br>
-                                <textarea name="descr" cols="50" rows="5" placeholder="Type your description here..."></textarea>
+                                <textarea name="descr" cols="50" rows="5"
+                                    placeholder="Type your description here..."></textarea>
                                 <p class="error_txt desc_error"></p>
                             </div>
                             <div class="form_control">
@@ -178,7 +183,7 @@
                 </div>
             </div>
         </div>
-        
+
 
 
     </div>

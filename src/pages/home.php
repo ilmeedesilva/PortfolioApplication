@@ -221,6 +221,7 @@
   <!--End  My Project-->
 
   <script src="../../script/navigation.js"> </script>
+  <script src="../../script/getLogo.js"> </script>
 </body>
 
 </html>

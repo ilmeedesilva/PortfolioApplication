@@ -55,7 +55,7 @@ const selectedFile = (doc) => {
   const file = doc.files[0];
   const fileType = file.type;
   const fileSize = file.size;
-  const filesizeinMB = (file.size/1000).toFixed(2);
+  const filesizeinMB = (file.size / 1000).toFixed(2);
   fileName.innerHTML = `${file.name}, size: ${filesizeinMB} KB`;
   if (fileType) {
     imgErrorTxt.innerHTML = "*Must include an image";
@@ -84,8 +84,7 @@ saveBtn.addEventListener("click", (e) => {
     dateErro.innerHTML = "*project date cannont be empty";
   } else if (selectedDate < currentDate) {
     dateErro.innerHTML = "*Date cannot be a future date";
-  }
-  else{
+  } else {
     dateErro.innerHTML = "";
   }
   if (!projDesc.value) {

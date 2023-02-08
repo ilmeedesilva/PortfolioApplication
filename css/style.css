@@ -68,6 +68,7 @@ body {
   background-color: #2aaae1 !important;
   color: #ffffff;
   box-shadow: 0 0 25px 0 rgb(27 64 121 / 30%);
+  cursor: pointer;
 }
 .primary_btn:hover {
   background-color: #59c0d4;

@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects Settings</title>
     <link rel="stylesheet" href="../../css/popup.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/form.css">
 </head>
 
 <body>
@@ -27,7 +29,7 @@
     </div>
     <div class="admin_settings_wrapper">
 
-    <div class="collapse_section collapse_Section_active">
+        <div class="collapse_section collapse_Section_active">
             <div class="collapse_section_header">
                 <h4>Update project description</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
@@ -37,16 +39,17 @@
                     <div class="desc_wrapper">
                         <div class="input_item">
                             <label for="">Description</label><br>
-                            <textarea name="" id="" cols="50" rows="6" placeholder="Type your description here..."></textarea>
+                            <textarea name="" id="" cols="50" rows="6"
+                                placeholder="Type your description here..."></textarea>
                             <p class="error_txt"></p>
                         </div>
                     </div>
                     <div class="btn_save_control">
-                    <button class="save_btn">Save</button>
+                        <button class="save_btn primary_btn">Save</button>
                     </div>
-                </div> 
+                </div>
             </div>
-        </div>        
+        </div>
         <div class="collapse_section collapse_Section_active">
             <div class="collapse_section_header">
                 <h4>Add New Project</h4>
@@ -82,7 +85,8 @@
                             </div>
                             <div class="input_item">
                                 <label for="descr">Description</label><br>
-                                <textarea name="descr" cols="50" rows="5" placeholder="Type your description here..."></textarea>
+                                <textarea name="descr" cols="50" rows="5"
+                                    placeholder="Type your description here..."></textarea>
                                 <p class="error_txt desc_error"></p>
                             </div>
                             <div class="form_control">
@@ -132,7 +136,7 @@
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
-            <div class="table_wrapper">
+                <div class="table_wrapper">
                     <table>
                         <tr>
                             <th>Title</th>

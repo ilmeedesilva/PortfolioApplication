@@ -30,14 +30,20 @@
 
                             <div class="img-area column col_1">
 
-                                <img class="icon" src="../../resource\icon\uploadimg.png">
-                                <input type="file" id="file">
-                                <p>Image size must be less than <span>2MB</span></p>
+                                <div class="img_uploader">
+                                    <label for="" class="img_uploader_wrapper logo_uploader_wrapper">
+                                        <input type="file" accept="image/*" class="image_uploader"
+                                            onchange="selectedLogoFile(this)">
+                                    </label>
+                                    <p class="file_name"></p>
+                                    <p class="error_txt error_logo"></p>
+                                    <p>Click here to upload</p>
+                                </div>
 
                             </div>
 
                             <div class="column col_2">
-                                <button class="select-image">Save</button>
+                                <button class="select-image logo_save_btn">Save</button>
                             </div>
                         </div>
                     </div>
@@ -82,7 +88,7 @@
                             </div>
                             <div class="box">
                                 <label for="phone1">Contact No 1:
-                                    <input type="text" name="phone1" id="tel" require placeholder="0700000000"> 
+                                    <input type="text" name="phone1" id="tel" require placeholder="0700000000">
                                     <p class="error_txt phone1_error"></p>
                             </div>
                             <div class="box">
@@ -116,7 +122,8 @@
                         </div>
                         <div class="Description">
                             <label for="Description">Description:
-                                <textarea id="slider1Desc" name="slider1Desc" rows="4" cols="50" placeholder="Enter your description here..."></textarea>
+                                <textarea id="slider1Desc" name="slider1Desc" rows="4" cols="50"
+                                    placeholder="Enter your description here..."></textarea>
                                 <p class="error_txt slider1Desc_error"></p>
                         </div>
 
@@ -130,7 +137,8 @@
                         </div>
                         <div class="Description">
                             <label for="Description">Description:
-                                <textarea id="w3review" name="slider2Desc" rows="4" cols="50" placeholder="Enter your description here..."></textarea>
+                                <textarea id="w3review" name="slider2Desc" rows="4" cols="50"
+                                    placeholder="Enter your description here..."></textarea>
                                 <p class="error_txt slider2Desc_error"></p>
                         </div>
 
@@ -144,7 +152,8 @@
                         </div>
                         <div class="Description">
                             <label for="Description">Description:
-                                <textarea id="w3review" name="slider3Desc" rows="4" cols="50" placeholder="Enter your description here..."></textarea>
+                                <textarea id="w3review" name="slider3Desc" rows="4" cols="50"
+                                    placeholder="Enter your description here..."></textarea>
                                 <p class="error_txt slider3Desc_error"></p>
                         </div>
 
@@ -168,14 +177,28 @@
 
                     <div class="Container">
                         <div class="slider_img">
+                            <h3>Slider 1</h3>
+                            <label for="" class="img_uploader_wrapper">
+                                <input type="file" accept="image/*" class="image_uploader"
+                                    onchange="selectedFile(this)">
+                            </label>
+                            <p class="file_name"></p>
+                            <p class="error_txt error_img"></p>
+                            <p>Click here to upload</p>
+                        </div>
+                    </div>
 
-                            <div class="Update_Slider">
-                                <h3>Slider 1</h3>
-                                <img class="icon" src="../../resource\icon\uploadimg.png">
-                                <input class="slide_img" type="file" id="file">
-                                <p>Image size must be less than <span>2MB</span></p>
+                    <div class="Container">
+                        <div class="slider_img">
 
-                            </div>
+                            <h3>Slider 2</h3>
+                            <label for="" class="img_uploader_wrapper">
+                                <input type="file" accept="image/*" class="image_uploader"
+                                    onchange="selectedFile(this)">
+                            </label>
+                            <p class="file_name"></p>
+                            <p class="error_txt error_img"></p>
+                            <p>Click here to upload</p>
 
                         </div>
                     </div>
@@ -183,27 +206,16 @@
                     <div class="Container">
                         <div class="slider_img">
 
-                            <div class="Update_Slider">
-                                <h3>Slider 2</h3>
-                                <img class="icon" src="../../resource\icon\uploadimg.png">
-                                <input class="slide_img" type="file" id="file">
-                                <p>Image size must be less than <span>2MB</span></p>
 
-                            </div>
+                            <h3>Slider 3</h3>
+                            <label for="" class="img_uploader_wrapper">
+                                <input type="file" accept="image/*" class="image_uploader"
+                                    onchange="selectedFile(this)">
+                            </label>
+                            <p class="file_name"></p>
+                            <p class="error_txt error_img"></p>
+                            <p>Click here to upload</p>
 
-                        </div>
-                    </div>
-
-                    <div class="Container">
-                        <div class="slider_img">
-
-                            <div class="Update_Slider">
-                                <h3>Slider 3</h3>
-                                <img class="icon" src="../../resource\icon\uploadimg.png">
-                                <input class="slide_img" type="file" id="file">
-                                <p>Image size must be less than <span>2MB</span></p>
-
-                            </div>
 
                         </div>
                     </div>
@@ -217,6 +229,7 @@
     </div>
     </div>
     <script src="../../script/collapse.js"></script>
+    <script src="../../script/setLogo.js"></script>
     <script src="../../script/updateContactInfo.js"></script>
 </body>
 

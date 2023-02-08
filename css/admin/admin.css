@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   /* overflow: hidden; */
 }
 
 .admin_panel_wrapper .admin_nav {
-  position: relative;
+  position: fixed;
   width: 15%;
   height: 100%;
   background-color: #1d1d42;
@@ -58,9 +58,15 @@
 }
 
 .admin_main_content {
-  width: 85%;
+  width: 100%;
   height: 100%;
   padding: 20px;
+  background-color: #f6f8fa;
+}
+
+.admin_page_header_text {
+  width: 720px;
+  margin: 0 auto;
 }
 
 .admin_page_header_text h3 {
@@ -72,9 +78,10 @@
 }
 
 .admin_settings_wrapper {
-  width: 100%;
+  width: 720px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .collapse_section {
@@ -120,6 +127,10 @@
   padding: 8px;
   opacity: 1;
   animation: heightReducer 2s;
+  border-radius: 0 0 10px 10px;
+  border: 2px solid #e2e2e2;
+  border-top: none;
+  transition: all 0.2s ease-out;
 }
 
 .collapse_section_body {
@@ -511,10 +522,22 @@ input#file {
   font-size: 20px;
   border-radius: 15px;
   margin-top: 8px;
-  background-color: #edecff;
+  background-color: #f2f2f2;
   padding: 12px !important;
   font-size: 16px !important;
   border: none;
+
+  line-height: 1.5;
+  background-clip: padding-box;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius: 10px;
+  color: #4d4d4d;
+  font-size: 14px;
+  padding: 5px 15px;
+  box-shadow: none;
+  font-weight: 300;
 }
 
 .form_wrapper .box input:focus {
@@ -629,7 +652,7 @@ form.slider_update textarea {
 .mail_body {
   display: flex;
   min-height: 100px;
-  background-color: gray;
+  background-color: #f8f8f8;
   padding: 8px;
   transition: 500ms all ease-in;
 }

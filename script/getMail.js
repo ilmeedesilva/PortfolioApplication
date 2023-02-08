@@ -19,7 +19,7 @@ fetch("../../db/getMail.php")
             <p>contact no: <span>${data.phone}</span></p>
           </div>
         </div>
-        <div class="mail_body mail_body_hidden">
+        <div class="mail_body collapse_section_body mail_body_hidden">
           <p class="usr_message">${data.message}</p>
         </div>
       `;

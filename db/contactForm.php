@@ -5,7 +5,7 @@ $username = "root";
 $password = "";
 $dbname = "test";
 
-$name = $_POST["name"];// me tiyene js eken ena ara values tika
+$name = $_POST["name"];
 $email = $_POST["email"];
 $tel = $_POST["tel"];
 $msg = $_POST["msg"];
@@ -16,7 +16,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO contactUser (name, email, phone, message)//quer eke methana
+$sql = "INSERT INTO contactUser (name, email, phone, message)
 VALUES ('$name', '$email', '$tel', '$msg')";
 
 if ($conn->query($sql) === TRUE) {

@@ -172,7 +172,7 @@
                     </div>
                 </form>
                 <div class="btn_upload">
-                    <button class="select-image">Save</button>
+                    <button class="select-image slider_info">Save</button>
                 </div>
             </div>
         </div>
@@ -233,7 +233,7 @@
                     </div>
                 </section>
                 <div class="btn_upload">
-                    <button class="select-image">Save</button>
+                    <button class="select-image slider_image">Save</button>
                 </div>
             </div>
         </div>
@@ -243,6 +243,7 @@
     <script src="../../script/collapse.js"></script>
     <script src="../../script/setLogo.js"></script>
     <script src="../../script/updateContactInfo.js"></script>
+    <script src="../../script/updateSliderInfo.js"></script>
 </body>
 
 </html>

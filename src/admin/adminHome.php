@@ -97,122 +97,123 @@
                     </div>
                 </section>
             </div>
-            <!--Update slider-->
-            <div class="collapse_section">
-                <div class="collapse_section_header">
-                    <h4>Update Slider Text</h4>
-                    <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
-                </div>
-                <div class="collapse_section_body">
-                    <form class="slider_update">
-                        <div class="upload_wrappe">
-                            <h3>Slider 1</h3>
-                            <div class="layout">
-                                <label for="title">Title:
-                                    <input type="text" name="slider1Title" id="Title">
-                                    <p class="error_txt slider1Title_error"></p>
-                            </div>
-                            <div class="Description">
-                                <label for="Description">Description:
-                                    <textarea id="slider1Desc" name="slider1Desc" rows="4" cols="50"></textarea>
-                                    <p class="error_txt slider1Desc_error"></p>
-                            </div>
-
-                        </div>
-                        <div class="upload_wrappe">
-                            <h3>Slider 2</h3>
-                            <div class="layout">
-                                <label for="header">Title:
-                                    <input type="text" name="slider2Title" id="Title">
-                                    <p class="error_txt slider2Title_error"></p>
-                            </div>
-                            <div class="Description">
-                                <label for="Description">Description:
-                                    <textarea id="w3review" name="slider2Desc" rows="4" cols="50"></textarea>
-                                    <p class="error_txt slider2Desc_error"></p>
-                            </div>
-
-                        </div>
-                        <div class="upload_wrappe">
-                            <h3>Slider 3</h3>
-                            <div class="layout">
-                                <label for="header">Title:
-                                    <input type="text" name="slider3Title" id="Title">
-                                    <p class="error_txt slider3Title_error"></p>
-                            </div>
-                            <div class="Description">
-                                <label for="Description">Description:
-                                    <textarea id="w3review" name="slider3Desc" rows="4" cols="50"></textarea>
-                                    <p class="error_txt slider3Desc_error"></p>
-                            </div>
-
-                        </div>
-                    </form>
-                    <div class="btn_upload">
-                        <button class="select-image">Save</button>
-                    </div>
-                </div>
-            </div>
-
-            <!--Update Slider Images-->
-            <div class="collapse_section">
-                <div class="collapse_section_header">
-
-                    <h4>Update Slider Images</h4>
-                    <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
-                </div>
-                <div class="collapse_section_body">
-                    <section class="upload">
-
-                        <div class="Container">
-                            <div class="slider_img">
-
-                                <div class="Update_Slider">
-                                    <h3>Slider 1</h3>
-                                    <img class="icon" src="../../resource\icon\uploadimg.png">
-                                    <input class="slide_img" type="file" id="file">
-                                    <p>Image size must be less than <span>2MB</span></p>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="Container">
-                            <div class="slider_img">
-
-                                <div class="Update_Slider">
-                                    <h3>Slider 2</h3>
-                                    <img class="icon" src="../../resource\icon\uploadimg.png">
-                                    <input class="slide_img" type="file" id="file">
-                                    <p>Image size must be less than <span>2MB</span></p>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="Container">
-                            <div class="slider_img">
-
-                                <div class="Update_Slider">
-                                    <h3>Slider 3</h3>
-                                    <img class="icon" src="../../resource\icon\uploadimg.png">
-                                    <input class="slide_img" type="file" id="file">
-                                    <p>Image size must be less than <span>2MB</span></p>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </section>
-                    <div class="btn_upload">
-                        <button class="select-image">Save</button>
-                    </div>
-                </div>
-            </div>
-
         </div>
+        <!--Update slider-->
+        <div class="collapse_section">
+            <div class="collapse_section_header">
+                <h4>Update Slider Text</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body">
+                <form class="slider_update">
+                    <div class="upload_wrappe">
+                        <h3>Slider 1</h3>
+                        <div class="layout">
+                            <label for="title">Title:
+                                <input type="text" name="slider1Title" id="Title">
+                                <p class="error_txt slider1Title_error"></p>
+                        </div>
+                        <div class="Description">
+                            <label for="Description">Description:
+                                <textarea id="slider1Desc" name="slider1Desc" rows="4" cols="50"></textarea>
+                                <p class="error_txt slider1Desc_error"></p>
+                        </div>
+
+                    </div>
+                    <div class="upload_wrappe">
+                        <h3>Slider 2</h3>
+                        <div class="layout">
+                            <label for="header">Title:
+                                <input type="text" name="slider2Title" id="Title">
+                                <p class="error_txt slider2Title_error"></p>
+                        </div>
+                        <div class="Description">
+                            <label for="Description">Description:
+                                <textarea id="w3review" name="slider2Desc" rows="4" cols="50"></textarea>
+                                <p class="error_txt slider2Desc_error"></p>
+                        </div>
+
+                    </div>
+                    <div class="upload_wrappe">
+                        <h3>Slider 3</h3>
+                        <div class="layout">
+                            <label for="header">Title:
+                                <input type="text" name="slider3Title" id="Title">
+                                <p class="error_txt slider3Title_error"></p>
+                        </div>
+                        <div class="Description">
+                            <label for="Description">Description:
+                                <textarea id="w3review" name="slider3Desc" rows="4" cols="50"></textarea>
+                                <p class="error_txt slider3Desc_error"></p>
+                        </div>
+
+                    </div>
+                </form>
+                <div class="btn_upload">
+                    <button class="select-image">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Update Slider Images-->
+        <div class="collapse_section">
+            <div class="collapse_section_header">
+
+                <h4>Update Slider Images</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body">
+                <section class="upload">
+
+                    <div class="Container">
+                        <div class="slider_img">
+
+                            <div class="Update_Slider">
+                                <h3>Slider 1</h3>
+                                <img class="icon" src="../../resource\icon\uploadimg.png">
+                                <input class="slide_img" type="file" id="file">
+                                <p>Image size must be less than <span>2MB</span></p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="Container">
+                        <div class="slider_img">
+
+                            <div class="Update_Slider">
+                                <h3>Slider 2</h3>
+                                <img class="icon" src="../../resource\icon\uploadimg.png">
+                                <input class="slide_img" type="file" id="file">
+                                <p>Image size must be less than <span>2MB</span></p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="Container">
+                        <div class="slider_img">
+
+                            <div class="Update_Slider">
+                                <h3>Slider 3</h3>
+                                <img class="icon" src="../../resource\icon\uploadimg.png">
+                                <input class="slide_img" type="file" id="file">
+                                <p>Image size must be less than <span>2MB</span></p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <div class="btn_upload">
+                    <button class="select-image">Save</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
     </div>
     </div>
 

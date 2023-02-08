@@ -25,14 +25,15 @@
                     <div class="desc_wrapper">
                         <div class="input_item">
                             <label for="">Description</label><br>
-                            <textarea name="" id="" cols="50" rows="6" placeholder="Type your description here..."></textarea>
+                            <textarea name="" id="" cols="50" rows="6"
+                                placeholder="Type your description here..."></textarea>
                             <p class="error_txt"></p>
                         </div>
                     </div>
                     <div class="btn_save_control">
-                    <button class="save_btn">Save</button>
+                        <button class="save_btn primary_btn">Save</button>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
 
@@ -59,7 +60,7 @@
             </div>
             <div class="collapse_section_body"></div>
         </div>
-        
+
 
 
     </div>

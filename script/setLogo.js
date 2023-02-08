@@ -15,7 +15,7 @@ const displayPopUp = (res) => {
     background.style.backgroundColor = "#75cf0f";
     icon.src = "../../resource/icon/success.png";
     header1.innerHTML = "SUCCESS";
-    detail.innerHTML = "WE WILL CONTACT YOU SHORTLY";
+    detail.innerHTML = "SUCCESSFULLY UPLOADED";
   } else {
     background.style.backgroundColor = "#e9374d";
     icon.src = "../../resource/icon/fail.png";

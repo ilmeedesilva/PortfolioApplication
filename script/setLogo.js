@@ -3,8 +3,43 @@ const logoInput = document.querySelector(
 );
 const logoClick = document.querySelector(".logo_uploader_wrapper");
 
+const clearInputFields = () => {};
+
+const displayPopUp = (res) => {
+  const header1 = document.querySelector(".status_descrip h6");
+  const detail = document.querySelector(".status_descrip p");
+  const background = document.querySelector(".status_popup_wrapper");
+  const icon = document.querySelector(".status_popup_wrapper .status_icon img");
+
+  if (res.includes("success")) {
+    background.style.backgroundColor = "#75cf0f";
+    icon.src = "../../resource/icon/success.png";
+    header1.innerHTML = "SUCCESS";
+    detail.innerHTML = "WE WILL CONTACT YOU SHORTLY";
+  } else {
+    background.style.backgroundColor = "#e9374d";
+    icon.src = "../../resource/icon/fail.png";
+    header1.innerHTML = "FAILED";
+    detail.innerHTML = "SOMTHING WENT WRONG! PLEASE TRY AGAIN";
+  }
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+  document
+    .querySelector(".status_popup_wrapper")
+    .classList.remove("popup_hide");
+  document.querySelector(".status_popup_wrapper").classList.add("popup_show");
+  setTimeout(function () {
+    document
+      .querySelector(".status_popup_wrapper")
+      .classList.remove("popup_show");
+    document.querySelector(".status_popup_wrapper").classList.add("popup_hide");
+  }, 4000);
+};
+
 const selectedLogoFile = (doc) => {
-  console.log("doc - ", doc);
   const file = doc.files[0];
   const fileType = file.type;
   const fileSize = file.size;
@@ -47,7 +82,8 @@ document.querySelector(".logo_save_btn").addEventListener("click", (e) => {
     })
       .then((response) => response.text())
       .then((result) => {
-        console.log("result - ", result);
+        displayPopUp(result);
+
         // displayPopUp(result);
         // if (result.includes("success")) {
 

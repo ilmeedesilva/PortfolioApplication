@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SE Girls Protfolio</title>
+  <title>Protfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" type="text/css" href="../../css/navigation.css">
   <link rel="stylesheet" type="text/css" href="../../css/footer.css">
@@ -211,16 +211,17 @@
             </div>
           </div>
         </div>
-      
+
       </div>
       <div class="btn-wrapper">
-      <a href="project.php" class="primary_btn cta_btn">View More</a>
+        <a href="project.php" class="primary_btn cta_btn">View More</a>
       </div>
   </section>
   <?php include('../../includes/footer.php'); ?>
   <!--End  My Project-->
 
   <script src="../../script/navigation.js"> </script>
+  <script src="../../script/getLogo.js"> </script>
 </body>
 
 </html>

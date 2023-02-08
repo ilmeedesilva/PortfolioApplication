@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   /* overflow: hidden; */
 }
 
 .admin_panel_wrapper .admin_nav {
-  position: relative;
+  position: fixed;
   width: 15%;
   height: 100%;
   background-color: #1d1d42;
@@ -58,9 +58,15 @@
 }
 
 .admin_main_content {
-  width: 85%;
+  width: 100%;
   height: 100%;
   padding: 20px;
+  background-color: #f6f8fa;
+}
+
+.admin_page_header_text {
+  width: 720px;
+  margin: 0 auto;
 }
 
 .admin_page_header_text h3 {
@@ -72,9 +78,10 @@
 }
 
 .admin_settings_wrapper {
-  width: 100%;
+  width: 720px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .collapse_section {
@@ -90,6 +97,7 @@
 .collapse_section_header {
   width: 100%;
   padding: 4px;
+  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 1px 5px 0px #cbcbcb;
   cursor: pointer;
@@ -118,8 +126,13 @@
   min-height: 100px;
   max-height: fit-content;
   padding: 8px;
+  background-color: #ffffff;
   opacity: 1;
   animation: heightReducer 2s;
+  border-radius: 0 0 10px 10px;
+  border: 2px solid #e2e2e2;
+  border-top: none;
+  transition: all 0.2s ease-out;
 }
 
 .collapse_section_body {
@@ -172,6 +185,11 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.img_uploader p {
+  color: #80858a;
+}
+
 .img_uploader img {
   width: 60px;
   height: auto;
@@ -184,22 +202,35 @@ input[type="file"] {
 .img_uploader_wrapper {
   display: inline-block;
   position: relative;
-  background-image: url(../../resource/icon/uploadimg.png);
+  background-image: url(../../resource/icon/uploadIcon.png);
   background-size: cover;
   width: 100px;
   height: 100px;
   cursor: pointer;
+  transition: 500ms all ease-in;
+}
+
+.img_uploader_wrapper:hover {
+  transform: scale(1.2);
 }
 
 .file_name {
   color: gray;
 }
 
-.form_wrapper input {
+/* .form_wrapper input {
   border: 1px solid #e2e2e2;
   padding: 8px;
   font-size: 14px;
   border-radius: 8px;
+} */
+.form_wrapper input:focus,
+.form_wrapper input:focus-visible {
+  outline: none;
+  background-color: #f2f2f2;
+  color: #4d4d4d;
+  border: none;
+  box-shadow: 0 0 0 1px #4d4d4d;
 }
 .form_wrapper input[type="text"] {
   width: 100%;
@@ -319,6 +350,7 @@ textarea::placeholder {
   border-radius: 30px;
   box-sizing: border-box;
 }
+
 .desc_wrapper textarea {
   border: 1px solid #e2e2e2;
   border-radius: 8px;
@@ -511,10 +543,22 @@ input#file {
   font-size: 20px;
   border-radius: 15px;
   margin-top: 8px;
-  background-color: #edecff;
+  background-color: #f2f2f2;
   padding: 12px !important;
   font-size: 16px !important;
   border: none;
+
+  line-height: 1.5;
+  background-clip: padding-box;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius: 10px;
+  color: #4d4d4d;
+  font-size: 14px;
+  padding: 5px 15px;
+  box-shadow: none;
+  font-weight: 300;
 }
 
 .form_wrapper .box input:focus {
@@ -587,6 +631,73 @@ form.slider_update textarea {
   text-align: center;
   margin: 0px auto;
 }
+.slider_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .btn_save_control .save_btn:hover {
   background-color: #59c0d4;
+}
+
+/* mail */
+
+.mail_item_wrapper {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: 4px auto;
+}
+
+.mail_item_wrapper p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.mail_item_wrapper p span {
+  color: #697786;
+}
+
+.mail_header {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #eaf0f7;
+  cursor: pointer;
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.mail_header:hover {
+  background-color: #d8e4f5;
+}
+
+.mail_body {
+  display: flex;
+  min-height: 100px;
+  background-color: #f8f8f8;
+  padding: 8px;
+  transition: 500ms all ease-in;
+}
+
+.mail_body_hidden {
+  display: none;
+  transition: height 1s;
+}
+
+.empty {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty p {
+  color: #6f7384;
 }

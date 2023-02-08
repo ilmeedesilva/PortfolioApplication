@@ -58,6 +58,7 @@ const displayPopUp = (res) => {
 submit_button.addEventListener("click", (e) => {
   e.preventDefault();
 
+  console.log("msg_input - ", msg_input.value);
   if (!name_input.value) {
     name_error.innerHTML = "*Name cannot be empty";
   } else if (!name_input.value.match(/^[a-zA-Z\s]+$/)) {
@@ -79,9 +80,9 @@ submit_button.addEventListener("click", (e) => {
   }
 
   if (!tel_input.value) {
-    tel_error.innerHTML = "*Telephone number cannot be empty";
+    tel_error.innerHTML = "*Contact number cannot be empty";
   } else if (!tel_input.value.match(/^\d{10}$/)) {
-    tel_error.innerHTML = "*Enter a valid Telephone number";
+    tel_error.innerHTML = "*Enter a valid contact number";
   } else {
     tel_error.innerHTML = "";
   }
@@ -102,18 +103,18 @@ submit_button.addEventListener("click", (e) => {
     !msg_error.innerHTML
   ) {
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "../../db/contactForm.php", true);
+    xhr.open("POST", "../../db/contactForm.php", true);// query eke yawana php file eke create karana oya wagemai hadanan tiyene fields tika wens karanan tbl eke mulin hadanna
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
       if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
         // const feedback = document.querySelector(".feedback");
         // feedback.innerHTML = xhr.responseText;
 
-        displayPopUp(xhr.responseText);
+        displayPopUp(xhr.responseText);// meke danna one naha eke man dannam
       }
     };
     xhr.send(
-      `name=${name_input.value}&email=${email_input.value}&tel=${tel_input.value}&msg=${msg_input.value}`
+      `name=${name_input.value}&email=${email_input.value}&tel=${tel_input.value}&msg=${msg_input.value}`// me tiyene value tika php eketa pass karana
     );
   }
 });

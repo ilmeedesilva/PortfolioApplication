@@ -5,7 +5,7 @@ $username = "root";
 $password = "";
 $dbname = "test";
 
-$streetno = $_POST["street_no"];// me tiyene js eken ena ara values tika
+$streetno = $_POST["street_no"];
 $city = $_POST["city_no"];
 $country = $_POST["country"];
 $phone1 = $_POST["phone1"];

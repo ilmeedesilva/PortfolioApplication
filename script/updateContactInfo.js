@@ -98,7 +98,7 @@ submit_button.addEventListener("click", (e) => {
         //   }
         // };
         xhr.send(
-          `street_no=${streetNo_input.value}&city_no=${city_input.value}&country=${country_input.value}&phone1=${phone1_input.value}&phone2=${phone2_input.value}`// me tiyene value tika php eketa pass karana
+          `street_no=${streetNo_input.value}&city_no=${city_input.value}&country=${country_input.value}&mail=${email_input.value}&phone1=${phone1_input.value}&phone2=${phone2_input.value}`// me tiyene value tika php eketa pass karana
         );
       }
 

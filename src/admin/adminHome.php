@@ -77,17 +77,17 @@
                         <div class="form_wrappe">
                             <div class="box">
                                 <label for="address">Street No:
-                                    <input type="text" name="street_no" id="address" placeholder="ex: No. 01">
+                                    <input type="text" name="street_no" id="address" placeholder="Ex: No. 01">
                                     <p class="error_txt street_no_error"></p>
                             </div>
                             <div class="box">
-                                <label for="address">City:
-                                    <input type="text" name="city_no" id="address" placeholder="ex: Colombo 01">
+                                <label for="address">Street & City:
+                                    <input type="text" name="city_no" id="address" placeholder="Ex: Example Road, Colombo 01">
                                     <p class="error_txt city_error"></p>
                             </div>
                             <div class="box">
                                 <label for="address">Country:
-                                    <input type="text" name="country" id="address" placeholder="ex: Sri Lanka">
+                                    <input type="text" name="country" id="address" placeholder="Ex: Sri Lanka">
                                     <p class="error_txt country_error"></p>
                             </div>
                         </div>
@@ -129,7 +129,7 @@
                         <h3>Slider 1</h3>
                         <div class="layout">
                             <label for="title">Title:
-                                <input type="text" name="slider1Title" id="Title" placeholder="ex: New title">
+                                <input type="text" name="slider1Title" id="Title" placeholder="Ex: New title">
                                 <p class="error_txt slider1Title_error"></p>
                         </div>
                         <div class="Description">
@@ -144,7 +144,7 @@
                         <h3>Slider 2</h3>
                         <div class="layout">
                             <label for="header">Title:
-                                <input type="text" name="slider2Title" id="Title" placeholder="ex: New title">
+                                <input type="text" name="slider2Title" id="Title" placeholder="Ex: New title">
                                 <p class="error_txt slider2Title_error"></p>
                         </div>
                         <div class="Description">
@@ -159,7 +159,7 @@
                         <h3>Slider 3</h3>
                         <div class="layout">
                             <label for="header">Title:
-                                <input type="text" name="slider3Title" id="Title" placeholder="ex: New title">
+                                <input type="text" name="slider3Title" id="Title" placeholder="Ex: New title">
                                 <p class="error_txt slider3Title_error"></p>
                         </div>
                         <div class="Description">

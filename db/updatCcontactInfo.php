@@ -8,6 +8,7 @@ $dbname = "test";
 $streetno = $_POST["street_no"];
 $city = $_POST["city_no"];
 $country = $_POST["country"];
+$email = $_POST["mail"];
 $phone1 = $_POST["phone1"];
 $phone2 = $_POST["phone2"];
 
@@ -17,8 +18,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO updatecontactinfo (streetno, city, country, phone1, phone2)
-VALUES ('$streetno', '$city', '$country', '$phone1', '$phone2')";
+$sql = "INSERT INTO updatecontactinfo (streetno, city, country, email, phone1, phone2)
+VALUES ('$streetno', '$city', '$country', '$email', '$phone1', '$phone2')";
 
 if ($conn->query($sql) === TRUE) {
     echo "success";
@@ -37,6 +38,7 @@ CREATE TABLE updatecontactinfo
 streetno VARCHAR(20) NOT NULL,
 city VARCHAR(20) NOT NULL,
 country VARCHAR(30) NOT NULL,
+email VARCHAR(40) NOT NULL,
 phone1 VARCHAR(30) NOT NULL,
 phone2 VARCHAR(30) NOT NULL,
 created_date DATE DEFAULT CURRENT_TIMESTAMP );

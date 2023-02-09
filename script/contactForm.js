@@ -103,18 +103,18 @@ submit_button.addEventListener("click", (e) => {
     !msg_error.innerHTML
   ) {
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "../../db/contactForm.php", true);// query eke yawana php file eke create karana oya wagemai hadanan tiyene fields tika wens karanan tbl eke mulin hadanna
+    xhr.open("POST", "../../db/contactForm.php", true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
       if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
         // const feedback = document.querySelector(".feedback");
         // feedback.innerHTML = xhr.responseText;
 
-        displayPopUp(xhr.responseText);// meke danna one naha eke man dannam
+        displayPopUp(xhr.responseText);
       }
     };
     xhr.send(
-      `name=${name_input.value}&email=${email_input.value}&tel=${tel_input.value}&msg=${msg_input.value}`// me tiyene value tika php eketa pass karana
+      `name=${name_input.value}&email=${email_input.value}&tel=${tel_input.value}&msg=${msg_input.value}`
     );
   }
 });

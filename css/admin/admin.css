@@ -620,6 +620,7 @@ form.slider_update textarea {
   width: 90%;
   border-radius: 15px;
   margin-top: 8px;
+  padding: 8px;
   background-color: #edecff;
   border: none;
 }

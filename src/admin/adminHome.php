@@ -138,7 +138,9 @@
                                     placeholder="Enter your description here..."></textarea>
                                 <p class="error_txt slider1Desc_error"></p>
                         </div>
-
+                        <div class="btn_upload">
+                            <button class="select-image slider1_info">Save</button>
+                        </div>
                     </div>
                     <div class="upload_wrappe">
                         <h3>Slider 2</h3>
@@ -153,7 +155,9 @@
                                     placeholder="Enter your description here..."></textarea>
                                 <p class="error_txt slider2Desc_error"></p>
                         </div>
-
+                        <div class="btn_upload">
+                            <button class="select-image slider2_info">Save</button>
+                        </div>
                     </div>
                     <div class="upload_wrappe">
                         <h3>Slider 3</h3>
@@ -168,12 +172,14 @@
                                     placeholder="Enter your description here..."></textarea>
                                 <p class="error_txt slider3Desc_error"></p>
                         </div>
-
+                        <div class="btn_upload">
+                            <button class="select-image slider3_info">Save</button>
+                        </div>
                     </div>
                 </form>
-                <div class="btn_upload">
+                <!-- <div class="btn_upload">
                     <button class="select-image slider_info">Save</button>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -198,6 +204,9 @@
                             <p class="error_txt error_img"></p>
                             <p>Click here to upload</p>
                         </div>
+                        <div class="btn_upload">
+                            <button class="select-image slider_image1">Save</button>
+                        </div>
                     </div>
 
                     <div class="Container">
@@ -212,6 +221,9 @@
                             <p class="error_txt error_img"></p>
                             <p>Click here to upload</p>
 
+                        </div>
+                        <div class="btn_upload">
+                            <button class="select-image slider_image2">Save</button>
                         </div>
                     </div>
 
@@ -230,11 +242,14 @@
 
 
                         </div>
+                        <div class="btn_upload">
+                            <button class="select-image slider_image3">Save</button>
+                        </div>
                     </div>
                 </section>
-                <div class="btn_upload">
+                <!-- <div class="btn_upload">
                     <button class="select-image slider_image">Save</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

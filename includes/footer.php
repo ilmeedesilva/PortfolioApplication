@@ -54,7 +54,7 @@
                     </div>
                     <div class="contact_info_phone">
                         <p class="no1">0775556667</p>
-                        <p class="no1">0776667778</p>
+                        <p class="no2">0776667778</p>
                     </div>
 
                     <div class="contact_info_email">

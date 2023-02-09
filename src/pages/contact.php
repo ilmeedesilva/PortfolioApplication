@@ -96,6 +96,7 @@
     <script src="../../script/contactForm.js">
     </script>
     <script src="../../script/getLogo.js"> </script>
+    <script src="../../script/getContactInfo.js"></script>
 </body>
 
 </html>

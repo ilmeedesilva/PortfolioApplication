@@ -243,6 +243,7 @@
     <script src="../../script/collapse.js"></script>
     <script src="../../script/setLogo.js"></script>
     <script src="../../script/updateContactInfo.js"></script>
+    <script src="../../script/getContactInfo.js"></script>
     <script src="../../script/updateSliderInfo.js"></script>
 </body>
 

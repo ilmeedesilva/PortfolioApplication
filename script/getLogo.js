@@ -5,7 +5,6 @@ const getLogo = () => {
     })
     .then(function (data) {
       for (var i = 0; i < data.length; i++) {
-        console.log(data[0].image);
         var project = data[i];
         var imageEncoded = project.image;
         var image = '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';

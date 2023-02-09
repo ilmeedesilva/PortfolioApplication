@@ -1,5 +1,4 @@
 const getProducts = () => {
-  console.log("get data");
   fetch("../../db/getProjects.php")
     .then(function (response) {
       return response.json();

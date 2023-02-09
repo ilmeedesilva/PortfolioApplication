@@ -19,6 +19,8 @@ const submit_button1 = document.querySelector(".slider1_info");
 const submit_button2 = document.querySelector(".slider2_info");
 const submit_button3 = document.querySelector(".slider3_info");
 
+
+
 submit_button1.addEventListener("click", (e) => {
     e.preventDefault();
     

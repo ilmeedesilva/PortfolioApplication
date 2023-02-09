@@ -5,7 +5,7 @@ $username = "root";
 $password = "";
 $dbname = "test";
 
-$title1 = $_POST["title1"];// me tiyene js eken ena ara values tika
+$title1 = $_POST["title1"];
 $title2 = $_POST["title2"];
 $title3 = $_POST["title3"];
 $desc1 = $_POST["desc1"];

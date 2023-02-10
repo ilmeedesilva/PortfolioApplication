@@ -28,4 +28,4 @@ mysqli_close($conn);
 
 ?>
 
-<!-- CREATE TABLE about ( id INT AUTO_INCREMENT PRIMARY KEY, image BLOB,description varchar(200) not null ); -->
+<!-- CREATE TABLE about ( id INT AUTO_INCREMENT PRIMARY KEY, image LONGTEXT,description varchar(200) not null ); -->

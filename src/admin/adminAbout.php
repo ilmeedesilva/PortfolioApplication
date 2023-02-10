@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<div class="status_popup_wrapper popup_hide">
+    <div class="status_popup_wrapper popup_hide">
         <div class="status_icon">
             <img src="../../resource/icon/success.png" alt="status">
         </div>
@@ -19,7 +19,7 @@
             <p>WE WILL CONTACT YOU SOON AS POSSIBLE</p>
         </div>
     </div>
-    
+
     <div class="admin_page_header_text">
         <h3>About Settings</h3>
     </div>
@@ -33,11 +33,15 @@
             </div>
             <div class="collapse_section_body">
                 <div class="add_project_wrapper">
+
                     <div class="img_upload_container">
+
                         <div class="title">
                             <h5>Upload Image</h5>
                         </div>
+
                         <div class="img_uploader">
+
                             <label for="" class="img_uploader_wrapper about_uploader_wrapper">
                                 <input type="file" accept="image/*" class="image_uploader"
                                     onchange="selectedFileAbout(this)">
@@ -204,6 +208,7 @@
 
     <script src="../../script/collapse.js"></script>
     <script src="../../script/updateAbout.js"></script>
+    <script src="../../script/getAbout.js"></script>
 </body>
 
 </html>

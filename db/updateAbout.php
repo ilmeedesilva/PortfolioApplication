@@ -16,7 +16,7 @@ $descAbout = $_POST["descAbout"];
 $imageData = file_get_contents($_FILES['image']['tmp_name']);
 $imageEncoded = base64_encode($imageData);
 
-$sql = "INSERT INTO aboutInfo (image,description) VALUES ('$imageEncoded','$descAbout')";
+$sql = "INSERT INTO about (image,description) VALUES ('$imageEncoded','$descAbout')";
 
 if (mysqli_query($conn, $sql)) {
     echo "success";

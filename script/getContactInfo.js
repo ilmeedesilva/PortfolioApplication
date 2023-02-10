@@ -5,7 +5,6 @@ const getContactInfo = () => {
     })
     .then(function (data) {
       for (var i = 0; i < data.length; i++) {
-        console.log(data[0]);
         if (window.location.href.includes("admin")) {
           document.querySelector(
             '.form_Container input[name="street_no"]'
@@ -25,7 +24,7 @@ const getContactInfo = () => {
         } else {
           document.querySelector(".contact_info_address .street_no").innerHTML =
             data[0].streetno;
-          document.querySelector(".contact_info_address .city_no").innerHTML =
+          document.querySelector(".contact_info_address .city").innerHTML =
             data[0].city;
           document.querySelector(".contact_info_address .country").innerHTML =
             data[0].country;

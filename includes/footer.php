@@ -17,7 +17,7 @@
 
             <div class="footer_content_left">
                 <div class="footer_content_logo_img">
-                    <img src="../../resource/icon/paypal.png" alt="company logo">
+                    <img src="../../resource/icon/comp_logo.jpg" alt="company logo">
                 </div>
                 <div class="footer_content_social_icons">
                     <a href="#"><img src="../../resource/icon/facebook.png" alt="facebook"> </a>

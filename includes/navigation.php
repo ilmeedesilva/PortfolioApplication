@@ -12,7 +12,7 @@
 <body>
     <div class="top_navigation">
         <div class="top_nav_left">
-            <a href="../../src/pages/home.php"><img src="../../resource/icon/paypal.png" alt="Logo"></a>
+            <a href="../../src/pages/home.php"><img src="../../resource/icon/comp_logo.jpg" alt="Logo"></a>
         </div>
         <div class="top_nav_right">
             <ul>

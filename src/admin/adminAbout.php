@@ -6,9 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Settings</title>
+    <link rel="stylesheet" href="../../css/popup.css">
 </head>
 
 <body>
+    <div class="status_popup_wrapper popup_hide">
+        <div class="status_icon">
+            <img src="../../resource/icon/success.png" alt="status">
+        </div>
+        <div class="status_descrip">
+            <h6>SUCCESS</h6>
+            <p>WE WILL CONTACT YOU SOON AS POSSIBLE</p>
+        </div>
+    </div>
+
     <div class="admin_page_header_text">
         <h3>About Settings</h3>
     </div>
@@ -22,17 +33,21 @@
             </div>
             <div class="collapse_section_body">
                 <div class="add_project_wrapper">
+
                     <div class="img_upload_container">
+
                         <div class="title">
                             <h5>Upload Image</h5>
                         </div>
+
                         <div class="img_uploader">
-                            <label for="" class="img_uploader_wrapper">
+
+                            <label for="" class="img_uploader_wrapper about_uploader_wrapper">
                                 <input type="file" accept="image/*" class="image_uploader"
-                                    onchange="selectedFile(this)">
+                                    onchange="selectedFileAbout(this)">
                             </label>
                             <p class="file_name"></p>
-                            <p class="error_txt error_img"></p>
+                            <p class="error_txt error_img_about"></p>
                             <p>Click here to upload</p>
                         </div>
                     </div>
@@ -40,12 +55,12 @@
                         <form action="">
                             <div class="input_item">
                                 <label for="descr">Description</label><br>
-                                <textarea name="descr" cols="50" rows="5"
+                                <textarea name="aboutDesc" cols="50" rows="5"
                                     placeholder="Type your description here..."></textarea>
-                                <p class="error_txt desc_error"></p>
+                                <p class="error_txt desc_error_about"></p>
                             </div>
                             <div class="form_control">
-                                <button class="save_btn">Save</button>
+                                <button class="save_btn saveAbout">Save</button>
                                 <button class="clear_btn">Clear</button>
                             </div>
                         </form>
@@ -192,6 +207,8 @@
 
 
     <script src="../../script/collapse.js"></script>
+    <script src="../../script/updateAbout.js"></script>
+    <script src="../../script/getAbout.js"></script>
 </body>
 
 </html>

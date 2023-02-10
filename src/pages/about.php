@@ -16,18 +16,20 @@
     <?php
     include "../../includes/navigation.php";
     ?>
-    <div class="main_section_full_wrapper project_img_wrapper">
+    <div class="main_section_full_wrapper project_img_wrapper about_header">
         <div class="page_header_title">
             <h5>ABOUT</h5>
         </div>
         <div class="gray_wrapper">
 
         </div>
-        <img class="img1" src="../../resource/image/img_about.jpg" title="About us" alt="About us">
+        <div class="about_banner_img">
+            <img class="img1" src="../../resource/image/img_about.jpg" title="About us" alt="About us">
+        </div>
     </div>
     <div class="main_section_wrapper">
 
-        <div class="main_section_wrapper mt_45">
+        <div class="main_section_wrapper mt_45 about_header_desc">
 
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -135,6 +137,7 @@
     </script>
     <script src="../../script/getLogo.js"> </script>
     <script src="../../script/getContactInfo.js"></script>
+    <script src="../../script/getAbout.js"></script>
 </body>
 
 </html>

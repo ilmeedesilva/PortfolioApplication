@@ -702,3 +702,14 @@ form.slider_update textarea {
 .empty p {
   color: #6f7384;
 }
+
+.about_banner_img {
+  width: 100%;
+  max-height: 500px;
+}
+
+.prev_img {
+  width: 250px;
+  height: 150px;
+  background-color: #000;
+}

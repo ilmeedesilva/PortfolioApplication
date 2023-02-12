@@ -94,12 +94,12 @@
                             <h5>Upload Image</h5>
                         </div>
                         <div class="img_uploader">
-                            <label for="" class="img_uploader_wrapper">
+                            <label for="" class="img_uploader_wrapper vision_uploader_wrapper">
                                 <input type="file" accept="image/*" class="image_uploader"
-                                    onchange="selectedFile(this)">
+                                    onchange="selectedFileVision(this)">
                             </label>
                             <p class="file_name"></p>
-                            <p class="error_txt error_img"></p>
+                            <p class="error_txt error_img_vision"></p>
                             <p>Click here to upload</p>
                         </div>
                     </div>
@@ -107,12 +107,12 @@
                         <form action="">
                             <div class="input_item">
                                 <label for="descr">Description</label><br>
-                                <textarea name="descr" cols="50" rows="5"
+                                <textarea name="visionDesc" cols="50" rows="5"
                                     placeholder="Type your description here..."></textarea>
-                                <p class="error_txt desc_error"></p>
+                                <p class="error_txt desc_error_vision"></p>
                             </div>
                             <div class="form_control">
-                                <button class="save_btn">Save</button>
+                                <button class="save_btn saveVision">Save</button>
                                 <button class="clear_btn">Clear</button>
                             </div>
                         </form>
@@ -209,6 +209,7 @@
     <script src="../../script/collapse.js"></script>
     <script src="../../script/updateAbout.js"></script>
     <script src="../../script/getAbout.js"></script>
+    <script src="../../script/updateVision.js"></script>
 </body>
 
 </html>

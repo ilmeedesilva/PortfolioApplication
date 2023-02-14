@@ -1,0 +1,45 @@
+#rect1,
+#rect2,
+#rect3 {
+  animation: moveLeftToRight 1s ease-in-out infinite alternate;
+  animation-delay: 0.5s;
+}
+
+#rect4,
+#rect5,
+#rect6 {
+  animation: moveRightToLeft 1s ease-in-out infinite alternate;
+  animation-delay: 0.5s;
+}
+
+#rect7,
+#rect8,
+#rect9 {
+  animation: moveLeftToRight 1.5s ease-in-out infinite alternate;
+  animation-delay: 0.75s;
+}
+
+#rect10,
+#rect11,
+#rect12 {
+  animation: moveRightToLeft 1.5s ease-in-out infinite alternate;
+  animation-delay: 0.75s;
+}
+
+@keyframes moveLeftToRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(140px);
+  }
+}
+
+@keyframes moveRightToLeft {
+  from {
+    transform: translateX(140px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

@@ -58,8 +58,8 @@
         </div>
 
 
-        <div class="section_wrapper">
-            <div class="text_section">
+        <div class="section_wrapper about_vision">
+            <div class="text_section about_vision_desc">
                 <h5>
                     Vision
                 </h5>
@@ -75,7 +75,7 @@
 
             </div>
 
-            <div class="image_section">
+            <div class="image_section about_vision_img">
                 <img src="../../resource/image/img_vision.jpg" title="Vision" alt="Vision">
             </div>
 
@@ -140,6 +140,7 @@
     <script src="../../script/getLogo.js"> </script>
     <script src="../../script/getContactInfo.js"></script>
     <script src="../../script/getAbout.js"></script>
+    <script src="../../script/getVision.js"></script>
 </body>
 
 </html>

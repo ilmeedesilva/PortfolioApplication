@@ -82,15 +82,15 @@
         </div>
 
 
-        <div class="section_wrapper">
+        <div class="section_wrapper about_tagLine">
 
 
-            <div class="image_section image_section_left">
+            <div class="image_section image_section_left about_tagLine_img">
                 <img src="../../resource/image/img_tagline.jpg" title="Tagline" alt="Tagline">
             </div>
 
 
-            <div class="text_section text_section_right">
+            <div class="text_section text_section_right about_tagLine_desc">
                 <h5>
                     TagLine
                 </h5>
@@ -108,8 +108,8 @@
 
         </div>
 
-        <div class="section_wrapper">
-            <div class="text_section">
+        <div class="section_wrapper about_motto">
+            <div class="text_section about_motto_desc">
                 <h5>
                     Motto
                 </h5>
@@ -125,7 +125,7 @@
 
             </div>
 
-            <div class="image_section">
+            <div class="image_section about_motto_img">
                 <img src="../../resource/image/img_motto.jpg" title="Motto" alt="Motto">
             </div>
 
@@ -141,6 +141,8 @@
     <script src="../../script/getContactInfo.js"></script>
     <script src="../../script/getAbout.js"></script>
     <script src="../../script/getVision.js"></script>
+    <script src="../../script/getTagLine.js"></script>
+    <script src="../../script/getMotto.js"></script>
 </body>
 
 </html>

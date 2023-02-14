@@ -61,7 +61,7 @@
                             </div>
                             <div class="form_control">
                                 <button class="save_btn saveAbout">Save</button>
-                                <button class="clear_btn">Clear</button>
+                                <button class="clear_btn clearAbout">Clear</button>
                             </div>
                         </form>
                     </div>
@@ -113,7 +113,7 @@
                             </div>
                             <div class="form_control">
                                 <button class="save_btn saveVision">Save</button>
-                                <button class="clear_btn">Clear</button>
+                                <button class="clear_btn clearVision">Clear</button>
                             </div>
                         </form>
                     </div>
@@ -152,7 +152,7 @@
                             </div>
                             <div class="form_control">
                                 <button class="save_btn saveTagLine">Save</button>
-                                <button class="clear_btn">Clear</button>
+                                <button class="clear_btn clearTagLine">Clear</button>
                             </div>
                         </form>
                     </div>
@@ -191,7 +191,7 @@
                             </div>
                             <div class="form_control">
                                 <button class="save_btn saveMotto">Save</button>
-                                <button class="clear_btn">Clear</button>
+                                <button class="clear_btn clearMotto">Clear</button>
                             </div>
                         </form>
                     </div>

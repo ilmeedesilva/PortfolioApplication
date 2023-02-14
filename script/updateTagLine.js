@@ -82,6 +82,12 @@ const tagLineInput = document.querySelector(
     }
   });
   
+  document.querySelector(".clearTagLine").addEventListener("click", (e) => {
+    e.preventDefault();
   
+    descTagLine.value ="";
+    tagLineInput.value = "";
+    document.querySelector(".tagLine_img_name").innerHTML="";
+  });
   
   

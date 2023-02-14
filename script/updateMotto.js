@@ -81,6 +81,14 @@ const mottoInput = document.querySelector(
         });
     }
   });
+
+  document.querySelector(".clearMotto").addEventListener("click", (e) => {
+    e.preventDefault();
+  
+    descMotto.value ="";
+    mottoInput.value = "";
+    document.querySelector(".motto_img_name").innerHTML="";
+  });
   
   
   

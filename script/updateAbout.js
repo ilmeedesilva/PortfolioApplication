@@ -71,38 +71,6 @@ const submit_button_about = document.querySelector(".saveAbout");
 
 const err_desc_about = document.querySelector(".desc_error_about");
 
-// submit_button_about.addEventListener("click", (e) => {
-//     e.preventDefault();
-
-//     if(!descAbout.value){
-//         err_desc_about.innerHTML = "*Description cannot be empty";
-//     }
-//     else{
-//         err_desc_about.innerHTML = "";
-//     }
-
-//       if (
-//         !err_desc_about.innerHTML
-//         // !(".error_img_about").innerHTML
-//       )
-//       {
-//         const xhr = new XMLHttpRequest();
-//         xhr.open("POST", "../../db/updateAbout.php", true);
-//         xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-//         // xhr.onreadystatechange = function () {
-//         //   if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-//         //     // const feedback = document.querySelector(".feedback");
-//         //     // feedback.innerHTML = xhr.responseText;
-
-//         //     displayPopUp(xhr.responseText);
-//         //   }
-//         // };
-//         xhr.send(
-//           `descAbout=${descAbout.value}`// me tiyene value tika php eketa pass karana
-//         );
-//       }
-
-//   });
 
 document.querySelector(".saveAbout").addEventListener("click", (e) => {
   e.preventDefault();
@@ -145,4 +113,13 @@ document.querySelector(".saveAbout").addEventListener("click", (e) => {
         console.error("Error:", error);
       });
   }
+});
+
+
+document.querySelector(".clearAbout").addEventListener("click", (e) => {
+  e.preventDefault();
+
+  descAbout.value ="";
+  aboutInput.value = "";
+  document.querySelector(".file_name").innerHTML="";
 });

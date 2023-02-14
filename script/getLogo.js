@@ -9,7 +9,8 @@ const getLogo = () => {
         var imageEncoded = project.image;
         var image = '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
 
-        document.querySelector(".top_nav_left").innerHTML = image;
+        document.querySelector(".top_nav_left").innerHTML =
+          '<a href="../../src/pages/home.php">' + image;
         document.querySelector(".footer_content_logo_img").innerHTML = image;
       }
     })

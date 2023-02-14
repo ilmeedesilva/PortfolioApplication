@@ -1,45 +1,47 @@
 #rect1,
-#rect2,
-#rect3 {
-  animation: moveLeftToRight 1s ease-in-out infinite alternate;
+#rect5,
+#rect11 {
+  animation: moveLeftToRight 800ms ease-in-out infinite alternate;
   animation-delay: 0.5s;
 }
 
-#rect4,
-#rect5,
+#rect2,
+#rect8,
 #rect6 {
-  animation: moveRightToLeft 1s ease-in-out infinite alternate;
+  animation: moveRightToLeft 800ms ease-in-out infinite alternate;
   animation-delay: 0.5s;
 }
 
 #rect7,
-#rect8,
+#rect3,
 #rect9 {
-  animation: moveLeftToRight 1.5s ease-in-out infinite alternate;
+  animation: moveLeftToRight 1s ease-in-out infinite alternate;
   animation-delay: 0.75s;
 }
 
 #rect10,
-#rect11,
+#rect4,
 #rect12 {
-  animation: moveRightToLeft 1.5s ease-in-out infinite alternate;
+  animation: moveRightToLeft 1s ease-in-out infinite alternate;
   animation-delay: 0.75s;
 }
 
 @keyframes moveLeftToRight {
   from {
-    transform: translateX(0);
+    transform: translateX(10px);
   }
+
   to {
-    transform: translateX(140px);
+    transform: translateX(30px);
   }
 }
 
 @keyframes moveRightToLeft {
   from {
-    transform: translateX(140px);
+    transform: translateX(30px);
   }
+
   to {
-    transform: translateX(0);
+    transform: translateX(10px);
   }
 }

@@ -53,3 +53,64 @@
 .hide {
   display: none;
 }
+
+.form_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.form_container .image_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form_container .image_wrapper .img_box {
+  width: 250px;
+  height: 140px;
+  position: relative;
+}
+
+.form_container .image_wrapper .img_box img {
+  width: 100%;
+}
+
+.form_container .image_wrapper .prev_img {
+  background-color: #f2f2f2;
+}
+
+.form_container .image_wrapper input[type="file"] {
+  opacity: 1 !important;
+  width: 200px;
+  position: absolute;
+  right: 20px;
+}
+
+.pop_up_edit_save_cancel_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+}
+
+.pop_up_edit_save_cancel_wrapper .cancel_btn {
+  min-width: 150px;
+  padding: 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 3px solid #dcdcdc;
+  color: #4b4b4b;
+  box-shadow: 0 0 25px 0 rgb(27 64 121 / 30%);
+  cursor: pointer;
+}
+
+.delete_btn {
+  background-color: #dd3f42 !important;
+  border: 3px solid #dd3f42;
+}
+
+.header_text_wrapper input,
+.desc_text_wrapper textarea {
+  width: -webkit-fill-available;
+}

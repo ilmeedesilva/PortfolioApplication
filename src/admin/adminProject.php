@@ -31,6 +31,31 @@
             <div class="close_btn">
                 <img src="../../resource/icon/close.png" alt="close_btn">
             </div>
+            <div class="form_container">
+                <div class="image_wrapper">
+                    <div class="img_box prev_img">
+
+                    </div>
+                    <input type="file" accept="image/*" class="image_uploader" onchange="selectedFile(this)">
+                    <p class="error_txt"></p>
+                </div>
+                <div class="header_text_wrapper">
+                    <input type="text" name="edit_project_header">
+                    <p class="error_txt"></p>
+                </div>
+                <div class="header_text_wrapper">
+                    <input type="date" name="edit_project_date">
+                    <p class="error_txt"></p>
+                </div>
+                <div class="desc_text_wrapper">
+                    <textarea name="edit_project_dec" cols="30" rows="10"></textarea>
+                    <p class="error_txt"></p>
+                </div>
+                <div class="pop_up_edit_save_cancel_wrapper">
+                    <button class="primary_btn">SAVE</button>
+                    <button class="cancel_btn">CANCEL</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -130,13 +155,13 @@
                             <td>ABCD Project</td>
                             <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
                             <td>10-08-2022</td>
-                            <td><button class="control_btn">Edit</button></td>
+                            <td><button class="control_btn edit_btn">Edit</button></td>
                         </tr>
                         <tr>
                             <td>EFGH Project</td>
                             <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
                             <td>02-14-2022</td>
-                            <td><button class="control_btn">Edit</button></td>
+                            <td><button class="control_btn edit_btn">Edit</button></td>
                         </tr>
                     </table>
                 </div>
@@ -161,13 +186,13 @@
                             <td>ABCD Project</td>
                             <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
                             <td>10-08-2022</td>
-                            <td><button class="control_btn">Delete</button></td>
+                            <td><button class="control_btn delete_control delete_btn">Delete</button></td>
                         </tr>
                         <tr>
                             <td>EFGH Project</td>
                             <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
                             <td>02-14-2022</td>
-                            <td><button class="control_btn">Delete</button></td>
+                            <td><button class="control_btn delete_control delete_btn">Delete</button></td>
                         </tr>
                     </table>
                 </div>

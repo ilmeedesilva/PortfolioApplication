@@ -105,8 +105,6 @@ submit_button3.addEventListener("click", (e) => {
     //     displayPopUp(xhr.responseText);
     //   }
     // };
-    xhr.send(
-      `title3=${title3.value}&desc3=${desc3.value}` // me tiyene value tika php eketa pass karana
-    );
+    xhr.send(`title3=${title3.value}&desc3=${desc3.value}`);
   }
 });

@@ -10,21 +10,22 @@ if (!$conn) {
 }
 
 
-$checkVisionTableExist = "SHOW TABLES LIKE 'vision'";
-$result = mysqli_query($conn, $checkVisionTableExist);
+$checkMottoTableExist = "SHOW TABLES LIKE 'motto'";
+$result = mysqli_query($conn, $checkMottoTableExist);
 if (mysqli_num_rows($result) == 0) {
-    $createVisionTableSql = "
-        CREATE TABLE vision (
+    $createMottoTableSql = "
+        CREATE TABLE motto (
             id INT AUTO_INCREMENT PRIMARY KEY,
             image LONGTEXT,
             description VARCHAR(200) not null
         )
     ";
-    mysqli_query($conn, $createVisionTableSql);
+    mysqli_query($conn, $createMottoTableSql);
 }
 
 
-$sql = "SELECT * FROM vision order by id desc limit 1";
+
+$sql = "SELECT * FROM motto order by id desc limit 1";
 $result = mysqli_query($conn, $sql);
 
 $data = array();

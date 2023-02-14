@@ -61,7 +61,7 @@
                             </div>
                             <div class="form_control">
                                 <button class="save_btn saveAbout">Save</button>
-                                <button class="clear_btn">Clear</button>
+                                <button class="clear_btn clearAbout">Clear</button>
                             </div>
                         </form>
                     </div>
@@ -113,7 +113,7 @@
                             </div>
                             <div class="form_control">
                                 <button class="save_btn saveVision">Save</button>
-                                <button class="clear_btn">Clear</button>
+                                <button class="clear_btn clearVision">Clear</button>
                             </div>
                         </form>
                     </div>
@@ -133,12 +133,12 @@
                             <h5>Upload Image</h5>
                         </div>
                         <div class="img_uploader">
-                            <label for="" class="img_uploader_wrapper">
+                            <label for="" class="img_uploader_wrapper tagLine_uploader_wrapper">
                                 <input type="file" accept="image/*" class="image_uploader"
-                                    onchange="selectedFile(this)">
+                                    onchange="selectedFileTagLine(this)">
                             </label>
-                            <p class="file_name"></p>
-                            <p class="error_txt error_img"></p>
+                            <p class="tagLine_img_name"></p>
+                            <p class="error_txt error_img_tagLine"></p>
                             <p>Click here to upload</p>
                         </div>
                     </div>
@@ -146,13 +146,13 @@
                         <form action="">
                             <div class="input_item">
                                 <label for="descr">Description</label><br>
-                                <textarea name="descr" cols="50" rows="5"
+                                <textarea name="tagLineDesc" cols="50" rows="5"
                                     placeholder="Type your description here..."></textarea>
-                                <p class="error_txt desc_error"></p>
+                                <p class="error_txt desc_error_tagLine"></p>
                             </div>
                             <div class="form_control">
-                                <button class="save_btn">Save</button>
-                                <button class="clear_btn">Clear</button>
+                                <button class="save_btn saveTagLine">Save</button>
+                                <button class="clear_btn clearTagLine">Clear</button>
                             </div>
                         </form>
                     </div>
@@ -172,12 +172,12 @@
                             <h5>Upload Image</h5>
                         </div>
                         <div class="img_uploader">
-                            <label for="" class="img_uploader_wrapper">
+                            <label for="" class="img_uploader_wrapper motto_uploader_wrapper">
                                 <input type="file" accept="image/*" class="image_uploader"
-                                    onchange="selectedFile(this)">
+                                    onchange="selectedFileMotto(this)">
                             </label>
-                            <p class="file_name"></p>
-                            <p class="error_txt error_img"></p>
+                            <p class="motto_img_name"></p>
+                            <p class="error_txt error_img_motto"></p>
                             <p>Click here to upload</p>
                         </div>
                     </div>
@@ -185,13 +185,13 @@
                         <form action="">
                             <div class="input_item">
                                 <label for="descr">Description</label><br>
-                                <textarea name="descr" cols="50" rows="5"
+                                <textarea name="mottoDesc" cols="50" rows="5"
                                     placeholder="Type your description here..."></textarea>
-                                <p class="error_txt desc_error"></p>
+                                <p class="error_txt desc_error_motto"></p>
                             </div>
                             <div class="form_control">
-                                <button class="save_btn">Save</button>
-                                <button class="clear_btn">Clear</button>
+                                <button class="save_btn saveMotto">Save</button>
+                                <button class="clear_btn clearMotto">Clear</button>
                             </div>
                         </form>
                     </div>
@@ -211,6 +211,10 @@
     <script src="../../script/getAbout.js"></script>
     <script src="../../script/updateVision.js"></script>
     <script src="../../script/getVision.js"></script>
+    <script src="../../script/updateTagLine.js"></script>
+    <script src="../../script/getTagLine.js"></script>
+    <script src="../../script/updateMotto.js"></script>
+    <script src="../../script/getMotto.js"></script>
 </body>
 
 </html>

@@ -14,12 +14,12 @@ if (!$conn) {
 
 
 $imageName = $_FILES['image']['name'];
-$descVision = $_POST["descVision"];
+$descTagLine = $_POST["descTagLine"];
 
 $imageData = file_get_contents($_FILES['image']['tmp_name']);
 $imageEncoded = base64_encode($imageData);
 
-$sql = "INSERT INTO vision (image,description) VALUES ('$imageEncoded','$descVision')";
+$sql = "INSERT INTO tagLine (image,description) VALUES ('$imageEncoded','$descTagLine')";
 
 
 
@@ -35,6 +35,3 @@ if (mysqli_query($conn, $sql)) {
 mysqli_close($conn);
 
 ?>
-
-<!-- CREATE TABLE vision ( id INT AUTO_INCREMENT PRIMARY KEY, image LONGTEXT,description varchar(200) not null );-->
-<!-- CREATE TABLE oldVisionData ( id INT AUTO_INCREMENT PRIMARY KEY, image LONGTEXT,description varchar(200) not null );-->

@@ -12,7 +12,11 @@ const getProducts = () => {
         var imageEncoded = project.image;
         var image = '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
         var html =
-          '<div class="col blog_wrapper">\
+          '<div class="col blog_wrapper" data-id="' +
+          project.id +
+          '" onclick="getPojectId(' +
+          project.id +
+          ')">\
                         <div class="blog-top-section">\
                           <div class="blue_cover"></div>\
                           <div class="blog_img">' +

@@ -134,3 +134,9 @@
   width: 1050px;
   margin: 0 auto;
 }
+
+@media only screen and (max-width: 900px) {
+  .footer_content {
+    width: inherit;
+  }
+}

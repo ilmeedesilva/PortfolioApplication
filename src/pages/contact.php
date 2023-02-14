@@ -93,6 +93,7 @@
     <?php include('../../includes/footer.php'); ?>
     <script src="../../script/navigation.js">
     </script>
+    <script src="../../script/mobileNav.js"></script>
     <script src="../../script/contactForm.js">
     </script>
     <script src="../../script/getLogo.js"> </script>

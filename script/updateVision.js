@@ -10,7 +10,7 @@ const selectedFileVision = (doc) => {
     const fileSize = file.size;
     const filesizeinMB = (file.size / 1000).toFixed(2);
     document.querySelector(
-      ".file_name"
+      ".vision_img_name"
     ).innerHTML = `${file.name}, size: ${filesizeinMB} KB`;
     if (fileType) {
       document.querySelector(".error_img_vision").innerHTML =

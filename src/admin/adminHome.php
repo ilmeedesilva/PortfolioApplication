@@ -82,7 +82,8 @@
                             </div>
                             <div class="box">
                                 <label for="address">Street & City:
-                                    <input type="text" name="city_no" id="address" placeholder="Ex: Example Road, Colombo 01">
+                                    <input type="text" name="city_no" id="address"
+                                        placeholder="Ex: Example Road, Colombo 01">
                                     <p class="error_txt city_error"></p>
                             </div>
                             <div class="box">

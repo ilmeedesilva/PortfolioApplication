@@ -11,7 +11,61 @@
   <link rel="stylesheet" type="text/css" href="../../css/footer.css">
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/Home.css">
+  <link rel="stylesheet" href="../../css/loaders.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <style>
+    #rect1,
+    #rect5,
+    #rect11,
+    {
+    animation: moveLeftToRight 800ms ease-in-out infinite alternate;
+    animation-delay: 0.5s;
+    }
+
+
+    #rect2,
+    #rect8,
+    #rect6 {
+      animation: moveRightToLeft 800ms ease-in-out infinite alternate;
+      animation-delay: 0.5s;
+    }
+
+    #rect7,
+    #rect3,
+    #rect9 {
+      animation: moveLeftToRight 1s ease-in-out infinite alternate;
+      animation-delay: 0.75s;
+    }
+
+    #rect10,
+    #rect4,
+    #rect12 {
+      animation: moveRightToLeft 1s ease-in-out infinite alternate;
+      animation-delay: 0.75s;
+    }
+
+    @keyframes moveLeftToRight {
+      from {
+        transform: translateX(10px);
+      }
+
+      to {
+        transform: translateX(30px);
+      }
+    }
+
+    @keyframes moveRightToLeft {
+      from {
+        transform: translateX(30px);
+      }
+
+      to {
+        transform: translateX(10px);
+      }
+    }
+  </style>
 
 </head>
 
@@ -59,7 +113,21 @@
       <div class="row">
         <div class="col-lg-4 col-md-12 col-12">
           <div class="about-img">
-            <img src="../../resource\image\img2.jpeg" alt="about-section-img" class="img-fluid">
+            <svg id="skeleton" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="10" width="180" height="8" id="rect1" />
+              <rect x="15" y="20" width="180" height="8" id="rect2" />
+              <rect x="10" y="30" width="180" height="8" id="rect3" />
+              <rect x="20" y="40" width="180" height="8" id="rect4" />
+              <rect x="0" y="50" width="180" height="8" id="rect5" />
+              <rect x="40" y="60" width="180" height="8" id="rect6" />
+              <rect x="10" y="70" width="180" height="8" id="rect7" />
+              <rect x="50" y="80" width="180" height="8" id="rect8" />
+              <rect x="0" y="90" width="180" height="8" id="rect9" />
+              <rect x="10" y="100" width="180" height="8" id="rect10" />
+              <rect x="50" y="110" width="180" height="8" id="rect11" />
+              <rect x="5" y="120" width="180" height="8" id="rect12" />
+            </svg>
+            <!-- <img src="../../resource\image\img2.jpeg" alt="about-section-img" class="img-fluid"> -->
           </div>
         </div>
         <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
@@ -221,8 +289,10 @@
   <!--End  My Project-->
 
   <script src="../../script/navigation.js"> </script>
+  <script src="../../script/mobileNav.js"></script>
   <script src="../../script/getLogo.js"> </script>
   <script src="../../script/getContactInfo.js"></script>
+  <!-- <script src="../../script/loaders.js"></script> -->
 </body>
 
 </html>

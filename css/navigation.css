@@ -55,3 +55,46 @@
 .top_nav_right ul li a .active_link {
   color: #5154ff;
 }
+
+.toggle_menu {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .toggle_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+  }
+  .toggle_menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #212121;
+    border-radius: 15px;
+    margin-bottom: 8px;
+  }
+
+  .top_nav_right {
+    position: relative;
+  }
+  .top_nav_right ul {
+    flex-direction: column;
+    position: absolute;
+    top: 59px;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 5;
+    transition: right 0.5s ease-in-out;
+  }
+
+  .nav_active ul {
+    right: 0 !important;
+  }
+
+  .top_nav_right ul li {
+    padding: 8px;
+  }
+}

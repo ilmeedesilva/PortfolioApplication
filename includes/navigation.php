@@ -15,6 +15,11 @@
             <a href="../../src/pages/home.php"><img src="../../resource/icon/comp_logo.jpg" alt="Logo"></a>
         </div>
         <div class="top_nav_right">
+            <div class="toggle_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul>
                 <li><a href="../../src/pages/home.php" class="active_link">Home</a></li>
                 <li><a href="../../src/pages/project.php">Project</a></li>

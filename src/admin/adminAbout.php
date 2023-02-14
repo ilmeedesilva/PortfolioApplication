@@ -98,7 +98,7 @@
                                 <input type="file" accept="image/*" class="image_uploader"
                                     onchange="selectedFileVision(this)">
                             </label>
-                            <p class="file_name"></p>
+                            <p class="vision_img_name"></p>
                             <p class="error_txt error_img_vision"></p>
                             <p>Click here to upload</p>
                         </div>
@@ -210,6 +210,7 @@
     <script src="../../script/updateAbout.js"></script>
     <script src="../../script/getAbout.js"></script>
     <script src="../../script/updateVision.js"></script>
+    <script src="../../script/getVision.js"></script>
 </body>
 
 </html>

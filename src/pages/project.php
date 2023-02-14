@@ -155,6 +155,7 @@
     <script src="../../script/getLogo.js"> </script>
     <script src="../../script/getContactInfo.js"></script>
     <script src="../../script/getDynamicProjects.js"></script>
+    <script src="../../script/mobileNav.js"></script>
 </body>
 
 </html>

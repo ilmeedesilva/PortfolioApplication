@@ -136,6 +136,7 @@
     <?php include('../../includes/footer.php'); ?>
     <script src="../../script/navigation.js">
     </script>
+    <script src="../../script/mobileNav.js"></script>
     <script src="../../script/getLogo.js"> </script>
     <script src="../../script/getContactInfo.js"></script>
     <script src="../../script/getAbout.js"></script>

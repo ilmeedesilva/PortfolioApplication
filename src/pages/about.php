@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/navigation.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/admin/admin.css">
+    <link rel="stylesheet" href="../../css/loaders.css">
 </head>
 
 <body>

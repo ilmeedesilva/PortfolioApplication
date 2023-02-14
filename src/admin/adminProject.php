@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../css/popup.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/form.css">
+    <link rel="stylesheet" href="../../css/popup_form.css">
 </head>
 
 <body>
@@ -21,6 +22,15 @@
         <div class="status_descrip">
             <h6>SUCCESS</h6>
             <p>WE WILL CONTACT YOU SOON AS POSSIBLE</p>
+        </div>
+    </div>
+
+    <div class="popup_form_wrapper hide">
+        <div class="gray_cover"></div>
+        <div class="popup_form">
+            <div class="close_btn">
+                <img src="../../resource/icon/close.png" alt="close_btn">
+            </div>
         </div>
     </div>
 
@@ -99,6 +109,9 @@
             </div>
         </div>
 
+
+
+
         <div class="collapse_section">
             <div class="collapse_section_header">
                 <h4>Update Project</h4>
@@ -168,6 +181,7 @@
 
     <script src="../../script/collapse.js"></script>
     <script src="../../script/project.js"></script>
+    <script src="../../script/popup_form.js"></script>
 
 
 </body>

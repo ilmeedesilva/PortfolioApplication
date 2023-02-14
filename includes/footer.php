@@ -17,7 +17,13 @@
 
             <div class="footer_content_left">
                 <div class="footer_content_logo_img">
-                    <img src="../../resource/icon/comp_logo.jpg" alt="company logo">
+                    <!-- <img src="../../resource/icon/comp_logo.jpg" alt="company logo"> -->
+                    <svg id="skeleton" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="10" width="180" height="5" fill="#f4eeee" id="rect1" />
+                        <rect x="15" y="20" width="180" height="5" fill="#f4eeee" id="rect2" />
+                        <rect x="10" y="30" width="180" height="5" fill="#f4eeee" id="rect3" />
+                        <rect x="20" y="40" width="180" height="5" fill="#f4eeee" id="rect4" />
+                    </svg>
                 </div>
                 <div class="footer_content_social_icons">
                     <a href="#"><img src="../../resource/icon/facebook.png" alt="facebook"> </a>

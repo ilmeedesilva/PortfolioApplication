@@ -76,7 +76,7 @@ document.querySelector(".saveAbout").addEventListener("click", (e) => {
   e.preventDefault();
   const err_img_about = document.querySelector(".error_img_about");
   if (!aboutInput.value) {
-    err_img_about.innerHTML = "no image selected";
+    err_img_about.innerHTML = "No image selected";
   } else {
     err_img_about.innerHTML = "";
   }

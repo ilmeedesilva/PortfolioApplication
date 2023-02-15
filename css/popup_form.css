@@ -74,6 +74,8 @@
 
 .form_container .image_wrapper .img_box img {
   width: 100%;
+  height: inherit;
+  object-fit: contain;
 }
 
 .form_container .image_wrapper .prev_img {

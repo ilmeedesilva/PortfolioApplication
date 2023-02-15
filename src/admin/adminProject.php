@@ -36,7 +36,7 @@
                     <div class="img_box prev_img">
 
                     </div>
-                    <input type="file" accept="image/*" class="image_uploader" onchange="selectedFile(this)">
+                    <input type="file" accept="image/*" class="image_uploader">
                     <p class="error_txt"></p>
                 </div>
                 <div class="header_text_wrapper">
@@ -77,8 +77,8 @@
                         </div>
                         <div class="img_uploader">
                             <label for="" class="img_uploader_wrapper project_uploader_wrapper">
-                                <input type="file" accept="image/*" class="image_uploader" 
-                                onchange="updateSelectedFileProject(this)">
+                                <input type="file" accept="image/*" class="image_uploader"
+                                    onchange="updateSelectedFileProject(this)">
                             </label>
                             <p class="update_project_file_name"></p>
                             <p class="error_txt error_img_project"></p>
@@ -90,7 +90,7 @@
                             <div class="input_item">
                                 <label for="descr">Description</label><br>
                                 <textarea name="projectDesc" cols="50" rows="5"
-                                placeholder="Type your description here..."></textarea>
+                                    placeholder="Type your description here..."></textarea>
                                 <p class="error_txt desc_error_project"></p>
                             </div>
                             <div class="form_control">
@@ -162,24 +162,16 @@
             <div class="collapse_section_body">
                 <div class="table_wrapper">
                     <table>
-                        <tr>
-                            <th>Title</th>
-                            <th>Description</th>
-                            <th>Created Date</th>
-                            <th>Action</th>
-                        </tr>
-                        <tr>
-                            <td>ABCD Project</td>
-                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
-                            <td>10-08-2022</td>
-                            <td><button class="control_btn edit_btn">Edit</button></td>
-                        </tr>
-                        <tr>
-                            <td>EFGH Project</td>
-                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit</td>
-                            <td>02-14-2022</td>
-                            <td><button class="control_btn edit_btn">Edit</button></td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Created Date</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="project_table_body project_edit_table_body">
+                        </tbody>
                     </table>
                 </div>
             </div>
@@ -191,7 +183,7 @@
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
-                <div class="table_wrapper">
+                <!-- <div class="table_wrapper">
                     <table>
                         <tr>
                             <th>Title</th>
@@ -212,7 +204,24 @@
                             <td><button class="control_btn delete_control delete_btn">Delete</button></td>
                         </tr>
                     </table>
+                </div> -->
+
+                <div class="table_wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Created Date</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="project_table_body project_delete_table_body">
+                        </tbody>
+                    </table>
                 </div>
+
+
             </div>
         </div>
 
@@ -226,6 +235,9 @@
     <script src="../../script/popup_form.js"></script>
     <script src="../../script/updateProject.js"></script>
     <script src="../../script/getProject.js"></script>
+    <script src="../../script/getAllProjectsData.js"></script>
+    <script src="../../script/selectedDeleteProjectdata.js"></script>
+    <script src="../../script/selectedEditProjectdata.js"></script>
 
 </body>
 

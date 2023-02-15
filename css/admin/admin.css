@@ -527,7 +527,7 @@ input#file {
   padding: 20px;
 }
 
-.form_wrappe {
+.form_wrapper {
   width: 40% !important;
   float: left;
 }
@@ -538,7 +538,7 @@ input#file {
   padding: 20px;
 }
 
-.form_wrappe input {
+.form_wrapper input {
   width: 90%;
   font-size: 20px;
   border-radius: 15px;

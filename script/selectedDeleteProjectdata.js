@@ -22,7 +22,6 @@ const selectedDeleteProjectdata = (project, type) => {
 
   document.querySelector(".image_wrapper .img_box").innerHTML = deleteimage;
 
-  console.log("delete img - ", project.image);
   document.querySelector(".popup_form_wrapper").classList.remove("hide");
 
   deleteRowIMGUploder.style.display = "none";

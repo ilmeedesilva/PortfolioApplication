@@ -21,8 +21,6 @@ fetch("../../db/getAllProjects.php")
       editBtn.textContent = "Edit";
       editrow.insertCell().appendChild(editBtn);
 
-      console.log(project);
-
       const deleteBtn = document.createElement("button");
       deleteBtn.classList.add("control_btn", "delete_control", "delete_btn");
       deleteBtn.textContent = "Delete";

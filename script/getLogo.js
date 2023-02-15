@@ -15,7 +15,7 @@ const getLogo = () => {
       }
     })
     .catch((err) => {
-      console.log("err - ", err);
+      alert(err);
     });
 };
 getLogo();

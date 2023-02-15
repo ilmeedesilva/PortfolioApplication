@@ -16,9 +16,6 @@ const editRowDeletBtn = document.querySelector(
 );
 
 const selectedEditProjectdata = (project, type) => {
-  console.log(project);
-  console.log(type);
-
   let editimageEncoded = project.image;
   let editimage =
     '<img src="data:image/jpeg;base64,' + editimageEncoded + '"/>';

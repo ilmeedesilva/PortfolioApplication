@@ -15,7 +15,10 @@ const deleteRowDeletBtn = document.querySelector(
   ".popup_form .pop_up_edit_save_cancel_wrapper .primary_btn"
 );
 
+let selectedID;
+
 const selectedDeleteProjectdata = (project, type) => {
+  selectedID = project.id;
   let deleteimageEncoded = project.image;
   let deleteimage =
     '<img src="data:image/jpeg;base64,' + deleteimageEncoded + '"/>';
@@ -37,3 +40,24 @@ const selectedDeleteProjectdata = (project, type) => {
   deleteRowDeletBtn.classList.add("delete_btn");
   deleteRowDeletBtn.innerHTML = "DELETE";
 };
+
+deleteRowDeletBtn.addEventListener("click", () => {
+  if (deleteRowDeletBtn.textContent === "DELETE") {
+    console.log("delete this - ", selectedID);
+
+    fetch("../../db/deleteProjectById.php", {
+      method: "POST",
+      body: JSON.stringify({ id: selectedID }),
+    })
+      .then((response) => {
+        if (response.ok) {
+          alert("Project deleted successfully!");
+        } else {
+          alert("Failed to delete project");
+        }
+      })
+      .catch((error) => {
+        alert(error);
+      });
+  }
+});

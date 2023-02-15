@@ -21,7 +21,7 @@
         </div>
         <div class="status_descrip">
             <h6>SUCCESS</h6>
-            <p>WE WILL CONTACT YOU SOON AS POSSIBLE</p>
+            <p></p>
         </div>
     </div>
 
@@ -36,12 +36,12 @@
                     <div class="img_box prev_img">
 
                     </div>
-                    <input type="file" accept="image/*" class="image_uploader">
-                    <p class="error_txt"></p>
+                    <input type="file" accept="image/*" class="image_uploader uploader_edit_project">
+                    <p class="error_txt uploader_edit_project_error"></p>
                 </div>
                 <div class="header_text_wrapper">
                     <input type="text" name="edit_project_header">
-                    <p class="error_txt"></p>
+                    <p class="error_txt edit_project_header_error_txt"></p>
                 </div>
                 <div class="header_text_wrapper">
                     <input type="date" name="edit_project_date">

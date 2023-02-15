@@ -38,7 +38,7 @@ const getContactInfo = () => {
       }
     })
     .catch((err) => {
-      console.log("err - ", err);
+      alert(err);
     });
 };
 getContactInfo();

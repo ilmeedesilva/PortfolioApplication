@@ -6,9 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Settings</title>
+    <link rel="stylesheet" href="../../css/popup.css">
 </head>
 
 <body>
+
+<div class="status_popup_wrapper popup_hide">
+        <div class="status_icon">
+            <img src="../../resource/icon/success.png" alt="status">
+        </div>
+        <div class="status_descrip">
+            <h6>SUCCESS</h6>
+            <p>WE WILL CONTACT YOU SOON AS POSSIBLE</p>
+        </div>
+    </div>
+
+
     <div class="admin_page_header_text">
         <h3>User Settings</h3>
     </div>
@@ -20,7 +33,51 @@
                 <h4>Add New User</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
-            <div class="collapse_section_body"></div>
+            <div class="collapse_section_body">
+            <section class="upload">
+                    <div class="form_Container">
+                        <div class="form_wrappe">
+                            <div class="box">
+                                <label for="name">Name:
+                                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                                    <p class="error_txt name_error"></p>
+                            </div>
+                            <div class="box">
+                                <label for="email">Email:
+                                    <input type="text" name="email" id="email"
+                                        placeholder="example@gmail.com">
+                                    <p class="error_txt email_error"></p>
+                            </div>
+                            <div class="box">
+                                <label for="contactno">Contact No:
+                                    <input type="text" name="contactNo" id="contactNo" placeholder="Ex: 0700000000">
+                                    <p class="error_txt tel_error"></p>
+                            </div>
+                        </div>
+
+                        <div class="form_wrappe">
+                            <div class="box">
+                                <label for="email">User Name:
+                                    <input type="user_name" name="user_name" id="user_name" placeholder="Enter user name">
+                                    <p class="error_txt username_error"></p>
+                            </div>
+                            <div class="box">
+                                <label for="phone1">Password:
+                                    <input type="password" name="password" id="password" require placeholder="Enter password">
+                                    <p class="error_txt pwd_error"></p>
+                            </div>
+                            <div class="box">
+                                <label for="phone2">Confirm Password:
+                                    <input type="password" name="confirm_password" id="confirm_password" require placeholder="Re-enter password">
+                                    <p class="error_txt confirmpwd_error"></p>
+                            </div>
+                        </div>
+                        <div class="column btn-col">
+                            <button class="primary_btn add_user_save_btn">Save</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
 
         <div class="collapse_section">
@@ -28,7 +85,23 @@
                 <h4>Edit User</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
-            <div class="collapse_section_body"></div>
+            <div class="collapse_section_body">
+            <div class="table_wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>User Name</th>
+                                <th>Email</th>
+                                <th>Contact No</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="project_table_body user_edit_table_body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
 
         <div class="collapse_section">
@@ -36,7 +109,24 @@
                 <h4>Users List</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
-            <div class="collapse_section_body"></div>
+            <div class="collapse_section_body">
+            <div class="table_wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>User Name</th>
+                                <th>Email</th>
+                                <th>Contact No</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="project_table_body user_delete_table_body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </div>
         </div>
 
 
@@ -47,6 +137,7 @@
 
 
     <script src="../../script/collapse.js"></script>
+    <script src="../../script/addUserInfo.js"></script>
 
 
 

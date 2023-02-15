@@ -1,5 +1,5 @@
 const getProducts = () => {
-  fetch("../../db/getProjects.php")
+  fetch("../../db/getAllProjects.php")
     .then(function (response) {
       return response.json();
     })

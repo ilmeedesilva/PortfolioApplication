@@ -23,7 +23,7 @@ const getVision = () => {
       }
     })
     .catch((err) => {
-      console.log("err - ", err);
+      alert(err);
     });
 };
 getVision();

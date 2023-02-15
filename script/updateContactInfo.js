@@ -79,7 +79,6 @@ submit_button.addEventListener("click", (e) => {
     !phone1_error.innerHTML &&
     !phone2_error.innerHTML
   ) {
-    console.log("else");
     fetch("../../db/updatCcontactInfo.php", {
       method: "POST",
       headers: {
@@ -88,7 +87,6 @@ submit_button.addEventListener("click", (e) => {
       body: `street_no=${streetNo_input.value}&city_no=${city_input.value}&country=${country_input.value}&phone1=${phone1_input.value}&phone2=${phone2_input.value}`,
     })
       .then((response) => {
-        console.log("response - ", response);
         if (!response.ok) {
           throw new Error(response.statusText);
         }

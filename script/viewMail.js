@@ -9,8 +9,6 @@ const removeAllMessgeBody = () => {
 
 mailHeaders.forEach((item, index) => {
   item.addEventListener("click", () => {
-    // removeAllMessgeBody();
-    console.log("item - ", item);
     mailMesg[index].classList.toggle("mail_body_hidden");
   });
 });

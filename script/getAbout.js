@@ -22,7 +22,6 @@ const getAbout = () => {
           //   document.querySelector('.form_Container input[name="phone2"]').value =
           //     data[0].phone2;
         } else {
-          console.log("data - ", data);
           var project = data[i];
           var imageEncoded = project.image;
           var image =
@@ -37,7 +36,7 @@ const getAbout = () => {
       }
     })
     .catch((err) => {
-      console.log("err - ", err);
+      alert(err);
     });
 };
 getAbout();

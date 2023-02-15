@@ -26,12 +26,12 @@
 
         </div>
         <div class="page_main_img">
-            <img class="img1" src="../../resource/image/projects.jpg" title="About us" alt="About us">
+            <img class="img1" src="../../resource/image/projects.jpg" title="About Projects" alt="About Projects">
         </div>
     </div>
     <div class="main_section_wrapper">
         <div class="project section_wrapper">
-            <div class="page_top_desc mt_45 mb_45">
+            <div class="page_top_desc mt_45 mb_45 project_header_desc">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta repellat officia consequatur
                     corporis repellendus exercitationem excepturi modi culpa. A minima quas voluptate eaque, aperiam
                     molestiae autem sunt nihil at.</p>
@@ -151,12 +151,13 @@
     <?php include('../../includes/footer.php'); ?>
     <script src="../../script/navigation.js">
     </script>
-    <script src="../../script/getData.js">
+    <script src="../../script/getAllProjects.js">
     </script>
     <script src="../../script/getLogo.js"> </script>
     <script src="../../script/getContactInfo.js"></script>
     <script src="../../script/getDynamicProjects.js"></script>
     <script src="../../script/mobileNav.js"></script>
+    <script src="../../script/getProject.js"></script>
 </body>
 
 </html>

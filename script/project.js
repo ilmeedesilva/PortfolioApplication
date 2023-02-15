@@ -1,8 +1,12 @@
-const fileInput = document.querySelector('input[type="file"]');
-const label = document.querySelector(".img_uploader_wrapper");
-const fileName = document.querySelector(".img_uploader .file_name");
+const fileInput = document.querySelector(
+  '.add_new_project_img_wrapper input[type="file"]'
+);
+const label = document.querySelector(".add_new_project_img_wrapper");
+const fileName = document.querySelector(".img_uploader .add_project_file_name");
 
-const imgErrorTxt = document.querySelector(".img_uploader .error_img");
+const imgErrorTxt = document.querySelector(
+  ".img_uploader .add_project_error_img"
+);
 
 const projName = document.querySelector(
   '.form_wrapper input[name="projectName"]'
@@ -47,11 +51,7 @@ const displayPopUp = (res) => {
   }, 4000);
 };
 
-label.addEventListener("click", (e) => {
-  fileInput.click();
-});
-
-const selectedFile = (doc) => {
+const selectedAddNewProjectFile = (doc) => {
   const file = doc.files[0];
   const fileType = file.type;
   const fileSize = file.size;
@@ -70,6 +70,11 @@ const selectedFile = (doc) => {
   }
 };
 
+label.addEventListener("click", (e) => {
+  e.preventDefault();
+  fileInput.click();
+});
+
 saveBtn.addEventListener("click", (e) => {
   e.preventDefault();
   const selectedDate = new Date(projDate.value);
@@ -82,7 +87,7 @@ saveBtn.addEventListener("click", (e) => {
   }
   if (!projDate.value) {
     dateErro.innerHTML = "*project date cannont be empty";
-  } else if (selectedDate < currentDate) {
+  } else if (selectedDate > currentDate) {
     dateErro.innerHTML = "*Date cannot be a future date";
   } else {
     dateErro.innerHTML = "";
@@ -132,3 +137,15 @@ saveBtn.addEventListener("click", (e) => {
       });
   }
 });
+
+document
+  .querySelector(".clear_add_project_btn")
+  .addEventListener("click", (e) => {
+    e.preventDefault();
+
+    projName.value = "";
+    projDate.value = "";
+    projDesc.value = "";
+    fileInput.value = "";
+    document.querySelector(".add_project_file_name").innerHTML = "";
+  });

@@ -1,5 +1,5 @@
-const getVision = () => {
-  fetch("../../db/getVision.php")
+const getAbout = () => {
+  fetch("../../db/getProjects.php")
     .then(function (response) {
       return response.json();
     })
@@ -7,7 +7,7 @@ const getVision = () => {
       for (var i = 0; i < data.length; i++) {
         if (window.location.href.includes("admin")) {
           document.querySelector(
-            '.form_wrapper textarea[name="visionDesc"]'
+            '.form_wrapper textarea[name="projectDesc"]'
           ).value = data[0].description;
         } else {
           var project = data[i];
@@ -15,9 +15,10 @@ const getVision = () => {
           var image =
             '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
 
-          document.querySelector(".about_vision .about_vision_img").innerHTML =
-            image;
-          document.querySelector(".about_vision_desc p").innerHTML =
+          document.querySelector(
+            ".project_img_wrapper .page_main_img"
+          ).innerHTML = image;
+          document.querySelector(".project_header_desc p").innerHTML =
             data[0].description;
         }
       }
@@ -26,4 +27,4 @@ const getVision = () => {
       alert(err);
     });
 };
-getVision();
+getAbout();

@@ -71,12 +71,11 @@ const submit_button_about = document.querySelector(".saveAbout");
 
 const err_desc_about = document.querySelector(".desc_error_about");
 
-
 document.querySelector(".saveAbout").addEventListener("click", (e) => {
   e.preventDefault();
   const err_img_about = document.querySelector(".error_img_about");
   if (!aboutInput.value) {
-    err_img_about.innerHTML = "no image selected";
+    err_img_about.innerHTML = "No image selected";
   } else {
     err_img_about.innerHTML = "";
   }
@@ -98,7 +97,6 @@ document.querySelector(".saveAbout").addEventListener("click", (e) => {
     })
       .then((response) => response.text())
       .then((result) => {
-        console.log("result - ", result);
         displayPopUp(result);
 
         // displayPopUp(result);
@@ -109,17 +107,15 @@ document.querySelector(".saveAbout").addEventListener("click", (e) => {
         // }
       })
       .catch((error) => {
-        console.log("error - ", error);
-        console.error("Error:", error);
+        alert(error);
       });
   }
 });
 
-
 document.querySelector(".clearAbout").addEventListener("click", (e) => {
   e.preventDefault();
 
-  descAbout.value ="";
+  descAbout.value = "";
   aboutInput.value = "";
-  document.querySelector(".file_name").innerHTML="";
+  document.querySelector(".file_name").innerHTML = "";
 });

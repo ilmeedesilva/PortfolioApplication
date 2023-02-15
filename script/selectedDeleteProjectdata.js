@@ -43,8 +43,6 @@ const selectedDeleteProjectdata = (project, type) => {
 
 deleteRowDeletBtn.addEventListener("click", () => {
   if (deleteRowDeletBtn.textContent === "DELETE") {
-    console.log("delete this - ", selectedID);
-
     fetch("../../db/deleteProjectById.php", {
       method: "POST",
       body: JSON.stringify({ id: selectedID }),
@@ -52,12 +50,16 @@ deleteRowDeletBtn.addEventListener("click", () => {
       .then((response) => {
         if (response.ok) {
           alert("Project deleted successfully!");
+          getAllProjectsData();
         } else {
           alert("Failed to delete project");
+          getAllProjectsData();
         }
       })
       .catch((error) => {
         alert(error);
       });
+
+    document.querySelector(".popup_form_wrapper").classList.add("hide");
   }
 });

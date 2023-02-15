@@ -714,3 +714,31 @@ form.slider_update textarea {
   height: 150px;
   background-color: #000;
 }
+.image_wrapper {
+  position: relative;
+}
+.uploader_edit_project_error {
+  position: absolute;
+  right: 20px;
+  top: 104px;
+  width: 225px;
+  overflow: hidden;
+}
+
+@media (max-width: 1225) {
+  .admin_panel_wrapper .admin_nav {
+    width: 10%;
+  }
+
+  .admin_page_header_text {
+    width: 860px;
+    margin: 0 auto;
+  }
+  .admin_settings_wrapper {
+    width: 840px;
+  }
+
+  .collapse_section {
+    width: inherit;
+  }
+}

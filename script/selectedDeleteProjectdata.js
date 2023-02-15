@@ -16,8 +16,13 @@ const deleteRowDeletBtn = document.querySelector(
 );
 
 const selectedDeleteProjectdata = (project, type) => {
-  console.log(project);
-  console.log(type);
+  let deleteimageEncoded = project.image;
+  let deleteimage =
+    '<img src="data:image/jpeg;base64,' + deleteimageEncoded + '"/>';
+
+  document.querySelector(".image_wrapper .img_box").innerHTML = deleteimage;
+
+  console.log("delete img - ", project.image);
   document.querySelector(".popup_form_wrapper").classList.remove("hide");
 
   deleteRowIMGUploder.style.display = "none";

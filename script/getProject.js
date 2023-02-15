@@ -1,4 +1,4 @@
-const getAbout = () => {
+const getProject = () => {
   fetch("../../db/getProjects.php")
     .then(function (response) {
       return response.json();
@@ -27,4 +27,4 @@ const getAbout = () => {
       alert(err);
     });
 };
-getAbout();
+getProject();

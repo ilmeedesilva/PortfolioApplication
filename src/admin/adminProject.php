@@ -45,11 +45,11 @@
                 </div>
                 <div class="header_text_wrapper">
                     <input type="date" name="edit_project_date">
-                    <p class="error_txt"></p>
+                    <p class="error_txt edit_project_create_date"></p>
                 </div>
                 <div class="desc_text_wrapper">
                     <textarea name="edit_project_dec" cols="30" rows="10"></textarea>
-                    <p class="error_txt"></p>
+                    <p class="error_txt edit_project_dec"></p>
                 </div>
                 <div class="pop_up_edit_save_cancel_wrapper">
                     <button class="primary_btn">SAVE</button>
@@ -75,9 +75,9 @@
                         <div class="title">
                             <h5>Upload Image</h5>
                         </div>
-                        <div class="img_uploader">
-                            <label for="" class="img_uploader_wrapper project_uploader_wrapper">
-                                <input type="file" accept="image/*" class="image_uploader"
+                        <div class="img_uploader ">
+                            <label for="updateProject" class="img_uploader_wrapper project_uploader_wrapper">
+                                <input type="file" accept="image/*" name="updateProject" class="image_uploader"
                                     onchange="updateSelectedFileProject(this)">
                             </label>
                             <p class="update_project_file_name"></p>
@@ -226,9 +226,6 @@
         </div>
 
     </div>
-
-
-
 
     <script src="../../script/collapse.js"></script>
     <script src="../../script/project.js"></script>

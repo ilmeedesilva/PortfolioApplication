@@ -68,9 +68,45 @@ uploadedEditProjectImg.addEventListener("change", function () {
 });
 
 const handleEditProject = (e, project, type) => {
+  const newHeaderError = document.querySelector(
+    ".edit_project_header_error_txt"
+  );
+  const newDateError = document.querySelector(".edit_project_create_date");
+  const newDescError = document.querySelector(".edit_project_dec");
+
   e.preventDefault();
 
+  // check date is valid
+
+  const selectedDate = new Date(editRowDate.value);
+  const currentDate = new Date();
+
+  if (selectedDate > currentDate) {
+    console.log("Input date is in the future");
+    newDateError.innerHTML = "Invalid Date";
+  }
+  if (editRowDate.value) {
+    newDateError.innerHTML = "Date cannont be empty";
+  } else {
+    newDateError.innerHTML = "";
+  }
+  if (editRowHeader.value.length < 10) {
+    newHeaderError.innerHTML =
+      "Project Title must have more than 10 characters";
+  } else {
+    newHeaderError.innerHTML =
+      "Project Title must have more than 10 characters";
+  }
+  if (editRowDesc.value.length < 20) {
+    newDescError.innerHTML =
+      "Project description must have more than 20 characters";
+  } else {
+    newDescError.innerHTML = "";
+  }
+
   const editImageEncoded = project.image;
+  const file = uploadedEditProjectImg.files[0]; // add this line to retrieve the uploaded file
+
   if (file instanceof Blob) {
     const reader = new FileReader();
     console.log(file);
@@ -88,10 +124,9 @@ const handleEditProject = (e, project, type) => {
       const editDesc = editRowDesc.value.trim();
 
       if (
-        editImageEncoded === editRowIMGUploder.value ||
-        editHeader === "" ||
-        editDate === "" ||
-        editDesc === ""
+        editHeader === project.projectName.trim() &&
+        editDate === project.date &&
+        editDesc === project.descr.trim()
       ) {
         alert(
           "Please fill all fields and make sure they are different from the original data"
@@ -122,6 +157,6 @@ const handleEditProject = (e, project, type) => {
           alert("Failed to save data");
         });
     };
+    reader.readAsDataURL(file);
   }
-  reader.readAsDataURL(editRowIMGUploder.files[0]);
 };

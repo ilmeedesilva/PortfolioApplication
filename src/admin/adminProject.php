@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../css/popup.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/form.css">
+    <link rel="stylesheet" href="../../css/admin/admin.css">
     <link rel="stylesheet" href="../../css/popup_form.css">
 </head>
 
@@ -33,22 +34,31 @@
             </div>
             <div class="form_container">
                 <div class="image_wrapper">
-                    <div class="img_box prev_img">
+                    <div class="group_lb_img">
+                        <label for="">previus Image</label>
+                        <div class="img_box prev_img">
 
+                        </div>
                     </div>
-                    <input type="file" accept="image/*" class="image_uploader uploader_edit_project">
-                    <p class="error_txt uploader_edit_project_error"></p>
+                    <div class="group_lb_img">
+                        <label for="" class="group_lb_img_pos_ab">upload Image</label>
+                        <input type="file" accept="image/*" class="image_uploader uploader_edit_project">
+                        <p class="error_txt uploader_edit_project_error"></p>
+                    </div>
                 </div>
                 <div class="header_text_wrapper">
+                    <label for="">Project Title</label>
                     <input type="text" name="edit_project_header">
                     <p class="error_txt edit_project_header_error_txt"></p>
                 </div>
                 <div class="header_text_wrapper">
+                    <label for="">Project fished date</label>
                     <input type="date" name="edit_project_date">
                     <p class="error_txt edit_project_create_date"></p>
                 </div>
                 <div class="desc_text_wrapper">
-                    <textarea name="edit_project_dec" cols="30" rows="10"></textarea>
+                    <label for="">Project Description</label>
+                    <textarea name="edit_project_dec" cols="30" rows="3"></textarea>
                     <p class="error_txt edit_project_dec"></p>
                 </div>
                 <div class="pop_up_edit_save_cancel_wrapper">
@@ -102,7 +112,7 @@
                 </div>
             </div>
         </div>
-        <div class="collapse_section collapse_Section_active">
+        <div class="collapse_section">
             <div class="collapse_section_header">
                 <h4>Add New Project</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">

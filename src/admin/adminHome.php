@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Settings</title>
     <link rel="stylesheet" href="../../css/popup.css">
-    <link rel="stylesheet" href="../../css/admin/admin.css">
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/form.css">
+    <link rel="stylesheet" href="../../css/admin/admin.css">
+    <link rel="stylesheet" href="../../css/popup_form.css">
 </head>
 
 <body>
@@ -74,7 +76,7 @@
                 <section class="upload">
                     <div class="form_Container">
 
-                        <div class="form_wrappe">
+                        <div class="form_wrappe group_inputs">
                             <div class="box">
                                 <label for="address">Street No:
                                     <input type="text" name="street_no" id="address" placeholder="Ex: No. 01">
@@ -93,7 +95,7 @@
                             </div>
                         </div>
 
-                        <div class="form_wrappe">
+                        <div class="form_wrappe group_inputs">
                             <div class="box">
                                 <label for="email">Email:
                                     <input type="email" name="mail" id="email" placeholder="example@gmail.com">

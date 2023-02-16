@@ -32,9 +32,8 @@
     <div class="main_section_wrapper">
         <div class="project section_wrapper">
             <div class="page_top_desc mt_45 mb_45 project_header_desc">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta repellat officia consequatur
-                    corporis repellendus exercitationem excepturi modi culpa. A minima quas voluptate eaque, aperiam
-                    molestiae autem sunt nihil at.</p>
+                <p>
+                </p>
             </div>
             <div class="content_bottom project_item_wrapper">
                 <div class="container blog_container">

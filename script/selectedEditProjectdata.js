@@ -27,6 +27,7 @@ const selectedEditProjectdata = (project, type) => {
   editRowIMGUploder.style.display = "block";
   document.querySelector(".popup_form .image_wrapper p").style.display =
     "block";
+  document.querySelector(".group_lb_img_pos_ab").style.display = "block";
   editRowHeader.readOnly = false;
   editRowDate.readOnly = false;
   editRowDesc.readOnly = false;

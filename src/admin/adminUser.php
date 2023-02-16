@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Settings</title>
     <link rel="stylesheet" href="../../css/popup.css">
+    <link rel="stylesheet" href="../../css/form.css">
 </head>
 
 <body>
 
-<div class="status_popup_wrapper popup_hide">
+    <div class="status_popup_wrapper popup_hide">
         <div class="status_icon">
             <img src="../../resource/icon/success.png" alt="status">
         </div>
@@ -34,9 +35,9 @@
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
-            <section class="upload">
+                <section class="upload">
                     <div class="form_Container">
-                        <div class="form_wrappe">
+                        <div class="form_wrappe  group_inputs">
                             <div class="box">
                                 <label for="name">Name:
                                     <input type="text" name="name" id="name" placeholder="Enter your name">
@@ -44,8 +45,7 @@
                             </div>
                             <div class="box">
                                 <label for="email">Email:
-                                    <input type="text" name="email" id="email"
-                                        placeholder="example@gmail.com">
+                                    <input type="text" name="email" id="email" placeholder="example@gmail.com">
                                     <p class="error_txt email_error"></p>
                             </div>
                             <div class="box">
@@ -55,20 +55,23 @@
                             </div>
                         </div>
 
-                        <div class="form_wrappe">
+                        <div class="form_wrappe  group_inputs">
                             <div class="box">
                                 <label for="email">User Name:
-                                    <input type="user_name" name="user_name" id="user_name" placeholder="Enter user name">
+                                    <input type="user_name" name="user_name" id="user_name"
+                                        placeholder="Enter user name">
                                     <p class="error_txt username_error"></p>
                             </div>
                             <div class="box">
                                 <label for="phone1">Password:
-                                    <input type="password" name="password" id="password" require placeholder="Enter password">
+                                    <input type="password" name="password" id="password" require
+                                        placeholder="Enter password">
                                     <p class="error_txt pwd_error"></p>
                             </div>
                             <div class="box">
                                 <label for="phone2">Confirm Password:
-                                    <input type="password" name="confirm_password" id="confirm_password" require placeholder="Re-enter password">
+                                    <input type="password" name="confirm_password" id="confirm_password" require
+                                        placeholder="Re-enter password">
                                     <p class="error_txt confirmpwd_error"></p>
                             </div>
                         </div>
@@ -86,7 +89,7 @@
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
-            <div class="table_wrapper">
+                <div class="table_wrapper">
                     <table>
                         <thead>
                             <tr>
@@ -110,7 +113,7 @@
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
-            <div class="table_wrapper">
+                <div class="table_wrapper">
                     <table>
                         <thead>
                             <tr>
@@ -126,8 +129,8 @@
                     </table>
                 </div>
             </div>
-            </div>
         </div>
+    </div>
 
 
 

@@ -29,6 +29,7 @@ const selectedDeleteProjectdata = (project, type) => {
 
   deleteRowIMGUploder.style.display = "none";
   document.querySelector(".popup_form .image_wrapper p").style.display = "none";
+  document.querySelector(".group_lb_img_pos_ab").style.display = "none";
   deleteRowHeader.readOnly = true;
   deleteRowDate.readOnly = true;
   deleteRowDesc.readOnly = true;

@@ -13,11 +13,17 @@
     <div class="top_navigation">
         <div class="top_nav_left">
             <a href="../../src/pages/home.php">
-                <svg id="skeleton" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="10" y="10" width="180" height="5" fill="#f4eeee" id="rect1" />
-                    <rect x="15" y="20" width="180" height="5" fill="#f4eeee" id="rect2" />
-                    <rect x="10" y="30" width="180" height="5" fill="#f4eeee" id="rect3" />
-                    <rect x="20" y="40" width="180" height="5" fill="#f4eeee" id="rect4" />
+                <svg width="95" height="60">
+                    <defs>
+                        <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#f0f0f0" stop-opacity="0.1">
+                                <animate attributeName="stop-opacity" values="0.1; 0.9; 0.1" dur="2s"
+                                    repeatCount="indefinite" />
+                            </stop>
+                            <stop offset="100%" stop-color="#dddddd" stop-opacity="0.1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="0" y="0" width="95" height="60" rx="10" fill="url(#shine)" />
                 </svg>
             </a>
         </div>

@@ -8,7 +8,7 @@ $dbname = "test";
 $streetno = $_POST["street_no"];
 $city = $_POST["city_no"];
 $country = $_POST["country"];
-$email = $_POST["mail"];
+$email = $_POST["email"];
 $phone1 = $_POST["phone1"];
 $phone2 = $_POST["phone2"];
 

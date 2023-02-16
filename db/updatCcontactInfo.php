@@ -18,6 +18,22 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+$checkUpdateContactInfoTableExist = "SHOW TABLES LIKE 'updatecontactinfo'";
+$result = mysqli_query($conn, $checkUpdateContactInfoTableExist);
+if (mysqli_num_rows($result) == 0) {
+    $createUpdateContactInfoTableSql = "
+    CREATE TABLE updatecontactinfo 
+    ( id INT AUTO_INCREMENT PRIMARY KEY,
+    streetno VARCHAR(20) NOT NULL,
+    city VARCHAR(20) NOT NULL,
+    country VARCHAR(30) NOT NULL,
+    email VARCHAR(40) NOT NULL,
+    phone1 VARCHAR(30) NOT NULL,
+    phone2 VARCHAR(30) NOT NULL,
+    created_date DATE DEFAULT CURRENT_TIMESTAMP )";
+    mysqli_query($conn, $createUpdateContactInfoTableSql);
+}
+
 $sql = "INSERT INTO updatecontactinfo (streetno, city, country, email, phone1, phone2)
 VALUES ('$streetno', '$city', '$country', '$email', '$phone1', '$phone2')";
 

@@ -12,6 +12,20 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
+$checkProjectsTableExist = "SHOW TABLES LIKE 'projects'";
+$result = mysqli_query($conn, $checkProjectsTableExist);
+if (mysqli_num_rows($result) == 0) {
+    $createProjectsTableSql = "
+    CREATE TABLE projects (
+        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+        projectName VARCHAR(30) NOT NULL,
+        date DATE NOT NULL,
+        descr TEXT NOT NULL,
+        image LONGTEXT NOT NULL
+    )";
+    mysqli_query($conn, $createProjectsTableSql);
+}
+
 // Get the id from the request
 $id = $_POST['id'];
 

@@ -4,6 +4,7 @@ const getContactInfo = () => {
       return response.json();
     })
     .then(function (data) {
+      console.log(data[0]);
       for (var i = 0; i < data.length; i++) {
         if (window.location.href.includes("admin")) {
           document.querySelector(
@@ -15,6 +16,8 @@ const getContactInfo = () => {
           document.querySelector(
             '.form_Container input[name="country"]'
           ).value = data[0].country;
+          document.querySelector('.form_Container input[name="mail"]').value =
+            data[0].email;
           document.querySelector('.form_Container input[name="mail"]').value =
             data[0].email;
           document.querySelector('.form_Container input[name="phone1"]').value =

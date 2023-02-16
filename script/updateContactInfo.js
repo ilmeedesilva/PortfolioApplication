@@ -79,12 +79,13 @@ submit_button.addEventListener("click", (e) => {
     !phone1_error.innerHTML &&
     !phone2_error.innerHTML
   ) {
+    console.log("email_input.value - ", email_input.value);
     fetch("../../db/updatCcontactInfo.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
-      body: `street_no=${streetNo_input.value}&city_no=${city_input.value}&country=${country_input.value}&phone1=${phone1_input.value}&phone2=${phone2_input.value}`,
+      body: `street_no=${streetNo_input.value}&city_no=${city_input.value}&country=${country_input.value}&email=${email_input.value}&phone1=${phone1_input.value}&phone2=${phone2_input.value}`,
     })
       .then((response) => {
         if (!response.ok) {

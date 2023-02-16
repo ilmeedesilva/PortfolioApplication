@@ -70,3 +70,14 @@ textarea::placeholder {
   margin-bottom: 12px;
   color: #dd3f42 !important;
 }
+
+.group_inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.group_inputs .box {
+  flex: 1;
+  margin: 0 10px;
+}

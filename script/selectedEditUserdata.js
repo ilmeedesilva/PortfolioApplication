@@ -39,8 +39,6 @@ const handleEditUser = (e, user) => {
   const username_error = document.querySelector(".editusername_error");
 
 
-// save eketa udin link ekak tiyenne reset password kiyala. ha
-
   e.preventDefault();
 
   // Name
@@ -89,7 +87,7 @@ const handleEditUser = (e, user) => {
   const editemail = editEmail.value.trim();
 
   if (
-    editname === user.name.trim() &&//trim kiyane mokkak da dannwa da? naaa meh ahanna hitiyeh/ eken whitspaces ain karanwa ethakota? eh mokatada use karanneh
+    editname === user.name.trim() &&
     editusername === user.user_name.trim() &&
     editcontactno === user.contactNo.trim() &&
     editemail === user.email.trim()

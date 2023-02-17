@@ -22,8 +22,6 @@ if (isset($data['id'])) {
 }
 
 
-
-
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
@@ -31,7 +29,7 @@ if (!$conn) {
 
 
 
-$sql = $conn->prepare("UPDATE adduserinfo SEt uname='$name', email='$email', contactno='$contactno', username='$username' WHERE id = ?");
+$sql = $conn->prepare("UPDATE adduserinfo SET uname='$name', email='$email', contactno='$contactno', username='$username' WHERE id = ?");
 $sql->bind_param("i", $id);
 if ($sql->execute()) {
     echo json_encode(array('success' => true));

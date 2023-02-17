@@ -51,101 +51,101 @@ const displayPopUp = (res) => {
   }, 4000);
 };
 
-const selectedAddNewProjectFile = (doc) => {
-  const file = doc.files[0];
-  const fileType = file.type;
-  const fileSize = file.size;
-  const filesizeinMB = (file.size / 1000).toFixed(2);
-  fileName.innerHTML = `${file.name}, size: ${filesizeinMB} KB`;
-  if (fileType) {
-    imgErrorTxt.innerHTML = "*Must include an image";
-  }
-  if (fileType !== "image/jpeg" && fileType !== "image/png") {
-    imgErrorTxt.innerHTML = "*Invalid file type, only jpeg and png are allowed";
-    return;
-  } else if (fileSize > 1000000) {
-    imgErrorTxt.innerHTML = "*File size must be less than 1MB";
-  } else {
-    imgErrorTxt.innerHTML = "";
-  }
-};
+// const selectedAddNewProjectFile = (doc) => {
+//   const file = doc.files[0];
+//   const fileType = file.type;
+//   const fileSize = file.size;
+//   const filesizeinMB = (file.size / 1000).toFixed(2);
+//   fileName.innerHTML = `${file.name}, size: ${filesizeinMB} KB`;
+//   if (fileType) {
+//     imgErrorTxt.innerHTML = "*Must include an image";
+//   }
+//   if (fileType !== "image/jpeg" && fileType !== "image/png") {
+//     imgErrorTxt.innerHTML = "*Invalid file type, only jpeg and png are allowed";
+//     return;
+//   } else if (fileSize > 1000000) {
+//     imgErrorTxt.innerHTML = "*File size must be less than 1MB";
+//   } else {
+//     imgErrorTxt.innerHTML = "";
+//   }
+// };
 
-label.addEventListener("click", (e) => {
-  e.preventDefault();
-  fileInput.click();
-});
+// label.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   fileInput.click();
+// });
 
-saveBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  const selectedDate = new Date(projDate.value);
-  const currentDate = new Date();
+// saveBtn.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   const selectedDate = new Date(projDate.value);
+//   const currentDate = new Date();
 
-  if (!projName.value) {
-    projNameErro.innerHTML = "*project name cannont be empty";
-  } else {
-    projNameErro.innerHTML = "";
-  }
-  if (!projDate.value) {
-    dateErro.innerHTML = "*project date cannont be empty";
-  } else if (selectedDate > currentDate) {
-    dateErro.innerHTML = "*Date cannot be a future date";
-  } else {
-    dateErro.innerHTML = "";
-  }
-  if (!projDesc.value) {
-    descNameErro.innerHTML = "*Description cannot be empty";
-  } else if (projDesc.value < 10 || projDesc.value > 500) {
-    descNameErro.innerHTML =
-      "*Description should contain more than 10 characters and less than 500 characters";
-  } else {
-    descNameErro.innerHTML = "";
-  }
-  if (!fileInput.value) {
-    imgErrorTxt.innerHTML = "*Must include an image";
-  } else {
-    imgErrorTxt.innerHTML = "";
-  }
+//   if (!projName.value) {
+//     projNameErro.innerHTML = "*project name cannont be empty";
+//   } else {
+//     projNameErro.innerHTML = "";
+//   }
+//   if (!projDate.value) {
+//     dateErro.innerHTML = "*project date cannont be empty";
+//   } else if (selectedDate > currentDate) {
+//     dateErro.innerHTML = "*Date cannot be a future date";
+//   } else {
+//     dateErro.innerHTML = "";
+//   }
+//   if (!projDesc.value) {
+//     descNameErro.innerHTML = "*Description cannot be empty";
+//   } else if (projDesc.value < 10 || projDesc.value > 500) {
+//     descNameErro.innerHTML =
+//       "*Description should contain more than 10 characters and less than 500 characters";
+//   } else {
+//     descNameErro.innerHTML = "";
+//   }
+//   if (!fileInput.value) {
+//     imgErrorTxt.innerHTML = "*Must include an image";
+//   } else {
+//     imgErrorTxt.innerHTML = "";
+//   }
 
-  if (
-    !projNameErro.innerHTML &&
-    !dateErro.innerHTML &&
-    !descNameErro.innerHTML &&
-    !imgErrorTxt.innerHTML
-  ) {
-    const selectedFile = fileInput.files[0];
-    const formData = new FormData();
-    formData.append("projectName", projName.value);
-    formData.append("date", projDate.value);
-    formData.append("descr", projDesc.value);
-    formData.append("image", selectedFile);
+//   if (
+//     !projNameErro.innerHTML &&
+//     !dateErro.innerHTML &&
+//     !descNameErro.innerHTML &&
+//     !imgErrorTxt.innerHTML
+//   ) {
+//     const selectedFile = fileInput.files[0];
+//     const formData = new FormData();
+//     formData.append("projectName", projName.value);
+//     formData.append("date", projDate.value);
+//     formData.append("descr", projDesc.value);
+//     formData.append("image", selectedFile);
 
-    fetch("../../db/addProject.php", {
-      method: "POST",
-      body: formData,
-    })
-      .then((response) => response.text())
-      .then((result) => {
-        displayPopUp(result);
-        // if (result.includes("success")) {
+//     fetch("../../db/addProject.php", {
+//       method: "POST",
+//       body: formData,
+//     })
+//       .then((response) => response.text())
+//       .then((result) => {
+//         displayPopUp(result);
+//         // if (result.includes("success")) {
 
-        // } else {
-        //   alert("Failed to save data");
-        // }
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-  }
-});
+//         // } else {
+//         //   alert("Failed to save data");
+//         // }
+//       })
+//       .catch((error) => {
+//         console.error("Error:", error);
+//       });
+//   }
+// });
 
-document
-  .querySelector(".clear_add_project_btn")
-  .addEventListener("click", (e) => {
-    e.preventDefault();
+// document
+//   .querySelector(".clear_add_project_btn")
+//   .addEventListener("click", (e) => {
+//     e.preventDefault();
 
-    projName.value = "";
-    projDate.value = "";
-    projDesc.value = "";
-    fileInput.value = "";
-    document.querySelector(".add_project_file_name").innerHTML = "";
-  });
+//     projName.value = "";
+//     projDate.value = "";
+//     projDesc.value = "";
+//     fileInput.value = "";
+//     document.querySelector(".add_project_file_name").innerHTML = "";
+//   });

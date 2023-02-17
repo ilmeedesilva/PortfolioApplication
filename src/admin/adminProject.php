@@ -88,34 +88,32 @@
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
-                <div class="add_project_wrapper">
-                    <div class="img_upload_container">
-                        <div class="title">
-                            <h5>Upload Image</h5>
+                <div class="project_crud_wrapper">
+                    <div class="selected_cover_img_view">
+                    </div>
+                    <div class="project_img_wrapper">
+                        <div class="img_upload_header_txt">
+                            <p>Upload Cover Image</p>
                         </div>
-                        <div class="img_uploader ">
-                            <label for="updateProject" class="img_uploader_wrapper project_uploader_wrapper">
-                                <input type="file" accept="image/*" name="updateProject" class="image_uploader"
-                                    onchange="updateSelectedFileProject(this)">
+                        <div class="image_uploader_wrapper">
+                            <label for="image_upload_icon">
+                                <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
                             </label>
-                            <p class="update_project_file_name"></p>
-                            <p class="error_txt error_img_project"></p>
-                            <p>Click here to upload</p>
+                            <input type="file" id="cover_image-upload" name="cover_image-upload" accept="image/*">
+                            <p>Click the icon to upload image</p>
+                            <p class="error_txt add_new_project_cover_img_err"></p>
                         </div>
                     </div>
-                    <div class="form_wrapper">
-                        <form action="">
-                            <div class="input_item">
-                                <label for="descr">Description</label><br>
-                                <textarea name="projectDesc" cols="50" rows="5"
-                                    placeholder="Type your description here..."></textarea>
-                                <p class="error_txt desc_error_project"></p>
-                            </div>
-                            <div class="form_control">
-                                <button class="saveProject primary_btn">Save</button>
-                                <button class="clear_btn clear_update_project_btn">Clear</button>
-                            </div>
-                        </form>
+
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="project_page_description">Description</label>
+                            <textarea id="project_page_description" name="project_page_description"></textarea>
+                            <p class="error_txt update_project_desc_error"></p>
+                        </div>
+                    </div>
+                    <div class="save-container">
+                        <button id="project_page_save" class="primary_btn">Save</button>
                     </div>
                 </div>
             </div>
@@ -128,7 +126,6 @@
             <div class="collapse_section_body">
                 <div class="project_crud_wrapper">
                     <div class="selected_img_view">
-
                     </div>
                     <div class="project_img_wrapper">
                         <div class="img_upload_header_txt">
@@ -173,7 +170,7 @@
 
         <div class="collapse_section">
             <div class="collapse_section_header">
-                <h4>Update Project</h4>
+                <h4>Update Projects</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
@@ -196,7 +193,7 @@
 
         <div class="collapse_section">
             <div class="collapse_section_header">
-                <h4>Delete Project</h4>
+                <h4>Delete Projects</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
@@ -245,10 +242,11 @@
     </div>
 
     <script src="../../script/collapse.js"></script>
-    <!-- <script src="../../script/project.js"></script> -->
+    <script src="../../script/project.js"></script>
     <script src="../../script/addNewProject.js"></script>
+    <script src="../../script/updateProjectPage.js"></script>
     <script src="../../script/popup_form.js"></script>
-    <script src="../../script/updateProject.js"></script>
+    <!-- <script src="../../script/updateProject.js"></script> -->
     <script src="../../script/getProject.js"></script>
     <script src="../../script/getAllProjectsData.js"></script>
     <script src="../../script/selectedDeleteProjectdata.js"></script>

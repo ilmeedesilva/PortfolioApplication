@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Settings</title>
     <link rel="stylesheet" href="../../css/popup.css">
-    <link rel="stylesheet" href="../../css/admin/admin.css">
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/form.css">
+    <link rel="stylesheet" href="../../css/admin/admin.css">
+    <link rel="stylesheet" href="../../css/popup_form.css">
 </head>
 
 <body>
@@ -28,6 +30,7 @@
     </div>
     <!--Update Company Logo-->
     <div class="admin_settings_wrapper">
+
 
         <div class="collapse_section collapse_Section_active">
             <div class="collapse_section_header">
@@ -52,6 +55,8 @@
                                     <p>Click here to upload</p>
                                 </div>
 
+
+
                             </div>
 
                             <div class="column col_2">
@@ -73,27 +78,34 @@
             <div class="collapse_section_body">
                 <section class="upload">
                     <div class="form_Container">
-
-                        <div class="form_wrappe">
-                            <div class="box">
+                        <div class="form_wrappe group_inputs">
+                            <div class="box short_input25">
                                 <label for="address">Street No:
                                     <input type="text" name="street_no" id="address" placeholder="Ex: No. 01">
                                     <p class="error_txt street_no_error"></p>
                             </div>
+                        </div>
+                        <div class="form_wrappe group_inputs">
                             <div class="box">
-                                <label for="address">Street & City:
-                                    <input type="text" name="city_no" id="address"
-                                        placeholder="Ex: Example Road, Colombo 01">
+                                <label for="address">Street:
+                                    <input type="text" name="street" id="address" placeholder="Ex: Example Road">
+                                    <p class="error_txt street_error"></p>
+                            </div>
+                            <div class="box">
+                                <label for="address">City:
+                                    <input type="text" name="city_no" id="address" placeholder="Ex: Colombo 01">
                                     <p class="error_txt city_error"></p>
                             </div>
+
                             <div class="box">
                                 <label for="address">Country:
                                     <input type="text" name="country" id="address" placeholder="Ex: Sri Lanka">
                                     <p class="error_txt country_error"></p>
+
                             </div>
                         </div>
 
-                        <div class="form_wrappe">
+                        <div class="form_wrappe group_inputs">
                             <div class="box">
                                 <label for="email">Email:
                                     <input type="email" name="mail" id="email" placeholder="example@gmail.com">
@@ -110,6 +122,23 @@
                                     <p class="error_txt phone2_error"></p>
                             </div>
                         </div>
+
+                        <div class="form_wrappe group_inputs">
+                            <div class="box">
+                                <label for="appointment">Opening Hours:</label>
+                                <input type="time" id="appointment" name="openinig_hrs" min="09:00" max="18:00">
+                                <p class="error_txt opening_hrs_error"></p>
+                            </div>
+                            <div class="box">
+                                <label for="appointment">Closing Hours:</label>
+                                <input type="time" id="appointment" name="closing_hrs" min="09:00" max="18:00">
+                                <p class="error_txt closing_hrs_error"></p>
+                            </div>
+                        </div>
+
+
+
+
                         <div class="column btn-col">
                             <button class="primary_btn contact_info_save_btn">Save</button>
                             <!-- <button class="primary_btn contact_info_save_btn">Save</button> -->

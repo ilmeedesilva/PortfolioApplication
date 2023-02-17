@@ -61,7 +61,7 @@
       <div class="row">
         <div class="col-lg-4 col-md-12 col-12">
           <div class="about-img">
-            <svg id="skeleton" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- <svg id="skeleton" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <rect x="10" y="10" width="180" height="5" fill="#f4eeee" id="rect1" />
               <rect x="15" y="20" width="180" height="5" fill="#f4eeee" id="rect2" />
               <rect x="10" y="30" width="180" height="5" fill="#f4eeee" id="rect3" />
@@ -74,7 +74,30 @@
               <rect x="10" y="100" width="180" height="5" fill="#f4eeee" id="rect10" />
               <rect x="50" y="110" width="180" height="5" fill="#f4eeee" id="rect11" />
               <rect x="5" y="120" width="180" height="5" fill="#f4eeee" id="rect12" />
+            </svg> -->
+            <!-- <svg viewBox="0 0 200 180">
+              <rect x="0" y="0" width="200" height="180" fill="#f2f2f2" />
+              <rect x="0" y="0" width="50" height="180" fill="#f0f0f0">
+                <animate attributeName="x" from="-20" to="200" dur="1s" repeatCount="indefinite" />
+              </rect>
+              <rect x="0" y="0" width="50" height="180" fill="#f0f0f0">
+                <animate attributeName="x" from="-15" to="200" dur="1.2s" repeatCount="indefinite" />
+              </rect>
+
+            </svg> -->
+
+            <svg width="400" height="300">
+              <defs>
+                <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#f0f0f0" stop-opacity="0.1">
+                    <animate attributeName="stop-opacity" values="0.1; 0.9; 0.1" dur="2s" repeatCount="indefinite" />
+                  </stop>
+                  <stop offset="100%" stop-color="#dddddd" stop-opacity="0.1" />
+                </linearGradient>
+              </defs>
+              <rect x="0" y="0" width="400" height="300" rx="10" fill="url(#shine)" />
             </svg>
+
             <!-- <img src="../../resource\image\img2.jpeg" alt="about-section-img" class="img-fluid"> -->
           </div>
         </div>

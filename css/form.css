@@ -63,10 +63,27 @@ textarea::placeholder {
   color: #b5bddb;
 }
 
+.short_input25 input {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
 .error_txt {
   font-family: calibri;
   font-size: 14px;
   text-align: left;
   margin-bottom: 12px;
   color: #dd3f42 !important;
+}
+
+.group_inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.group_inputs .box {
+  flex: 1;
+  margin: 0 10px;
 }

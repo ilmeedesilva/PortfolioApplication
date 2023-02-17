@@ -719,26 +719,60 @@ form.slider_update textarea {
 }
 .uploader_edit_project_error {
   position: absolute;
-  right: 20px;
-  top: 104px;
+  right: 15px;
+  top: 60px;
   width: 225px;
   overflow: hidden;
 }
 
-@media (max-width: 1225) {
-  .admin_panel_wrapper .admin_nav {
-    width: 10%;
-  }
+/* prject add */
 
-  .admin_page_header_text {
-    width: 860px;
-    margin: 0 auto;
-  }
-  .admin_settings_wrapper {
-    width: 840px;
-  }
+.project_crud_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .collapse_section {
-    width: inherit;
-  }
+.project_crud_wrapper input[type="file"] {
+  position: relative !important;
+}
+
+.project_img_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image_uploader_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img_upload_header_txt p {
+  color: #212121;
+  font-weight: 700;
+}
+
+.image_uploader_wrapper p {
+  color: #212121;
+}
+.image_upload_icon {
+  cursor: pointer;
+  transition: 500ms all ease-in;
+}
+
+.image_upload_icon:hover {
+  transform: scale(1.2);
+}
+
+.selected_img_view,
+.selected_cover_img_view {
+  display: none;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
 }

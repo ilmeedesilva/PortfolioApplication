@@ -27,6 +27,7 @@ const selectedEditProjectdata = (project, type) => {
   editRowIMGUploder.style.display = "block";
   document.querySelector(".popup_form .image_wrapper p").style.display =
     "block";
+  document.querySelector(".group_lb_img_pos_ab").style.display = "block";
   editRowHeader.readOnly = false;
   editRowDate.readOnly = false;
   editRowDesc.readOnly = false;
@@ -66,15 +67,15 @@ uploadedEditProjectImg.addEventListener("change", function () {
   }
   uploadedEditProjectImgError.innerHTML = "";
 });
-
+console.log("editRowHeader.value.length - ", editRowHeader.value.length);
 const handleEditProject = (e, project, type) => {
+  e.preventDefault();
+
   const newHeaderError = document.querySelector(
     ".edit_project_header_error_txt"
   );
   const newDateError = document.querySelector(".edit_project_create_date");
   const newDescError = document.querySelector(".edit_project_dec");
-
-  e.preventDefault();
 
   // check date is valid
 
@@ -90,12 +91,13 @@ const handleEditProject = (e, project, type) => {
   } else {
     newDateError.innerHTML = "";
   }
-  if (editRowHeader.value.length < 10) {
+  if (!editRowHeader.value) {
+    newHeaderError.innerHTML = "Project Title cannot be empty";
+  } else if (editRowHeader.value.length < 10) {
     newHeaderError.innerHTML =
       "Project Title must have more than 10 characters";
   } else {
-    newHeaderError.innerHTML =
-      "Project Title must have more than 10 characters";
+    newHeaderError.innerHTML = "";
   }
   if (editRowDesc.value.length < 20) {
     newDescError.innerHTML =

@@ -8,6 +8,7 @@
     <title>View Mail</title>
     <link rel="stylesheet" href="../../css/admin/admin.css">
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/form.css">
 </head>
 
 <body>

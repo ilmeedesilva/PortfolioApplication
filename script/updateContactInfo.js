@@ -17,6 +17,11 @@ const phone1_error = document.querySelector(".phone1_error");
 const phone2_input = document.querySelector('input[name="phone2"]');
 const phone2_error = document.querySelector(".phone2_error");
 
+const openingHours = document.querySelector('input[name="openinig_hrs"]');
+const closingHours = document.querySelector('input[name="closing_hrs"]');
+const openingHoursError = document.querySelector(".opening_hrs_error");
+const closingHoursError = document.querySelector(".closing_hrs_error");
+
 const submit_button = document.querySelector(".contact_info_save_btn");
 
 submit_button.addEventListener("click", (e) => {
@@ -73,11 +78,29 @@ submit_button.addEventListener("click", (e) => {
   }
 
   if (
+    (openingHours.value && !closingHours.value) ||
+    (!openingHours.value && closingHours.value)
+  ) {
+    openingHoursError.innerHTML =
+      "Please select both opening and closing hours";
+    closingHoursError.innerHTML =
+      "Please select both opening and closing hours";
+  } else if (openingHours.value >= closingHours.value) {
+    openingHoursError.innerHTML = "Opening hours must be before closing hours";
+    closingHoursError.innerHTML = "Closing hours must be after opening hours";
+  } else {
+    openingHoursError.innerHTML = "";
+    closingHoursError.innerHTML = "";
+  }
+
+  if (
     !streetNo_error.innerHTML &&
     !city_error.innerHTML &&
     !country_error.innerHTML &&
     !phone1_error.innerHTML &&
-    !phone2_error.innerHTML
+    !phone2_error.innerHTML &&
+    !openingHoursError.innerHTML &&
+    !closingHoursError.innerHTML
   ) {
     console.log("email_input.value - ", email_input.value);
     fetch("../../db/updatCcontactInfo.php", {

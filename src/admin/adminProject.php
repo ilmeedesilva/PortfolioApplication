@@ -74,6 +74,14 @@
     </div>
     <div class="admin_settings_wrapper">
 
+
+
+
+
+
+
+
+
         <div class="collapse_section collapse_Section_active">
             <div class="collapse_section_header">
                 <h4>Update project page</h4>
@@ -118,44 +126,43 @@
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
-                <div class="add_project_wrapper">
-                    <div class="img_upload_container">
-                        <div class="title">
-                            <h5>Upload Image</h5>
+                <div class="project_crud_wrapper">
+                    <div class="selected_img_view">
+
+                    </div>
+                    <div class="project_img_wrapper">
+                        <div class="img_upload_header_txt">
+                            <p>Upload Image</p>
                         </div>
-                        <div class="img_uploader">
-                            <label for="" class="img_uploader_wrapper add_new_project_img_wrapper">
-                                <input type="file" accept="image/*" class="image_uploader"
-                                    onchange="selectedAddNewProjectFile(this)">
+                        <div class="image_uploader_wrapper">
+                            <label for="image_upload_icon">
+                                <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
                             </label>
-                            <p class="add_project_file_name"></p>
-                            <p class="error_txt add_project_error_img"></p>
-                            <p>Click here to upload</p>
+                            <input type="file" id="image-upload" name="image-upload" accept="image/*">
+                            <p>Click the icon to upload image</p>
+                            <p class="error_txt add_new_project_img_err"></p>
                         </div>
                     </div>
-                    <div class="form_wrapper">
-                        <form action="">
-                            <div class="input_item">
-                                <label for="projectName">Project Name</label><br>
-                                <input type="text" name="projectName" placeholder="Enter Project Name">
-                                <p class="error_txt proj_error"></p>
-                            </div>
-                            <div class="input_item">
-                                <label for="date">Project Completed Date</label><br>
-                                <input type="date" name="date">
-                                <p class="error_txt date_error"></p>
-                            </div>
-                            <div class="input_item">
-                                <label for="descr">Description</label><br>
-                                <textarea name="descr" cols="50" rows="5"
-                                    placeholder="Type your description here..."></textarea>
-                                <p class="error_txt desc_error"></p>
-                            </div>
-                            <div class="form_control">
-                                <button class="save_btn">Save</button>
-                                <button class="clear_btn clear_add_project_btn">Clear</button>
-                            </div>
-                        </form>
+
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="project-name">Project Name</label>
+                            <input type="text" id="project-name">
+                            <p class="error_txt"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="finish-date">Finish Date</label>
+                            <input type="date" id="finish-date">
+                            <p class="error_txt"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="description"></textarea>
+                            <p class="error_txt"></p>
+                        </div>
+                    </div>
+                    <div class="save-container">
+                        <button id="save" class="primary_btn">Save</button>
                     </div>
                 </div>
             </div>
@@ -238,7 +245,8 @@
     </div>
 
     <script src="../../script/collapse.js"></script>
-    <script src="../../script/project.js"></script>
+    <!-- <script src="../../script/project.js"></script> -->
+    <script src="../../script/addNewProject.js"></script>
     <script src="../../script/popup_form.js"></script>
     <script src="../../script/updateProject.js"></script>
     <script src="../../script/getProject.js"></script>

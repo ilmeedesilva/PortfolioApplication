@@ -767,7 +767,8 @@ form.slider_update textarea {
   transform: scale(1.2);
 }
 
-.selected_img_view {
+.selected_img_view,
+.selected_cover_img_view {
   display: none;
   width: 100px;
   height: 100px;

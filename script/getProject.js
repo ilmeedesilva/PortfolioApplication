@@ -6,8 +6,19 @@ const getProject = () => {
     .then(function (data) {
       for (var i = 0; i < data.length; i++) {
         if (window.location.href.includes("admin")) {
+          if (data[0].image) {
+            document.querySelector(".selected_cover_img_view").style.display =
+              "block";
+            document.querySelector(
+              ".selected_cover_img_view"
+            ).style.backgroundImage = `url('data:image/jpeg;base64,${data[0].image}')`;
+          } else {
+            document.querySelector(".selected_cover_img_view").style.display =
+              "none";
+            console.error("Invalid image data:", data[0].image);
+          }
           document.querySelector(
-            '.form_wrapper textarea[name="projectDesc"]'
+            '.form-container textarea[name="project_page_description"]'
           ).value = data[0].description;
         } else {
           var project = data[i];

@@ -89,8 +89,8 @@ submit_button.addEventListener("click", (e) => {
     if (!username_input.value) {
         username_error.innerHTML = "*User name cannot be empty";
     } else {
-        if(username_input.value.length<4 || username_input.value.length>8){
-            username_error.innerHTML = "*User name must contain 4 to 8 charcters";
+        if(username_input.value.length<4 || username_input.value.length>15){
+            username_error.innerHTML = "*User name must contain 4 to 15 charcters";
         }
         else{
             username_error.innerHTML = "";

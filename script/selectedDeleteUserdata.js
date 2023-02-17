@@ -22,7 +22,7 @@ let selectedID;
 
 const selectedDeleteUserdata = (user, type) => {
   selectedID = user.id;
-console.log("delete clicked - ", selectedID);
+  
   document.querySelector(".popup_form_wrapper").classList.remove("hide");
 
 

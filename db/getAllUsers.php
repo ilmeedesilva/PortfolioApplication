@@ -9,7 +9,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM updatecontactinfo  order by id desc limit 1";
+$sql = "SELECT * FROM adduserinfo";
 $result = mysqli_query($conn, $sql);
 
 $data = array();
@@ -21,6 +21,7 @@ if (mysqli_num_rows($result) > 0) {
 
 header('Content-Type: application/json');
 echo json_encode($data);
+
 
 mysqli_close($conn);
 ?>

@@ -75,7 +75,7 @@
               <rect x="50" y="110" width="180" height="5" fill="#f4eeee" id="rect11" />
               <rect x="5" y="120" width="180" height="5" fill="#f4eeee" id="rect12" />
             </svg> -->
-            <svg viewBox="0 0 200 180">
+            <!-- <svg viewBox="0 0 200 180">
               <rect x="0" y="0" width="200" height="180" fill="#f2f2f2" />
               <rect x="0" y="0" width="50" height="180" fill="#f0f0f0">
                 <animate attributeName="x" from="-20" to="200" dur="1s" repeatCount="indefinite" />
@@ -84,7 +84,20 @@
                 <animate attributeName="x" from="-15" to="200" dur="1.2s" repeatCount="indefinite" />
               </rect>
 
+            </svg> -->
+
+            <svg width="400" height="300">
+              <defs>
+                <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#f0f0f0" stop-opacity="0.1">
+                    <animate attributeName="stop-opacity" values="0.1; 0.9; 0.1" dur="2s" repeatCount="indefinite" />
+                  </stop>
+                  <stop offset="100%" stop-color="#dddddd" stop-opacity="0.1" />
+                </linearGradient>
+              </defs>
+              <rect x="0" y="0" width="400" height="300" rx="10" fill="url(#shine)" />
             </svg>
+
             <!-- <img src="../../resource\image\img2.jpeg" alt="about-section-img" class="img-fluid"> -->
           </div>
         </div>
@@ -249,7 +262,7 @@
   <script src="../../script/navigation.js"> </script>
   <script src="../../script/mobileNav.js"></script>
   <script src="../../script/getLogo.js"> </script>
-  <script src="../../script/getContactInfo.js"></script>
+  <!-- <script src="../../script/getContactInfo.js"></script> -->
   <!-- <script src="../../script/loaders.js"></script> -->
 </body>
 

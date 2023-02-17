@@ -15,31 +15,30 @@ const editRowDeletBtn = document.querySelector(
   ".popup_form .pop_up_edit_save_cancel_wrapper .primary_btn"
 );
 
-const selectedEditProjectdata = (project, type) => {
-  let editimageEncoded = project.image;
+const selectedEditProjectdata = (project, type) => {// me tiyene ara api anith js file eke click event eke call karapu function eke
+  let editimageEncoded = project.image;//project kiyala parameter eke iyene oya btn eke click kara welawe loop eke tibba row eke values tika/ img eke save karanan baha ne db eke images widiyata. eke base69 form eketa save wenne eka api encoded karala aphu image ekak karanna tama oya logic eke gahala tiyenne
   let editimage =
     '<img src="data:image/jpeg;base64,' + editimageEncoded + '"/>';
 
-  document.querySelector(".image_wrapper .img_box").innerHTML = editimage;
+  document.querySelector(".image_wrapper .img_box").innerHTML = editimage;//me eke gihin api set karala image eke set karanna one element eketa
 
   document.querySelector(".popup_form_wrapper").classList.remove("hide");
 
   editRowIMGUploder.style.display = "block";
   document.querySelector(".popup_form .image_wrapper p").style.display =
     "block";
-  document.querySelector(".group_lb_img_pos_ab").style.display = "block";
-  editRowHeader.readOnly = false;
+  editRowHeader.readOnly = false;//me samahra fields readOnly false karala tiyeen api delete eke dith me modal ekamai penna ne eke edit karanan baha ne fields. dan edit ekedi ewa readonly tiyana one habai eke read only tiyala meketa eddit meke edit karanan baha ne. etha kota edit btn eke click aradi ara read only thibba fields false karanwa
   editRowDate.readOnly = false;
   editRowDesc.readOnly = false;
 
-  editRowHeader.value = project.projectName;
+  editRowHeader.value = project.projectName;// me input fields walata value assign karal ara project eken apu
   editRowDate.value = project.date;
   editRowDesc.value = project.descr;
 
-  editRowDeletBtn.classList.remove("delete_btn");
-  editRowDeletBtn.innerHTML = "SAVE";
+  editRowDeletBtn.classList.remove("delete_btn");//save delete btn dekatama tiyane 1 btn ekai man delete eke di delete_btn kiyal class ekak add kara eke styling karanna one nisa eke meke di rewmove kara
+  editRowDeletBtn.innerHTML = "SAVE";// delete eke di save eke deete kiyala tiyene eke meke maru kara
   editRowDeletBtn.addEventListener("click", (e) =>
-    handleEditProject(e, project, type)
+    handleEditProject(e, project, type)// me tiyene a btn eke event eke 
   );
 };
 
@@ -68,7 +67,7 @@ uploadedEditProjectImg.addEventListener("change", function () {
   uploadedEditProjectImgError.innerHTML = "";
 });
 
-const handleEditProject = (e, project, type) => {
+const handleEditProject = (e, project, type) => {//edit eke di karana validation me tiyene uda save btn eke click karama
   const newHeaderError = document.querySelector(
     ".edit_project_header_error_txt"
   );
@@ -79,6 +78,8 @@ const handleEditProject = (e, project, type) => {
 
   // check date is valid
 
+
+  // mata mongal wageh :(, meeting noda kiyana amarui. raata kiyla denawada. mn krnnm ethakota. mata therenneh na meh js ekeh kiyapuwa :( earphone wath nath da? baaaaa ahnna baa. meh yka enawa saren sarehh!!!!! ha ehenam . man giya bye
   const selectedDate = new Date(editRowDate.value);
   const currentDate = new Date();
 

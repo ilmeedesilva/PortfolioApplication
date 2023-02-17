@@ -724,7 +724,29 @@ form.slider_update textarea {
   width: 225px;
   overflow: hidden;
 }
-
+.btn_wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.btn_wrapper .editt_btn {
+  background-image: url("../../resource/icon/edit.png");
+  background-color: white;
+  background-size: cover;
+  margin-right: 30px;
+  border: none;
+  height: 20px;
+  width: 20px;
+}
+.btn_wrapper .deletee_btn {
+  background-image: url("../../resource/icon/bin.png");
+  background-color: white;
+  background-size: cover;
+  margin-right: 30px;
+  border: none;
+  height: 20px;
+  width: 20px;
+}
 /* prject add */
 
 .project_crud_wrapper {

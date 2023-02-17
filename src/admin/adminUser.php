@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Settings</title>
     <link rel="stylesheet" href="../../css/popup.css">
+    <link rel="stylesheet" href="../../css/admin/admin.css">
     <link rel="stylesheet" href="../../css/form.css">
+    <link rel="stylesheet" href="../../css/popup_form.css">
 </head>
 
 <body>
@@ -18,10 +20,57 @@
         </div>
         <div class="status_descrip">
             <h6>SUCCESS</h6>
-            <p>WE WILL CONTACT YOU SOON AS POSSIBLE</p>
+            <p>SUCCESSFULLY ADDED</p>
         </div>
     </div>
 
+    <div class="popup_form_wrapper hide">
+        <div class="gray_cover"></div>
+        <div class="popup_form">
+            <div class="close_btn">
+                <img src="../../resource/icon/close.png" alt="close_btn">
+            </div>
+            <section class="upload">
+                <div class="form_Container">
+                    <div class="form_wrappe  group_inputs">
+                        <div class="box">
+                            <label for="name">Name:
+                                <input type="text" name="edit_name" id="editname" placeholder="Enter your name">
+                                <p class="error_txt editname_error"></p>
+                        </div>
+                        <div class="box">
+                            <label for="phone1">User Name:
+                                <input type="text" name="edit_user_name" id="editusername" require
+                                    placeholder="Enter user name">
+                                <p class="error_txt editusername_error"></p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="form_wrappe  group_inputs">
+                        <div class="box">
+                            <label for="email">Contact No:
+                                <input type="text" name="edit_contactNo" id="editcontactNo"
+                                    placeholder="Ex: 0700000000">
+                                <p class="error_txt editcontactNo_error"></p>
+                                <a href="#">Reset Password</a>
+                        </div>
+                        <div class="box">
+                            <label for="email">Email:
+                                <input type="text" name="edit_email" id="editemail" placeholder="example@gmail.com">
+                                <p class="error_txt editemail_error"></p>
+                                
+                        </div>
+                    </div>
+                    <div class="pop_up_edit_save_cancel_wrapper">
+                        
+                        <button class="primary_btn">SAVE</button>
+                        <button class="cancel_btn">CANCEL</button>
+                </div>
+            </section>
+        </div>
+    </div>
 
     <div class="admin_page_header_text">
         <h3>User Settings</h3>
@@ -43,6 +92,7 @@
                                     <input type="text" name="name" id="name" placeholder="Enter your name">
                                     <p class="error_txt name_error"></p>
                             </div>
+
                             <div class="box">
                                 <label for="email">Email:
                                     <input type="text" name="email" id="email" placeholder="example@gmail.com">
@@ -107,6 +157,8 @@
             </div>
         </div>
 
+
+
         <div class="collapse_section">
             <div class="collapse_section_header">
                 <h4>Users List</h4>
@@ -121,7 +173,6 @@
                                 <th>User Name</th>
                                 <th>Email</th>
                                 <th>Contact No</th>
-                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody class="project_table_body user_delete_table_body">
@@ -134,13 +185,17 @@
 
 
 
-    </div>
+
 
 
 
 
     <script src="../../script/collapse.js"></script>
     <script src="../../script/addUserInfo.js"></script>
+    <script src="../../script/getAllUserData.js"></script>
+    <script src="../../script/popup_form.js"></script>
+    <script src="../../script/selectedEditUserdata.js"></script>
+    <script src="../../script/selectedDeleteUserdata.js"></script>
 
 
 

@@ -27,7 +27,6 @@ const selectedEditProjectdata = (project, type) => {
   editRowIMGUploder.style.display = "block";
   document.querySelector(".popup_form .image_wrapper p").style.display =
     "block";
-  document.querySelector(".group_lb_img_pos_ab").style.display = "block";
   editRowHeader.readOnly = false;
   editRowDate.readOnly = false;
   editRowDesc.readOnly = false;
@@ -42,6 +41,7 @@ const selectedEditProjectdata = (project, type) => {
     handleEditProject(e, project, type)
   );
 };
+
 
 const uploadedEditProjectImg = document.querySelector(".uploader_edit_project");
 const uploadedEditProjectImgError = document.querySelector(
@@ -67,7 +67,9 @@ uploadedEditProjectImg.addEventListener("change", function () {
   }
   uploadedEditProjectImgError.innerHTML = "";
 });
-console.log("editRowHeader.value.length - ", editRowHeader.value.length);
+
+
+
 const handleEditProject = (e, project, type) => {
   e.preventDefault();
 
@@ -76,10 +78,7 @@ const handleEditProject = (e, project, type) => {
   );
   const newDateError = document.querySelector(".edit_project_create_date");
   const newDescError = document.querySelector(".edit_project_dec");
-
-  // check date is valid
-
-  const selectedDate = new Date(editRowDate.value);
+const selectedDate = new Date(editRowDate.value);
   const currentDate = new Date();
 
   if (selectedDate > currentDate) {
@@ -107,7 +106,7 @@ const handleEditProject = (e, project, type) => {
   }
 
   const editImageEncoded = project.image;
-  const file = uploadedEditProjectImg.files[0]; // add this line to retrieve the uploaded file
+  const file = uploadedEditProjectImg.files[0]; 
 
   if (file instanceof Blob) {
     const reader = new FileReader();

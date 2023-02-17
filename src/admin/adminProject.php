@@ -52,7 +52,7 @@
                     <p class="error_txt edit_project_header_error_txt"></p>
                 </div>
                 <div class="header_text_wrapper">
-                    <label for="">Project fished date</label>
+                    <label for="">Project finished date</label>
                     <input type="date" name="edit_project_date">
                     <p class="error_txt edit_project_create_date"></p>
                 </div>

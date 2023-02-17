@@ -22,7 +22,7 @@ let selectedID;
 
 const selectedDeleteUserdata = (user, type) => {
   selectedID = user.id;
-
+  
   document.querySelector(".popup_form_wrapper").classList.remove("hide");
 
 
@@ -49,10 +49,8 @@ deleteRowDeletBtn.addEventListener("click", () => {
       .then((response) => {
         if (response.ok) {
           alert("User deleted successfully!");
-          getAllUserData();
         } else {
           alert("Failed to delete user");
-          getAllUserData();
         }
       })
       .catch((error) => {

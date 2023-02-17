@@ -80,7 +80,6 @@ submit_button.addEventListener("click", (e) => {
     if (!contactno_input.value) {
       contactno_error.innerHTML = "*Contact number cannot be empty";
     } else if(!contactno_input.value.match(/^\d{10}$/)){
-        //console.log("CONTACT");
         contactno_error.innerHTML = "*Enter a valid contact number";
     } else {
         contactno_error.innerHTML = "";
@@ -90,10 +89,8 @@ submit_button.addEventListener("click", (e) => {
     if (!username_input.value) {
         username_error.innerHTML = "*User name cannot be empty";
     } else {
-        //console.log("ELSE");
-        if(username_input.value.length<4 || username_input.value.length>8){
-            //console.log("Else - IF");
-            username_error.innerHTML = "*User name must contain 4 to 8 charcters";
+        if(username_input.value.length<4 || username_input.value.length>15){
+            username_error.innerHTML = "*User name must contain 4 to 15 charcters";
         }
         else{
             username_error.innerHTML = "";
@@ -117,9 +114,7 @@ submit_button.addEventListener("click", (e) => {
     }
     
     if (confirmpwd_input.value.length>7 && pwd_input.value.length>7) {
-        //console.log("Confirm pwd");
         if(pwd_input.value!=confirmpwd_input.value){
-            //console.log("Confirm pwd IF");
             confirmpwd_error.innerHTML = "*Password does not match";
         } else{
             confirmpwd_error.innerHTML = "";

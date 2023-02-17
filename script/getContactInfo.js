@@ -11,6 +11,9 @@ const getContactInfo = () => {
             '.form_Container input[name="street_no"]'
           ).value = data[0].streetno;
           document.querySelector(
+            '.form_Container input[name="street"]'
+          ).value = data[0].street_name;
+          document.querySelector(
             '.form_Container input[name="city_no"]'
           ).value = data[0].city;
           document.querySelector(
@@ -24,9 +27,15 @@ const getContactInfo = () => {
             data[0].phone1;
           document.querySelector('.form_Container input[name="phone2"]').value =
             data[0].phone2;
+          document.querySelector('.form_Container input[name="openinig_hrs"]').value =
+            data[0].opening_hr;
+          document.querySelector('.form_Container input[name="closing_hrs"]').value =
+            data[0].closing_hr;
         } else {
           document.querySelector(".contact_info_address .street_no").innerHTML =
             data[0].streetno;
+          document.querySelector(".contact_info_address .street_name").innerHTML =
+            data[0].street_name;
           document.querySelector(".contact_info_address .city").innerHTML =
             data[0].city;
           document.querySelector(".contact_info_address .country").innerHTML =

@@ -747,3 +747,54 @@ form.slider_update textarea {
   height: 20px;
   width: 20px;
 }
+/* prject add */
+
+.project_crud_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project_crud_wrapper input[type="file"] {
+  position: relative !important;
+}
+
+.project_img_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image_uploader_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img_upload_header_txt p {
+  color: #212121;
+  font-weight: 700;
+}
+
+.image_uploader_wrapper p {
+  color: #212121;
+}
+.image_upload_icon {
+  cursor: pointer;
+  transition: 500ms all ease-in;
+}
+
+.image_upload_icon:hover {
+  transform: scale(1.2);
+}
+
+.selected_img_view,
+.selected_cover_img_view {
+  display: none;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}

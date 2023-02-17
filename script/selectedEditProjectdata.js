@@ -67,14 +67,16 @@ uploadedEditProjectImg.addEventListener("change", function () {
   uploadedEditProjectImgError.innerHTML = "";
 });
 
-const handleEditProject = (e, project, type) => {//edit eke di karana validation me tiyene uda save btn eke click karama
+
+
+const handleEditProject = (e, project, type) => {
+  e.preventDefault();
+
   const newHeaderError = document.querySelector(
     ".edit_project_header_error_txt"
   );
   const newDateError = document.querySelector(".edit_project_create_date");
   const newDescError = document.querySelector(".edit_project_dec");
-
-  e.preventDefault();
 
   // check date is valid
 
@@ -92,12 +94,13 @@ const handleEditProject = (e, project, type) => {//edit eke di karana validation
   } else {
     newDateError.innerHTML = "";
   }
-  if (editRowHeader.value.length < 10) {
+  if (!editRowHeader.value) {
+    newHeaderError.innerHTML = "Project Title cannot be empty";
+  } else if (editRowHeader.value.length < 10) {
     newHeaderError.innerHTML =
       "Project Title must have more than 10 characters";
   } else {
-    newHeaderError.innerHTML =
-      "Project Title must have more than 10 characters";
+    newHeaderError.innerHTML = "";
   }
   if (editRowDesc.value.length < 20) {
     newDescError.innerHTML =

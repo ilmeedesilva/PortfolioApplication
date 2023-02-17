@@ -9,7 +9,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM updatecontactinfo";
+$sql = "SELECT * FROM updatecontactinfo  order by id desc limit 1";
 $result = mysqli_query($conn, $sql);
 
 $data = array();

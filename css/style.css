@@ -56,6 +56,8 @@ body {
 
 .page_main_img img {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .primary_btn {

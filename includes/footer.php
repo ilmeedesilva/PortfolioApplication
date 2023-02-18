@@ -60,6 +60,7 @@
                     <h6>Contact Us</h6>
                     <div class="contact_info_address">
                         <p class="street_no">NO 01</p>
+                        <p class="street_name">Nugegoda</p>
                         <p class="city">Nugegoda</p>
                         <p class="country">Sri Lanka</p>
                     </div>

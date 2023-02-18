@@ -9,6 +9,14 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
+$checkLogoTableExist = "SHOW TABLES LIKE 'logo'";
+$result = mysqli_query($conn, $checkLogoTableExist);
+if (mysqli_num_rows($result) == 0) {
+    $createLogoTableSql = "
+    CREATE TABLE logo ( id INT AUTO_INCREMENT PRIMARY KEY, image BLOB )";
+    mysqli_query($conn, $createLogoTableSql);
+}
+
 $sql = "SELECT * FROM logo";
 $result = mysqli_query($conn, $sql);
 

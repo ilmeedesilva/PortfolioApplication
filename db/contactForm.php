@@ -16,6 +16,20 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+$checkContactUserTableExist = "SHOW TABLES LIKE 'contactUser'";
+$result = mysqli_query($conn, $checkContactUserTableExist);
+if (mysqli_num_rows($result) == 0) {
+    $createContactUserTableSql = "
+    CREATE TABLE contactUser 
+    ( id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone VARCHAR(15) NOT NULL,
+    message TEXT NOT NULL,
+    created_date DATE DEFAULT CURRENT_TIMESTAMP )";
+    mysqli_query($conn, $createContactUserTableSql);
+}
+
 $sql = "INSERT INTO contactUser (name, email, phone, message)
 VALUES ('$name', '$email', '$tel', '$msg')";
 

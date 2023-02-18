@@ -72,20 +72,21 @@
             <div class="information">
                 <h2>Contact Information</h2>
                 <div class="contact_info contact_info_address">
-                    <p class="street_no">No. 01</p>
-                    <P class="street_name">Udahamulla</P>
-                    <p class="city">Nugegoda</p>
-                    <p class="country">Sri Lanka</p><br>
+                    <p class="contact_street_no">No. 01</p>
+                    <P class="contact_street_name">Udahamulla</P>
+                    <p class="contact_city">Nugegoda</p>
+                    <p class="contact_country">Sri Lanka</p><br>
                 </div>
                 <div class="contact_info contact_info_phone">
-                    <p class="no1">Call us: 0775556667</p>
+                    <p class="contact_no1">Call us: 0775556667</p>
+                    <p class="contact_no2">Call us: 0775556667</p>
                 </div>
                 <div class="contact_info contact_info_email">
-                    <p class="email">emailaddress@gmail.com</p>
+                    <p class="contact_email">emailaddress@gmail.com</p>
                 </div>
                 <div class="contact_info contact_info_openingTag">
                     <p class="open_title">We're open from Monday - Friday</p>
-                    <p class="open_title">9.00 am - 6.00 pm</p>
+                    <p class="open_title"><span class="opening_hrs"> 9.00 am </span> - <span class="closing_hrs">6.00 pm</span> </p>
                 </div>
             </div>
         </div>

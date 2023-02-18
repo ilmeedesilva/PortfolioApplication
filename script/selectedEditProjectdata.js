@@ -27,7 +27,6 @@ const selectedEditProjectdata = (project, type) => {
   editRowIMGUploder.style.display = "block";
   document.querySelector(".popup_form .image_wrapper p").style.display =
     "block";
-  document.querySelector(".group_lb_img_pos_ab").style.display = "block";
   editRowHeader.readOnly = false;
   editRowDate.readOnly = false;
   editRowDesc.readOnly = false;
@@ -76,9 +75,6 @@ const handleEditProject = (e, project, type) => {
   );
   const newDateError = document.querySelector(".edit_project_create_date");
   const newDescError = document.querySelector(".edit_project_dec");
-
-  // check date is valid
-
   const selectedDate = new Date(editRowDate.value);
   const currentDate = new Date();
 
@@ -106,7 +102,7 @@ const handleEditProject = (e, project, type) => {
   }
 
   const editImageEncoded = project.image;
-  const file = uploadedEditProjectImg.files[0]; // add this line to retrieve the uploaded file
+  const file = uploadedEditProjectImg.files[0];
 
   if (file instanceof Blob) {
     const reader = new FileReader();

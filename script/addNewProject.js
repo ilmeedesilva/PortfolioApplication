@@ -31,41 +31,41 @@ saveButton.addEventListener("click", () => {
   const image = imageInput.files[0];
 
   if (!image) {
-    addNewProjectImgErr.textContent = "Please select an image";
+    addNewProjectImgErr.textContent = "*Please select an image";
   } else if (!image.type.includes("jpeg") && !image.type.includes("png")) {
-    addNewProjectImgErr.textContent = "Please select a JPEG or PNG image";
+    addNewProjectImgErr.textContent = "*Please select a JPEG or PNG image";
   } else if (image.size > 1000000) {
-    addNewProjectImgErr.textContent = "The image must be less than 1MB";
+    addNewProjectImgErr.textContent = "*The image must be less than 1MB";
   } else {
     addNewProjectImgErr.textContent = "";
   }
 
   if (projectName.trim() === "") {
     projectNameInput.nextElementSibling.textContent =
-      "Please enter a project name";
+      "*Please enter a project name";
   } else if (projectName.length < 8) {
     projectNameInput.nextElementSibling.textContent =
-      "The project name must be at least 8 characters long";
+      "*The project name must be at least 8 characters long";
   } else {
     projectNameInput.nextElementSibling.textContent = "";
   }
 
   if (finishDate === "") {
     finishDateInput.nextElementSibling.textContent =
-      "Please enter a finish date";
+      "*Please enter a completed date";
   } else if (new Date(finishDate) > new Date()) {
     finishDateInput.nextElementSibling.textContent =
-      "The finish date cannot be a future date";
+      "*Completed date cannot be a future date";
   } else {
     finishDateInput.nextElementSibling.textContent = "";
   }
 
   if (description.trim() === "") {
     descriptionInput.nextElementSibling.textContent =
-      "Please enter a description";
+      "*Please enter a description";
   } else if (description.length < 10) {
     descriptionInput.nextElementSibling.textContent =
-      "The description must be at least 10 characters long";
+      "*The description must be at least 10 characters long";
   } else {
     descriptionInput.nextElementSibling.textContent = "";
   }

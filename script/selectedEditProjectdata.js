@@ -42,7 +42,6 @@ const selectedEditProjectdata = (project, type) => {
   );
 };
 
-
 const uploadedEditProjectImg = document.querySelector(".uploader_edit_project");
 const uploadedEditProjectImgError = document.querySelector(
   ".uploader_edit_project_error"
@@ -68,8 +67,6 @@ uploadedEditProjectImg.addEventListener("change", function () {
   uploadedEditProjectImgError.innerHTML = "";
 });
 
-
-
 const handleEditProject = (e, project, type) => {
   e.preventDefault();
 
@@ -78,11 +75,10 @@ const handleEditProject = (e, project, type) => {
   );
   const newDateError = document.querySelector(".edit_project_create_date");
   const newDescError = document.querySelector(".edit_project_dec");
-const selectedDate = new Date(editRowDate.value);
+  const selectedDate = new Date(editRowDate.value);
   const currentDate = new Date();
 
   if (selectedDate > currentDate) {
-    console.log("Input date is in the future");
     newDateError.innerHTML = "Invalid Date";
   }
   if (editRowDate.value) {
@@ -106,11 +102,11 @@ const selectedDate = new Date(editRowDate.value);
   }
 
   const editImageEncoded = project.image;
-  const file = uploadedEditProjectImg.files[0]; 
+  const file = uploadedEditProjectImg.files[0];
 
   if (file instanceof Blob) {
     const reader = new FileReader();
-    console.log(file);
+
     reader.onload = function (event) {
       if (event.target.result === editImageEncoded) {
         uploadedEditProjectImgError.innerHTML =

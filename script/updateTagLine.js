@@ -13,7 +13,7 @@ const selectedFileTagLine = (doc) => {
   ).innerHTML = `${file.name}, size: ${filesizeinMB} KB`;
   if (fileType) {
     document.querySelector(".error_img_tagLine").innerHTML =
-      "*Must include an image";
+      "*Please select an image";
   }
   if (fileType !== "image/jpeg" && fileType !== "image/png") {
     document.querySelector(".error_img_tagLine").innerHTML =
@@ -41,7 +41,7 @@ document.querySelector(".saveTagLine").addEventListener("click", (e) => {
   e.preventDefault();
   const err_img_tagLine = document.querySelector(".error_img_tagLine");
   if (!tagLineInput.value) {
-    err_img_tagLine.innerHTML = "no image selected";
+    err_img_tagLine.innerHTML = "*Please select an image";
   } else {
     err_img_tagLine.innerHTML = "";
   }

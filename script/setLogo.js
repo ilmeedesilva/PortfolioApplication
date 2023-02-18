@@ -48,7 +48,7 @@ const selectedLogoFile = (doc) => {
     ".file_name"
   ).innerHTML = `${file.name}, size: ${filesizeinMB} KB`;
   if (fileType) {
-    document.querySelector(".error_logo").innerHTML = "*Must include an image";
+    document.querySelector(".error_logo").innerHTML = "*Please select an image";
   }
   if (fileType !== "image/jpeg" && fileType !== "image/png") {
     document.querySelector(".error_logo").innerHTML =
@@ -69,7 +69,7 @@ logoClick.addEventListener("click", (e) => {
 document.querySelector(".logo_save_btn").addEventListener("click", (e) => {
   e.preventDefault();
   if (!logoInput.value) {
-    document.querySelector(".error_logo").innerHTML = "no image selected";
+    document.querySelector(".error_logo").innerHTML = "*Please select an image";
   } else {
     document.querySelector(".error_logo").innerHTML = "";
     const selectedFile = logoInput.files[0];

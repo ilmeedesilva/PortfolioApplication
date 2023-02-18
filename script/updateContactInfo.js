@@ -82,12 +82,12 @@ submit_button.addEventListener("click", (e) => {
     (!openingHours.value && closingHours.value)
   ) {
     openingHoursError.innerHTML =
-      "Please select both opening and closing hours";
+      "*Please select both opening and closing hours";
     closingHoursError.innerHTML =
-      "Please select both opening and closing hours";
+      "*Please select both opening and closing hours";
   } else if (openingHours.value >= closingHours.value) {
-    openingHoursError.innerHTML = "Opening hours must be before closing hours";
-    closingHoursError.innerHTML = "Closing hours must be after opening hours";
+    openingHoursError.innerHTML = "*Opening hours must be before closing hours";
+    closingHoursError.innerHTML = "*Closing hours must be after opening hours";
   } else {
     openingHoursError.innerHTML = "";
     closingHoursError.innerHTML = "";

@@ -36,26 +36,26 @@ updateProjectPageSave.addEventListener("click", () => {
   const image = projectCoverImgInput.files[0];
   let isInvalidIMG = false;
   if (!image && !Project_update_id) {
-    uploadImageCoverError.textContent = "Please select an image";
+    uploadImageCoverError.textContent = "*Please select an image";
   } else if (
     image &&
     !image.type.includes("jpeg") &&
     !image.type.includes("png")
   ) {
-    uploadImageCoverError.textContent = "Please select a JPEG or PNG image";
+    uploadImageCoverError.textContent = "*Please select a JPEG or PNG image";
     isInvalidIMG = true;
   } else if (image && image.size > 1000000) {
-    uploadImageCoverError.textContent = "The image must be less than 1MB";
+    uploadImageCoverError.textContent = "*The image must be less than 1MB";
     isInvalidIMG = true;
   } else {
     uploadImageCoverError.textContent = "";
   }
 
   if (description.trim() === "") {
-    projectPageDescErrorMessages.textContent = "Please enter a description";
+    projectPageDescErrorMessages.textContent = "*Please enter a description";
   } else if (description.length < 10) {
     projectPageDescErrorMessages.textContent =
-      "The description must be at least 10 characters long";
+      "*The description must be at least 10 characters long";
   } else {
     projectPageDescErrorMessages.textContent = "";
   }

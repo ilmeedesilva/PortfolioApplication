@@ -49,19 +49,19 @@ const uploadedEditProjectImgError = document.querySelector(
 
 uploadedEditProjectImg.addEventListener("change", function () {
   if (uploadedEditProjectImg.files.length === 0) {
-    uploadedEditProjectImgError.innerHTML = "No file selected";
+    uploadedEditProjectImgError.innerHTML = "*Please select an image";
     return;
   }
 
   const file = uploadedEditProjectImg.files[0];
 
   if (file.size > 1048576) {
-    uploadedEditProjectImgError.innerHTML = "File size exceeds 1MB";
+    uploadedEditProjectImgError.innerHTML = "*File size exceeds 1MB";
     return;
   }
 
   if (!/^image\/(jpe?g|png)$/i.test(file.type)) {
-    uploadedEditProjectImgError.innerHTML = "File type must be JPG or PNG";
+    uploadedEditProjectImgError.innerHTML = "*File type must be JPG or PNG";
     return;
   }
   uploadedEditProjectImgError.innerHTML = "";
@@ -79,24 +79,24 @@ const handleEditProject = (e, project, type) => {
   const currentDate = new Date();
 
   if (selectedDate > currentDate) {
-    newDateError.innerHTML = "Invalid Date";
+    newDateError.innerHTML = "*Invalid Date";
   }
   if (editRowDate.value) {
-    newDateError.innerHTML = "Date cannont be empty";
+    newDateError.innerHTML = "*Date cannont be empty";
   } else {
     newDateError.innerHTML = "";
   }
   if (!editRowHeader.value) {
-    newHeaderError.innerHTML = "Project Title cannot be empty";
+    newHeaderError.innerHTML = "*Project Title cannot be empty";
   } else if (editRowHeader.value.length < 10) {
     newHeaderError.innerHTML =
-      "Project Title must have more than 10 characters";
+      "*Project Title must have more than 10 characters";
   } else {
     newHeaderError.innerHTML = "";
   }
   if (editRowDesc.value.length < 20) {
     newDescError.innerHTML =
-      "Project description must have more than 20 characters";
+      "*Project description must have more than 20 characters";
   } else {
     newDescError.innerHTML = "";
   }
@@ -110,7 +110,7 @@ const handleEditProject = (e, project, type) => {
     reader.onload = function (event) {
       if (event.target.result === editImageEncoded) {
         uploadedEditProjectImgError.innerHTML =
-          "uploaded image same as original";
+          "*Uploaded image same as original";
         return;
       } else {
         uploadedEditProjectImgError.innerHTML = "";

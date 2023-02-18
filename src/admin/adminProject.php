@@ -146,17 +146,17 @@
                     <div class="form-container">
                         <div class="form-group">
                             <label for="project-name">Project Name</label>
-                            <input type="text" id="project-name">
+                            <input type="text" id="project-name" placeholder="Enter project name">
                             <p class="error_txt"></p>
                         </div>
                         <div class="form-group">
-                            <label for="finish-date">Finish Date</label>
+                            <label for="finish-date">Completed Date</label>
                             <input type="date" id="finish-date">
                             <p class="error_txt"></p>
                         </div>
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <textarea id="description"></textarea>
+                            <textarea id="description" placeholder="Enter project description here..."></textarea>
                             <p class="error_txt"></p>
                         </div>
                     </div>

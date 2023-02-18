@@ -44,7 +44,7 @@
                         <li><a href="home.php">Home</a></li>
                         <li><a href="project.php">Projects</a></li>
                         <li><a href="about.php">About</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="contact.php">Contact</a></li>
                     </ul>
                 </div>
                 <div class="wrapper_about">

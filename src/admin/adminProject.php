@@ -89,6 +89,7 @@
             </div>
             <div class="collapse_section_body">
                 <div class="project_crud_wrapper">
+                    <p class="project_page_update_pk" style="display: none;"></p>
                     <div class="selected_cover_img_view">
                     </div>
                     <div class="project_img_wrapper">
@@ -108,7 +109,8 @@
                     <div class="form-container">
                         <div class="form-group">
                             <label for="project_page_description">Description</label>
-                            <textarea id="project_page_description" name="project_page_description"></textarea>
+                            <textarea id="project_page_description" name="project_page_description" rows="10"
+                                cols="40"></textarea>
                             <p class="error_txt update_project_desc_error"></p>
                         </div>
                     </div>

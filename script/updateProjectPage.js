@@ -27,19 +27,26 @@ projectCoverImgInput.addEventListener("change", () => {
 });
 
 updateProjectPageSave.addEventListener("click", () => {
+  const Project_update_id = updateProjectPageSave.getAttribute("data-pk");
   errorMessages.forEach((errorMessage) => {
     errorMessage.textContent = "";
   });
 
   const description = projectPageDescriptionInput.value;
   const image = projectCoverImgInput.files[0];
-  console.log("description - ", description);
-  if (!image) {
+  let isInvalidIMG = false;
+  if (!image && !Project_update_id) {
     uploadImageCoverError.textContent = "Please select an image";
-  } else if (!image.type.includes("jpeg") && !image.type.includes("png")) {
+  } else if (
+    image &&
+    !image.type.includes("jpeg") &&
+    !image.type.includes("png")
+  ) {
     uploadImageCoverError.textContent = "Please select a JPEG or PNG image";
-  } else if (image.size > 1000000) {
+    isInvalidIMG = true;
+  } else if (image && image.size > 1000000) {
     uploadImageCoverError.textContent = "The image must be less than 1MB";
+    isInvalidIMG = true;
   } else {
     uploadImageCoverError.textContent = "";
   }
@@ -53,12 +60,59 @@ updateProjectPageSave.addEventListener("click", () => {
     projectPageDescErrorMessages.textContent = "";
   }
 
+  if (Project_update_id && description && !isInvalidIMG) {
+    if (image) {
+      const formData = new FormData();
+      formData.append("description", description);
+      formData.append("image", image);
+
+      fetch("../../db/updateProject.php", {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => response.text())
+        .then((result) => {
+          console.log("result = ", result);
+          displayPopUp(result);
+          // if (result.includes("success")) {
+
+          // } else {
+          //   alert("Failed to save data");
+          // }
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    } else {
+      const formData = new FormData();
+      formData.append("description", description);
+      formData.append("id", parseInt(Project_update_id));
+      fetch("../../db/updateProjectPageById.php", {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => response.text())
+        .then((result) => {
+          displayPopUp(result);
+          // if (result.includes("success")) {
+
+          // } else {
+          //   alert("Failed to save data");
+          // }
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    }
+  }
+
   if (
+    !Project_update_id &&
     !uploadImageCoverError.textContent &&
     !projectPageDescErrorMessages.textContent
   ) {
     const formData = new FormData();
-    formData.append("descProject", description);
+    formData.append("description", description);
     formData.append("image", image);
 
     fetch("../../db/updateProject.php", {

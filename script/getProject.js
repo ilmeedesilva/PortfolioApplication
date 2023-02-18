@@ -20,6 +20,10 @@ const getProject = () => {
           document.querySelector(
             '.form-container textarea[name="project_page_description"]'
           ).value = data[0].description;
+
+          document
+            .querySelector("#project_page_save")
+            .setAttribute("data-pk", data[0].id);
         } else {
           var project = data[i];
           var imageEncoded = project.image;

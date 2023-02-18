@@ -148,7 +148,7 @@
             </div>
         </div>
         <!--Update slider-->
-        <div class="collapse_section">
+        <!-- <div class="collapse_section">
             <div class="collapse_section_header">
                 <h4>Update Slider Text</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
@@ -164,7 +164,7 @@
                         </div>
                         <div class="Description">
                             <label for="Description">Description:
-                                <textarea id="slider1Desc" name="slider1Desc" rows="4" cols="50"
+                                <textarea id="slider1Desc" name="slider1Desc" rows="10" cols="40"
                                     placeholder="Enter your description here..."></textarea>
                                 <p class="error_txt slider1Desc_error"></p>
                         </div>
@@ -181,7 +181,7 @@
                         </div>
                         <div class="Description">
                             <label for="Description">Description:
-                                <textarea id="w3review" name="slider2Desc" rows="4" cols="50"
+                                <textarea id="w3review" name="slider2Desc" rows="10" cols="40"
                                     placeholder="Enter your description here..."></textarea>
                                 <p class="error_txt slider2Desc_error"></p>
                         </div>
@@ -207,13 +207,13 @@
                         </div>
                     </div>
                 </form>
-                <!-- <div class="btn_upload">
+                <div class="btn_upload">
                     <button class="select-image slider_info">Save</button>
-                </div> -->
+                </div> 
             </div>
-        </div>
+        </div> -->
 
-        <!--Update Slider Images-->
+        <!--Update Slider Images
         <div class="collapse_section">
             <div class="collapse_section_header">
 
@@ -277,11 +277,11 @@
                         </div>
                     </div>
                 </section>
-                <!-- <div class="btn_upload">
+                <div class="btn_upload">
                     <button class="select-image slider_image">Save</button>
-                </div> -->
+                </div> 
             </div>
-        </div>
+        </div>-->
     </div>
     </div>
     </div>
@@ -289,7 +289,7 @@
     <script src="../../script/setLogo.js"></script>
     <script src="../../script/updateContactInfo.js"></script>
     <script src="../../script/getContactInfo.js"></script>
-    <script src="../../script/updateSliderInfo.js"></script>
+    <!-- <script src="../../script/updateSliderInfo.js"></script> -->
 </body>
 
 </html>

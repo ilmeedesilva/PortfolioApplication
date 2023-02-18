@@ -24,12 +24,12 @@ if (mysqli_num_rows($result) == 0) {
 
 
 $imageName = $_FILES['image']['name'];
-$descProject = $_POST["descProject"];
+$description = $_POST["description"];
 
 $imageData = file_get_contents($_FILES['image']['tmp_name']);
 $imageEncoded = base64_encode($imageData);
 
-$sql = "INSERT INTO Updateproject (image,description) VALUES ('$imageEncoded','$descProject')";
+$sql = "INSERT INTO Updateproject (image,description) VALUES ('$imageEncoded','$description')";
 
 if (mysqli_query($conn, $sql)) {
     echo "success";

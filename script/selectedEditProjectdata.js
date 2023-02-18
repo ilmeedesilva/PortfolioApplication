@@ -67,7 +67,7 @@ uploadedEditProjectImg.addEventListener("change", function () {
   }
   uploadedEditProjectImgError.innerHTML = "";
 });
-console.log("editRowHeader.value.length - ", editRowHeader.value.length);
+
 const handleEditProject = (e, project, type) => {
   e.preventDefault();
 
@@ -83,7 +83,6 @@ const handleEditProject = (e, project, type) => {
   const currentDate = new Date();
 
   if (selectedDate > currentDate) {
-    console.log("Input date is in the future");
     newDateError.innerHTML = "Invalid Date";
   }
   if (editRowDate.value) {
@@ -111,7 +110,7 @@ const handleEditProject = (e, project, type) => {
 
   if (file instanceof Blob) {
     const reader = new FileReader();
-    console.log(file);
+
     reader.onload = function (event) {
       if (event.target.result === editImageEncoded) {
         uploadedEditProjectImgError.innerHTML =

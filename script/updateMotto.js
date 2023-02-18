@@ -41,7 +41,7 @@ document.querySelector(".saveMotto").addEventListener("click", (e) => {
   e.preventDefault();
   const err_img_motto = document.querySelector(".error_img_motto");
   if (!mottoInput.value) {
-    err_img_motto.innerHTML = "no image selected";
+    err_img_motto.innerHTML = "*Please select an image";
   } else {
     err_img_motto.innerHTML = "";
   }

@@ -45,7 +45,7 @@ submit_button_project.addEventListener("click", (e) => {
   e.preventDefault();
   const err_img_project = document.querySelector(".error_img_project");
   if (!projectInput.value) {
-    err_img_project.innerHTML = "*No image selected";
+    err_img_project.innerHTML = "*Please select an image";
   } else {
     err_img_project.innerHTML = "";
   }

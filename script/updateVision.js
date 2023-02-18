@@ -13,7 +13,7 @@ const selectedFileVision = (doc) => {
   ).innerHTML = `${file.name}, size: ${filesizeinMB} KB`;
   if (fileType) {
     document.querySelector(".error_img_vision").innerHTML =
-      "*Must include an image";
+      "*Please select an image";
   }
   if (fileType !== "image/jpeg" && fileType !== "image/png") {
     document.querySelector(".error_img_vision").innerHTML =
@@ -41,7 +41,7 @@ document.querySelector(".saveVision").addEventListener("click", (e) => {
   e.preventDefault();
   const err_img_vision = document.querySelector(".error_img_vision");
   if (!visionInput.value) {
-    err_img_vision.innerHTML = "no image selected";
+    err_img_vision.innerHTML = "*Please select an image";
   } else {
     err_img_vision.innerHTML = "";
   }

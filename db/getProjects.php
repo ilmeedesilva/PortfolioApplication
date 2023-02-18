@@ -9,6 +9,18 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
+$checkUpdateProjectTableExist = "SHOW TABLES LIKE 'Updateproject'";
+$result = mysqli_query($conn, $checkUpdateProjectTableExist);
+if (mysqli_num_rows($result) == 0) {
+    $createUpdateProjectTableSql = "
+    CREATE TABLE Updateproject 
+    ( id INT AUTO_INCREMENT PRIMARY KEY,
+     image LONGTEXT,
+     description varchar(200) not null 
+    )";
+    mysqli_query($conn, $createUpdateProjectTableSql);
+}
+
 $sql = "SELECT * FROM Updateproject order by id desc limit 1";
 $result = mysqli_query($conn, $sql);
 

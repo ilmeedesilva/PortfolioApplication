@@ -1,32 +1,39 @@
 const editName = document.querySelector('.popup_form input[name="edit_name"]');
 
-const editUserName = document.querySelector('.popup_form input[name="edit_user_name"]');
+const editUserName = document.querySelector(
+  '.popup_form input[name="edit_user_name"]'
+);
 
-const editContactNo = document.querySelector('.popup_form input[name="edit_contactNo"]');
+const editContactNo = document.querySelector(
+  '.popup_form input[name="edit_contactNo"]'
+);
 
-const editEmail = document.querySelector('.popup_form input[name="edit_email"]');
+const editEmail = document.querySelector(
+  '.popup_form input[name="edit_email"]'
+);
 
-const editRowDeletBtn = document.querySelector(".popup_form .pop_up_edit_save_cancel_wrapper .primary_btn");
+const editRowDeletBtn = document.querySelector(
+  ".popup_form .pop_up_edit_save_cancel_wrapper .primary_btn"
+);
 
 const selectedEditUserdata = (user, type) => {
   document.querySelector(".popup_form_wrapper").classList.remove("hide");
-  
-  editName.readOnly = false; 
+  document.querySelector(".reset_user_password").classList.remove("hide");
+  document.querySelector(".reset_btn").classList.add("hide");
+  document.querySelector(".crud_btn").classList.remove("hide");
+  editName.readOnly = false;
   editUserName.readOnly = false;
   editEmail.readOnly = false;
   editContactNo.readOnly = false;
 
-  editName.value = user.name; 
+  editName.value = user.name;
   editUserName.value = user.user_name;
   editEmail.value = user.email;
   editContactNo.value = user.contactNo;
 
-  editRowDeletBtn.classList.remove("delete_btn"); 
+  editRowDeletBtn.classList.remove("delete_btn");
   editRowDeletBtn.innerHTML = "SAVE";
-  editRowDeletBtn.addEventListener(
-    "click",
-    (e) => handleEditUser(e, user) 
-  );
+  editRowDeletBtn.addEventListener("click", (e) => handleEditUser(e, user));
 };
 
 const handleEditUser = (e, user) => {
@@ -37,7 +44,6 @@ const handleEditUser = (e, user) => {
   const contactno_error = document.querySelector(".editcontactNo_error");
 
   const username_error = document.querySelector(".editusername_error");
-
 
   e.preventDefault();
 

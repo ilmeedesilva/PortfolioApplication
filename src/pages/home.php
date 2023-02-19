@@ -246,6 +246,7 @@
   <script src="../../script/mobileNav.js"></script>
   <script src="../../script/getLogo.js"> </script>
   <script src="../../script/getContactInfo.js"></script>
+  <script src="../../script/getAllSocialMedias.js"></script>
   <!-- <script src="../../script/loaders.js"></script> -->
 </body>
 

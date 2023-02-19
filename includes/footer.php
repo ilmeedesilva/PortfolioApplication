@@ -32,9 +32,9 @@
                     </svg>
                 </div>
                 <div class="footer_content_social_icons">
-                    <a href="#"><img src="../../resource/icon/facebook.png" alt="facebook"> </a>
+                    <!-- <a href="#"><img src="../../resource/icon/facebook.png" alt="facebook"> </a>
                     <a href="#"><img src="../../resource/icon/twitter.png" alt="twitter"></a>
-                    <a href="#"><img src="../../resource/icon/linkedin.png" alt="linkedin"></a>
+                    <a href="#"><img src="../../resource/icon/linkedin.png" alt="linkedin"></a> -->
                 </div>
             </div>
 

@@ -9,7 +9,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM projects";
+$sql = "SELECT * FROM socialmedia";
 $result = mysqli_query($conn, $sql);
 $data = array();
 if (mysqli_num_rows($result) > 0) {

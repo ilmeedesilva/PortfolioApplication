@@ -32,7 +32,7 @@
             </div>
             <section class="upload">
                 <div class="form_Container">
-                    <div class="form_wrappe  group_inputs">
+                    <div class="form_wrappe  group_inputs  user_edit">
                         <div class="box">
                             <label for="name">Name:
                                 <input type="text" name="edit_name" id="editname" placeholder="Enter your name">
@@ -48,13 +48,13 @@
 
                     </div>
 
-                    <div class="form_wrappe  group_inputs">
+                    <div class="form_wrappe  group_inputs user_edit">
                         <div class="box">
                             <label for="email">Contact No:
                                 <input type="text" name="edit_contactNo" id="editcontactNo"
                                     placeholder="Ex: 0700000000">
                                 <p class="error_txt editcontactNo_error"></p>
-                                <a href="#">Reset Password</a>
+                                <a href="#" class="reset_user_password">Reset Password</a>
                         </div>
                         <div class="box">
                             <label for="email">Email:
@@ -63,10 +63,33 @@
 
                         </div>
                     </div>
+
+                    <div class="form_wrappe  group_inputs reset_password hide">
+                        <div class="box">
+                            <label for="email">New Password:
+                                <input type="text" name="newPassword" id="newPassword"
+                                    placeholder="enter a new password in here">
+                                <p class="error_txt new_password_error"></p>
+
+                        </div>
+                        <div class="box">
+                            <label for="email">Confirm Password:
+                                <input type="text" name="confPassowrd" id="confPassowrd"
+                                    placeholder="Confirm password in here">
+                                <p class="error_txt confirm_password_error"></p>
+
+                        </div>
+                    </div>
+
+
+
                     <div class="pop_up_edit_save_cancel_wrapper">
 
-                        <button class="primary_btn">SAVE</button>
+                        <button class="primary_btn crud_btn">SAVE</button>
+                        <button class="reset_btn hide">RESET</button>
                         <button class="cancel_btn">CANCEL</button>
+
+
                     </div>
             </section>
         </div>
@@ -197,6 +220,7 @@
     <script src="../../script/popup_form.js"></script>
     <script src="../../script/selectedEditUserdata.js"></script>
     <script src="../../script/selectedDeleteUserdata.js"></script>
+    <script src="../../script/resetPassword.js"></script>
 
 
 

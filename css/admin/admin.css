@@ -209,10 +209,37 @@ input[type="file"] {
   cursor: pointer;
   transition: 500ms all ease-in;
 }
+.pre-img{
 
+ display: inline-block;
+  position: relative;
+  background-image: url(../../resource/icon/uploadIcon.png);
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  transition: 500ms all ease-in;
+}
+
+/*start img upload layout*/
+.col-1 {
+  width: 49% !important;
+  float: left !important;
+}
+
+.col-2 {
+  width: 50% !important;
+  float: right !important;
+}
+
+.col-3 {
+  width: 100% !important;
+  height: 100px !important;
+}
+
+/*
 .img_uploader_wrapper:hover {
   transform: scale(1.2);
-}
+}*/
 
 .file_name {
   color: gray;
@@ -589,10 +616,13 @@ input#file {
 .upload_wrappe {
   display: inline-block;
   width: 30%;
-  padding: 0px 10px;
+  padding: 20px 10px;
 }
 .upload_wrappe input {
   width: 100%;
+}
+.img-area.column.col_1.col-1.previous-img {
+  box-shadow: none !important;
 }
 
 .upload_wrappe textarea {
@@ -636,6 +666,9 @@ form.slider_update textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 2px 2px 13px 5px #f5f5f5;
+  height: 240px !important;
+  border-radius: 15px !important;
 }
 
 .btn_save_control .save_btn:hover {
@@ -754,6 +787,7 @@ form.slider_update textarea {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0px 0px 0px 20px !important;
 }
 
 .project_crud_wrapper input[type="file"] {

@@ -78,7 +78,7 @@
 
     <div class="admin_settings_wrapper">
 
-        <div class="collapse_section collapse_Section_active">
+        <div class="collapse_section">
             <div class="collapse_section_header">
                 <h4>Add New User</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">

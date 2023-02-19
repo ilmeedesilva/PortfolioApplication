@@ -30,19 +30,15 @@
     </div>
     <!--Update Company Logo-->
     <div class="admin_settings_wrapper">
-
-
-        <div class="collapse_section collapse_Section_active">
+        <div class="collapse_section">
             <div class="collapse_section_header">
                 <h4>Update Company Logo</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
                 <section class="upload">
-
                     <div class="Container">
                         <div class="wrapper">
-
                             <div class="img-area column col_1">
 
                                 <div class="img_uploader">
@@ -54,9 +50,6 @@
                                     <p class="error_txt error_logo"></p>
                                     <p>Click here to upload</p>
                                 </div>
-
-
-
                             </div>
 
                             <div class="column col_2">
@@ -147,6 +140,8 @@
                 </section>
             </div>
         </div>
+
+
         <!--Update slider-->
         <!-- <div class="collapse_section">
             <div class="collapse_section_header">

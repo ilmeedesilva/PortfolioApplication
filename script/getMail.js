@@ -36,8 +36,7 @@ fetch("../../db/getMail.php")
       const empty = document.createElement("div");
       empty.classList.add("empty");
       empty.innerHTML = `
-  <img src="../../resource/icon/empty.png" alt="empty">
-  <p>No Mails at the Moment.</p>
+  <img src="../../resource/icon/mails.webp" alt="empty">
 `;
       mailContainer.appendChild(empty);
     }
@@ -46,8 +45,7 @@ fetch("../../db/getMail.php")
     const empty = document.createElement("div");
     empty.classList.add("empty");
     empty.innerHTML = `
-<img src="../../resource/icon/empty.png" alt="empty">
-<p>No Mails at the Moment.</p>
+<img src="../../resource/icon/mails.webp" alt="empty">
 `;
     document.querySelector(".admin_mail_wrapper").appendChild(empty);
   });

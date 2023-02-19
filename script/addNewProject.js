@@ -5,9 +5,21 @@ const imageInput = document.getElementById("image-upload");
 const selectedImgView = document.querySelector(".selected_img_view");
 const addNewProjectImgErr = document.querySelector(".add_new_project_img_err");
 const errorMessages = document.querySelectorAll(".error-msg");
+
 const saveButton = document.getElementById("save");
+const clear_button = document.querySelector(".add_project_clear_btn");
 
 selectedImgView.style.display = "none";
+
+const clearInputFields = () => {
+
+  projectNameInput.value="";
+  finishDateInput.value="";
+  descriptionInput.value="";
+  imageInput.value="";
+  selectedImgView.value="";
+};
+
 
 imageInput.addEventListener("change", () => {
   if (imageInput.files.length > 0) {
@@ -89,6 +101,7 @@ saveButton.addEventListener("click", () => {
       .then((response) => response.text())
       .then((result) => {
         displayPopUp(result);
+        clearInputFields();
         // if (result.includes("success")) {
 
         // } else {
@@ -99,4 +112,20 @@ saveButton.addEventListener("click", () => {
         console.error("Error:", error);
       });
   }
+});
+
+
+
+
+clear_button.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  //console.log("clicked");
+
+  projectNameInput.value="";
+  finishDateInput.value="";
+  descriptionInput.value="";
+  imageInput.value="";
+  selectedImgView.value="";
+
 });

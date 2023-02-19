@@ -27,6 +27,8 @@ const closingHoursError = document.querySelector(".closing_hrs_error");
 
 const submit_button = document.querySelector(".contact_info_save_btn");
 
+// const clear_button = document.querySelector(".add_contactInfo_clear_btn");
+
 submit_button.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -174,4 +176,18 @@ submit_button.addEventListener("click", (e) => {
     }
   }
 });
+
+// clear_button.addEventListener("click", (e) => {
+//   e.preventDefault();
+
+//   streetNo_error.value = "";
+//   streetName_error.value = "";
+//   city_error.value = "";
+//   country_error.value = "";
+//   phone1_error.value = "";
+//   phone2_error.value = "";
+//   openingHoursError.value = "";
+//   closingHoursError.value = "";
+// });
+
 // });

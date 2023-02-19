@@ -60,14 +60,14 @@
                             <label for="email">Email:
                                 <input type="text" name="edit_email" id="editemail" placeholder="example@gmail.com">
                                 <p class="error_txt editemail_error"></p>
-                                
+
                         </div>
                     </div>
                     <div class="pop_up_edit_save_cancel_wrapper">
-                        
+
                         <button class="primary_btn">SAVE</button>
                         <button class="cancel_btn">CANCEL</button>
-                </div>
+                    </div>
             </section>
         </div>
     </div>
@@ -136,7 +136,7 @@
 
         <div class="collapse_section">
             <div class="collapse_section_header">
-                <h4>Edit User</h4>
+                <h4>Manage Users</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">

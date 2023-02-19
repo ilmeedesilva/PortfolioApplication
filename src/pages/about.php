@@ -59,25 +59,6 @@
                 </svg>
             </p>
         </div>
-
-        <div class="list">
-            <div class="list1">
-                <ul>
-                    <li><a href="#" class="active_link">CEO Message</a></li>
-                    <li><a href="#">Cooparate Data</a></li>
-                    <li><a href="#">Cooparate Structure</a></li>
-                </ul>
-            </div>
-            <div class="list1">
-                <ul>
-                    <li><a href="#">Group</a></li>
-                    <li><a href="#">Publications</a></li>
-                    <li><a href="#">Project History</a></li>
-                </ul>
-            </div>
-        </div>
-
-
         <div class="section_wrapper about_vision">
             <div class="text_section about_vision_desc">
                 <h5>

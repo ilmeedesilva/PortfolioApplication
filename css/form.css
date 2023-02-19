@@ -33,6 +33,7 @@ select {
   padding: 5px 15px;
   box-shadow: none;
   font-weight: 300;
+  resize: none;
 }
 
 input:focus-visible {

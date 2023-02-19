@@ -73,18 +73,9 @@
         <h3>Projects Settings</h3>
     </div>
     <div class="admin_settings_wrapper">
-
-
-
-
-
-
-
-
-
-        <div class="collapse_section collapse_Section_active">
+        <div class="collapse_section">
             <div class="collapse_section_header">
-                <h4>Update project page</h4>
+                <h4>Update project</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
@@ -114,6 +105,7 @@
                             <p class="error_txt update_project_desc_error"></p>
                         </div>
                     </div>
+
                     <div class="save-container">
                         <button id="project_page_save" class="primary_btn">Save</button>
                     </div>
@@ -156,7 +148,8 @@
                         </div>
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <textarea id="description" placeholder="Enter project description here..."></textarea>
+                            <textarea id="description" placeholder="Enter project description here..." rows="10"
+                                cols="40"></textarea>
                             <p class="error_txt"></p>
                         </div>
                     </div>
@@ -166,10 +159,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
         <div class="collapse_section">
             <div class="collapse_section_header">
                 <h4>Update Projects</h4>
@@ -192,7 +181,6 @@
                 </div>
             </div>
         </div>
-
         <div class="collapse_section">
             <div class="collapse_section_header">
                 <h4>Delete Projects</h4>

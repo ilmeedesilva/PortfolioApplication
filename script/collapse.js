@@ -1,7 +1,18 @@
 const allCollapse = document.querySelectorAll(".collapse_section_header");
 
-allCollapse.forEach((item, index) => {
+const toggleCollapse = (clickedItem) => {
+  allCollapse.forEach((item) => {
+    const parent = item.parentElement;
+    if (item === clickedItem) {
+      parent.classList.toggle("collapse_Section_active");
+    } else if (parent.classList.contains("collapse_Section_active")) {
+      parent.classList.remove("collapse_Section_active");
+    }
+  });
+};
+
+allCollapse.forEach((item) => {
   item.addEventListener("click", () => {
-    item.parentElement.classList.toggle("collapse_Section_active");
+    toggleCollapse(item);
   });
 });

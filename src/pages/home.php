@@ -23,7 +23,7 @@
   </script>
 
   <!--start carousel-->
-  <div id="carousel" class="carousel slide" data-bs-ride="carousel ">
+  <!-- <div id="carousel" class="carousel slide" data-bs-ride="carousel ">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="../../resource\image\img5.jpg" class="d-block w-100" alt="Banner1">
@@ -35,7 +35,26 @@
         </div>
       </div>
     </div>
+  </div> -->
+
+
+
+
+  <div class="main_banner">
+    <div class="banner_content_wrapper">
+      <div class="banner_text_section">
+        <h2>Header Text</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla mollitia vero officiis laboriosam
+          vitae dolor eaque et unde, consequatur suscipit! Ullam hic molestias eveniet autem unde officia illum aut.</p>
+        <button class="primary_btn">Button</button>
+      </div>
+      <div class="banner_img_section">
+        <img src="../../resource/image/ilmee.jpeg" alt="Image">
+      </div>
+    </div>
   </div>
+
+
   <!--end carousel-->
 
   <!--start About section-->

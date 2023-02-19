@@ -16,6 +16,7 @@ if (mysqli_num_rows($result) == 0) {
     $createProjectsTableSql = "
     CREATE TABLE socialMedia (
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+        socialMediaLinkName  VARCHAR(50) NOT NULL,
         socialMediaLink VARCHAR(50) NOT NULL,
         image LONGTEXT NOT NULL
     )";

@@ -10,10 +10,11 @@ const getAbout = () => {
             '.form_wrapper textarea[name="aboutDesc"]'
           ).value = data[0].description;
         } else if (window.location.href.includes("home")) {
+          let displayDescription = data[0].description.substring(0,100).concat("...");
           document.querySelector(".about_desc_home").innerHTML =
-            data[0].description;
+            displayDescription;
           document.querySelector(".about_desc_footer").innerHTML =
-            data[0].description;
+            displayDescription;
         }
         else if (window.location.href.includes("about")){
           var project = data[i];

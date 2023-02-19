@@ -197,6 +197,12 @@
                             </div>
                         </div>
 
+                        <div class="box allCheckBox">
+                                <label for="appointment">Opening Days:</label>
+                                <input type="checkbox" name="chbx" value="checkbox" checked="checked" id="appointment"> Confirmed <br><br>
+                                <p class="error_txt closing_hrs_error"></p>
+                            </div>
+
                         
 
 

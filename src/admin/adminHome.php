@@ -30,6 +30,8 @@
     </div>
     <!--Update Company Logo-->
     <div class="admin_settings_wrapper">
+
+
         <div class="collapse_section">
             <div class="collapse_section_header">
                 <h4>Update Company Logo</h4>
@@ -37,8 +39,10 @@
             </div>
             <div class="collapse_section_body">
                 <section class="upload">
+
                     <div class="Container">
                         <div class="wrapper">
+
                             <div class="img-area column col_1">
 
                                 <div class="img_uploader">
@@ -50,6 +54,9 @@
                                     <p class="error_txt error_logo"></p>
                                     <p>Click here to upload</p>
                                 </div>
+
+
+
                             </div>
 
                             <div class="column col_2">
@@ -138,6 +145,51 @@
                         </div>
                     </div>
                 </section>
+            </div>
+        </div>
+
+
+        <!-- add new social media  -->
+
+
+        <div class="collapse_section">
+            <div class="collapse_section_header">
+                <h4>Add new Social Media</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body">
+                <div class="project_crud_wrapper">
+                    <div class="selected_img_view selected_add_new_social_icon_view">
+                    </div>
+                    <div class="selected_cover_img_view">
+                    </div>
+                    <div class="project_img_wrapper">
+                        <div class="img_upload_header_txt">
+                            <p>Upload Social Media Icon</p>
+                        </div>
+                        <div class="image_uploader_wrapper">
+                            <label for="image_upload_icon">
+                                <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
+                            </label>
+                            <input type="file" id="new_social_media_icon" name="new_social_media_icon" accept="image/*">
+                            <p>Click the icon to upload image</p>
+                            <p class="error_txt new_social_media_icon_err"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="add_social_link">Social Media Link</label>
+                            <input type="text" name="add_social_link" id="new_social_media_link"
+                                placeholder="example: https://www.example.com"></input>
+                            <p class="error_txt add_new_social_link_error"></p>
+                        </div>
+                    </div>
+
+                    <div class="save-container">
+                        <button id="add_new_social_media" class="primary_btn">Save</button>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -283,6 +335,7 @@
     <script src="../../script/collapse.js"></script>
     <script src="../../script/setLogo.js"></script>
     <script src="../../script/updateContactInfo.js"></script>
+    <script src="../../script/addNewSocialMedia.js"></script>
     <script src="../../script/getContactInfo.js"></script>
     <!-- <script src="../../script/updateSliderInfo.js"></script> -->
 </body>

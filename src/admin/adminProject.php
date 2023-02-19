@@ -148,7 +148,8 @@
                         </div>
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <textarea id="description" placeholder="Enter project description here..."></textarea>
+                            <textarea id="description" placeholder="Enter project description here..." rows="10"
+                                cols="40"></textarea>
                             <p class="error_txt"></p>
                         </div>
                     </div>

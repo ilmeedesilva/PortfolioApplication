@@ -125,8 +125,9 @@
                                     <p class="error_txt confirmpwd_error"></p>
                             </div>
                         </div>
-                        <div class="column btn-col">
+                        <div class="column btn-col form_control">
                             <button class="primary_btn add_user_save_btn">Save</button>
+                            <button class="clear_btn add_user_clear_btn">Clear</button>
                         </div>
                     </div>
                 </section>
@@ -159,7 +160,7 @@
 
 
 
-        <div class="collapse_section">
+        <!-- <div class="collapse_section">
             <div class="collapse_section_header">
                 <h4>Users List</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
@@ -180,7 +181,7 @@
                     </table>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
 

@@ -1,5 +1,5 @@
 const edittableBody = document.querySelector(".user_edit_table_body");
-const deletetableBody = document.querySelector(".user_delete_table_body");
+//const deletetableBody = document.querySelector(".user_delete_table_body");
 
 const getAllUsersData = () => {
    
@@ -7,14 +7,14 @@ const getAllUsersData = () => {
     .then((response) => response.json())
     .then((users) => {
         users.forEach((user) => {
-        const delrow = deletetableBody.insertRow();
+        //const delrow = deletetableBody.insertRow();
 
         const editrow = edittableBody.insertRow();
 
-        delrow.insertCell().textContent = user.uname;
-        delrow.insertCell().textContent = user.username;
-        delrow.insertCell().textContent = user.email;
-        delrow.insertCell().textContent = user.contactno;
+        // delrow.insertCell().textContent = user.uname;
+        // delrow.insertCell().textContent = user.username;
+        // delrow.insertCell().textContent = user.email;
+        // delrow.insertCell().textContent = user.contactno;
         
 
         editrow.insertCell().textContent = user.uname;

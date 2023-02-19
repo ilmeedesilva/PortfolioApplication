@@ -1,6 +1,15 @@
 const newSocialMediaImageInput = document.getElementById(
   "new_social_media_icon"
 );
+
+const newSocialMediaLinkName = document.getElementById(
+  "new_social_media_link_name"
+);
+
+const newSocialMediaLinkNameError = document.querySelector(
+  ".add_new_social_link__name_error"
+);
+
 const newSocialMediaLink = document.getElementById("new_social_media_link");
 
 const newSocialMediaImageInputError = document.querySelector(
@@ -31,7 +40,7 @@ newSocialMediaImageInput.addEventListener("change", () => {
 
 newSocialMediaSaveButton.addEventListener("click", () => {
   const newSocialMediaLinkValue = newSocialMediaLink.value;
-
+  const newSocialMediaLinkNameValue = newSocialMediaLinkName.value;
   const image = newSocialMediaImageInput.files[0];
 
   if (!image) {
@@ -53,12 +62,21 @@ newSocialMediaSaveButton.addEventListener("click", () => {
     newSocialMediaImageInputError.textContent = "";
   }
 
+  if (newSocialMediaLinkNameValue.trim() === "") {
+    newSocialMediaLinkNameError.textContent =
+      "*Please enter Social Media Name.";
+  } else {
+    newSocialMediaLinkNameError.textContent = "";
+  }
+
   if (
     !newSocialMediaIconErr.textContent &&
+    !newSocialMediaLinkNameError.textContent &&
     !newSocialMediaImageInputError.textContent
   ) {
     const formData = new FormData();
     formData.append("newSocialMediaLink", newSocialMediaLinkValue);
+    formData.append("newSocialMediaLinkName", newSocialMediaLinkNameValue);
     formData.append("image", image);
 
     fetch("../../db/addNewSocialMedia.php", {

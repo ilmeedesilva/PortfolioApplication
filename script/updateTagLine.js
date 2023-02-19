@@ -47,7 +47,10 @@ document.querySelector(".saveTagLine").addEventListener("click", (e) => {
   }
   if (!descTagLine.value) {
     err_desc_tagLine.innerHTML = "*Description cannot be empty";
-  } else {
+  } else if (descTagLine.value.length <= 99 || descTagLine.value.length > 500) {
+    err_desc_tagLine.innerHTML =
+      "*TagLine Description should contain more than 100 characters and less than 500 characters";}   
+  else {
     err_desc_tagLine.innerHTML = "";
   }
   if (!err_desc_tagLine.innerHTML && !err_img_tagLine.innerHTML) {

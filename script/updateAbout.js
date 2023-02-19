@@ -81,7 +81,10 @@ document.querySelector(".saveAbout").addEventListener("click", (e) => {
   }
   if (!descAbout.value) {
     err_desc_about.innerHTML = "*Description cannot be empty";
-  } else {
+  }else if (descAbout.value.length <= 199 || descAbout.value.length > 1000) {
+    err_desc_about.innerHTML =
+      "*About Description should contain more than 200 characters and less than 1000 characters";} 
+  else {
     err_desc_about.innerHTML = "";
   }
   if (!err_desc_about.innerHTML && !err_img_about.innerHTML) {

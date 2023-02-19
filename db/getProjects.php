@@ -16,7 +16,7 @@ if (mysqli_num_rows($result) == 0) {
     CREATE TABLE Updateproject 
     ( id INT AUTO_INCREMENT PRIMARY KEY,
      image LONGTEXT,
-     description varchar(200) not null 
+     description varchar(1000) not null 
     )";
     mysqli_query($conn, $createUpdateProjectTableSql);
 }

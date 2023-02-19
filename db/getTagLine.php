@@ -17,7 +17,7 @@ if (mysqli_num_rows($result) == 0) {
         CREATE TABLE tagLine (
             id INT AUTO_INCREMENT PRIMARY KEY,
             image LONGTEXT,
-            description VARCHAR(200) not null
+            description VARCHAR(500) not null
         )
     ";
     mysqli_query($conn, $createTagLineTableSql);

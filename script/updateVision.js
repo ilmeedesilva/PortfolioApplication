@@ -47,7 +47,10 @@ document.querySelector(".saveVision").addEventListener("click", (e) => {
   }
   if (!descVision.value) {
     err_desc_vision.innerHTML = "*Description cannot be empty";
-  } else {
+  } else if (descVision.value.length <= 99 || descVision.value.length > 500) {
+    err_desc_vision.innerHTML =
+      "*Vision Description should contain more than 100 characters and less than 500 characters";}  
+  else {
     err_desc_vision.innerHTML = "";
   }
   if (!err_desc_vision.innerHTML && !err_img_vision.innerHTML) {

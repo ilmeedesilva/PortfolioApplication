@@ -36,5 +36,4 @@ mysqli_close($conn);
 
 ?>
 
-<!-- CREATE TABLE vision ( id INT AUTO_INCREMENT PRIMARY KEY, image LONGTEXT,description varchar(200) not null );-->
-<!-- CREATE TABLE oldVisionData ( id INT AUTO_INCREMENT PRIMARY KEY, image LONGTEXT,description varchar(200) not null );-->
+<!-- CREATE TABLE vision ( id INT AUTO_INCREMENT PRIMARY KEY, image LONGTEXT,description varchar(500) not null );-->

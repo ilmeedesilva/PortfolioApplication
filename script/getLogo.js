@@ -35,7 +35,7 @@ const getLogo = () => {
     }
     })
     .catch((err) => {
-   
+   console.log(err);
       alert(err); 
 
     });

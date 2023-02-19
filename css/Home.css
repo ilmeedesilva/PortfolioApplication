@@ -4,25 +4,48 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e0dace;
+  background-size: cover;
+  background-image: url(../resource/image/masthead.jpg), linear-gradient(#666666b8, #0e0d0d21);
+  background-blend-mode: overlay;
 }
 
 .banner_content_wrapper {
-  width: 800px;
+  width: 90%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
+.banner_content_wrapper h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 4.3em;
+  line-height: 1.1;
+  margin: 0 0 0.3em;
+  color: #fff !important;
+  text-shadow: -1px -1px 5px black;
+}
 
 .banner_text_section {
-  width: 50%;
+  width: 53%;
   text-align: left;
+}
+button.primary_btn.main-btn:hover {
+  background-color: transparent !important;
+  border: 3px solid #fff !IMPORTANT;
+}
+.banner_text_section p {
+  font-size: 23px;
+  line-height: 1.5em;
+  margin-top: 0;
+  color: #fff;
+  text-shadow: -1px -1px 5px black;
+  text-align: justify;
 }
 
 .banner_img_section {
-  width: 50%;
+  width: 45%;
   text-align: center;
 }
 
@@ -163,22 +186,27 @@ section#about {
   width: 100%;
   background-size: cover;
   background-position: center;
-  height: 30vh;
+  height: 25vh;
   background-blend-mode: overlay;
 }
 .cta-content {
   z-index: 1;
   position: relative;
-  max-width: 1200px;
+  max-width: 80%;
   margin: auto;
   text-align: center;
 }
 .col-content h2 {
   font-size: 50px;
   letter-spacing: 2px;
-  margin: 30px 0px 35px 0px;
+  margin: 30px 0px 0px 0px;
   color: #fff;
   font-weight: 700;
+}
+.col-content p {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
 }
 .btn-holder {
   float: right;

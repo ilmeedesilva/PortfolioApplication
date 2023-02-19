@@ -100,7 +100,7 @@
                     <div class="form-container">
                         <div class="form-group">
                             <label for="project_page_description">Description</label>
-                            <textarea id="project_page_description" name="project_page_description" rows="3"
+                            <textarea id="project_page_description" name="project_page_description" rows="8"
                                 cols="30"></textarea>
                             <p class="error_txt update_project_desc_error"></p>
                         </div>
@@ -148,7 +148,7 @@
                         </div>
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <textarea id="description" placeholder="Enter project description here..." rows="3"
+                            <textarea id="description" placeholder="Enter project description here..." rows="8"
                                 cols="30"></textarea>
                             <p class="error_txt"></p>
                         </div>
@@ -211,7 +211,7 @@
                     </table>
                 </div> -->
 
-                <!-- <div class="table_wrapper">
+        <!-- <div class="table_wrapper">
                     <table>
                         <thead>
                             <tr>

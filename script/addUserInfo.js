@@ -20,6 +20,21 @@ const confirmpwd_error = document.querySelector(".confirmpwd_error");
 
 const submit_button = document.querySelector(".add_user_save_btn");
 
+const clear_button = document.querySelector(".add_user_clear_btn");
+
+const clearInputFields = () => {
+
+  name_input.value="";
+  email_input.value="";
+  contactno_input.value="";
+  username_input.value="";
+  pwd_input.value="";
+  confirmpwd_input.value="";
+  
+};
+
+
+
 const displayPopUp = (res) => {
   const header1 = document.querySelector(".status_descrip h6");
   const detail = document.querySelector(".status_descrip p");
@@ -31,6 +46,7 @@ const displayPopUp = (res) => {
     icon.src = "../../resource/icon/success.png";
     header1.innerHTML = "SUCCESS";
     detail.innerHTML = "SUCCESSFULLY ADDED";
+    clearInputFields();
   } else {
     background.style.backgroundColor = "#e9374d";
     icon.src = "../../resource/icon/fail.png";
@@ -154,3 +170,16 @@ submit_button.addEventListener("click", (e) => {
       });
   }
 });
+
+clear_button.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  name_input.value="";
+  email_input.value="";
+  contactno_input.value="";
+  username_input.value="";
+  pwd_input.value="";
+  confirmpwd_input.value="";
+
+});
+

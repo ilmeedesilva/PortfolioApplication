@@ -100,8 +100,8 @@
                     <div class="form-container">
                         <div class="form-group">
                             <label for="project_page_description">Description</label>
-                            <textarea id="project_page_description" name="project_page_description" rows="10"
-                                cols="40"></textarea>
+                            <textarea id="project_page_description" name="project_page_description" rows="3"
+                                cols="30"></textarea>
                             <p class="error_txt update_project_desc_error"></p>
                         </div>
                     </div>
@@ -148,20 +148,21 @@
                         </div>
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <textarea id="description" placeholder="Enter project description here..." rows="10"
-                                cols="40"></textarea>
+                            <textarea id="description" placeholder="Enter project description here..." rows="3"
+                                cols="30"></textarea>
                             <p class="error_txt"></p>
                         </div>
                     </div>
-                    <div class="save-container">
+                    <div class="save-container form_control">
                         <button id="save" class="primary_btn">Save</button>
+                        <button class="clear_btn add_project_clear_btn">Clear</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="collapse_section">
             <div class="collapse_section_header">
-                <h4>Update Projects</h4>
+                <h4>Manage Projects</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
@@ -181,13 +182,13 @@
                 </div>
             </div>
         </div>
-        <div class="collapse_section">
+        <!-- <div class="collapse_section">
             <div class="collapse_section_header">
                 <h4>Delete Projects</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
-                <!-- <div class="table_wrapper">
+                 <div class="table_wrapper">
                     <table>
                         <tr>
                             <th>Title</th>
@@ -210,7 +211,7 @@
                     </table>
                 </div> -->
 
-                <div class="table_wrapper">
+                <!-- <div class="table_wrapper">
                     <table>
                         <thead>
                             <tr>
@@ -223,11 +224,11 @@
                         <tbody class="project_table_body project_delete_table_body">
                         </tbody>
                     </table>
-                </div>
+                </div> 
 
 
             </div>
-        </div>
+        </div> -->
 
     </div>
 

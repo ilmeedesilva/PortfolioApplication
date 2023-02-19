@@ -25,6 +25,60 @@
         </div>
     </div>
 
+
+
+
+    <div class="popup_form_wrapper hide">
+        <div class="gray_cover"></div>
+        <div class="popup_form">
+            <div class="close_btn">
+                <img src="../../resource/icon/close.png" alt="close_btn">
+            </div>
+            <div class="form_container">
+                <div class="image_wrapper">
+                    <div class="group_lb_img">
+                        <label for="">previus Image</label>
+                        <div class="img_box prev_img prev_social_img">
+                        </div>
+                    </div>
+                    <div class="group_lb_img">
+                        <label for="" class="group_lb_img_pos_ab">upload Image</label>
+                        <input type="file" accept="image/*" class="image_uploader uploader_edit_social_media_icon">
+                        <p class="error_txt uploader_edit_social_media_icon_error"></p>
+                    </div>
+                </div>
+                <div class="header_text_wrapper">
+                    <label for="">Social Media Name</label>
+                    <input type="text" name="edit_social_media_name">
+                    <p class="error_txt edit_social_media_name_error_txt"></p>
+                </div>
+                <div class="header_text_wrapper">
+                    <label for="">Social Media Link</label>
+                    <input type="text" name="edit_social_media_link">
+                    <p class="error_txt edit_social_media_link_error_txt"></p>
+                </div>
+                <div class="pop_up_edit_save_cancel_wrapper">
+                    <button class="primary_btn delete_social_media_save">SAVE</button>
+                    <button class="cancel_btn">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="admin_page_header_text">
         <h3>Home Settings</h3>
     </div>
@@ -39,12 +93,9 @@
             </div>
             <div class="collapse_section_body">
                 <section class="upload">
-
                     <div class="Container">
                         <div class="wrapper">
-
                             <div class="img-area column col_1">
-
                                 <div class="img_uploader">
                                     <label for="" class="img_uploader_wrapper logo_uploader_wrapper">
                                         <input type="file" accept="image/*" class="image_uploader"
@@ -54,18 +105,13 @@
                                     <p class="error_txt error_logo"></p>
                                     <p>Click here to upload</p>
                                 </div>
-
-
-
                             </div>
-
                             <div class="column col_2">
                                 <button class="select-image logo_save_btn">Save</button>
                             </div>
                         </div>
                     </div>
                 </section>
-
             </div>
         </div>
         <!--Update Update Contact Info-->
@@ -136,9 +182,6 @@
                             </div>
                         </div>
 
-
-
-
                         <div class="column btn-col">
                             <button class="primary_btn contact_info_save_btn">Save</button>
                             <!-- <button class="primary_btn contact_info_save_btn">Save</button> -->
@@ -179,6 +222,10 @@
 
                     <div class="form-container">
                         <div class="form-group">
+                            <label for="add_social_link">Social Media Name</label>
+                            <input type="text" name="add_social_link_name" id="new_social_media_link_name"
+                                placeholder="example: facebook"></input>
+                            <p class="error_txt add_new_social_link__name_error"></p>
                             <label for="add_social_link">Social Media Link</label>
                             <input type="text" name="add_social_link" id="new_social_media_link"
                                 placeholder="example: https://www.example.com"></input>
@@ -189,6 +236,30 @@
                     <div class="save-container">
                         <button id="add_new_social_media" class="primary_btn">Save</button>
                     </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="collapse_section">
+            <div class="collapse_section_header">
+                <h4>Modify Social Medias</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body">
+                <div class="table_wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Link</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="project_table_body social_media_modify_table_body">
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -337,7 +408,12 @@
     <script src="../../script/updateContactInfo.js"></script>
     <script src="../../script/addNewSocialMedia.js"></script>
     <script src="../../script/getContactInfo.js"></script>
+    <script src="../../script/getAllSocialMedias.js"></script>
+    <script src="../../script/popup_form.js"></script>
     <!-- <script src="../../script/updateSliderInfo.js"></script> -->
+    <script src="../../script/selectedSocialMediaDeleteData.js"></script>
+    <script src="../../script/selectedSocialMediaEditData.js"></script>
+
 </body>
 
 </html>

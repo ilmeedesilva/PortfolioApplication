@@ -32,9 +32,9 @@
                     </svg>
                 </div>
                 <div class="footer_content_social_icons">
-                    <a href="#"><img src="../../resource/icon/facebook.png" alt="facebook"> </a>
+                    <!-- <a href="#"><img src="../../resource/icon/facebook.png" alt="facebook"> </a>
                     <a href="#"><img src="../../resource/icon/twitter.png" alt="twitter"></a>
-                    <a href="#"><img src="../../resource/icon/linkedin.png" alt="linkedin"></a>
+                    <a href="#"><img src="../../resource/icon/linkedin.png" alt="linkedin"></a> -->
                 </div>
             </div>
 
@@ -44,7 +44,7 @@
                         <li><a href="home.php">Home</a></li>
                         <li><a href="project.php">Projects</a></li>
                         <li><a href="about.php">About</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="contact.php">Contact</a></li>
                     </ul>
                 </div>
                 <div class="wrapper_about">

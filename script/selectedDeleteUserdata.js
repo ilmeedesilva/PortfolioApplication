@@ -22,9 +22,11 @@ let selectedID;
 
 const selectedDeleteUserdata = (user, type) => {
   selectedID = user.id;
-  
-  document.querySelector(".popup_form_wrapper").classList.remove("hide");
 
+  document.querySelector(".popup_form_wrapper").classList.remove("hide");
+  document.querySelector(".reset_user_password").classList.add("hide");
+  document.querySelector(".reset_btn").classList.add("hide");
+  document.querySelector(".crud_btn").classList.remove("hide");
 
   deleteName.readOnly = true;
   deleteUserName.readOnly = true;

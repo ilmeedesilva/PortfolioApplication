@@ -34,24 +34,7 @@
           <a href="#" class="btn-banner mt3">Learn More</a>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="../../resource\image\home-img4.jpg" class="d-block w-100" alt="Banner2">
-        <div class="carousel-caption">
-          <h4>Let's Started</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. </p>
-          <a href="#" class="btn-banner mt3"> Learn More</a>
-        </div>
-      </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
   <!--end carousel-->
 
@@ -263,6 +246,7 @@
   <script src="../../script/mobileNav.js"></script>
   <script src="../../script/getLogo.js"> </script>
   <script src="../../script/getContactInfo.js"></script>
+  <script src="../../script/getAllSocialMedias.js"></script>
   <!-- <script src="../../script/loaders.js"></script> -->
   <script src="../../script/getAbout.js"></script>
 </body>

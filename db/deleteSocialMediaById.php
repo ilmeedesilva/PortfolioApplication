@@ -24,7 +24,7 @@ if (!$conn) {
 
 
 
-$sql = $conn->prepare("DELETE FROM projects WHERE id = ?");
+$sql = $conn->prepare("DELETE FROM socialmedia WHERE id = ?");
 $sql->bind_param("i", $id);
 if ($sql->execute()) {
     echo json_encode(array('success' => true));

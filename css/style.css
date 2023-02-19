@@ -16,11 +16,15 @@ body {
 .mb_45 {
   margin-bottom: 45px !important;
 }
+.img_upload_container {
+  width: 50% !important;
+  float: left;
+}
 
 .main_section_wrapper {
   width: 1050px;
   margin: 0 auto;
-  padding-bottom: 100px !important;
+  padding-bottom: 100px;
 }
 
 .main_section_full_wrapper {

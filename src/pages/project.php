@@ -36,7 +36,7 @@
                 </p>
             </div>
             <div class="filter_options">
-                <label for="filter">Filter Options:</label>
+                <label for="filter">Filter By:</label>
                 <select name="filertOps">
                     <option value="Default">Default</option>
                     <option value="Recent">Recent</option>
@@ -166,6 +166,7 @@
     <script src="../../script/getDynamicProjects.js"></script>
     <script src="../../script/mobileNav.js"></script>
     <script src="../../script/getProject.js"></script>
+    <script src="../../script/getAbout.js"></script>
 </body>
 
 </html>

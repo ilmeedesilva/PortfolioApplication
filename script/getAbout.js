@@ -9,19 +9,14 @@ const getAbout = () => {
           document.querySelector(
             '.form_wrapper textarea[name="aboutDesc"]'
           ).value = data[0].description;
-          //   document.querySelector(
-          //     '.form_Container input[name="city_no"]'
-          //   ).value = data[0].city;
-          //   document.querySelector(
-          //     '.form_Container input[name="country"]'
-          //   ).value = data[0].country;
-          //   document.querySelector('.form_Container input[name="mail"]').value =
-          //     data[0].email;
-          //   document.querySelector('.form_Container input[name="phone1"]').value =
-          //     data[0].phone1;
-          //   document.querySelector('.form_Container input[name="phone2"]').value =
-          //     data[0].phone2;
-        } else {
+        } else if (window.location.href.includes("home")) {
+          let displayDescription = data[0].description.substring(0,100).concat("...");
+          document.querySelector(".about_desc_home").innerHTML =
+            displayDescription;
+          document.querySelector(".about_desc_footer").innerHTML =
+            displayDescription;
+        }
+        else if (window.location.href.includes("about")){
           var project = data[i];
           var imageEncoded = project.image;
           var image =
@@ -31,7 +26,13 @@ const getAbout = () => {
             image;
           document.querySelector(".about_header_desc p").innerHTML =
             data[0].description;
-          // data[0].streetno;
+          document.querySelector(".about_desc_footer").innerHTML =
+            data[0].description;
+          
+        }
+        else{
+          document.querySelector(".about_desc_footer").innerHTML =
+            data[0].description;
         }
       }
     })

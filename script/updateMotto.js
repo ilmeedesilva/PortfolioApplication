@@ -78,10 +78,10 @@ document.querySelector(".saveMotto").addEventListener("click", (e) => {
   }
 });
 
-document.querySelector(".clearMotto").addEventListener("click", (e) => {
-  e.preventDefault();
+// document.querySelector(".clearMotto").addEventListener("click", (e) => {
+//   e.preventDefault();
 
-  descMotto.value = "";
-  mottoInput.value = "";
-  document.querySelector(".motto_img_name").innerHTML = "";
-});
+//   descMotto.value = "";
+//   mottoInput.value = "";
+//   document.querySelector(".motto_img_name").innerHTML = "";
+// });

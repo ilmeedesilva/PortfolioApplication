@@ -112,10 +112,10 @@ document.querySelector(".saveAbout").addEventListener("click", (e) => {
   }
 });
 
-document.querySelector(".clearAbout").addEventListener("click", (e) => {
-  e.preventDefault();
+// document.querySelector(".clearAbout").addEventListener("click", (e) => {
+//   e.preventDefault();
 
-  descAbout.value = "";
-  aboutInput.value = "";
-  document.querySelector(".file_name").innerHTML = "";
-});
+//   descAbout.value = "";
+//   aboutInput.value = "";
+//   document.querySelector(".file_name").innerHTML = "";
+// });

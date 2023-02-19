@@ -36,6 +36,13 @@ select {
   resize: none;
 }
 
+.allCheckBox input{
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 15px;
+}
+
+
 input:focus-visible {
   border: 1px solid #f4f6fc !important;
 }

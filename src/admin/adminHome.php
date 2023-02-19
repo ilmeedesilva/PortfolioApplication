@@ -93,9 +93,24 @@
             </div>
             <div class="collapse_section_body">
                 <section class="upload">
+                    <div>
+                        <p class="project_page_update_pk" style="display: none;"></p>
+                        <div class="selected_cover_img_view selected_logo_img_view">
+                        </div>
+                    </div>
+
                     <div class="Container">
+
+
+
                         <div class="wrapper">
                             <div class="img-area column col_1">
+
+
+
+
+
+
                                 <div class="img_uploader">
                                     <label for="" class="img_uploader_wrapper logo_uploader_wrapper">
                                         <input type="file" accept="image/*" class="image_uploader"
@@ -185,12 +200,19 @@
 
 
 
-                        <div class="column btn-col form_control">
-                            <button class="primary_btn contact_info_save_btn">Save</button>
-                            <!-- <button class="clear_btn add_contactInfo_clear_btn">Clear</button> -->
-                            <!-- <button class="primary_btn contact_info_save_btn">Save</button> -->
+
+
+
+                        <div class="column btn-col">
+
+
+
+                            <div class="column btn-col form_control">
+                                <button class="primary_btn contact_info_save_btn">Save</button>
+                                <!-- <button class="clear_btn add_contactInfo_clear_btn">Clear</button> -->
+                                <!-- <button class="primary_btn contact_info_save_btn">Save</button> -->
+                            </div>
                         </div>
-                    </div>
                 </section>
             </div>
         </div>
@@ -320,7 +342,7 @@
                 </div>
             </div>
         </div>
-
+        <!--Manage services-->
         <div class="collapse_section">
             <div class="collapse_section_header">
                 <h4>Manage Services</h4>
@@ -343,10 +365,10 @@
             </div>
         </div>
 
-
+        <!--Modify social media-->
         <div class="collapse_section">
             <div class="collapse_section_header">
-                <h4>Modify Social Medias</h4>
+                <h4>Modify Social Media</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
@@ -366,6 +388,50 @@
             </div>
         </div>
 
+        <!--call to action section-->
+        <div class="collapse_section">
+            <div class="collapse_section_header">
+                <h4>Call to action section</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body">
+                <div class="project_crud_wrapper">
+                    <div class="call_to_action_selected_img_view">
+                    </div>
+                    <div class="project_img_wrapper">
+                        <div class="img_upload_header_txt">
+                            <p>Upload background Image</p>
+                        </div>
+                        <div class="image_uploader_wrapper">
+                            <label for="image_upload_icon">
+                                <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
+                            </label>
+                            <input type="file" id="call-to-action-image-upload" name="call-to-action-image-upload"
+                                accept="image/*">
+                            <p>Click the icon to upload image</p>
+                            <p class="error_txt call-to-action-img_err"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="project-name">Main Title</label>
+                            <input type="text" name="call-to-action-Main-Title" placeholder="Enter main Title">
+                            <p class="error_txt call-to-action-main-title-error"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="project-name">Sub Title</label>
+                            <input type="text" name="call-to-action-Sub-Title" placeholder="Enter Sub Title">
+                            <p class="error_txt call-to-action-sub-title-error"></p>
+                        </div>
+                    </div>
+                    <div class="save-container form_control">
+                        <button id="save" class="primary_btn call-to-action-save_btn">Save</button>
+                        <button class="clear_btn call-to-action-clear_btn">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--Update slider-->
         <!-- <div class="collapse_section">
@@ -510,6 +576,7 @@
     <script src="../../script/updateContactInfo.js"></script>
     <script src="../../script/addNewSocialMedia.js"></script>
     <script src="../../script/getContactInfo.js"></script>
+    <script src="../../script/getLogo.js"></script>
     <script src="../../script/getAllSocialMedias.js"></script>
     <script src="../../script/popup_form.js"></script>
     <!-- <script src="../../script/updateSliderInfo.js"></script> -->

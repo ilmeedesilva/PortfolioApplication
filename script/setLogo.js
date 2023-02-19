@@ -3,8 +3,32 @@ const logoInput = document.querySelector(
 );
 const logoClick = document.querySelector(".logo_uploader_wrapper");
 
+const selectedLogoImgView = document.querySelector(
+  ".selected_logo_img_view"
+);
+
+selectedLogoImgView.style.display = "none";
+
+logoInput.addEventListener("change", () => {
+  if (logoInput.files.length > 0) {
+    selectedLogoImgView.style.backgroundImage = `url('${URL.createObjectURL(
+      logoInput.files[0]
+    )}')`;
+    selectedLogoImgView.style.display = "block";
+  } else {
+    selectedLogoImgView.style.display = "none";
+  }
+});
+
+
+
 const clearInputFields = () => {};
 
+// document.querySelector(".logo_save_btn").addEventListener("click", () => {
+//   const logo_update_id = document.querySelector(".logo_save_btn").getAttribute("data-pk");
+//   errorMessages.forEach((errorMessage) => {
+//     errorMessage.textContent = "";
+//   });
 const displayPopUp = (res) => {
   const header1 = document.querySelector(".status_descrip h6");
   const detail = document.querySelector(".status_descrip p");

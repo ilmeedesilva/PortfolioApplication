@@ -16,7 +16,7 @@
         <h3>View Mail</h3>
     </div>
 
-    <div class="admin_settings_wrapper admin_mail_wrapper">
+    <div class="admin_settings_wrapper admin_mail_wrapper mail_wrapper">
 
 
 

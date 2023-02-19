@@ -78,10 +78,10 @@ document.querySelector(".saveTagLine").addEventListener("click", (e) => {
   }
 });
 
-document.querySelector(".clearTagLine").addEventListener("click", (e) => {
-  e.preventDefault();
+// document.querySelector(".clearTagLine").addEventListener("click", (e) => {
+//   e.preventDefault();
 
-  descTagLine.value = "";
-  tagLineInput.value = "";
-  document.querySelector(".tagLine_img_name").innerHTML = "";
-});
+//   descTagLine.value = "";
+//   tagLineInput.value = "";
+//   document.querySelector(".tagLine_img_name").innerHTML = "";
+// });

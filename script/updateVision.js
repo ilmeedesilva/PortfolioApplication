@@ -78,10 +78,10 @@ document.querySelector(".saveVision").addEventListener("click", (e) => {
   }
 });
 
-document.querySelector(".clearVision").addEventListener("click", (e) => {
-  e.preventDefault();
+// document.querySelector(".clearVision").addEventListener("click", (e) => {
+//   e.preventDefault();
 
-  descVision.value = "";
-  visionInput.value = "";
-  document.querySelector(".vision_img_name").innerHTML = "";
-});
+//   descVision.value = "";
+//   visionInput.value = "";
+//   document.querySelector(".vision_img_name").innerHTML = "";
+// });

@@ -1,4 +1,4 @@
-const navlinks = document.querySelectorAll(".top_nav_right ul li a");
+const navlinks = document.querySelectorAll("menu-list ul li a");
 
 const topNavigation = document.querySelector(".top_navigation");
 

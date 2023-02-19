@@ -13,11 +13,11 @@ $checkLogoTableExist = "SHOW TABLES LIKE 'logo'";
 $result = mysqli_query($conn, $checkLogoTableExist);
 if (mysqli_num_rows($result) == 0) {
     $createLogoTableSql = "
-    CREATE TABLE logo ( id INT AUTO_INCREMENT PRIMARY KEY, image BLOB )";
+    CREATE TABLE logo ( id INT AUTO_INCREMENT PRIMARY KEY, image Longtext )";
     mysqli_query($conn, $createLogoTableSql);
 }
 
-$sql = "SELECT * FROM logo";
+$sql = "SELECT * FROM logo order by id desc limit 1";
 $result = mysqli_query($conn, $sql);
 
 $data = array();

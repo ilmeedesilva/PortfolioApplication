@@ -13,8 +13,6 @@
   <link rel="stylesheet" href="../../css/Home.css">
   <link rel="stylesheet" href="../../css/loaders.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -37,23 +35,19 @@
     </div>
   </div> -->
 
-
-
-
-  <div class="main_banner">
+  <div class="main_banner banner-wrapper">
     <div class="banner_content_wrapper">
       <div class="banner_text_section">
-        <h2>Header Text</h2>
+        <h2>Hi I'm Ilmee</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla mollitia vero officiis laboriosam
           vitae dolor eaque et unde, consequatur suscipit! Ullam hic molestias eveniet autem unde officia illum aut.</p>
-        <button class="primary_btn">Button</button>
+        <button class="primary_btn main-btn">Learn More</button>
       </div>
-      <div class="banner_img_section">
-        <img src="../../resource/image/ilmee.jpeg" alt="Image">
+      <!--<div class="banner_img_section">
+        <img src="../../resource/image/ilmee.jpeg" alt="Image">-->
       </div>
     </div>
   </div>
-
 
   <!--end carousel-->
 
@@ -107,7 +101,7 @@
           <div class="about-text sub-heading">
             <h5>Welcome</h5>
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            <p class="about_desc_home">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
               minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
               irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
               sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -129,12 +123,13 @@
       <div class="cta-content">
         <div class="cta-col col_1">
           <div class="col-content">
-            <h2>Enough Talk, <br />Let's Build Something Together!</h2>
+            <h2 class="title text-light">Want to work with me?</h6>
+            <p>Always feel Free to Contact & Hire me</p>
           </div>
         </div>
         <div class="cta-col col_2">
           <div class="btn-holder">
-            <a href="contact.php" class="primary_btn cta_btn">Call Me</a>
+            <a href="contact.php" class="primary_btn cta_btn">Hire Me</a>
           </div>
         </div>
       </div>
@@ -267,6 +262,7 @@
   <script src="../../script/getContactInfo.js"></script>
   <script src="../../script/getAllSocialMedias.js"></script>
   <!-- <script src="../../script/loaders.js"></script> -->
+  <script src="../../script/getAbout.js"></script>
 </body>
 
 </html>

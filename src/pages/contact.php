@@ -85,8 +85,9 @@
                     <p class="contact_email">emailaddress@gmail.com</p>
                 </div>
                 <div class="contact_info contact_info_openingTag">
-                    <p class="open_title">We're open from Monday - Friday</p>
-                    <p class="open_title"><span class="opening_hrs"> 9.00 am </span> - <span class="closing_hrs">6.00 pm</span> </p>
+
+                    <p class="open_title"><span class="opening_hrs"> 9.00 am </span> - <span class="closing_hrs">6.00
+                            pm</span> </p>
                 </div>
             </div>
         </div>
@@ -100,6 +101,7 @@
     </script>
     <script src="../../script/getLogo.js"> </script>
     <script src="../../script/getContactInfo.js"></script>
+    <script src="../../script/getAbout.js"></script>
 </body>
 
 </html>

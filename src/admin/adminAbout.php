@@ -33,6 +33,7 @@
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
+                    
                 <div class="add_project_wrapper">
 
                     <div class="img_upload_container">

@@ -39,11 +39,24 @@
             </div>
             <div class="collapse_section_body">
                 <section class="upload">
+                        <div>
+                            <p class="project_page_update_pk" style="display: none;"></p>
+                            <div class="selected_cover_img_view selected_logo_img_view">
+                            </div>
+                        </div>
 
                     <div class="Container">
+
+                        
+
                         <div class="wrapper">
 
                             <div class="img-area column col_1">
+
+                            
+
+                            
+                                
 
                                 <div class="img_uploader">
                                     <label for="" class="img_uploader_wrapper logo_uploader_wrapper">
@@ -136,6 +149,7 @@
                             </div>
                         </div>
 
+                        
 
 
 
@@ -289,6 +303,7 @@
     <script src="../../script/setLogo.js"></script>
     <script src="../../script/updateContactInfo.js"></script>
     <script src="../../script/getContactInfo.js"></script>
+    <script src="../../script/getLogo.js"></script>
     <!-- <script src="../../script/updateSliderInfo.js"></script> -->
 </body>
 

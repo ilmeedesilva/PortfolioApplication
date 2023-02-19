@@ -100,6 +100,7 @@
     </script>
     <script src="../../script/getLogo.js"> </script>
     <script src="../../script/getContactInfo.js"></script>
+    <script src="../../script/getAbout.js"></script>
 </body>
 
 </html>

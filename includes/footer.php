@@ -48,7 +48,7 @@
                     </ul>
                 </div>
                 <div class="wrapper_about">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim provident quidem molestias? Velit,
+                    <p class="about_desc_footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim provident quidem molestias? Velit,
                         neque placeat, optio, ipsum libero numquam tempora repellendus voluptate aliquam necessitatibus
                         obcaecati? Cupiditate natus consectetur odit repellat.</p>
                 </div>

@@ -157,6 +157,7 @@
     <script src="../../script/getDynamicProjects.js"></script>
     <script src="../../script/mobileNav.js"></script>
     <script src="../../script/getProject.js"></script>
+    <script src="../../script/getAbout.js"></script>
 </body>
 
 </html>

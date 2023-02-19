@@ -81,7 +81,7 @@ const handleEditProject = (e, project, type) => {
   if (selectedDate > currentDate) {
     newDateError.innerHTML = "*Invalid Date";
   }
-  if (editRowDate.value) {
+  if (!editRowDate.value) {
     newDateError.innerHTML = "*Date cannont be empty";
   } else {
     newDateError.innerHTML = "";

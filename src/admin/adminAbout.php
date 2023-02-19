@@ -57,7 +57,7 @@
                         <form action="">
                             <div class="input_item">
                                 <label for="descr">Description</label><br>
-                                <textarea name="aboutDesc" cols="50" rows="5"
+                                <textarea name="aboutDesc" cols="30" rows="3"
                                     placeholder="Type your description here..."></textarea>
                                 <p class="error_txt desc_error_about"></p>
                             </div>
@@ -108,7 +108,7 @@
                         <form action="">
                             <div class="input_item">
                                 <label for="descr">Description</label><br>
-                                <textarea name="visionDesc" cols="50" rows="5"
+                                <textarea name="visionDesc" cols="30" rows="3"
                                     placeholder="Type your description here..."></textarea>
                                 <p class="error_txt desc_error_vision"></p>
                             </div>
@@ -146,7 +146,7 @@
                         <form action="">
                             <div class="input_item">
                                 <label for="descr">Description</label><br>
-                                <textarea name="tagLineDesc" cols="50" rows="5"
+                                <textarea name="tagLineDesc" cols="30" rows="3"
                                     placeholder="Type your description here..."></textarea>
                                 <p class="error_txt desc_error_tagLine"></p>
                             </div>
@@ -184,7 +184,7 @@
                         <form action="">
                             <div class="input_item">
                                 <label for="descr">Description</label><br>
-                                <textarea name="mottoDesc" cols="50" rows="5"
+                                <textarea name="mottoDesc" cols="30" rows="3"
                                     placeholder="Type your description here..."></textarea>
                                 <p class="error_txt desc_error_motto"></p>
                             </div>

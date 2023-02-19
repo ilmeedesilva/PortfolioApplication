@@ -159,7 +159,7 @@
 
         <div class="collapse_section">
             <div class="collapse_section_header">
-                <h4>Edit User</h4>
+                <h4>Manage Users</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">

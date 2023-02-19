@@ -35,6 +35,15 @@
                 <p>
                 </p>
             </div>
+            <div class="filter_options">
+                <label for="filter">Filter Options:</label>
+                <select name="filertOps">
+                    <option value="Default">Default</option>
+                    <option value="Recent">Recent</option>
+                    <option value="Oldest">Oldest</option>
+                </select><br>
+            </div>
+
             <div class="content_bottom project_item_wrapper">
                 <div class="container blog_container">
                     <!-- <div class="col blog_wrapper">

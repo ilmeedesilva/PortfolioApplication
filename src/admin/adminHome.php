@@ -202,7 +202,12 @@
 
 
                         <div class="column btn-col">
+
+
+
+                        <div class="column btn-col form_control">
                             <button class="primary_btn contact_info_save_btn">Save</button>
+                            <!-- <button class="clear_btn add_contactInfo_clear_btn">Clear</button> -->
                             <!-- <button class="primary_btn contact_info_save_btn">Save</button> -->
                         </div>
                     </div>
@@ -259,6 +264,104 @@
             </div>
         </div>
 
+        <!--Add Services title & description-->
+        <div class="collapse_section">
+            <div class="collapse_section_header">
+                <h4>Update Services</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+
+            <div class="collapse_section_body">
+                <section class="upload">
+                    <div class="form_Container">
+                        <div class="form_wrappe group_inputs">
+                            <div class="box">
+                                <label for="address">Title:
+                                    <input type="text" name="title" placeholder="Enter title">
+                                    <p class="error_txt title_error"></p>
+                            </div>
+                            <div class="box">
+                                <label for="descr">Description:</label><br>
+                                <textarea name="servicesdesc" cols="30" rows="3"
+                                    placeholder="Type your description here..."></textarea>
+                                <p class="error_txt desc_error"></p>
+                            </div>
+                        </div>
+                        <div class="column btn-col form_control">
+                            <button class="primary_btn add_titledesc_save_btn">Save</button>
+                            <button class="clear_btn add_titledesc_clear_btn">Clear</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Add new Service -->
+        <div class="collapse_section">
+            <div class="collapse_section_header">
+                <h4>Add New Service</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body">
+                <div class="project_crud_wrapper">
+                    <div class="selected_img_view">
+                    </div>
+                    <div class="project_img_wrapper">
+                        <div class="img_upload_header_txt">
+                            <p>Upload Icon</p>
+                        </div>
+                        <div class="image_uploader_wrapper">
+                            <label for="image_upload_icon">
+                                <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
+                            </label>
+                            <input type="file" id="image-upload" name="image-upload" accept="image/*">
+                            <p>Click the icon to upload image</p>
+                            <p class="error_txt add_new_project_img_err"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="project-name">Service</label>
+                            <input type="text" name="service" placeholder="Enter service">
+                            <p class="error_txt service_error"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="description" placeholder="Enter project description here..." rows="3"
+                                cols="30"></textarea>
+                            <p class="error_txt desc_error"></p>
+                        </div>
+                    </div>
+                    <div class="save-container form_control">
+                        <button id="save" class="primary_btn add_service_save_btn">Save</button>
+                        <button class="clear_btn add_service_clear_btn">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="collapse_section">
+            <div class="collapse_section_header">
+                <h4>Manage Services</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body">
+                <div class="table_wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="project_table_body service_edit_table_body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
 
         <div class="collapse_section">

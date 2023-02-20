@@ -767,6 +767,7 @@ form.slider_update textarea {
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: center;
 }
 .btn_wrapper .editt_btn {
   background-image: url("../../resource/icon/edit.png");
@@ -847,7 +848,9 @@ form.slider_update textarea {
 }
 
 .image_uploader_wrapper p {
-  color: #212121;
+  color: #b2b2b2;
+  font-size: 15px;
+  margin: 12px 0;
 }
 .image_upload_icon {
   cursor: pointer;

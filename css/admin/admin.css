@@ -786,12 +786,13 @@ form.slider_update textarea {
   align-items: center;
   flex-direction: row;
   justify-content: center;
+  justify-content: space-around;
 }
 .btn_wrapper .editt_btn {
   background-image: url("../../resource/icon/edit.png");
   background-color: white;
   background-size: cover;
-  margin-right: 30px;
+  /* margin-right: 50px; */
   border: none;
   height: 20px;
   width: 20px;
@@ -800,7 +801,7 @@ form.slider_update textarea {
   background-image: url("../../resource/icon/bin.png");
   background-color: white;
   background-size: cover;
-  margin-right: 30px;
+  /* margin-right: 30px; */
   border: none;
   height: 20px;
   width: 20px;

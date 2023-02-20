@@ -266,6 +266,29 @@
             </div>
         </div>
 
+        <!--Modify social media-->
+        <div class="collapse_section">
+            <div class="collapse_section_header">
+                <h4>Manage Social Medias</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body">
+                <div class="table_wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Link</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="project_table_body social_media_modify_table_body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
         <!--Add Services title & description-->
         <div class="collapse_section">
             <div class="collapse_section_header">
@@ -365,28 +388,7 @@
             </div>
         </div>
 
-        <!--Modify social media-->
-        <div class="collapse_section">
-            <div class="collapse_section_header">
-                <h4>Modify Social Media</h4>
-                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
-            </div>
-            <div class="collapse_section_body">
-                <div class="table_wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Link</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody class="project_table_body social_media_modify_table_body">
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+
 
         <!--call to action section-->
         <div class="collapse_section">

@@ -3,10 +3,11 @@ const socialMediaModifyTBBody = document.querySelector(
 );
 
 const getAllSocialMedias = () => {
-  while (socialMediaModifyTBBody.firstChild) {
-    socialMediaModifyTBBody.removeChild(socialMediaModifyTBBody.firstChild);
+  if (window.location.href.includes("admin")) {
+    while (socialMediaModifyTBBody.firstChild) {
+      socialMediaModifyTBBody.removeChild(socialMediaModifyTBBody.firstChild);
+    }
   }
-
   fetch("../../db/getAllSocialMedias.php")
     .then((response) => response.json())
     .then((medias) => {

@@ -107,6 +107,13 @@
   right: 20px;
 }
 
+.uploader_edit_social_media_icon_error {
+  position: absolute;
+  width: 247px;
+  top: 50px;
+  right: -4px;
+}
+
 .pop_up_edit_save_cancel_wrapper {
   display: flex;
   align-items: center;

@@ -17,6 +17,11 @@ const deleteRowDeletBtn = document.querySelector(
 
 let selectedID;
 
+const updateTableAfterDelete = () => {
+  getAllProjectsData();
+  document.querySelector(".popup_form_wrapper").classList.add("hide");
+};
+
 const selectedDeleteProjectdata = (project, type) => {
   selectedID = project.id;
   let deleteimageEncoded = project.image;
@@ -51,10 +56,9 @@ deleteRowDeletBtn.addEventListener("click", () => {
       .then((response) => {
         if (response.ok) {
           alert("Project deleted successfully!");
-          getAllProjectsData();
+          updateTableAfterDelete();
         } else {
           alert("Failed to delete project");
-          getAllProjectsData();
         }
       })
       .catch((error) => {

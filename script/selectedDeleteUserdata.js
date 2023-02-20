@@ -51,6 +51,7 @@ deleteRowDeletBtn.addEventListener("click", () => {
       .then((response) => {
         if (response.ok) {
           alert("User deleted successfully!");
+          getAllUsersData();
         } else {
           alert("Failed to delete user");
         }

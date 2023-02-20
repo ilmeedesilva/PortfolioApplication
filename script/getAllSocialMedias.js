@@ -2,7 +2,11 @@ const socialMediaModifyTBBody = document.querySelector(
   ".social_media_modify_table_body"
 );
 
-const getAllUsersData = () => {
+const getAllSocialMedias = () => {
+  while (socialMediaModifyTBBody.firstChild) {
+    socialMediaModifyTBBody.removeChild(socialMediaModifyTBBody.firstChild);
+  }
+
   fetch("../../db/getAllSocialMedias.php")
     .then((response) => response.json())
     .then((medias) => {
@@ -70,4 +74,4 @@ const getAllUsersData = () => {
     .catch((error) => console.error(error));
 };
 
-getAllUsersData();
+getAllSocialMedias();

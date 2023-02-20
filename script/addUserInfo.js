@@ -23,17 +23,13 @@ const submit_button = document.querySelector(".add_user_save_btn");
 const clear_button = document.querySelector(".add_user_clear_btn");
 
 const clearInputFields = () => {
-
-  name_input.value="";
-  email_input.value="";
-  contactno_input.value="";
-  username_input.value="";
-  pwd_input.value="";
-  confirmpwd_input.value="";
-  
+  name_input.value = "";
+  email_input.value = "";
+  contactno_input.value = "";
+  username_input.value = "";
+  pwd_input.value = "";
+  confirmpwd_input.value = "";
 };
-
-
 
 const displayPopUp = (res) => {
   const header1 = document.querySelector(".status_descrip h6");
@@ -109,8 +105,10 @@ submit_button.addEventListener("click", (e) => {
     if (!username_input.value.match(/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/)) {
       console.log("regex");
       username_error.innerHTML = "*First 2 characters must be letters";
-    }
-    else if (username_input.value.length < 4 || username_input.value.length > 15) {
+    } else if (
+      username_input.value.length < 4 ||
+      username_input.value.length > 15
+    ) {
       username_error.innerHTML = "*User name must contain 4 to 15 charcters";
     } else {
       username_error.innerHTML = "";
@@ -164,6 +162,7 @@ submit_button.addEventListener("click", (e) => {
       .then((response) => response.text())
       .then((result) => {
         displayPopUp(result);
+        getAllUsersData();
       })
       .catch((error) => {
         alert(error);
@@ -174,12 +173,10 @@ submit_button.addEventListener("click", (e) => {
 clear_button.addEventListener("click", (e) => {
   e.preventDefault();
 
-  name_input.value="";
-  email_input.value="";
-  contactno_input.value="";
-  username_input.value="";
-  pwd_input.value="";
-  confirmpwd_input.value="";
-
+  name_input.value = "";
+  email_input.value = "";
+  contactno_input.value = "";
+  username_input.value = "";
+  pwd_input.value = "";
+  confirmpwd_input.value = "";
 });
-

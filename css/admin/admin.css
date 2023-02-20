@@ -887,6 +887,11 @@ form.slider_update textarea {
   object-fit: contain;
   background-position: center;
   background-size: cover;
+  transition: transform 0.5s ease;
+}
+
+.selected_img_view:hover {
+  transform: scale(1.2);
 }
 
 .img_uploader_label_input_wrapper {

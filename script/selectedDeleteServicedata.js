@@ -1,12 +1,12 @@
 const deleteTitle = document.querySelector(
-  '.popup_form input[name="edit_title"]'
+  'input[name="edit_title"]'
 );
 
 const deleteDescription = document.querySelector(
-  '.popup_form textarea[name="edit_desc"]'
+  'textarea[name="edit_desc"]'
 );
 const deleteRowDeletServiceBtn = document.querySelector(
-  ".popup_form .pop_up_edit_save_cancel_wrapper .delete_edit_service_save"
+  ".pop_up_edit_save_cancel_wrapper .delete_edit_service_save"
 );
 
 let selectedServiceID;
@@ -14,6 +14,8 @@ let selectedServiceID;
 const selectedDeleteServicedata = (service, type) => {
   selectedServiceID = service.id;
 
+  console.log("deleteeeeeeeee");
+  
   deleteTitle.readOnly = true;
   deleteDescription.readOnly = true;
 

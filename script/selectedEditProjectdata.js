@@ -80,8 +80,7 @@ const handleEditProject = (e, project, type) => {
 
   if (selectedDate > currentDate) {
     newDateError.innerHTML = "*Invalid Date";
-  }
-  if (!editRowDate.value) {
+  } else if (!editRowDate.value) {
     newDateError.innerHTML = "*Date cannont be empty";
   } else {
     newDateError.innerHTML = "";
@@ -104,39 +103,41 @@ const handleEditProject = (e, project, type) => {
   const editImageEncoded = project.image;
   const file = uploadedEditProjectImg.files[0];
 
-  if (file instanceof Blob) {
-    const reader = new FileReader();
+  const editHeader = editRowHeader.value.trim();
+  const editDate = editRowDate.value.trim();
+  const editDesc = editRowDesc.value.trim();
 
-    reader.onload = function (event) {
-      if (event.target.result === editImageEncoded) {
-        uploadedEditProjectImgError.innerHTML =
-          "*Uploaded image same as original";
-        return;
-      } else {
-        uploadedEditProjectImgError.innerHTML = "";
-      }
+  if (
+    editHeader === project.projectName.trim() &&
+    editDate === project.date &&
+    editDesc === project.descr.trim()
+  ) {
+    alert(
+      "Please fill all fields and make sure they are different from the original data"
+    );
+    return;
+  }
+  console.log("file - ", file);
+  console.log(
+    "uploadedEditProjectImgError.innerHTML  - ",
+    uploadedEditProjectImgError.innerHTML
+  );
 
-      const editHeader = editRowHeader.value.trim();
-      const editDate = editRowDate.value.trim();
-      const editDesc = editRowDesc.value.trim();
-
-      if (
-        editHeader === project.projectName.trim() &&
-        editDate === project.date &&
-        editDesc === project.descr.trim()
-      ) {
-        alert(
-          "Please fill all fields and make sure they are different from the original data"
-        );
-        return;
-      }
-
+  if (
+    !uploadedEditProjectImgError.innerHTML &&
+    !newDateError.innerHTML &&
+    !newHeaderError.innerHTML &&
+    !newDescError.innerHTML &&
+    type === "Edit"
+  ) {
+    if (file) {
       const data = new FormData();
       data.append("project_id", project.id);
-      data.append("image", editRowIMGUploder.files[0]);
+      data.append("image", file);
       data.append("project_name", editHeader);
       data.append("date", editDate);
       data.append("descr", editDesc);
+      console.log("project.id - ", project.id);
 
       fetch("../../db/putProjectData.php", {
         method: "POST",
@@ -145,6 +146,7 @@ const handleEditProject = (e, project, type) => {
         .then((response) => {
           if (response.status === 200) {
             alert("Data saved successfully");
+            getAllProjectsData();
           } else {
             alert("Failed to save data");
           }
@@ -153,7 +155,31 @@ const handleEditProject = (e, project, type) => {
           console.log(error);
           alert("Failed to save data");
         });
-    };
-    reader.readAsDataURL(file);
+    } else {
+      const data = new FormData();
+      data.append("project_id", project.id);
+      // data.append("image", editRowIMGUploder.files[0]);
+      data.append("project_name", editHeader);
+      data.append("date", editDate);
+      data.append("descr", editDesc);
+      console.log("project.id - ", project.id);
+
+      fetch("../../db/putProjectData.php", {
+        method: "POST",
+        body: data,
+      })
+        .then((response) => {
+          if (response.status === 200) {
+            alert("Data saved successfully");
+            getAllProjectsData();
+          } else {
+            alert("Failed to save data");
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+          alert("Failed to save data");
+        });
+    }
   }
 };

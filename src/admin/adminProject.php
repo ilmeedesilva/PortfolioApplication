@@ -87,7 +87,7 @@
                         <div class="img_upload_header_txt">
                             <p>Upload Cover Image</p>
                         </div>
-                        <div class="image_uploader_wrapper">
+                        <div class="image_uploader_wrapper img_uploader_label_input_wrapper">
                             <label for="image_upload_icon">
                                 <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
                             </label>
@@ -100,7 +100,7 @@
                     <div class="form-container">
                         <div class="form-group">
                             <label for="project_page_description">Description</label>
-                            <textarea id="project_page_description" name="project_page_description" rows="3"
+                            <textarea id="project_page_description" name="project_page_description" rows="8"
                                 cols="30"></textarea>
                             <p class="error_txt update_project_desc_error"></p>
                         </div>
@@ -125,7 +125,7 @@
                         <div class="img_upload_header_txt">
                             <p>Upload Image</p>
                         </div>
-                        <div class="image_uploader_wrapper">
+                        <div class="image_uploader_wrapper img_uploader_label_input_wrapper">
                             <label for="image_upload_icon">
                                 <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
                             </label>
@@ -148,7 +148,7 @@
                         </div>
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <textarea id="description" placeholder="Enter project description here..." rows="3"
+                            <textarea id="description" placeholder="Enter project description here..." rows="8"
                                 cols="30"></textarea>
                             <p class="error_txt"></p>
                         </div>
@@ -211,7 +211,7 @@
                     </table>
                 </div> -->
 
-                <!-- <div class="table_wrapper">
+        <!-- <div class="table_wrapper">
                     <table>
                         <thead>
                             <tr>

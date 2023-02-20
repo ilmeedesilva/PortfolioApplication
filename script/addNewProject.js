@@ -12,14 +12,12 @@ const clear_button = document.querySelector(".add_project_clear_btn");
 selectedImgView.style.display = "none";
 
 const clearInputFields = () => {
-
-  projectNameInput.value="";
-  finishDateInput.value="";
-  descriptionInput.value="";
-  imageInput.value="";
-  selectedImgView.value="";
+  projectNameInput.value = "";
+  finishDateInput.value = "";
+  descriptionInput.value = "";
+  imageInput.value = "";
+  selectedImgView.value = "";
 };
-
 
 imageInput.addEventListener("change", () => {
   if (imageInput.files.length > 0) {
@@ -102,6 +100,9 @@ saveButton.addEventListener("click", () => {
       .then((result) => {
         displayPopUp(result);
         clearInputFields();
+
+        getAllProjectsData();
+
         // if (result.includes("success")) {
 
         // } else {
@@ -114,18 +115,14 @@ saveButton.addEventListener("click", () => {
   }
 });
 
-
-
-
 clear_button.addEventListener("click", (e) => {
   e.preventDefault();
 
   //console.log("clicked");
 
-  projectNameInput.value="";
-  finishDateInput.value="";
-  descriptionInput.value="";
-  imageInput.value="";
-  selectedImgView.value="";
-
+  projectNameInput.value = "";
+  finishDateInput.value = "";
+  descriptionInput.value = "";
+  imageInput.value = "";
+  selectedImgView.value = "";
 });

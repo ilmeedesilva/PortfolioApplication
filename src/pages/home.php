@@ -13,8 +13,6 @@
   <link rel="stylesheet" href="../../css/Home.css">
   <link rel="stylesheet" href="../../css/loaders.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -37,23 +35,19 @@
     </div>
   </div> -->
 
-
-
-
-  <div class="main_banner">
+  <div class="main_banner banner-wrapper">
     <div class="banner_content_wrapper">
       <div class="banner_text_section">
-        <h2>Header Text</h2>
+        <h2>Hi I'm Ilmee</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla mollitia vero officiis laboriosam
           vitae dolor eaque et unde, consequatur suscipit! Ullam hic molestias eveniet autem unde officia illum aut.</p>
-        <button class="primary_btn">Button</button>
+        <button class="primary_btn main-btn">Learn More</button>
       </div>
       <div class="banner_img_section">
-        <img src="../../resource/image/ilmee.jpeg" alt="Image">
+        <!-- <img src="" alt="Image"> -->
       </div>
     </div>
   </div>
-
 
   <!--end carousel-->
 
@@ -62,7 +56,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-12 col-12">
-          <div class="about-img">
+          <div class="about-img section_appear">
             <!-- <svg id="skeleton" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <rect x="10" y="10" width="180" height="5" fill="#f4eeee" id="rect1" />
               <rect x="15" y="20" width="180" height="5" fill="#f4eeee" id="rect2" />
@@ -88,7 +82,7 @@
 
             </svg> -->
 
-            <svg width="400" height="300">
+            <!-- <svg width="400" height="300">
               <defs>
                 <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
                   <stop offset="0%" stop-color="#f0f0f0" stop-opacity="0.1">
@@ -98,16 +92,17 @@
                 </linearGradient>
               </defs>
               <rect x="0" y="0" width="400" height="300" rx="10" fill="url(#shine)" />
-            </svg>
+            </svg> -->
 
-            <!-- <img src="../../resource\image\img2.jpeg" alt="about-section-img" class="img-fluid"> -->
+            <img src="../../resource\image\img2.jpeg" alt="about-section-img" class="img-fluid">
           </div>
         </div>
-        <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+        <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5 section_appear">
           <div class="about-text sub-heading">
             <h5>Welcome</h5>
             <h2>About Me</h2>
-            <p class="about_desc_home">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            <p class="about_desc_home">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad
               minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
               irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
               sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -129,12 +124,13 @@
       <div class="cta-content">
         <div class="cta-col col_1">
           <div class="col-content">
-            <h2>Enough Talk, <br />Let's Build Something Together!</h2>
+            <h2 class="title text-light">Want to work with me?</h6>
+              <p>Always feel Free to Contact & Hire me</p>
           </div>
         </div>
         <div class="cta-col col_2">
           <div class="btn-holder">
-            <a href="contact.php" class="primary_btn cta_btn">Call Me</a>
+            <a href="contact.php" class="primary_btn cta_btn">Hire Me</a>
           </div>
         </div>
       </div>
@@ -145,8 +141,8 @@
   <!--End call to action section-->
 
   <!--Start service section-->
-  <div class="main_section_wrapper">
-    <div id="services" class="services section-padding">
+  <div class="main_section_wrapper section_appear">
+    <div id="services" class="services section-padding ">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -202,7 +198,7 @@
   <!--End service section-->
 
   <!--Start My Project-->
-  <section id="Project" class="project section-padding">
+  <section id="Project" class="project section-padding section_appear">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -215,7 +211,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-12 col-lg-4">
+        <div class="col-12 col-md-12 col-lg-4 ">
           <div class="card text-center">
             <div class="project-body">
               <img src="../../resource\image\proj1.jpg">
@@ -264,6 +260,7 @@
   <script src="../../script/navigation.js"> </script>
   <script src="../../script/mobileNav.js"></script>
   <script src="../../script/getLogo.js"> </script>
+  <script src="../../script/home.js"> </script>
   <script src="../../script/getContactInfo.js"></script>
   <script src="../../script/getAllSocialMedias.js"></script>
   <!-- <script src="../../script/loaders.js"></script> -->

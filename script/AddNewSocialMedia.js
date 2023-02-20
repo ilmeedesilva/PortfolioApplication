@@ -55,7 +55,11 @@ newSocialMediaSaveButton.addEventListener("click", () => {
 
   if (newSocialMediaLinkValue.trim() === "") {
     newSocialMediaImageInputError.textContent = "*Please enter a link.";
-  } else if (!newSocialMediaLinkValue.match(/^(ftp|http|https):\/\/[^ "]+$/)) {
+  } else if (
+    !newSocialMediaLinkValue.match(
+      /^(https?:\/\/)?([a-z0-9-]+\.)+[a-z]{2,}(\/.*)*$/i
+    )
+  ) {
     newSocialMediaImageInputError.textContent =
       "*Please enter a valid link. example - https://www.example.com";
   } else {

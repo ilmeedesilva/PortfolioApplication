@@ -58,11 +58,11 @@ body{
 */
 
 .text_section.about_vision_desc {
-    width: 48% !important;
+    width: 48% ;
     float: left;
 }
 .image_section.about_vision_img {
-    width: 50% !important;
+    width: 50% ;
     float: right;
 }
  
@@ -128,3 +128,9 @@ body{
 }
 
 
+/*new styles*/
+.about_header_desc {
+    width: 80% !important;
+    margin: 0px auto;
+    text-align: center;
+}

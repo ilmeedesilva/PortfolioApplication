@@ -13,11 +13,10 @@ if ($conn->connect_error) {
 
 if (isset($_POST['project_id'])) {
     $projectId = $_POST['project_id'];
-    $projectName = $_POST['project_name'];
-    $date = $_POST['date'];
-    $descr = $_POST['descr'];
+    $socialMediaName = $_POST['socialMediaName'];
+    $socialMediaLink = $_POST['socialMediaLink'];
 
-    $sql = "UPDATE projects SET projectName='$projectName', date='$date', descr='$descr' WHERE id=$projectId";
+    $sql = "UPDATE socialmedia SET socialMediaLinkName='$socialMediaName', socialMediaLink='$socialMediaLink' WHERE id=$projectId";
 
     if (isset($_FILES['image'])) {
         $file = $_FILES['image'];
@@ -27,7 +26,7 @@ if (isset($_POST['project_id'])) {
 
         if ($fileError === 0) {
             $imageData = base64_encode(file_get_contents($fileTmpName));
-            $sql = "UPDATE projects SET projectName='$projectName', date='$date', descr='$descr', image='$imageData' WHERE id=$projectId";
+            $sql = "UPDATE socialmedia SET socialMediaLinkName='$socialMediaName', socialMediaLink='$socialMediaLink', image='$imageData' WHERE id=$projectId";
         }
     }
 

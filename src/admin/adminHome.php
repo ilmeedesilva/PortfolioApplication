@@ -25,16 +25,80 @@
         </div>
     </div>
 
+    <!-- <div class="popup_form_wrapper hide">
+        <div class="gray_cover"></div>
+
+        <div class="popup_form">
+            <div class="close_btn">
+                <img src="../../resource/icon/close.png" alt="close_btn">
+            </div>
+
+            <div class="collapse_section_body">
+                <section class="upload">
+                    <div class="form_Container">
+                        <div class="form_wrappe group_inputs edit_service">
+                            <div class="box">
+                                <label for="address">Title:
+                                    <input type="text" name="edit_title" placeholder="Enter title">
+                                    <p class="error_txt edittitle_error"></p>
+                            </div>
+                            <div class="box">
+                                <label for="descr">Description:</label><br>
+                                <textarea name="edit_desc" cols="30" rows="3"
+                                    placeholder="Type your description here..."></textarea>
+                                <p class="error_txt editdesc_error"></p>
+                            </div>
+                        </div>
+                        <div class="pop_up_edit_save_cancel_wrapper">
+                            <button class="primary_btn delete_edit_service_save">SAVE</button>
+                            <button class="cancel_btn">CANCEL</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div> -->
 
 
 
     <div class="popup_form_wrapper hide">
         <div class="gray_cover"></div>
+        <!-- 
         <div class="popup_form">
             <div class="close_btn">
                 <img src="../../resource/icon/close.png" alt="close_btn">
             </div>
-            <div class="form_container">
+
+            <div class="collapse_section_body">
+                <section class="upload">
+                    <div class="form_Container">
+                        <div class="form_wrappe group_inputs edit_service">
+                            <div class="box">
+                                <label for="title">Title:
+                                    <input type="text" name="edit_title" placeholder="Enter title">
+                                    <p class="error_txt edittitle_error"></p>
+                            </div>
+                            <div class="box">
+                                <label for="descr">Description:</label><br>
+                                <textarea name="edit_desc" cols="30" rows="3"
+                                    placeholder="Type your description here..."></textarea>
+                                <p class="error_txt editdesc_error"></p>
+                            </div>
+                        </div>
+                        <div class="pop_up_edit_save_cancel_wrapper">
+                            <button class="primary_btn delete_edit_service_save">SAVE</button>
+                            <button class="cancel_btn">CANCEL</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div> -->
+
+        <div class="popup_form">
+            <div class="close_btn">
+                <img src="../../resource/icon/close.png" alt="close_btn">
+            </div>
+            <div class="form_container social_media_form_container">
                 <div class="image_wrapper">
                     <div class="group_lb_img">
                         <label for="">previus Image</label>
@@ -62,21 +126,32 @@
                     <button class="cancel_btn">CANCEL</button>
                 </div>
             </div>
+
+            <div class="services_form_wrapper">
+                <section class="upload">
+                    <div class="form_Container">
+                        <div class="form_wrappe group_inputs edit_service">
+                            <div class="box">
+                                <label for="edit_title">Title:
+                                    <input type="text" name="edit_title" id="edit_title" placeholder="Enter title">
+                                    <p class="error_txt edittitle_error"></p>
+                            </div>
+                            <div class="box">
+                                <label for="edit_desc">Description:</label><br>
+                                <textarea name="edit_desc" cols="30" rows="3"
+                                    placeholder="Type your description here..."></textarea>
+                                <p class="error_txt editdesc_error"></p>
+                            </div>
+                        </div>
+                        <div class="pop_up_edit_save_cancel_wrapper">
+                            <button class="primary_btn delete_edit_service_save">SAVE</button>
+                            <button class="cancel_btn">CANCEL</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <div class="admin_page_header_text">
@@ -250,17 +325,18 @@
                         <div class="form-group">
                             <label for="add_social_link">Social Media Name</label>
                             <input type="text" name="add_social_link_name" id="new_social_media_link_name"
-                                placeholder="example: facebook"></input>
+                                placeholder="ex: facebook"></input>
                             <p class="error_txt add_new_social_link__name_error"></p>
                             <label for="add_social_link">Social Media Link</label>
                             <input type="text" name="add_social_link" id="new_social_media_link"
-                                placeholder="example: https://www.example.com"></input>
+                                placeholder="ex: https://www.example.com"></input>
                             <p class="error_txt add_new_social_link_error"></p>
                         </div>
                     </div>
 
-                    <div class="save-container">
+                    <div class="save-container form_control">
                         <button id="add_new_social_media" class="primary_btn">Save</button>
+                        <button class="clear_btn add_newsocialmedia_clear_btn">Clear</button>
                     </div>
                 </div>
             </div>
@@ -584,6 +660,10 @@
     <!-- <script src="../../script/updateSliderInfo.js"></script> -->
     <script src="../../script/selectedSocialMediaDeleteData.js"></script>
     <script src="../../script/selectedSocialMediaEditData.js"></script>
+    <script src="../../script/addServicesTitleDescription.js"></script>
+    <script src="../../script/selectedEditServicedata.js"></script>
+    <script src="../../script/selectedDeleteServicedata.js"></script>
+    <script src="../../script/getAllServiceData.js"></script>
 
 </body>
 

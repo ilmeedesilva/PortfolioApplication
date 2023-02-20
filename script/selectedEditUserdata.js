@@ -80,12 +80,16 @@ const handleEditUser = (e, user) => {
   if (!editUserName.value) {
     username_error.innerHTML = "*User name cannot be empty";
   } else {
-    if (editUserName.value.length < 4 || editUserName.value.length > 8) {
-      username_error.innerHTML = "*User name must contain 4 to 8 charcters";
+    if (!editUserName.value.match(/^[A-Za-z][A-Za-z]+\d*$|^[a-z]\d\d+$/)) {
+      username_error.innerHTML = "*First 2 characters must be letters";
+    }
+    else if (editUserName.value.length < 4 || editUserName.value.length > 15) {
+      username_error.innerHTML = "*User name must contain 4 to 15 charcters";
     } else {
       username_error.innerHTML = "";
     }
   }
+
 
   const editname = editName.value.trim();
   const editusername = editUserName.value.trim();

@@ -25,7 +25,16 @@ const newSocialMediaSaveButton = document.getElementById(
   "add_new_social_media"
 );
 
+const clear_button = document.querySelector(".add_newsocialmedia_clear_btn");
+
 newSocialMediaSelectedImgView.style.display = "none";
+
+const clearSocialMediaFields = () => {
+
+  newSocialMediaImageInput.value = "";
+  newSocialMediaLinkName.value = "";
+  newSocialMediaLink.value = "";
+};
 
 newSocialMediaImageInput.addEventListener("change", () => {
   if (newSocialMediaImageInput.files.length > 0) {
@@ -90,6 +99,7 @@ newSocialMediaSaveButton.addEventListener("click", () => {
       .then((response) => response.text())
       .then((result) => {
         displayPopUp(result);
+        clearSocialMediaFields();
         // if (result.includes("success")) {
 
         // } else {
@@ -100,4 +110,14 @@ newSocialMediaSaveButton.addEventListener("click", () => {
         console.error("Error:", error);
       });
   }
+});
+
+clear_button.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  console.log("clicked");
+
+  newSocialMediaImageInput.value = "";
+  newSocialMediaLinkName.value = "";
+  newSocialMediaLink.value = "";
 });

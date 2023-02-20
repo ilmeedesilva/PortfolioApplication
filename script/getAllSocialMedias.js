@@ -41,6 +41,11 @@ const getAllSocialMedias = () => {
               .querySelector(".popup_form_wrapper")
               .classList.remove("hide");
 
+            document.querySelector(".services_form_wrapper").style.display =
+              "none";
+            document.querySelector(
+              ".social_media_form_container"
+            ).style.display = "block";
             selectedSocialMediaEditData(selectedUser, "Edit");
           });
 
@@ -51,6 +56,12 @@ const getAllSocialMedias = () => {
               link: media.socialMediaLink,
               image: media.image,
             };
+
+            document.querySelector(".services_form_wrapper").style.display =
+              "none";
+            document.querySelector(
+              ".social_media_form_container"
+            ).style.display = "block";
             selectedSocialMediaDeleteData(selectedUser, "Delete");
           });
         } else {

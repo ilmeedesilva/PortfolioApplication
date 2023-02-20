@@ -11,12 +11,13 @@ const clear_button = document.querySelector(".add_project_clear_btn");
 
 selectedImgView.style.display = "none";
 
-const clearInputFields = () => {
-  projectNameInput.value = "";
-  finishDateInput.value = "";
-  descriptionInput.value = "";
-  imageInput.value = "";
-  selectedImgView.value = "";
+const clearAddNewInputFields = () => {
+
+  projectNameInput.value="";
+  finishDateInput.value="";
+  descriptionInput.value="";
+  imageInput.value="";
+  selectedImgView.value="";
 };
 
 imageInput.addEventListener("change", () => {
@@ -99,10 +100,10 @@ saveButton.addEventListener("click", () => {
       .then((response) => response.text())
       .then((result) => {
         displayPopUp(result);
-        clearInputFields();
 
         getAllProjectsData();
 
+        clearAddNewInputFields();
         // if (result.includes("success")) {
 
         // } else {

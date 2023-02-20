@@ -196,13 +196,6 @@
                                 <p class="error_txt closing_hrs_error"></p>
                             </div>
                         </div>
-
-                        <!-- <div class="box allCheckBox">
-                                <label for="appointment">Opening Days:</label>
-                                <input type="checkbox" name="chbx" value="checkbox" checked="checked" id="appointment"> Confirmed <br><br>
-                                <p class="error_txt closing_hrs_error"></p>
-                            </div> -->
-
                         
 
 
@@ -392,6 +385,52 @@
             </div>
         </div>
 
+        <!-- Update About Image -->
+
+        <div class="collapse_section">
+            <div class="collapse_section_header">
+                <h4>Update About Image</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body">
+                <section class="upload">
+                        <div>
+                            <p class="project_page_update_pk" style="display: none;"></p>
+                            <div class="selected_cover_img_view selected_about_img_view">
+                            </div>
+                        </div>
+
+                    <div class="Container">
+
+                        
+
+                        <div class="wrapper">
+                            <div class="img-area column col_1">
+
+                            
+
+                            
+                                
+
+                                <div class="img_uploader">
+                                    <label for="" class="img_uploader_wrapper about_img_uploader_wrapper">
+                                        <input type="file" accept="image/*" class="image_uploader"
+                                            onchange="selectedAboutImageFile(this)">
+                                    </label>
+                                    <p class="file_about_img"></p>
+                                    <p class="error_txt error_abt_img"></p>
+                                    <p>Click here to upload</p>
+                                </div>
+                            </div>
+                            <div class="column col_2">
+                                <button class="select-image about_img_save_btn">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
 
         <!--Update slider-->
         <!-- <div class="collapse_section">
@@ -542,6 +581,9 @@
     <!-- <script src="../../script/updateSliderInfo.js"></script> -->
     <script src="../../script/selectedSocialMediaDeleteData.js"></script>
     <script src="../../script/selectedSocialMediaEditData.js"></script>
+    <script src="../../script/updateHomeAboutImage.js"></script>
+    <script src="../../script/getHomeAboutImage.js"></script>
+
 
 </body>
 

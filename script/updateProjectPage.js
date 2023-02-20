@@ -16,11 +16,46 @@ const updateProjectPageSave = document.getElementById("project_page_save");
 selectedProjectCoverImgView.style.display = "none";
 
 projectCoverImgInput.addEventListener("change", () => {
-  if (projectCoverImgInput.files.length > 0) {
-    selectedProjectCoverImgView.style.backgroundImage = `url('${URL.createObjectURL(
-      projectCoverImgInput.files[0]
-    )}')`;
-    selectedProjectCoverImgView.style.display = "block";
+  const file = projectCoverImgInput.files[0];
+  const reader = new FileReader();
+
+  // Check if a file was selected
+  if (file) {
+    // Check if the file type is JPG, JPEG, or PNG
+    if (
+      file.type === "image/jpeg" ||
+      file.type === "image/jpg" ||
+      file.type === "image/png"
+    ) {
+      // Check if the file size is less than 1MB
+      if (file.size <= 1048576) {
+        reader.readAsDataURL(file);
+        reader.onload = () => {
+          // Create a new image object and set the onload event handler
+          const img = new Image();
+          img.onload = () => {
+            if (img.width > 300) {
+              selectedProjectCoverImgView.style.backgroundImage = `url('${reader.result}')`;
+              selectedProjectCoverImgView.style.display = "block";
+              uploadImageCoverError.textContent = "";
+            } else {
+              uploadImageCoverError.textContent =
+                "Please select an image with a width greater than 300px.";
+              selectedProjectCoverImgView.style.display = "none";
+            }
+          };
+          img.src = reader.result;
+        };
+      } else {
+        uploadImageCoverError.textContent =
+          "Please select an image with a file size less than 1MB.";
+        selectedProjectCoverImgView.style.display = "none";
+      }
+    } else {
+      uploadImageCoverError.textContent =
+        "Please select an image of type JPG, JPEG, or PNG.";
+      selectedProjectCoverImgView.style.display = "none";
+    }
   } else {
     selectedProjectCoverImgView.style.display = "none";
   }

@@ -5,7 +5,8 @@
   justify-content: space-between;
   align-items: center;
   background-size: cover;
-  background-image: url(../resource/image/masthead.jpg), linear-gradient(#666666b8, #0e0d0d21);
+  background-image: url(../resource/image/masthead.jpg),
+    linear-gradient(#666666b8, #0e0d0d21);
   background-blend-mode: overlay;
 }
 
@@ -18,7 +19,7 @@
   margin: 0 auto;
 }
 .banner_content_wrapper h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 4.3em;
   line-height: 1.1;
@@ -30,10 +31,14 @@
 .banner_text_section {
   width: 53%;
   text-align: left;
+  position: relative;
+  top: 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 button.primary_btn.main-btn:hover {
   background-color: transparent !important;
-  border: 3px solid #fff !IMPORTANT;
+  border: 3px solid #fff !important;
 }
 .banner_text_section p {
   font-size: 23px;
@@ -141,6 +146,19 @@ a.btn:hover {
 /*about section*/
 img.img-fluid {
   border-radius: 5px;
+}
+
+/* fade effect section */
+
+.section_appear {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.section_in {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 section#about {

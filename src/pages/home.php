@@ -43,8 +43,8 @@
           vitae dolor eaque et unde, consequatur suscipit! Ullam hic molestias eveniet autem unde officia illum aut.</p>
         <button class="primary_btn main-btn">Learn More</button>
       </div>
-      <!--<div class="banner_img_section">
-        <img src="../../resource/image/ilmee.jpeg" alt="Image">-->
+      <div class="banner_img_section">
+        <!-- <img src="" alt="Image"> -->
       </div>
     </div>
   </div>
@@ -97,11 +97,12 @@
             <!-- <img src="../../resource\image\img2.jpeg" alt="about-section-img" class="img-fluid"> -->
           </div>
         </div>
-        <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+        <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5 section_appear">
           <div class="about-text sub-heading">
             <h5>Welcome</h5>
             <h2>About Me</h2>
-            <p class="about_desc_home">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            <p class="about_desc_home">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad
               minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
               irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
               sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -124,7 +125,7 @@
         <div class="cta-col col_1">
           <div class="col-content">
             <h2 class="title text-light">Want to work with me?</h6>
-            <p>Always feel Free to Contact & Hire me</p>
+              <p>Always feel Free to Contact & Hire me</p>
           </div>
         </div>
         <div class="cta-col col_2">
@@ -140,8 +141,8 @@
   <!--End call to action section-->
 
   <!--Start service section-->
-  <div class="main_section_wrapper">
-    <div id="services" class="services section-padding">
+  <div class="main_section_wrapper section_appear">
+    <div id="services" class="services section-padding ">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -197,7 +198,7 @@
   <!--End service section-->
 
   <!--Start My Project-->
-  <section id="Project" class="project section-padding">
+  <section id="Project" class="project section-padding section_appear">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -259,6 +260,7 @@
   <script src="../../script/navigation.js"> </script>
   <script src="../../script/mobileNav.js"></script>
   <script src="../../script/getLogo.js"> </script>
+  <script src="../../script/home.js"> </script>
   <script src="../../script/getContactInfo.js"></script>
   <script src="../../script/getAllSocialMedias.js"></script>
   <!-- <script src="../../script/loaders.js"></script> -->

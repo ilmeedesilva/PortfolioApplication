@@ -18,17 +18,16 @@ const getHomeAboutImage = () => {
               console.error("Invalid image data:", data[0].image);
             }
   
-            // document
-            //   .querySelector(".logo_save_btn")
-            //   .setAttribute("data-pk", data[0].id);
           }
-        //   else if(window.location.href.includes("home"))
-        //   {
-        //     var project = data[i];
-        //     var imageEncoded = project.image;
-        //     var image = '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
-        //     document.querySelector(.)
-        //   }
+          else if(window.location.href.includes("home"))
+          {
+            var project = data[i];
+            var imageEncoded = project.image;
+            let imagetag = document.createElement("img");
+            imagetag.src = "data:image/jpeg;base64," + imageEncoded;
+            console.log(imageEncoded);
+            document.querySelector(".about-img").appendChild(imagetag);
+          }
         //   else{
   
         //   var project = data[i];

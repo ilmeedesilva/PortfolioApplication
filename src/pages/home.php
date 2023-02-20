@@ -94,7 +94,7 @@
               <rect x="0" y="0" width="400" height="300" rx="10" fill="url(#shine)" />
             </svg> -->
 
-            <img src="../../resource\image\img2.jpeg" alt="about-section-img" class="img-fluid">
+            <!-- <img src="../../resource\image\img2.jpeg" alt="about-section-img" class="img-fluid"> -->
           </div>
         </div>
         <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5 section_appear">
@@ -265,6 +265,7 @@
   <script src="../../script/getAllSocialMedias.js"></script>
   <!-- <script src="../../script/loaders.js"></script> -->
   <script src="../../script/getAbout.js"></script>
+  <script src="../../script/getHomeAboutImage.js"></script>
 </body>
 
 </html>

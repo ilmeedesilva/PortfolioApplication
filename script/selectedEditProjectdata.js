@@ -122,9 +122,6 @@ const handleEditProject = (e, project, type) => {
     "uploadedEditProjectImgError.innerHTML  - ",
     uploadedEditProjectImgError.innerHTML
   );
-  console.log("newDateError.innerHTML  - ", newDateError.innerHTML);
-  console.log("newHeaderError.innerHTML  - ", newHeaderError.innerHTML);
-  console.log("newDescError.innerHTML  - ", newDescError.innerHTML);
 
   if (
     !uploadedEditProjectImgError.innerHTML &&

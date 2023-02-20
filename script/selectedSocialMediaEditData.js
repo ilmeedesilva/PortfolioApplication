@@ -72,65 +72,57 @@ uploadedEditSocialImg.addEventListener("change", function () {
 const handleEditProject = (e, social, type) => {
   e.preventDefault();
 
-  const newHeaderError = document.querySelector(
-    ".edit_project_header_error_txt"
+  const editSocialMediaNameError = document.querySelector(
+    ".edit_social_media_name_error_txt"
   );
-  const newDateError = document.querySelector(".edit_project_create_date");
-  const newDescError = document.querySelector(".edit_project_dec");
+  const editSocialMediaLinkError = document.querySelector(
+    ".edit_social_media_link_error_txt"
+  );
   const currentDate = new Date();
 
-  if (!editSocialRowName.value) {
-    newHeaderError.innerHTML = "*social media Name cannot be empty";
+  if (!editSocialRowName.value.trim() === "") {
+    editSocialMediaNameError.innerHTML = "*social media Name cannot be empty";
   } else if (editSocialRowName.value.length < 10) {
-    newHeaderError.innerHTML =
+    editSocialMediaNameError.innerHTML =
       "*Project Title must have more than 10 characters";
   } else {
-    newHeaderError.innerHTML = "";
+    editSocialMediaNameError.innerHTML = "";
   }
-  if (!editSocialRowLink.value) {
-    newDescError.innerHTML = "*Social media link cannot be empty";
+
+  if (editSocialRowLink.value.trim() === "") {
+    editSocialMediaLinkError.innerHTML = "*Please enter a link.";
+  } else if (
+    !editSocialRowLink.value.match(
+      /^(https?:\/\/)?([a-z0-9-]+\.)+[a-z]{2,}(\/.*)*$/i
+    )
+  ) {
+    editSocialMediaLinkError.innerHTML =
+      "*Please enter a valid link. example - https://www.example.com";
   } else {
-    newDescError.innerHTML = "";
+    editSocialMediaLinkError.innerHTML = "";
   }
 
   const editImageEncoded = social.image;
   const file = uploadedEditSocialImg.files[0];
 
-  if (file instanceof Blob) {
-    const reader = new FileReader();
+  console.log("editSocialRowName.value - ", editSocialRowName.value);
+  console.log("editSocialRowLink.value - ", editSocialRowLink.value);
+  console.log("social.id - ", social.id);
 
-    reader.onload = function (event) {
-      if (event.target.result === editImageEncoded) {
-        uploadedEditProjectImgError.innerHTML =
-          "*Uploaded image same as original";
-        return;
-      } else {
-        uploadedEditProjectImgError.innerHTML = "";
-      }
-
-      const editHeader = editSocialRowName.value.trim();
-      const editDate = editRowDate.value.trim();
-      const editDesc = editSocialRowLink.value.trim();
-
-      if (
-        editHeader === social.projectName.trim() &&
-        editDate === social.date &&
-        editDesc === social.descr.trim()
-      ) {
-        alert(
-          "Please fill all fields and make sure they are different from the original data"
-        );
-        return;
-      }
-
+  if (
+    !uploadedEditProjectImgError.innerHTML &&
+    !editSocialMediaNameError.innerHTML &&
+    !editSocialMediaLinkError.innerHTML &&
+    type === "Edit"
+  ) {
+    if (file) {
       const data = new FormData();
       data.append("project_id", social.id);
-      data.append("image", editSocialImgIploader.files[0]);
-      data.append("project_name", editHeader);
-      data.append("date", editDate);
-      data.append("descr", editDesc);
+      data.append("image", file);
+      data.append("socialMediaName", editSocialRowName.value);
+      data.append("socialMediaLink", editSocialRowLink.value);
 
-      fetch("../../db/putProjectData.php", {
+      fetch("../../db/putSocialMediaData.php", {
         method: "POST",
         body: data,
       })
@@ -146,7 +138,30 @@ const handleEditProject = (e, social, type) => {
           console.log(error);
           alert("Failed to save data");
         });
-    };
-    reader.readAsDataURL(file);
+    } else {
+      const data = new FormData();
+      data.append("project_id", social.id);
+      // data.append("image", editSocialImgIploader.files[0]);
+      data.append("socialMediaName", editSocialRowName.value);
+      data.append("socialMediaLink", editSocialRowLink.value);
+
+      fetch("../../db/putSocialMediaData.php", {
+        method: "POST",
+        body: data,
+      })
+        .then((response) => {
+          console.log("response - ", response);
+          if (response.status === 200) {
+            alert("Data saved successfully");
+            getAllSocialMedias();
+          } else {
+            alert("Failed to save data");
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+          alert("Failed to save data");
+        });
+    }
   }
 };

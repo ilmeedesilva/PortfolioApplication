@@ -56,7 +56,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-12 col-12">
-          <div class="about-img">
+          <div class="about-img section_appear">
             <!-- <svg id="skeleton" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <rect x="10" y="10" width="180" height="5" fill="#f4eeee" id="rect1" />
               <rect x="15" y="20" width="180" height="5" fill="#f4eeee" id="rect2" />
@@ -82,7 +82,7 @@
 
             </svg> -->
 
-            <svg width="400" height="300">
+            <!-- <svg width="400" height="300">
               <defs>
                 <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
                   <stop offset="0%" stop-color="#f0f0f0" stop-opacity="0.1">
@@ -92,9 +92,9 @@
                 </linearGradient>
               </defs>
               <rect x="0" y="0" width="400" height="300" rx="10" fill="url(#shine)" />
-            </svg>
+            </svg> -->
 
-            <!-- <img src="../../resource\image\img2.jpeg" alt="about-section-img" class="img-fluid"> -->
+            <img src="../../resource\image\img2.jpeg" alt="about-section-img" class="img-fluid">
           </div>
         </div>
         <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5 section_appear">
@@ -211,7 +211,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-12 col-lg-4">
+        <div class="col-12 col-md-12 col-lg-4 ">
           <div class="card text-center">
             <div class="project-body">
               <img src="../../resource\image\proj1.jpg">

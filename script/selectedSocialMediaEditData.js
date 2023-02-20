@@ -137,6 +137,7 @@ const handleEditProject = (e, social, type) => {
         .then((response) => {
           if (response.status === 200) {
             alert("Data saved successfully");
+            getAllSocialMedias();
           } else {
             alert("Failed to save data");
           }

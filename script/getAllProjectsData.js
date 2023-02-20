@@ -1,6 +1,10 @@
 const edittableBody = document.querySelector(".project_edit_table_body");
 //const deletetableBody = document.querySelector(".project_delete_table_body");
 const getAllProjectsData = () => {
+  while (edittableBody.firstChild) {
+    edittableBody.removeChild(edittableBody.firstChild);
+  }
+  edittableBody.innerHTML = "";
   fetch("../../db/getAllProjects.php")
     .then((response) => response.json())
     .then((projects) => {

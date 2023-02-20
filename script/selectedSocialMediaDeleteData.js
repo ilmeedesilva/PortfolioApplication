@@ -16,7 +16,6 @@ const deleteRowDeletBtn = document.querySelector(
 let selectedID;
 
 const selectedSocialMediaDeleteData = (social, type) => {
-  console.log("social - ", social);
   selectedID = social.id;
   let deleteimageEncoded = social.image;
   let deleteimage =
@@ -50,10 +49,9 @@ deleteRowDeletBtn.addEventListener("click", () => {
       .then((response) => {
         if (response.ok) {
           alert("Project deleted successfully!");
-          getAllProjectsData();
+          getAllSocialMedias();
         } else {
           alert("Failed to delete project");
-          getAllProjectsData();
         }
       })
       .catch((error) => {

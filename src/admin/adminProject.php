@@ -87,7 +87,7 @@
                         <div class="img_upload_header_txt">
                             <p>Upload Cover Image</p>
                         </div>
-                        <div class="image_uploader_wrapper">
+                        <div class="image_uploader_wrapper img_uploader_label_input_wrapper">
                             <label for="image_upload_icon">
                                 <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
                             </label>
@@ -125,7 +125,7 @@
                         <div class="img_upload_header_txt">
                             <p>Upload Image</p>
                         </div>
-                        <div class="image_uploader_wrapper">
+                        <div class="image_uploader_wrapper img_uploader_label_input_wrapper">
                             <label for="image_upload_icon">
                                 <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
                             </label>

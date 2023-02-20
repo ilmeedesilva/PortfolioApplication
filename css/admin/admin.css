@@ -209,9 +209,8 @@ input[type="file"] {
   cursor: pointer;
   transition: 500ms all ease-in;
 }
-.pre-img{
-
- display: inline-block;
+.pre-img {
+  display: inline-block;
   position: relative;
   background-image: url(../../resource/icon/uploadIcon.png);
   background-size: cover;
@@ -740,7 +739,7 @@ form.slider_update textarea {
 }
 .mail_wrapper div img {
   width: 100% !important;
-  float: none !IMPORTANT;
+  float: none !important;
   margin: 0px auto;
 }
 .about_banner_img {
@@ -867,4 +866,26 @@ form.slider_update textarea {
   object-fit: contain;
   background-position: center;
   background-size: cover;
+}
+
+.img_uploader_label_input_wrapper {
+  position: relative;
+}
+
+.img_uploader_label_input_wrapper label {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  transition: 500ms all ease-in;
+}
+
+.img_uploader_label_input_wrapper label img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.img_uploader_label_input_wrapper label {
+  transform: scale(1.2);
 }

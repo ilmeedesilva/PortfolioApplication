@@ -94,6 +94,23 @@
   margin-bottom: 16px;
 }
 
+.page_on_load {
+  animation: moveinFadein 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes moveinFadein {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .collapse_section_header {
   width: 100%;
   padding: 4px;

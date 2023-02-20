@@ -16,3 +16,10 @@ allCollapse.forEach((item) => {
     toggleCollapse(item);
   });
 });
+
+window.addEventListener("load", () => {
+  const collapseBars = document.querySelectorAll(".collapse_section");
+  collapseBars.forEach((bar) => {
+    bar.classList.add("page_on_load");
+  });
+});

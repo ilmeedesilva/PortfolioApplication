@@ -70,6 +70,13 @@
 .admin_nav .log_out {
   position: absolute;
   bottom: 80px;
+  color: #aeaebb;
+  cursor: pointer;
+}
+
+.logout_wrapper {
+  width: 100%;
+  padding: 20px 12px;
 }
 
 .admin_main_content {
@@ -930,4 +937,66 @@ form.slider_update textarea {
 
 .img_uploader_label_input_wrapper label {
   transform: scale(1.2);
+}
+.logo_out_conf {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.gray_cover {
+  width: 100%;
+  height: 100vh;
+  background-color: #272727;
+  opacity: 0.8;
+  z-index: 7;
+}
+
+.logo_out_conf_box {
+  width: 300px;
+  height: 170px;
+  border-radius: 8px;
+  background: #ffffff;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_out_conf_box p {
+  color: #212121;
+}
+
+.logo_out_conf_box_btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.logo_out_conf_box_btns button {
+  width: 120px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+}
+
+.btnYes {
+  background-color: #d73d21;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btnNo {
+  background-color: unset;
+  color: #212121;
+  cursor: pointer;
 }

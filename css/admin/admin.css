@@ -10,8 +10,8 @@
   position: fixed;
   width: 15%;
   height: 100%;
-  background-color: #1d1d42;
-  padding: 20px;
+  background-color: #354053;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   box-shadow: 1px 0px 6px 0px #1d1d42;
@@ -23,6 +23,10 @@
   color: #ffffff;
 }
 
+.nav_header {
+  padding: 8px 20px;
+}
+
 .admin_nav ul {
   width: 100%;
   margin: 0;
@@ -30,6 +34,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  overflow: hidden;
 }
 
 .admin_nav ul li {
@@ -50,8 +55,18 @@
   width: 100%;
   padding: 16px 0;
   color: #aeaebb;
+  padding: 16px;
   text-decoration: none;
 }
+
+.admin_nav ul a:hover {
+  background-color: #343c4a;
+}
+
+.admin_link_active {
+  background-color: #2b3443;
+}
+
 .admin_nav .log_out {
   position: absolute;
   bottom: 80px;

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/navigation.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/admin/admin.css">
+    <link rel="stylesheet" href="../../css/project.css">
     <link rel="stylesheet" href="../../css/loaders.css">
 </head>
 
@@ -19,7 +20,7 @@
     include "../../includes/navigation.php";
     ?>
 
-    <div class="project-details-container">
+    <div class="project-details-container ">
 
     </div>
 

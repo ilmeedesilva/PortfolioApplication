@@ -172,7 +172,15 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <!-- <div class="main_project_blog_container">
+
+      </div> -->
+
+      <div class="main_project_blog_container section_appear">
+
+
+      </div>
+      <!-- <div class="row">
         <div class="col-12 col-md-12 col-lg-4 ">
           <div class="card text-center">
             <div class="project-body">
@@ -211,7 +219,7 @@
           </div>
         </div>
 
-      </div>
+      </div> -->
       <div class="btn-wrapper">
         <a href="project.php" class="primary_btn cta_btn">View More</a>
       </div>
@@ -228,6 +236,7 @@
   <!-- <script src="../../script/loaders.js"></script> -->
   <script src="../../script/getAbout.js"></script>
   <script src="../../script/getHomeAboutImage.js"></script>
+  <script src="../../script/getProductsByCount.js"></script>
 </body>
 
 </html>

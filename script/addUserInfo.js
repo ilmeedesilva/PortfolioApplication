@@ -22,13 +22,15 @@ const submit_button = document.querySelector(".add_user_save_btn");
 
 const clear_button = document.querySelector(".add_user_clear_btn");
 
-const clearInputFields = () => {
-  name_input.value = "";
-  email_input.value = "";
-  contactno_input.value = "";
-  username_input.value = "";
-  pwd_input.value = "";
-  confirmpwd_input.value = "";
+const clearAddUserInputFields = () => {
+
+  name_input.value="";
+  email_input.value="";
+  contactno_input.value="";
+  username_input.value="";
+  pwd_input.value="";
+  confirmpwd_input.value="";
+  
 };
 
 const displayPopUp = (res) => {
@@ -42,7 +44,7 @@ const displayPopUp = (res) => {
     icon.src = "../../resource/icon/success.png";
     header1.innerHTML = "SUCCESS";
     detail.innerHTML = "SUCCESSFULLY ADDED";
-    clearInputFields();
+    clearAddUserInputFields();
   } else {
     background.style.backgroundColor = "#e9374d";
     icon.src = "../../resource/icon/fail.png";
@@ -102,8 +104,7 @@ submit_button.addEventListener("click", (e) => {
   if (!username_input.value) {
     username_error.innerHTML = "*User name cannot be empty";
   } else {
-    if (!username_input.value.match(/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/)) {
-      console.log("regex");
+    if (!username_input.value.match(/^[A-Za-z][A-Za-z]+\d*$|^[a-z]\d\d+$/)) {
       username_error.innerHTML = "*First 2 characters must be letters";
     } else if (
       username_input.value.length < 4 ||

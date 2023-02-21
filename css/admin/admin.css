@@ -943,7 +943,7 @@ form.slider_update textarea {
   transform: scale(1.2);
 }
 .logo_out_conf {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
   overflow: hidden;

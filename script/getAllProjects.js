@@ -14,9 +14,9 @@ const getProducts = () => {
         var html =
           '<div class="col blog_wrapper" data-id="' +
           project.id +
-          '" onclick="getPojectId(' +
+          '" onclick="window.location.href=\'project-details.php?id=' +
           project.id +
-          ')">\
+          '\'">\
                         <div class="blog-top-section">\
                           <div class="blue_cover"></div>\
                           <div class="blog_img">' +

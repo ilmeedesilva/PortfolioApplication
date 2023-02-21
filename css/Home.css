@@ -165,6 +165,24 @@ section#about {
   padding: 100px 0px;
 }
 
+.about_home_Wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: flex !important;
+  align-items: center;
+}
+
+.about_home_img {
+  width: 50%;
+}
+.about_home_img img {
+  width: 100%;
+}
+
+.about_text {
+  width: 50%;
+}
+
 .about-text h2 {
   font-weight: 700;
   font-size: 50px;
@@ -173,6 +191,7 @@ section#about {
 .about-text {
   padding-right: 50px;
   text-align: justify;
+  padding: 16px 0;
 }
 
 section#about {

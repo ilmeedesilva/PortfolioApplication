@@ -312,6 +312,7 @@ a.cta_btn {
   overflow: hidden;
   box-shadow: -2px 2px 20px 0px #c9c6c6;
   border-radius: 8px;
+  width: 360px;
 }
 
 .main_project_blog_container .blog_item .blog_text h4 {

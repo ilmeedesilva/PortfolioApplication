@@ -88,14 +88,14 @@ updateProjectPageSave.addEventListener("click", () => {
 
   if (description.trim() === "") {
     projectPageDescErrorMessages.textContent = "*Please enter a description";
-  } else if (description.length < 10) {
+  } else if (description.length <= 199 || description.length > 1000) {
     projectPageDescErrorMessages.textContent =
-      "*The description must be at least 10 characters long";
+      "*The description must be at least 200 characters long";
   } else {
     projectPageDescErrorMessages.textContent = "";
   }
 
-  if (Project_update_id && description && !isInvalidIMG) {
+  if (Project_update_id && description && projectPageDescErrorMessages.textContent=="" && !isInvalidIMG) {
     if (image) {
       const formData = new FormData();
       formData.append("description", description);

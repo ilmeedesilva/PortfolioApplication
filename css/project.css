@@ -241,3 +241,14 @@
   height: 300px !important;
   border-radius: 0px 15px 0px 0px !important;
 }
+
+@media only screen and (max-width: 900px) {
+.project_header_desc {
+  width: 100% !important;
+  display: block !important;
+  margin: 0px 10px !important;
+}
+.filter_options {
+  margin: 0px auto;
+}
+}

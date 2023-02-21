@@ -47,7 +47,10 @@ document.querySelector(".saveMotto").addEventListener("click", (e) => {
   }
   if (!descMotto.value) {
     err_desc_motto.innerHTML = "*Description cannot be empty";
-  } else {
+  } else if (descMotto.value.length <= 99 || descMotto.value.length > 500) {
+    err_desc_motto.innerHTML =
+      "*Motto Description should contain more than 100 characters and less than 500 characters";}    
+  else {
     err_desc_motto.innerHTML = "";
   }
   if (!err_desc_motto.innerHTML && !err_img_motto.innerHTML) {

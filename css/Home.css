@@ -165,6 +165,24 @@ section#about {
   padding: 100px 0px;
 }
 
+.about_home_Wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: flex !important;
+  align-items: center;
+}
+
+.about_home_img {
+  width: 50%;
+}
+.about_home_img img {
+  width: 100%;
+}
+
+.about_text {
+  width: 50%;
+}
+
 .about-text h2 {
   font-weight: 700;
   font-size: 50px;
@@ -173,6 +191,7 @@ section#about {
 .about-text {
   padding-right: 50px;
   text-align: justify;
+  padding: 16px 0;
 }
 
 section#about {
@@ -342,6 +361,8 @@ section#Project {
   display: flex;
   padding-top: 50px;
 }
+
+
 /*Responsive*/
 @media only screen and (max-width: 767px) {
   .carousel-caption {
@@ -379,7 +400,7 @@ section#Project {
     height: auto !important;
   }
   section#CTA-section {
-    height: 40vh !important;
+    height: 50vh !important;
     padding: 20px 0px !important;
   }
   .cta-col.col_2 {
@@ -429,21 +450,32 @@ section#Project {
   .main_section_wrapper {
     padding-bottom: 20px !important;
   }
-}
 
-@media (max-width: 768px) {
   .banner_content_wrapper {
-    flex-direction: column;
-    width: 100%;
+    flex-direction: column !important;
+    width: 100% !important;
   }
 
   .banner_text_section {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 50px !important;
   }
 
   .banner_img_section {
-    width: 100%;
+    width: 100% !important;
   }
+  .main_banner.banner-wrapper p {
+    width: 90% !important;
+    margin: 0px auto !important;
+    text-align: justify;
+    padding: 20px !important;
+}
+.main_banner.banner-wrapper h2 {
+  padding-top: 50px !important;
+  font-size: 55px !important;
+}
+.main_banner.banner-wrapper {
+  height: auto !important;
+}
 }

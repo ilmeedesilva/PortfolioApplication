@@ -12,7 +12,16 @@
 </head>
 
 <body>
-
+    <div class="logo_out_conf hide">
+        <div class="gray_cover"></div>
+        <div class="logo_out_conf_box">
+            <p>Are your sure you want to logout?</p>
+            <div class="logo_out_conf_box_btns">
+                <button class="btnYes">Yes</button>
+                <button class="btnNo">No</button>
+            </div>
+        </div>
+    </div>
 
     <div class="admin_panel_wrapper">
         <div class="admin_nav">
@@ -36,11 +45,11 @@
                     <li> <img src="../../resource/icon/user.png" alt="project icon"> User</li>
                 </a>
             </ul>
-            <div class="log_out">
+            <div class="log_out logout_wrapper">
                 <ul>
-                    <a href="../pages/home.php">
-                        <li> <img src="../../resource/icon/logout.png" alt="project icon">Logout</li>
-                    </a>
+
+                    <li> <img src="../../resource/icon/logout.png" alt="project icon" class="logout_btn">Logout</li>
+
                 </ul>
             </div>
         </div>
@@ -85,7 +94,7 @@
     </div>
 
 
-
+    <script src="../../script/logout.js"></script>
 </body>
 
 </html>

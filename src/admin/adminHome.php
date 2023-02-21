@@ -714,6 +714,7 @@
     <script src="../../script/selectedEditServicedata.js"></script>
     <script src="../../script/selectedDeleteServicedata.js"></script>
     <script src="../../script/getAllServiceData.js"></script>
+    <!-- <script src="../../script/logout.js"></script> -->
 
 </body>
 

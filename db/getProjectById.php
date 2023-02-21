@@ -26,17 +26,15 @@ if (mysqli_num_rows($result) == 0) {
     mysqli_query($conn, $createProjectsTableSql);
 }
 
-// Get the id from the request
-$id = $_POST['id'];
+$id = $_GET['id'];
+// $id = $_POST['id'];
 
-// Prepare and execute the SQL statement
 $sql = "SELECT * FROM projects WHERE id=?";
 $stmt = mysqli_prepare($conn, $sql);
 mysqli_stmt_bind_param($stmt, "i", $id);
 mysqli_stmt_execute($stmt);
 $result = mysqli_stmt_get_result($stmt);
 
-// Fetch the result and return it as a JSON object
 $rows = array();
 while ($row = mysqli_fetch_assoc($result)) {
     $rows[] = $row;

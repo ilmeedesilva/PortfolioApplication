@@ -27,9 +27,9 @@ fetch(`../../db/getProjectById.php?id=${projectId}`)
       image +
       '</div>\
          <div class="project-details-section">\
-           <h3>' +
+           <h2>' +
       projectName +
-      '</h3>\
+      '</h2>\
            <div class="sub_details d-flex justify-content-between align-items-center">\
              <p>' +
       descr +

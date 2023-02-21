@@ -20,22 +20,21 @@
                 <h4>Admin</h4>
             </div>
             <ul>
-                <a href="main.php?page=home">
+                <a href="main.php?page=home" <?php echo isset($_GET['page']) && $_GET['page'] == 'home' ? 'class="admin_link_active"' : '' ?>>
                     <li> <img src="../../resource/icon/home.png" alt="home icon"> Home</li>
                 </a>
-                <a href="main.php?page=project">
+                <a href="main.php?page=project" <?php echo isset($_GET['page']) && $_GET['page'] == 'project' ? 'class="admin_link_active"' : '' ?>>
                     <li> <img src="../../resource/icon/projects.png" alt="project icon"> Projects</li>
                 </a>
-                <a href="main.php?page=about">
+                <a href="main.php?page=about" <?php echo isset($_GET['page']) && $_GET['page'] == 'about' ? 'class="admin_link_active"' : '' ?>>
                     <li> <img src="../../resource/icon/about.png" alt="project icon"> About</li>
                 </a>
-                <a href="main.php?page=mail">
+                <a href="main.php?page=mail" <?php echo isset($_GET['page']) && $_GET['page'] == 'mail' ? 'class="admin_link_active"' : '' ?>>
                     <li> <img src="../../resource/icon/email.png" alt="project icon"> Mail</li>
                 </a>
-                <a href="main.php?page=user">
+                <a href="main.php?page=user" <?php echo isset($_GET['page']) && $_GET['page'] == 'user' ? 'class="admin_link_active"' : '' ?>>
                     <li> <img src="../../resource/icon/user.png" alt="project icon"> User</li>
                 </a>
-
             </ul>
             <div class="log_out">
                 <ul>

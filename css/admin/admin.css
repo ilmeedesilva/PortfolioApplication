@@ -86,6 +86,10 @@
   background-color: #e3e6ea;
 }
 
+.deactive {
+  display: none;
+}
+
 .admin_page_header_text {
   width: 720px;
   margin: 0 auto;

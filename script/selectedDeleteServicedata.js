@@ -12,10 +12,10 @@ const deleteRowDeletServiceBtn = document.querySelector(
 let selectedServiceID;
 
 const selectedDeleteServicedata = (service, type) => {
+  
   selectedServiceID = service.id;
 
-  console.log("deleteeeeeeeee");
-  
+  console.log("service - ", service);
   deleteTitle.readOnly = true;
   deleteDescription.readOnly = true;
 
@@ -35,7 +35,10 @@ deleteRowDeletServiceBtn.addEventListener("click", () => {
       .then((response) => {
         if (response.ok) {
           alert("Service deleted successfully!");
-        } else {
+          getAllServicesData(); 
+          
+        }
+        else{
           alert("Failed to delete service");
         }
       })

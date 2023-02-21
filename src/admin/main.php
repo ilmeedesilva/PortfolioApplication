@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="logo_out_conf hide">
+    <div class="logo_out_conf deactive">
         <div class="gray_cover"></div>
         <div class="logo_out_conf_box">
             <p>Are your sure you want to logout?</p>
@@ -47,9 +47,7 @@
             </ul>
             <div class="log_out logout_wrapper">
                 <ul>
-
                     <li> <img src="../../resource/icon/logout.png" alt="project icon" class="logout_btn">Logout</li>
-
                 </ul>
             </div>
         </div>

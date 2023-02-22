@@ -11,7 +11,7 @@ const getProductsByCount = (count) => {
         var descr = project.descr;
         var imageEncoded = project.image;
         var image = '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
-        var html = `<div class="blog_item">
+        var html = `<div class="blog_item" onclick="window.location.href=\'project-details.php?id=${project.id}'">
             <div class="blog_img">
               ${image}
             </div>

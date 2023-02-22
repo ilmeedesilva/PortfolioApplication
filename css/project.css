@@ -253,6 +253,8 @@
   justify-self: center;
   width: 100%;
   position: relative;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .project-details {
@@ -272,8 +274,22 @@
 
 .project-img img {
   max-width: 100%;
-  max-height: auto;
+  height: 100%;
   object-fit: contain;
+}
+
+.project-details-section {
+  width: 100%;
+}
+
+.project-details-section .sub_details p {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px 0;
+}
+
+.project-details-section .sub_details .date p {
+  margin: 0 !important;
 }
 
 @media only screen and (max-width: 900px) {

@@ -339,6 +339,7 @@ a.cta_btn {
   margin: 0 16px;
   min-width: 350px;
   max-width: 400px;
+  cursor: pointer;
 }
 
 .main_project_blog_container .blog_item .blog_img {

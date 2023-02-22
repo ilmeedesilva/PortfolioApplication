@@ -4,7 +4,7 @@ const getProductsByCount = (count) => {
       return response.json();
     })
     .then(function (data) {
-      for (var i = 0; i < data.length; i++) {
+      for (var i = 0; i < count; i++) {
         var project = data[i];
         var projectName = project.projectName;
         var date = project.date;
@@ -16,8 +16,10 @@ const getProductsByCount = (count) => {
               ${image}
             </div>
             <div class="blog_txt_section">
+            
               <div class="blog_text">
                 <h4>${projectName}</h4>
+                <span class="small_txt_date">${date}</span>
                 <p>${descr}</p>
               </div>
             </div>

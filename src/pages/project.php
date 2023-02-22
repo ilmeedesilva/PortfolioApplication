@@ -31,7 +31,7 @@
     </div>
     <div class="main_section_wrapper">
         <div class="project section_wrapper">
-            <div class="page_top_desc mt_45 mb_45 project_header_desc">
+            <div class="page_top_desc project_header_desc">
                 <p>
                 </p>
             </div>

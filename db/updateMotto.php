@@ -15,7 +15,7 @@ if (!$conn) {
 
 
 $imageName = $_FILES['image']['name'];
-$descMotto = $_POST["descMotto"];
+$descMotto = $_POST["description"];
 
 $imageData = file_get_contents($_FILES['image']['tmp_name']);
 $imageEncoded = base64_encode($imageData);

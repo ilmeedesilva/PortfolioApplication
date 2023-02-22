@@ -148,47 +148,51 @@
             </div>
         </div>
 
-
-
-        
         <div class="collapse_section">
             <div class="collapse_section_header">
                 <h4>Update Motto</h4>
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
-                <div class="add_project_wrapper">
-                    <div class="img_upload_container">
-                        <div class="title">
-                            <h5>Upload Image</h5>
+                <div class="project_crud_wrapper">
+                    <p class="project_page_update_pk" style="display: none;"></p>
+                    <div class="selected_cover_img_view selected_img_motto_view">
+                    </div>
+                    <div class="project_img_wrapper">
+                        <div class="img_upload_header_txt">
+                            <p>Upload Cover Image</p>
                         </div>
-                        <div class="img_uploader">
-                            <label for="" class="img_uploader_wrapper motto_uploader_wrapper">
-                                <input type="file" accept="image/*" class="image_uploader"
-                                    onchange="selectedFileMotto(this)">
+                        <div class="image_uploader_wrapper img_uploader_label_input_wrapper motto_uploader_wrapper">
+                            <label for="image_upload_icon">
+                                <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
                             </label>
-                            <p class="motto_img_name"></p>
-                            <p class="error_txt error_img_motto"></p>
-                            <p>Click here to upload</p>
+                            <input type="file" id="motto_cover_image-upload" name="cover_image-upload" accept="image/*">
+                            <p>Click the icon to upload image</p>
+                            <p class="error_txt add_motto_cover_img_err"></p>
                         </div>
                     </div>
-                    <div class="form_wrapper">
-                        <form action="">
-                            <div class="input_item">
-                                <label for="descr">Description</label><br>
-                                <textarea name="mottoDesc" cols="30" rows="8"
-                                    placeholder="Type your description here..."></textarea>
-                                <p class="error_txt desc_error_motto"></p>
-                            </div>
-                            <div class="form_control">
-                                <button class="save_btn saveMotto">Save</button>
-                            </div>
-                        </form>
+
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="motto_page_description">Description</label>
+                            <textarea id="motto_page_description" name="motto_page_description" rows="8"
+                                cols="30"></textarea>
+                            <p class="error_txt update_motto_desc_error"></p>
+                        </div>
+                    </div>
+
+                    <div class="save-container">
+                        <button id="motto_page_save" class="primary_btn">Save</button>
                     </div>
                 </div>
             </div>
         </div>
 
+
+
+
+        
+        
 
 
     </div>

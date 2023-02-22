@@ -10,11 +10,11 @@ const getAbout = () => {
             '.form_wrapper textarea[name="aboutDesc"]'
           ).value = data[0].description;
         } else if (window.location.href.includes("home")) {
-          let displayDescription = data[0].description.substring(0,100).concat("...");
+          let displayDescription1 = data[0].description.substring(0,500).concat("...");
           document.querySelector(".about_desc_home").innerHTML =
-            displayDescription;
+            displayDescription1;
           document.querySelector(".about_desc_footer").innerHTML =
-            displayDescription;
+            displayDescription1;
         }
         else if (window.location.href.includes("about")){
           var project = data[i];
@@ -22,17 +22,20 @@ const getAbout = () => {
           var image =
             '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
 
+          let displayDescription2 = data[0].description.substring(0,500).concat("...");
+
           document.querySelector(".about_header .about_banner_img").innerHTML =
             image;
           document.querySelector(".about_header_desc p").innerHTML =
             data[0].description;
           document.querySelector(".about_desc_footer").innerHTML =
-            data[0].description;
+            displayDescription2;
           
         }
         else{
+          let displayDescription3 = data[0].description.substring(0,500).concat("...");
           document.querySelector(".about_desc_footer").innerHTML =
-            data[0].description;
+            displayDescription3;
         }
       }
     })

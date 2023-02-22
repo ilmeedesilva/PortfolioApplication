@@ -77,17 +77,17 @@
   <!--End About section-->
 
   <!--Start call to action section-->
-  <section id="CTA-section" class="call section-padding">
+  <section id="CTA-section" class="call section-padding cta_section">
     <div class="cta-section">
-      <div class="background-img">
+      <div class="background-img img_cta">
 
       </div>
 
       <div class="cta-content">
         <div class="cta-col col_1">
           <div class="col-content">
-            <h2 class="title text-light">Want to work with me?</h6>
-              <p>Always feel Free to Contact & Hire me</p>
+            <h2 class="title text-light cta_main_title">Want to work with me?</h6>
+              <p class="cta_sub_title">Always feel Free to Contact & Hire me</p>
           </div>
         </div>
         <div class="cta-col col_2">
@@ -276,6 +276,7 @@
   <!-- <script src="../../script/loaders.js"></script> -->
   <script src="../../script/getAbout.js"></script>
   <script src="../../script/getHomeAboutImage.js"></script>
+  <script src="../../script/getCallToActionBanner.js"></script>
   <script src="../../script/getProductsByCount.js"></script>
 </body>
 

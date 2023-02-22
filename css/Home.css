@@ -265,6 +265,63 @@ a.cta_btn {
   padding: 12px 30px;
 }
 
+/* home services */
+.service_container_wrapper {
+  background-color: #eeeeee;
+}
+
+.services_items_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.services_items_wrapper .service_item {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px;
+  min-width: 300px;
+  max-width: 400px;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 2px #e6e5e5;
+}
+
+.services_items_wrapper .service_item:hover {
+  box-shadow: 0 2px 12px 2px #e6e5e5;
+}
+
+.service_item_icon {
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service_item_desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service_item_desc h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.service_item_desc p {
+  font-size: 16px;
+}
+
 /* home projects */
 .main_project_blog_container {
   width: 100%;
@@ -463,6 +520,7 @@ section#Project {
   }
   section#about {
     width: 95% !important;
+    margin: 20px;
   }
   /*service section*/
   .cta-col.col_1 {

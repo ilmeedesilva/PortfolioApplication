@@ -1,64 +1,144 @@
-const mainTitle=document.querySelector('input[name="call-to-action-Main-Title"]');
-const selectedCallToActionBanner=document.querySelector('#call-to-action-image-upload');
-const subTitle=document.querySelector('input[name="call-to-action-Sub-Title"]');
+const ctaMainTitleInput = document.getElementById("Cta-Main-Title");
+const ctaSubTitleInput = document.getElementById("Cta-Sub-Title");
+const ctaImageInput = document.getElementById("call-to-action-image-upload");
+const selectedCtaImgView = document.querySelector(".selected_img_view_cta");
+const ctaImgErr = document.querySelector(".call_to_action_img_err");
+const ctaMainTitleErr = document.querySelectorAll(".call_to_action_main_title_error");
+const ctaSubTitleErr = document.querySelectorAll(".call_to_action_sub_title_error");
+const errorMessages = document.querySelectorAll(".error-msg");
 
-/*const updateSelectedFileProject = (doc) => {
-    const file = doc.files[0];
-    const fileType = file.type;
-    const fileSize = file.size;
-    const filesizeinMB = (file.size / 1000).toFixed(2);
-    document.querySelector(
-      ".update_project_file_name"
-    ).innerHTML = `${file.name}, size: ${filesizeinMB} KB`;
-    if (fileType) {
-      document.querySelector(".call-to-action-img_err").innerHTML =
-        "*Must include an image";
-    }
-    if (fileType !== "image/jpeg" && fileType !== "image/png") {
-      document.querySelector(".call-to-action-img_err").innerHTML =
-        "*Invalid file type, only jpeg and png are allowed";
-      return;
-    } else if (fileSize > 1000000) {
-      document.querySelector(".call-to-action-img_err").innerHTML =
-        "*File size must be less than 1MB";
+const saveButton = document.querySelector(".cta_save_btn");
+const cta_clear_button = document.querySelector(".cta_clear_btn");
+
+selectedCtaImgView.style.display = "none";
+
+const clearInputFieldsCta = () => {
+  ctaMainTitleInput.value = "";
+  ctaSubTitleInput.value = "";
+  ctaImageInput.value = "";
+  selectedCtaImgView.value = "";
+};
+
+ctaImageInput.addEventListener("change", () => {
+  const file = ctaImageInput.files[0];
+  const reader = new FileReader();
+
+  // Check if a file was selected
+  if (file) {
+    // Check if the file type is JPG, JPEG, or PNG
+    if (
+      file.type === "image/jpeg" ||
+      file.type === "image/jpg" ||
+      file.type === "image/png"
+    ) {
+      // Check if the file size is less than 1MB
+      if (file.size <= 1048576) {
+        reader.readAsDataURL(file);
+        reader.onload = () => {
+          // Create a new image object and set the onload event handler
+          const img = new Image();
+          img.onload = () => {
+            if (img.width > 300) {
+              selectedCtaImgView.style.backgroundImage = `url('${reader.result}')`;
+              selectedCtaImgView.style.display = "block";
+              ctaImgErr.textContent = "";
+            } else {
+              ctaImgErr.textContent =
+                "Please select an image with a width greater than 300px.";
+              ctaImgErr.style.display = "none";
+            }
+          };
+          img.src = reader.result;
+        };
+      } else {
+        ctaImgErr.textContent =
+          "Please select an image with a file size less than 1MB.";
+        selectedCtaImgView.style.display = "none";
+      }
     } else {
-      document.querySelector(".call-to-action-img_err").innerHTML = "";
+      ctaImgErr.textContent =
+        "Please select an image of type JPG, JPEG, or PNG.";
+      selectedCtaImgView.style.display = "none";
     }
-  };
-  
-projectClick.addEventListener("click", (e) => {
-    e.preventDefault();
-  
-    projectInput.click();
+  } else {
+    selectedCtaImgView.style.display = "none";
+  }
+});
+
+
+saveButton.addEventListener("click", () => {
+  const cta_update_id = saveButton.getAttribute("data-pk");
+  errorMessages.forEach((errorMessage) => {
+    errorMessage.textContent = "";
   });
-    
-  const submit_button_project = document.querySelector(
-    ".form_wrapper .saveProject"
-  );
-  
-  const err_desc_project = document.querySelector(".desc_error_project");
-  
-  submit_button_project.addEventListener("click", (e) => {
-    e.preventDefault();
-    const err_img_project = document.querySelector(".error_img_project");
-    if (!projectInput.value) {
-      err_img_project.innerHTML = "*Please select an image";
-    } else {
-      err_img_project.innerHTML = "";
-    }
-    if (!descProject.value) {
-      err_desc_project.innerHTML = "*Description cannot be empty";
-    } else {
-      err_desc_project.innerHTML = "";
-    }
-    if (!err_desc_project.innerHTML && !err_img_project.innerHTML) {
-      document.querySelector(".call-to-action-img_err").innerHTML = "";
-      const selectedFileAbout1 = projectInput.files[0];
+
+  const mainTitleName = ctaMainTitleInput.value;
+  const subTitleName = ctaSubTitleInput.value;
+  const image = ctaImageInput.files[0];
+  let isInvalidIMG = false;
+
+  if (!image && !cta_update_id) {
+    ctaImgErr.textContent = "*Please select an image";
+  } else if(
+    image &&
+    !image.type.includes("jpeg") &&
+    !image.type.includes("png")
+  ) {
+    ctaImgErr.textContent = "*Please select a JPEG or PNG image";
+  } else if (image && image.size > 1000000) {
+    ctaImgErr.textContent = "*The image must be less than 1MB";
+    isInvalidIMG = true;
+  } else {
+    ctaImgErr.textContent = "";
+  }
+
+  if (mainTitleName.trim() === "") {
+    ctaMainTitleInput.nextElementSibling.textContent =
+      "*Please enter a project name";
+  } else if (mainTitleName.length < 8) {
+    ctaMainTitleInput.nextElementSibling.textContent =
+      "*The project name must be at least 8 characters long";
+  } else {
+    ctaMainTitleInput.nextElementSibling.textContent = "";
+  }
+
+  if (subTitleName.trim() === "") {
+    ctaSubTitleInput.nextElementSibling.textContent =
+      "*Please enter a project name";
+  } else if (mainTitleName.length < 8) {
+    ctaSubTitleInput.nextElementSibling.textContent =
+      "*The project name must be at least 8 characters long";
+  } else {
+    ctaSubTitleInput.nextElementSibling.textContent = "";
+  }
+
+
+  if (cta_update_id && mainTitleName && subTitleName && ctaMainTitleErr.textContent=="" && ctaSubTitleErr.textContent=="" && !isInvalidIMG) {
+    if (image) {
+    const formData = new FormData();
+    formData.append("mainTitle", mainTitleName);
+    formData.append("subTitle", subTitleName);
+    formData.append("image", image);
+
+    fetch("../../db/addCallToAction.php", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.text())
+      .then((result) => {
+        displayPopUp(result);
+        clearInputFieldsCta();
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  } else {
       const formData = new FormData();
-      formData.append("descProject", descProject.value);
-      formData.append("image", selectedFileAbout1);
-  
-      fetch("../../db/setCallToActionBanner.js", {
+      formData.append("mainTitle", mainTitleName);
+      formData.append("subTitle", subTitleName);
+      formData.append("image", image);
+      formData.append("id", parseInt(cta_update_id));
+      fetch("../../db/setCtaBannerById.php", {
         method: "POST",
         body: formData,
       })
@@ -67,18 +147,44 @@ projectClick.addEventListener("click", (e) => {
           displayPopUp(result);
         })
         .catch((error) => {
-          alert(error);
+          console.error("Error:", error);
         });
     }
-  });
-  
-  document
-    .querySelector(".call-to-action-clear_btn")
-    .addEventListener("click", (e) => {
-      e.preventDefault();
-  
-      descProject.value = "";
-      projectInput.value = "";
-      document.querySelector(".call-to-action-save_btn").innerHTML = "";
-    });
-  */
+  }
+
+  if (
+    !ctaImgErr.textContent &&
+    !ctaMainTitleInput.nextElementSibling.textContent &&
+    !ctaSubTitleInput.nextElementSibling.textContent 
+  ) {
+    const formData = new FormData();
+    formData.append("mainTitle", mainTitleName);
+    formData.append("subTitle", subTitleName);
+    formData.append("image", image);
+
+    fetch("../../db/addCallToAction.php", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.text())
+      .then((result) => {
+        displayPopUp(result);
+        clearInputFieldsCta();
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }
+});
+
+
+cta_clear_button.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  //console.log("clicked");
+
+  ctaMainTitleInput.value = "";
+  ctaSubTitleInput.value = "";
+  ctaImageInput.value = "";
+  selectedCtaImgView.value = "";
+});

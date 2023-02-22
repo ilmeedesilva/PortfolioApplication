@@ -30,6 +30,7 @@
 .blog_container {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 0;
 }
@@ -211,6 +212,11 @@
   padding: 80px 0px 50px 0px;
 }
 
+.filter_options {
+  width: 250px;
+  margin: 20px auto;
+}
+
 .filter_options select {
   padding: 6px;
   border-radius: 4px;
@@ -226,7 +232,6 @@
 }
 .filter_options label {
   font-weight: 600 !important;
-  font-family: "Playfair Display", serif !important;
 }
 /*Prroject layout*/
 .col.blog_wrapper {
@@ -274,8 +279,10 @@
 @media only screen and (max-width: 900px) {
   .project_header_desc {
     width: 100% !important;
-    display: block !important;
-    margin: 0px 10px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
   }
   .filter_options {
     margin: 0px auto;

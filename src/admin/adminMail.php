@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- <div class="loader"></div> -->
     <div class="admin_page_header_text">
         <h3>View Mail</h3>
     </div>
@@ -24,7 +25,7 @@
 
 
 
-
+    <!-- <script src="../../script/pageLoader.js"></script> -->
     <script src="../../script/collapse.js"></script>
 
     <script src="../../script/getMail.js"></script>

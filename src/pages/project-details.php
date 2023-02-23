@@ -16,6 +16,7 @@
 
 
 <body>
+    <div class="loader"></div>
     <?php
     include "../../includes/navigation.php";
     ?>
@@ -27,7 +28,7 @@
 
 
     <?php include('../../includes/footer.php'); ?>
-
+    <script src="../../script/pageLoader.js"></script>
     <script src="../../script/selectedProjectDetailsView.js"></script>
     <script src="../../script/navigation.js">
     </script>

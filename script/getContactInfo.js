@@ -1,6 +1,8 @@
 const getContactInfo = () => {
+  isLoading(true);
   fetch("../../db/getContactInfo.php")
     .then(function (response) {
+      isLoading(false);
       return response.json();
     })
     .then(function (data) {
@@ -9,9 +11,8 @@ const getContactInfo = () => {
           document.querySelector(
             '.form_Container input[name="street_no"]'
           ).value = data[0].streetno;
-          document.querySelector(
-            '.form_Container input[name="street"]'
-          ).value = data[0].street_name;
+          document.querySelector('.form_Container input[name="street"]').value =
+            data[0].street_name;
           document.querySelector(
             '.form_Container input[name="city_no"]'
           ).value = data[0].city;
@@ -26,16 +27,18 @@ const getContactInfo = () => {
             data[0].phone1;
           document.querySelector('.form_Container input[name="phone2"]').value =
             data[0].phone2;
-          document.querySelector('.form_Container input[name="openinig_hrs"]').value =
-            data[0].opening_hr;
-          document.querySelector('.form_Container input[name="closing_hrs"]').value =
-            data[0].closing_hr;
-        }
-        else if(window.location.href.includes("contact")){
+          document.querySelector(
+            '.form_Container input[name="openinig_hrs"]'
+          ).value = data[0].opening_hr;
+          document.querySelector(
+            '.form_Container input[name="closing_hrs"]'
+          ).value = data[0].closing_hr;
+        } else if (window.location.href.includes("contact")) {
           document.querySelector(".contact_info_address .street_no").innerHTML =
             data[0].streetno;
-          document.querySelector(".contact_info_address .street_name").innerHTML =
-            data[0].street_name;
+          document.querySelector(
+            ".contact_info_address .street_name"
+          ).innerHTML = data[0].street_name;
           document.querySelector(".contact_info_address .city").innerHTML =
             data[0].city;
           document.querySelector(".contact_info_address .country").innerHTML =
@@ -47,32 +50,37 @@ const getContactInfo = () => {
           document.querySelector(".contact_info_phone .no2").innerHTML =
             data[0].phone2;
 
-
-
-            document.querySelector(".contact_info_address .contact_street_no").innerHTML =
-            data[0].streetno;
-          document.querySelector(".contact_info_address .contact_street_name").innerHTML =
-            data[0].street_name;
-          document.querySelector(".contact_info_address .contact_city").innerHTML =
-            data[0].city;
-          document.querySelector(".contact_info_address .contact_country").innerHTML =
-            data[0].country;
-          document.querySelector(".contact_info_email .contact_email").innerHTML =
-            data[0].email;
+          document.querySelector(
+            ".contact_info_address .contact_street_no"
+          ).innerHTML = data[0].streetno;
+          document.querySelector(
+            ".contact_info_address .contact_street_name"
+          ).innerHTML = data[0].street_name;
+          document.querySelector(
+            ".contact_info_address .contact_city"
+          ).innerHTML = data[0].city;
+          document.querySelector(
+            ".contact_info_address .contact_country"
+          ).innerHTML = data[0].country;
+          document.querySelector(
+            ".contact_info_email .contact_email"
+          ).innerHTML = data[0].email;
           document.querySelector(".contact_info_phone .contact_no1").innerHTML =
             data[0].phone1;
           document.querySelector(".contact_info_phone .contact_no2").innerHTML =
             data[0].phone2;
-          document.querySelector(".contact_info_openingTag .opening_hrs").innerHTML =
-            data[0].opening_hr;
-          document.querySelector(".contact_info_openingTag .closing_hrs").innerHTML =
-            data[0].closing_hr;
-        }
-        else {
+          document.querySelector(
+            ".contact_info_openingTag .opening_hrs"
+          ).innerHTML = data[0].opening_hr;
+          document.querySelector(
+            ".contact_info_openingTag .closing_hrs"
+          ).innerHTML = data[0].closing_hr;
+        } else {
           document.querySelector(".contact_info_address .street_no").innerHTML =
             data[0].streetno;
-          document.querySelector(".contact_info_address .street_name").innerHTML =
-            data[0].street_name;
+          document.querySelector(
+            ".contact_info_address .street_name"
+          ).innerHTML = data[0].street_name;
           document.querySelector(".contact_info_address .city").innerHTML =
             data[0].city;
           document.querySelector(".contact_info_address .country").innerHTML =

@@ -17,8 +17,11 @@ const getAllProjectsData = () => {
     edittableBody.removeChild(edittableBody.firstChild);
   }
   loadingPorjectData();
+  isLoading(true);
   fetch("../../db/getAllProjects.php")
-    .then((response) => response.json())
+    .then((response) => {
+      isLoading(false), response.json();
+    })
     .then((projects) => {
       hideloadingPorjectData();
       if (projects.length === 0) {

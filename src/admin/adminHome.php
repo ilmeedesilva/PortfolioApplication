@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+    <div class="loader"></div>
     <div class="status_popup_wrapper popup_hide">
         <div class="status_icon">
             <img src="../../resource/icon/success.png" alt="status">
@@ -475,7 +475,7 @@
             </div>
             <div class="collapse_section_body">
                 <div class="project_crud_wrapper">
-                <p class="project_page_update_pk" style="display: none;"></p>
+                    <p class="project_page_update_pk" style="display: none;"></p>
                     <div class="selected_img_view selected_img_view_cta">
                     </div>
                     <div class="project_img_wrapper">
@@ -496,12 +496,14 @@
                     <div class="form-container">
                         <div class="form-group">
                             <label for="project-name">Main Title</label>
-                            <input type="text" name="call_to_action_Main_Title" placeholder="Enter main Title" id="Cta-Main-Title">
+                            <input type="text" name="call_to_action_Main_Title" placeholder="Enter main Title"
+                                id="Cta-Main-Title">
                             <p class="error_txt call_to_action_main_title_error"></p>
                         </div>
                         <div class="form-group">
                             <label for="project-name">Sub Title</label>
-                            <input type="text" name="call_to_action_Sub_Title" placeholder="Enter Sub Title" id="Cta-Sub-Title">
+                            <input type="text" name="call_to_action_Sub_Title" placeholder="Enter Sub Title"
+                                id="Cta-Sub-Title">
                             <p class="error_txt call_to_action_sub_title_error"></p>
                         </div>
                     </div>
@@ -698,6 +700,7 @@
     </div>
     </div>
     </div>
+    <script src="../../script/pageLoader.js"></script>
     <script src="../../script/collapse.js"></script>
     <script src="../../script/setLogo.js"></script>
     <script src="../../script/updateContactInfo.js"></script>

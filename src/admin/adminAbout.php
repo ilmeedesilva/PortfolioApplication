@@ -85,7 +85,8 @@
                             <label for="image_upload_icon">
                                 <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
                             </label>
-                            <input type="file" id="vision_cover_image-upload" name="cover_image-upload" accept="image/*">
+                            <input type="file" id="vision_cover_image-upload" name="cover_image-upload"
+                                accept="image/*">
                             <p>Click the icon to upload image</p>
                             <p class="error_txt add_vision_cover_img_err"></p>
                         </div>
@@ -126,7 +127,8 @@
                             <label for="image_upload_icon">
                                 <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
                             </label>
-                            <input type="file" id="tagLine_cover_image-upload" name="cover_image-upload" accept="image/*">
+                            <input type="file" id="tagLine_cover_image-upload" name="cover_image-upload"
+                                accept="image/*">
                             <p>Click the icon to upload image</p>
                             <p class="error_txt add_tagLine_cover_img_err"></p>
                         </div>
@@ -191,15 +193,15 @@
 
 
 
-        
-        
+
+
 
 
     </div>
 
 
 
-
+    <script src="../../script/pageLoader.js"></script>
     <script src="../../script/collapse.js"></script>
     <script src="../../script/updateAbout.js"></script>
     <script src="../../script/getAbout.js"></script>

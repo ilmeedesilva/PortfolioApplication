@@ -15,7 +15,7 @@
 
 <body>
 
-
+    <div class="loader"></div>
     <div class="status_popup_wrapper popup_hide">
         <div class="status_icon">
             <img src="../../resource/icon/success.png" alt="status">
@@ -231,7 +231,7 @@
         </div> -->
 
     </div>
-
+    <script src="../../script/pageLoader.js"></script>
     <script src="../../script/collapse.js"></script>
     <script src="../../script/project.js"></script>
     <script src="../../script/addNewProject.js"></script>

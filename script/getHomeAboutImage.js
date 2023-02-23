@@ -1,6 +1,8 @@
 const getHomeAboutImage = () => {
+  isLoading(true);
   fetch("../../db/getHomeAboutImage.php")
     .then(function (response) {
+      isLoading(false);
       return response.json();
     })
     .then(function (data) {

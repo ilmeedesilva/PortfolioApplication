@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+    <!-- <div class="loader"></div> -->
     <div class="status_popup_wrapper popup_hide">
         <div class="status_icon">
             <img src="../../resource/icon/success.png" alt="status">
@@ -213,7 +213,7 @@
 
 
 
-
+    <!-- <script src="../../script/pageLoader.js"></script> -->
     <script src="../../script/collapse.js"></script>
     <script src="../../script/addUserInfo.js"></script>
     <script src="../../script/getAllUserData.js"></script>

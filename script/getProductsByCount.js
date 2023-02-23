@@ -1,6 +1,8 @@
 const getProductsByCount = (count) => {
+  isLoading(true);
   fetch(`../../db/getAllProjects.php?count=${count}`)
     .then(function (response) {
+      isLoading(false);
       return response.json();
     })
     .then(function (data) {

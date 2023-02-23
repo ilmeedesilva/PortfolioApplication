@@ -15,7 +15,6 @@ const getVision = () => {
           } else {
             document.querySelector(".selected_img_vision_view").style.display =
               "none";
-            console.error("Invalid image data:", data[0].image);
           }
           document.querySelector(
             '.form-container textarea[name="vision_page_description"]'
@@ -24,8 +23,7 @@ const getVision = () => {
           document
             .querySelector("#vision_page_save")
             .setAttribute("data-pk", data[0].id);
-        } 
-        else {
+        } else {
           var project = data[i];
           var imageEncoded = project.image;
           var image =
@@ -43,30 +41,6 @@ const getVision = () => {
     });
 };
 getVision();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const getVision = () => {
 //   fetch("../../db/getVision.php")

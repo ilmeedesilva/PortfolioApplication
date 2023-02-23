@@ -16,6 +16,9 @@
 </head>
 
 <body>
+
+  <div class="loader"></div>
+
   <?php include('../../includes/navigation.php'); ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
   </script>
@@ -34,6 +37,8 @@
       </div>
     </div>
   </div> -->
+
+
 
   <div class="main_banner banner-wrapper">
     <div class="banner_content_wrapper">
@@ -266,7 +271,7 @@
   </section>
   <?php include('../../includes/footer.php'); ?>
   <!--End  My Project-->
-
+  <script src="../../script/pageLoader.js"></script>
   <script src="../../script/navigation.js"> </script>
   <script src="../../script/mobileNav.js"></script>
   <script src="../../script/getLogo.js"> </script>
@@ -278,6 +283,7 @@
   <script src="../../script/getHomeAboutImage.js"></script>
   <script src="../../script/getCallToActionBanner.js"></script>
   <script src="../../script/getProductsByCount.js"></script>
+
 </body>
 
 </html>

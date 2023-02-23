@@ -1,6 +1,8 @@
 const getCallToActionBanner = () => {
+  isLoading(true);
   fetch("../../db/getCallToActionBanner.php")
     .then(function (response) {
+      isLoading(false);
       return response.json();
     })
     .then(function (data) {

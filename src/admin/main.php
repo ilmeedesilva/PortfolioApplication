@@ -1,3 +1,14 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+if (!isset($_SESSION['logged_userName'])) {
+    header('Location: login.php');
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,8 +28,10 @@
         <div class="logo_out_conf_box">
             <p>Are your sure you want to logout?</p>
             <div class="logo_out_conf_box_btns">
-                <button class="btnYes">Yes</button>
-                <button class="btnNo">No</button>
+                <form action="../../db/logout.php" method="post">
+                    <button class="btnYes">Yes</button>
+                    <button class="btnNo">No</button>
+                </form>
             </div>
         </div>
     </div>

@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <div class="loader"></div>
     <?php
     include "../../includes/navigation.php";
     ?>
@@ -135,6 +136,7 @@
 
     </div>
     <?php include('../../includes/footer.php'); ?>
+    <script src="../../script/pageLoader.js"></script>
     <script src="../../script/navigation.js">
     </script>
     <script src="../../script/mobileNav.js"></script>

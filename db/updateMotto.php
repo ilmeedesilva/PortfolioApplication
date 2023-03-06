@@ -1,21 +1,8 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
-
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-
-
-
+require_once './dbconnection/dbConnection.php';
 
 $imageName = $_FILES['image']['name'];
-$descMotto = $_POST["descMotto"];
+$descMotto = $_POST["description"];
 
 $imageData = file_get_contents($_FILES['image']['tmp_name']);
 $imageEncoded = base64_encode($imageData);
@@ -33,6 +20,6 @@ if (mysqli_query($conn, $sql)) {
 
 
 
-mysqli_close($conn);
+require_once './dbconnection/dbConnectionClose.php';
 
 ?>

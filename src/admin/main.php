@@ -1,3 +1,14 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+if (!isset($_SESSION['logged_userName'])) {
+    header('Location: login.php');
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,8 +28,10 @@
         <div class="logo_out_conf_box">
             <p>Are your sure you want to logout?</p>
             <div class="logo_out_conf_box_btns">
-                <button class="btnYes">Yes</button>
-                <button class="btnNo">No</button>
+                <form action="../../db/logout.php" method="post">
+                    <button class="btnYes">Yes</button>
+                    <button class="btnNo">No</button>
+                </form>
             </div>
         </div>
     </div>
@@ -30,24 +43,25 @@
             </div>
             <ul>
                 <a href="main.php?page=home" <?php echo isset($_GET['page']) && $_GET['page'] == 'home' ? 'class="admin_link_active"' : '' ?>>
-                    <li> <img src="../../resource/icon/home.png" alt="home icon"> Home</li>
+                    <li> <img src="../../resource/icon/home.png" alt="home icon"><span> Home</span></li>
                 </a>
                 <a href="main.php?page=project" <?php echo isset($_GET['page']) && $_GET['page'] == 'project' ? 'class="admin_link_active"' : '' ?>>
-                    <li> <img src="../../resource/icon/projects.png" alt="project icon"> Projects</li>
+                    <li> <img src="../../resource/icon/projects.png" alt="project icon"><span> Projects</span></li>
                 </a>
                 <a href="main.php?page=about" <?php echo isset($_GET['page']) && $_GET['page'] == 'about' ? 'class="admin_link_active"' : '' ?>>
-                    <li> <img src="../../resource/icon/about.png" alt="project icon"> About</li>
+                    <li> <img src="../../resource/icon/about.png" alt="project icon"><span> About</span></li>
                 </a>
                 <a href="main.php?page=mail" <?php echo isset($_GET['page']) && $_GET['page'] == 'mail' ? 'class="admin_link_active"' : '' ?>>
-                    <li> <img src="../../resource/icon/email.png" alt="project icon"> Mail</li>
+                    <li> <img src="../../resource/icon/email.png" alt="project icon"><span> Mail</span></li>
                 </a>
                 <a href="main.php?page=user" <?php echo isset($_GET['page']) && $_GET['page'] == 'user' ? 'class="admin_link_active"' : '' ?>>
-                    <li> <img src="../../resource/icon/user.png" alt="project icon"> User</li>
+                    <li> <img src="../../resource/icon/user.png" alt="project icon"><span> User</span></li>
                 </a>
             </ul>
             <div class="log_out logout_wrapper">
                 <ul>
-                    <li> <img src="../../resource/icon/logout.png" alt="project icon" class="logout_btn">Logout</li>
+                    <li> <img src="../../resource/icon/logout.png" alt="project icon"
+                            class="logout_btn"><span>Logout</span></li>
                 </ul>
             </div>
         </div>

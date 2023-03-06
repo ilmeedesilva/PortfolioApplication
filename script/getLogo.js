@@ -1,6 +1,8 @@
 const getLogo = () => {
+  isLoading(true);
   fetch("../../db/getLogo.php")
     .then(function (response) {
+      isLoading(false);
       return response.json();
     })
     .then(function (data) {
@@ -21,23 +23,21 @@ const getLogo = () => {
           // document
           //   .querySelector(".logo_save_btn")
           //   .setAttribute("data-pk", data[0].id);
+        } else {
+          var project = data[i];
+          var imageEncoded = project.image;
+          var image =
+            '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
+
+          document.querySelector(".top_nav_left").innerHTML =
+            '<a href="../../src/pages/home.php">' + image;
+          document.querySelector(".footer_content_logo_img").innerHTML = image;
         }
-        else{
-
-        var project = data[i];
-        var imageEncoded = project.image;
-        var image = '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
-
-        document.querySelector(".top_nav_left").innerHTML =
-          '<a href="../../src/pages/home.php">' + image;
-        document.querySelector(".footer_content_logo_img").innerHTML = image;
       }
-    }
     })
     .catch((err) => {
-   console.log(err);
-      alert(err); 
-
+      console.log(err);
+      alert(err);
     });
 };
 getLogo();

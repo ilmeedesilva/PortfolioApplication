@@ -1,3 +1,20 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+if (!isset($_SESSION['logged_userName'])) {
+    header('Location: login.php');
+    exit();
+}
+
+
+if (!isset($_GET['page'])) {
+    header("Location: main.php?page=mail");
+    exit();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +29,8 @@
 </head>
 
 <body>
+
+    <!-- <div class="loader"></div> -->
     <div class="admin_page_header_text">
         <h3>View Mail</h3>
     </div>
@@ -24,7 +43,7 @@
 
 
 
-
+    <!-- <script src="../../script/pageLoader.js"></script> -->
     <script src="../../script/collapse.js"></script>
 
     <script src="../../script/getMail.js"></script>

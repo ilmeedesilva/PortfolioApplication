@@ -16,6 +16,9 @@
 </head>
 
 <body>
+
+  <div class="loader"></div>
+
   <?php include('../../includes/navigation.php'); ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
   </script>
@@ -34,6 +37,8 @@
       </div>
     </div>
   </div> -->
+
+
 
   <div class="main_banner banner-wrapper">
     <div class="banner_content_wrapper">
@@ -77,17 +82,17 @@
   <!--End About section-->
 
   <!--Start call to action section-->
-  <section id="CTA-section" class="call section-padding">
+  <section id="CTA-section" class="call section-padding cta_section">
     <div class="cta-section">
-      <div class="background-img">
+      <div class="background-img img_cta">
 
       </div>
 
       <div class="cta-content">
         <div class="cta-col col_1">
           <div class="col-content">
-            <h2 class="title text-light">Want to work with me?</h6>
-              <p>Always feel Free to Contact & Hire me</p>
+            <h2 class="title text-light cta_main_title">Want to work with me?</h6>
+              <p class="cta_sub_title">Always feel Free to Contact & Hire me</p>
           </div>
         </div>
         <div class="cta-col col_2">
@@ -104,7 +109,7 @@
 
   <!--Start service section-->
   <div class="main_section_wrapper section_appear">
-    <div id="services" class="services section-padding ">
+    <div id="services" class="services section-padding service_container_wrapper">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -118,7 +123,47 @@
           </div>
         </div>
       </div>
-      <div class="row">
+
+      <div class="services_items_wrapper">
+        <div class="service_item">
+          <div class="service_item_icon"><i class="bi bi-x-diamond"></i></div>
+          <div class="service_item_desc">
+            <h4>Service item #01</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo error, facere perferendis min</p>
+          </div>
+        </div>
+
+        <div class="service_item">
+          <div class="service_item_icon"><i class="bi bi-x-diamond"></i></div>
+          <div class="service_item_desc">
+            <h4>Service item #01</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo error, facere perferendis min</p>
+          </div>
+        </div>
+
+
+
+
+        <div class="service_item">
+          <div class="service_item_icon"> <i class="bi bi-layers"></i></div>
+          <div class="service_item_desc">
+            <h4>Service item #01</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo error, facere perferendis min</p>
+          </div>
+        </div>
+
+
+
+        <div class="service_item">
+          <div class="service_item_icon"><i class="bi bi-display"></i></div>
+          <div class="service_item_desc">
+            <h4>Service item #01</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo error, facere perferendis min</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="row">
         <div class="col-12 col-md-12 col-lg-4">
           <div class="card text-center">
             <div class="box-body">
@@ -154,7 +199,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
   <!--End service section-->
@@ -226,7 +271,7 @@
   </section>
   <?php include('../../includes/footer.php'); ?>
   <!--End  My Project-->
-
+  <script src="../../script/pageLoader.js"></script>
   <script src="../../script/navigation.js"> </script>
   <script src="../../script/mobileNav.js"></script>
   <script src="../../script/getLogo.js"> </script>
@@ -236,7 +281,9 @@
   <!-- <script src="../../script/loaders.js"></script> -->
   <script src="../../script/getAbout.js"></script>
   <script src="../../script/getHomeAboutImage.js"></script>
+  <script src="../../script/getCallToActionBanner.js"></script>
   <script src="../../script/getProductsByCount.js"></script>
+
 </body>
 
 </html>

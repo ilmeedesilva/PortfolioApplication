@@ -1,3 +1,22 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+if (!isset($_SESSION['logged_userName'])) {
+    header('Location: login.php');
+    exit();
+}
+
+
+if (!isset($_GET['page'])) {
+    header("Location: main.php?page=home");
+    exit();
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +34,7 @@
 
 <body>
 
+    <div class="loader"></div>
     <div class="status_popup_wrapper popup_hide">
         <div class="status_icon">
             <img src="../../resource/icon/success.png" alt="status">
@@ -475,7 +495,8 @@
             </div>
             <div class="collapse_section_body">
                 <div class="project_crud_wrapper">
-                    <div class="call_to_action_selected_img_view">
+                    <p class="project_page_update_pk" style="display: none;"></p>
+                    <div class="selected_img_view selected_img_view_cta">
                     </div>
                     <div class="project_img_wrapper">
                         <div class="img_upload_header_txt">
@@ -488,25 +509,27 @@
                             <input type="file" id="call-to-action-image-upload" name="call-to-action-image-upload"
                                 accept="image/*">
                             <p>Click the icon to upload image</p>
-                            <p class="error_txt call-to-action-img_err"></p>
+                            <p class="error_txt call_to_action_img_err"></p>
                         </div>
                     </div>
 
                     <div class="form-container">
                         <div class="form-group">
                             <label for="project-name">Main Title</label>
-                            <input type="text" name="call-to-action-Main-Title" placeholder="Enter main Title">
-                            <p class="error_txt call-to-action-main-title-error"></p>
+                            <input type="text" name="call_to_action_Main_Title" placeholder="Enter main Title"
+                                id="Cta-Main-Title">
+                            <p class="error_txt call_to_action_main_title_error"></p>
                         </div>
                         <div class="form-group">
                             <label for="project-name">Sub Title</label>
-                            <input type="text" name="call-to-action-Sub-Title" placeholder="Enter Sub Title">
-                            <p class="error_txt call-to-action-sub-title-error"></p>
+                            <input type="text" name="call_to_action_Sub_Title" placeholder="Enter Sub Title"
+                                id="Cta-Sub-Title">
+                            <p class="error_txt call_to_action_sub_title_error"></p>
                         </div>
                     </div>
                     <div class="save-container form_control">
-                        <button id="save" class="primary_btn call-to-action-save_btn">Save</button>
-                        <button class="clear_btn call-to-action-clear_btn">Clear</button>
+                        <button id="save" class="primary_btn cta_save_btn">Save</button>
+                        <button class="clear_btn cta_clear_btn">Clear</button>
                     </div>
                 </div>
             </div>
@@ -697,6 +720,7 @@
     </div>
     </div>
     </div>
+    <script src="../../script/pageLoader.js"></script>
     <script src="../../script/collapse.js"></script>
     <script src="../../script/setLogo.js"></script>
     <script src="../../script/updateContactInfo.js"></script>
@@ -715,6 +739,8 @@
     <script src="../../script/selectedDeleteServicedata.js"></script>
     <script src="../../script/getAllServiceData.js"></script>
     <!-- <script src="../../script/logout.js"></script> -->
+    <script src="../../script/setCallToActionBanner.js"></script>
+    <script src="../../script/getCallToActionBanner.js"></script>
 
 </body>
 

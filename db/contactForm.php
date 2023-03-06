@@ -1,20 +1,12 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
+require_once './dbconnection/dbConnection.php';
 
 $name = $_POST["name"];
 $email = $_POST["email"];
 $tel = $_POST["tel"];
 $msg = $_POST["msg"];
 
-$conn = new mysqli($servername, $username, $password, $dbname);
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
 $checkContactUserTableExist = "SHOW TABLES LIKE 'contactUser'";
 $result = mysqli_query($conn, $checkContactUserTableExist);
@@ -49,7 +41,7 @@ if ($conn->query($sql) === TRUE) {
     echo "Error";
 }
 
-$conn->close();
+require_once './dbconnection/dbConnectionClose.php';
 ?>
 
 <!-- contact us page query

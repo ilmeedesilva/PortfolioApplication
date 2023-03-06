@@ -1,9 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
-$conn = mysqli_connect($dbHost, $dbUsername, $dbPassword, $dbName);
+require_once './dbconnection/dbConnection.php';
 
 $checkProjectsTableExist = "SHOW TABLES LIKE 'projects'";
 $result = mysqli_query($conn, $checkProjectsTableExist);
@@ -29,4 +25,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 header('Content-Type: application/json');
 echo json_encode($projects);
+
+
+require_once './dbconnection/dbConnectionClose.php';
 ?>

@@ -1,9 +1,5 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
+require_once './dbconnection/dbConnection.php';
 
 $title1 = $_POST["title1"];
 $title2 = $_POST["title2"];
@@ -28,7 +24,7 @@ if ($conn->query($sql) === TRUE) {
     echo "Error";
 }
 
-$conn->close();
+require_once './dbconnection/dbConnectionClose.php';
 ?>
 
 <!-- contact update info admin page query

@@ -1,3 +1,21 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+if (!isset($_SESSION['logged_userName'])) {
+    header('Location: login.php');
+    exit();
+}
+
+
+if (!isset($_GET['page'])) {
+    header("Location: main.php?page=user");
+    exit();
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +31,7 @@
 </head>
 
 <body>
+
     <!-- <div class="loader"></div> -->
     <div class="status_popup_wrapper popup_hide">
         <div class="status_icon">

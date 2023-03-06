@@ -1,13 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
-
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+require_once './dbconnection/dbConnection.php';
 
 $sql = "SELECT * FROM adduserinfo";
 $result = mysqli_query($conn, $sql);
@@ -23,5 +15,5 @@ header('Content-Type: application/json');
 echo json_encode($data);
 
 
-mysqli_close($conn);
+require_once './dbconnection/dbConnectionClose.php';
 ?>

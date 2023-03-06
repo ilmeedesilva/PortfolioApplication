@@ -24,7 +24,8 @@ const getAllProjectsData = () => {
     })
     .then((projects) => {
       hideloadingPorjectData();
-      if (projects.length === 0) {
+      console.log("projects - ", projects);
+      if (!projects) {
         edittableBody.innerHTML = "<p>No Data</p>";
       } else {
         projects.forEach((project) => {

@@ -1,9 +1,5 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
+require_once './dbconnection/dbConnection.php';
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -50,8 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     }
 
-    // Close the database connection
-    $conn->close();
+    require_once './dbconnection/dbConnectionClose.php';
 
 } else {
     echo "Invalid request method";

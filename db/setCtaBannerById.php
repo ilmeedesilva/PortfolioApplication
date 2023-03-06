@@ -1,16 +1,12 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
+require_once './dbconnection/dbConnection.php';
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Get the values from the form data
     $mainTitle = $_POST['mainTitle'];
-    $subTitle =$_POST['subTitle'];
+    $subTitle = $_POST['subTitle'];
     $id = $_POST['id'];
 
     // Connect to the database
@@ -38,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo "Error updating Banner: " . $conn->error;
         }
 
-    } else if(!empty($_FILES['mainTitle'])){
+    } else if (!empty($_FILES['mainTitle'])) {
 
         // Update the project with Main title only
         $stmt = $conn->prepare("UPDATE callToAction SET mainTitle = ?, subTitle = ?, image = ?  WHERE id = ?");
@@ -49,8 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo "Error updating Main title: " . $conn->error;
         }
 
-    }
-    else if(!empty($_FILES['subTitle'])){
+    } else if (!empty($_FILES['subTitle'])) {
 
         // Update the project with Main title only
         $stmt = $conn->prepare("UPDATE callToAction SET subTitle = ? , mainTitle = ?, image = ? WHERE id = ?");
@@ -63,9 +58,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     }
 
-    // Close the database connection
-    $conn->close();
+
+    require_once './dbconnection/dbConnectionClose.php';
 
 } else {
     echo "Invalid request method";
 }
+
+?>

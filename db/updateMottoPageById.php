@@ -1,9 +1,5 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
+require_once './dbconnection/dbConnection.php';
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -12,11 +8,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $description = $_POST['description'];
     $id = $_POST['id'];
 
-    // Connect to the database
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
 
     // Check if an image was uploaded
     if (!empty($_FILES['image']['tmp_name'])) {
@@ -50,9 +41,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     }
 
-    // Close the database connection
-    $conn->close();
+    require_once './dbconnection/dbConnectionClose.php';
 
 } else {
     echo "Invalid request method";
 }
+
+?>

@@ -1,9 +1,6 @@
 <?php
+require_once './dbconnection/dbConnection.php';
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
 
 $request_body = file_get_contents("php://input");
 $data = json_decode($request_body, true);
@@ -15,15 +12,6 @@ if (isset($data['id'])) {
 }
 
 
-
-
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-
-
 $sql = $conn->prepare("DELETE FROM services WHERE id = ?");
 $sql->bind_param("i", $id);
 if ($sql->execute()) {
@@ -31,4 +19,9 @@ if ($sql->execute()) {
 } else {
     echo json_encode(array('success' => false, 'message' => $sql->error));
 }
+
+
+
+
+require_once './dbconnection/dbConnectionClose.php';
 ?>

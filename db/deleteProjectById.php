@@ -1,9 +1,5 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
+require_once './dbconnection/dbConnection.php';
 
 $request_body = file_get_contents("php://input");
 $data = json_decode($request_body, true);
@@ -17,13 +13,6 @@ if (isset($data['id'])) {
 
 
 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-
-
 $sql = $conn->prepare("DELETE FROM projects WHERE id = ?");
 $sql->bind_param("i", $id);
 if ($sql->execute()) {
@@ -31,4 +20,7 @@ if ($sql->execute()) {
 } else {
     echo json_encode(array('success' => false, 'message' => $sql->error));
 }
+
+
+require_once './dbconnection/dbConnectionClose.php';
 ?>

@@ -1,9 +1,5 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
+require_once './dbconnection/dbConnection.php';
 
 $streetno = $_POST["street_no"];
 $streetname = $_POST["street_name"];
@@ -15,11 +11,7 @@ $phone2 = $_POST["phone2"];
 $opening_hr = $_POST["opening_hr"];
 $closing_hr = $_POST["closing_hr"];
 
-$conn = new mysqli($servername, $username, $password, $dbname);
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
 $checkUpdateContactInfoTableExist = "SHOW TABLES LIKE 'updatecontactinfo'";
 $result = mysqli_query($conn, $checkUpdateContactInfoTableExist);
@@ -48,7 +40,7 @@ if ($conn->query($sql) === TRUE) {
     echo "Error";
 }
 
-$conn->close();
+require_once './dbconnection/dbConnectionClose.php';
 ?>
 
 <!-- contact update info admin page query

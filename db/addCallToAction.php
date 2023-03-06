@@ -1,14 +1,5 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
-
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+require_once './dbconnection/dbConnection.php';
 
 $checkCallToActionTableExist = "SHOW TABLES LIKE 'callToAction'";
 $result = mysqli_query($conn, $checkCallToActionTableExist);
@@ -39,7 +30,7 @@ if (mysqli_query($conn, $sql)) {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
-mysqli_close($conn);
+require_once './dbconnection/dbConnectionClose.php';
 
 ?>
 

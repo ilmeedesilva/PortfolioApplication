@@ -1,9 +1,5 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
+require_once './dbconnection/dbConnection.php';
 
 $name = $_POST["edit_name"];
 $email = $_POST["edit_email"];
@@ -16,16 +12,11 @@ $data = json_decode($request_body, true);
 
 if (isset($data['id'])) {
     $id = $data['id'];
-    
+
 } else {
     echo json_encode(array('success' => false, 'message' => 'ID not provided'));
 }
 
-
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
 
 
 
@@ -36,4 +27,7 @@ if ($sql->execute()) {
 } else {
     echo json_encode(array('success' => false, 'message' => $sql->error));
 }
+
+
+require_once './dbconnection/dbConnectionClose.php';
 ?>

@@ -1,18 +1,7 @@
 <?php
 session_start();
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
-
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require_once './dbconnection/dbConnection.php';
 
 
 $username = $conn->real_escape_string($_POST['username']);
@@ -41,5 +30,5 @@ if ($result->num_rows > 0) {
     header('Location: /src/admin/login.php');
 }
 
-$conn->close();
+require_once './dbconnection/dbConnectionClose.php';
 ?>

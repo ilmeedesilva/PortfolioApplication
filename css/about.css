@@ -69,7 +69,7 @@ body{
 .section_wrapper{
     display: flex;
     flex-direction: row;
-    width: 800px;
+    width: 80%;
     margin: 40px auto;
     padding: 40px;
     box-shadow: 0 2px 15px 2px #d6d6d6;
@@ -77,8 +77,7 @@ body{
 }
 
 .text_section{
-    color: black;
-   
+    color: black;  
 }
 
 .text_section_right{
@@ -126,7 +125,6 @@ body{
     margin: 0;
     margin-right: 12px;
 }
-
 
 /*new styles*/
 .about_header_desc {

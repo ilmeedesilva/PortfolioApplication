@@ -272,6 +272,7 @@
   <?php include('../../includes/footer.php'); ?>
   <!--End  My Project-->
   <script src="../../script/pageLoader.js"></script>
+  <script src="../../script/jquery-3.6.3.min.js"></script>
   <script src="../../script/navigation.js"> </script>
   <script src="../../script/mobileNav.js"></script>
   <script src="../../script/getLogo.js"> </script>

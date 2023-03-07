@@ -25,6 +25,7 @@ if (!isset($_GET['page'])) {
     <title>About Settings</title>
     <link rel="stylesheet" href="../../css/popup.css">
     <link rel="stylesheet" href="../../css/form.css">
+    <script src="../../script/jquery-3.6.3.min.js"></script>
 </head>
 
 <body>

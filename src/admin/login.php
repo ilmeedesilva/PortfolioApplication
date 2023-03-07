@@ -14,6 +14,7 @@ session_start();
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="../../css/admin/login.css">
+  <script src="../../script/jquery-3.6.3.min.js"></script>
 </head>
 
 <body>
@@ -53,11 +54,14 @@ session_start();
               </p>
             </div>
 
-            <div class="rem_checkBox mt-5">
+            <div class="rem_checkBox mt-5 d-flex justify-content-between">
               <label for="remember">
                 <input type="checkbox" id="remember" name="remember" style="vertical-align: middle;">
                 Remember Me
               </label>
+              <a href="/src/pages/" class="display-6">
+                <img src="../../resource/icon/redirect.png" alt="redirect">
+                return to home</a>
             </div>
 
             <div class="login_sub_btn mt-5">

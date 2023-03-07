@@ -78,3 +78,9 @@
     });
   }
 })();
+
+allGroupInputs.forEach((item, index) => {
+  if (item.value) {
+    allGroupLabels[i].classList.add("lb_active");
+  }
+});

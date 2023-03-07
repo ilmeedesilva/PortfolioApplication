@@ -53,11 +53,14 @@ session_start();
               </p>
             </div>
 
-            <div class="rem_checkBox mt-5">
+            <div class="rem_checkBox mt-5 d-flex justify-content-between">
               <label for="remember">
                 <input type="checkbox" id="remember" name="remember" style="vertical-align: middle;">
                 Remember Me
               </label>
+              <a href="/src/pages/" class="display-6">
+                <img src="../../resource/icon/redirect.png" alt="redirect">
+                return to home</a>
             </div>
 
             <div class="login_sub_btn mt-5">

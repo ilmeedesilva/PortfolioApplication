@@ -7,6 +7,7 @@ $dbname = "test";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+    error_log("Connection failed: " . mysqli_connect_error());
+    die("Unable to connect to database");
 }
 ?>

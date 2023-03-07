@@ -52,8 +52,8 @@
 .top_nav_right ul li a:hover {
   color: #5154ff;
 }
-.top_nav_right ul li a .active_link {
-  color: #5154ff;
+.active_link {
+  color: #5154ff !important;
 }
 
 .toggle_menu {

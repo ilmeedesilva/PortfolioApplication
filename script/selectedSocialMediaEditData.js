@@ -82,9 +82,6 @@ const handleEditProject = (e, social, type) => {
 
   if (!editSocialRowName.value.trim() === "") {
     editSocialMediaNameError.innerHTML = "*social media Name cannot be empty";
-  } else if (editSocialRowName.value.length < 10) {
-    editSocialMediaNameError.innerHTML =
-      "*Project Title must have more than 10 characters";
   } else {
     editSocialMediaNameError.innerHTML = "";
   }

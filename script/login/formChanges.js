@@ -1,80 +1,75 @@
-(function () {
-  const allGroupInputs = document.querySelectorAll(".input_group input");
-  const allGroupLabels = document.querySelectorAll(".input_group label");
-
-  const allGroupSelect = document.querySelectorAll(".select_group select");
-  const allGroupSelectsLabels = document.querySelectorAll(
-    ".select_group label"
-  );
-
-  const productAddModelBtn = document.querySelector(".product_add button");
+$(function () {
+  const allGroupInputs = $(".input_group input");
+  const allGroupLabels = $(".input_group label");
+  const allGroupSelect = $(".select_group select");
+  const allGroupSelectsLabels = $(".select_group label");
+  const productAddModelBtn = $(".product_add button");
 
   const removeActiveLBStyles = () => {
-    allGroupLabels.forEach((item, i) => {
-      if (allGroupInputs[i].value) {
-        item.classList.add("lb_active");
+    allGroupLabels.each((i, item) => {
+      if (allGroupInputs.eq(i).val()) {
+        $(item).addClass("lb_active");
       } else {
-        item.classList.remove("lb_active");
-        item.style.animation = "lb_deactive_move_inside 1s";
+        $(item)
+          .removeClass("lb_active")
+          .css("animation", "lb_deactive_move_inside 1s");
       }
     });
   };
 
   const onEditFormOpen = () => {
-    // removeActiveLBStyles();
-    console.log("length - ", allGroupLabels.length);
-    allGroupLabels.forEach((item, i) => {
-      console.log("value - ", allGroupInputs[i].value);
-      if (allGroupInputs[i].value) {
-        item.classList.add("lb_active");
+    allGroupLabels.each((i, item) => {
+      console.log("value - ", allGroupInputs.eq(i).val());
+      if (allGroupInputs.eq(i).val()) {
+        $(item).addClass("lb_active");
       }
     });
   };
 
-  allGroupInputs.forEach((item, i) => {
-    //input onfocus
-    item.addEventListener("focus", (e) => {
+  allGroupInputs
+    .on("focus", function (e) {
       e.preventDefault();
       removeActiveLBStyles();
-      allGroupLabels[i].style.animation = null;
-      allGroupLabels[i].classList.add("lb_active");
-    });
-
-    // input lost focus
-    item.addEventListener("blur", (e) => {
+      const index = allGroupInputs.index(this);
+      allGroupLabels.eq(index).css("animation", null).addClass("lb_active");
+    })
+    .on("blur", function (e) {
       e.preventDefault();
       removeActiveLBStyles();
     });
-  });
 
-  allGroupSelect.forEach((item, i) => {
-    //input onfocus
-    item.addEventListener("focus", (e) => {
+  allGroupSelect
+    .on("focus", function (e) {
       e.preventDefault();
       removeActiveLBStyles();
-      allGroupSelectsLabels[i].style.animation = null;
-      allGroupSelectsLabels[i].classList.add("lb_active");
-    });
-
-    // input lost focus
-    item.addEventListener("blur", (e) => {
+      const index = allGroupSelect.index(this);
+      allGroupSelectsLabels
+        .eq(index)
+        .css("animation", null)
+        .addClass("lb_active");
+    })
+    .on("blur", function (e) {
       e.preventDefault();
       removeActiveLBStyles();
     });
-  });
 
-  // document
-  //   .querySelector("#productData")
-  //   .addEventListener("click", function (e) {
-  //     if (e.target.classList.contains("action_edit")) {
-  //       onEditFormOpen();
-  //     } else if (e.target.classList.contains("action_delete")) {
-  //     }
-  //   });
+  // $("#productData").on("click", function(e) {
+  // if ($(e.target).hasClass("action_edit")) {
+  // onEditFormOpen();
+  // } else if ($(e.target).hasClass("action_delete")) {
+  // }
+  // });
 
-  if (productAddModelBtn) {
-    productAddModelBtn.addEventListener("click", () => {
+  if (productAddModelBtn.length) {
+    productAddModelBtn.on("click", function () {
       removeActiveLBStyles();
     });
   }
-})();
+
+  allGroupInputs.each(function (i, item) {
+    console.log("item - ", item);
+    if ($(item).val()) {
+      allGroupLabels.eq(i).addClass("lb_active");
+    }
+  });
+});

@@ -26,6 +26,7 @@ if (!isset($_GET['page'])) {
     <link rel="stylesheet" href="../../css/admin/admin.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/form.css">
+    <script src="../../script/jquery-3.6.3.min.js"></script>
 </head>
 
 <body>

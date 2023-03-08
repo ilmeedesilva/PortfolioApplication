@@ -14,6 +14,7 @@ session_start();
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="../../css/admin/login.css">
+  <script src="../../script/jquery-3.6.3.min.js"></script>
 </head>
 
 <body>
@@ -32,13 +33,13 @@ session_start();
           <form action="../../db/checkUserLogin.php" method="POST">
             <div class="input_group login_input input_icons login_input icon_user_input mt-5">
               <label for="username" class="ml-4">USERNAME</label>
-              <input type="text" name="username" value="">
+              <input type="text" name="username">
               <p class="error_msg er_usrnme"></p>
             </div>
 
             <div class="input_group login_input input_icons icon_password_input mt-5">
               <label for="password" class="ml-4">PASSWORD</label>
-              <input type="password" name="password" value="">
+              <input type="password" name="password">
               <p class="error_msg er_pwd"></p>
             </div>
 
@@ -53,11 +54,14 @@ session_start();
               </p>
             </div>
 
-            <div class="rem_checkBox mt-5">
+            <div class="rem_checkBox mt-5 d-flex justify-content-between">
               <label for="remember">
                 <input type="checkbox" id="remember" name="remember" style="vertical-align: middle;">
                 Remember Me
               </label>
+              <a href="/src/pages/" class="display-6">
+                <img src="../../resource/icon/redirect.png" alt="redirect">
+                return to home</a>
             </div>
 
             <div class="login_sub_btn mt-5">

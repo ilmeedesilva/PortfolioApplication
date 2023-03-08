@@ -1,6 +1,10 @@
 const edittableBody = document.querySelector(".service_edit_table_body");
 
 const getAllServicesData = () => {
+  while (edittableBody.firstChild) {
+    edittableBody.removeChild(edittableBody.firstChild);
+  }
+
   fetch("../../db/getAllServices.php")
     .then((response) => response.json())
     .then((services) => {
@@ -23,6 +27,7 @@ const getAllServicesData = () => {
 
         editBtn.addEventListener("click", () => {
           const selectedService = {
+            id: service.id,
             title: service.title,
             description: service.description,
           };
@@ -38,7 +43,11 @@ const getAllServicesData = () => {
         });
 
         deleteBtn.addEventListener("click", () => {
+          document
+            .querySelector(".popup_form_wrapper")
+            .classList.remove("hide");
           const selectedService = {
+            id: service.id,
             title: service.title,
             description: service.description,
           };

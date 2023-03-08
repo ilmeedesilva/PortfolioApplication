@@ -20,11 +20,11 @@ const getAllProjectsData = () => {
   isLoading(true);
   fetch("../../db/getAllProjects.php")
     .then((response) => {
-      isLoading(false), response.json();
+      isLoading(false);
+      return response.json();
     })
     .then((projects) => {
       hideloadingPorjectData();
-      console.log("projects - ", projects);
       if (!projects) {
         edittableBody.innerHTML = "<p>No Data</p>";
       } else {
@@ -75,11 +75,11 @@ const getAllProjectsData = () => {
         });
       }
     })
-    .catch(
-      (error) => console.log("error - ", error),
-      hideloadingPorjectData(),
-      (edittableBody.innerHTML = "<p>Something went wrong</p>")
-    );
+    .catch((error) => {
+      console.log("error - ", error);
+      hideloadingPorjectData();
+      edittableBody.innerHTML = "<p>Something went wrong</p>";
+    });
 };
 
 getAllProjectsData();

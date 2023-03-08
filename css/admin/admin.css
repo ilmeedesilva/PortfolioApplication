@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100%;
-  /* overflow: hidden; */
+  /* height: 100%; */
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .admin_panel_wrapper .admin_nav {
@@ -81,7 +82,7 @@
 
 .admin_main_content {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 20px;
   background-color: #e3e6ea;
 }

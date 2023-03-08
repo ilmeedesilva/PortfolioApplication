@@ -59,7 +59,7 @@ session_start();
                 <input type="checkbox" id="remember" name="remember" style="vertical-align: middle;">
                 Remember Me
               </label>
-              <a href="/src/pages/" class="display-6">
+              <a href="/" class="display-6">
                 <img src="../../resource/icon/redirect.png" alt="redirect">
                 return to home</a>
             </div>

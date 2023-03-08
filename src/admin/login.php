@@ -33,13 +33,13 @@ session_start();
           <form action="../../db/checkUserLogin.php" method="POST">
             <div class="input_group login_input input_icons login_input icon_user_input mt-5">
               <label for="username" class="ml-4">USERNAME</label>
-              <input type="text" name="username" value="">
+              <input type="text" name="username">
               <p class="error_msg er_usrnme"></p>
             </div>
 
             <div class="input_group login_input input_icons icon_password_input mt-5">
               <label for="password" class="ml-4">PASSWORD</label>
-              <input type="password" name="password" value="">
+              <input type="password" name="password">
               <p class="error_msg er_pwd"></p>
             </div>
 

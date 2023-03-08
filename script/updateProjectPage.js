@@ -63,9 +63,10 @@ projectCoverImgInput.addEventListener("change", () => {
 
 updateProjectPageSave.addEventListener("click", () => {
   const Project_update_id = updateProjectPageSave.getAttribute("data-pk");
-  errorMessages.forEach((errorMessage) => {
-    errorMessage.textContent = "";
-  });
+  // errorMessages.forEach((errorMessage) => {
+  uploadImageCoverError.textContent = "";
+  projectPageDescErrorMessages.textContent = "";
+  // });
 
   const description = projectPageDescriptionInput.value;
   const image = projectCoverImgInput.files[0];
@@ -95,7 +96,12 @@ updateProjectPageSave.addEventListener("click", () => {
     projectPageDescErrorMessages.textContent = "";
   }
 
-  if (Project_update_id && description && projectPageDescErrorMessages.textContent=="" && !isInvalidIMG) {
+  if (
+    Project_update_id &&
+    description &&
+    projectPageDescErrorMessages.textContent == "" &&
+    !isInvalidIMG
+  ) {
     if (image) {
       const formData = new FormData();
       formData.append("description", description);

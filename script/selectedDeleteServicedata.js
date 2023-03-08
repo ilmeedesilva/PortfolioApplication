@@ -1,10 +1,6 @@
-const deleteTitle = document.querySelector(
-  'input[name="edit_title"]'
-);
+const deleteTitle = document.querySelector('input[name="edit_title"]');
 
-const deleteDescription = document.querySelector(
-  'textarea[name="edit_desc"]'
-);
+const deleteDescription = document.querySelector('textarea[name="edit_desc"]');
 const deleteRowDeletServiceBtn = document.querySelector(
   ".pop_up_edit_save_cancel_wrapper .delete_edit_service_save"
 );
@@ -14,8 +10,7 @@ let selectedServiceID;
 const selectedDeleteServicedata = (service, type) => {
   selectedServiceID = service.id;
 
-  console.log("deleteeeeeeeee");
-  
+  console.log("service - ", service);
   deleteTitle.readOnly = true;
   deleteDescription.readOnly = true;
 
@@ -35,6 +30,7 @@ deleteRowDeletServiceBtn.addEventListener("click", () => {
       .then((response) => {
         if (response.ok) {
           alert("Service deleted successfully!");
+          getAllServicesData();
         } else {
           alert("Failed to delete service");
         }

@@ -8,7 +8,6 @@ if (!isset($_SESSION['logged_userName'])) {
     exit();
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

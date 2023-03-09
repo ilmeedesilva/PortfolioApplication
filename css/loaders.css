@@ -45,3 +45,39 @@
     transform: translateX(10px);
   }
 }
+
+/*New Loader*/
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+}
+
+body{
+  background:rgba(4,25,173,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.loader {
+  width: 80px;
+  height: 80px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  border-top: 5px solid rgba(25, 152, 75, 0.9);
+  animation: loader 25s linear infinite;
+}
+
+@keyframes loader {
+  form {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360dge);
+  }
+}

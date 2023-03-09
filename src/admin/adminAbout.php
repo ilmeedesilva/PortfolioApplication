@@ -220,6 +220,9 @@ if (!isset($_GET['page'])) {
 
 
 
+
+
+
     <script src="../../script/pageLoader.js"></script>
     <script src="../../script/collapse.js"></script>
     <script src="../../script/updateAbout.js"></script>

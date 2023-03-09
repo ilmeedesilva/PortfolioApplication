@@ -24,12 +24,13 @@ const getTagLine = () => {
           document
             .querySelector("#tagLine_page_save")
             .setAttribute("data-pk", data[0].id);
-        } 
-        else {
+        } else {
           var project = data[i];
           var imageEncoded = project.image;
           var image =
-            '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
+            '<img src="data:image/jpeg;base64,' +
+            imageEncoded +
+            '"class="img-fluid"/>';
 
           document.querySelector(
             ".about_tagLine .about_tagLine_img"
@@ -44,21 +45,6 @@ const getTagLine = () => {
     });
 };
 getTagLine();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const getTagLine = () => {
 //   fetch("../../db/getTagLine.php")

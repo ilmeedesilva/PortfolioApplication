@@ -59,13 +59,14 @@ session_start();
                 <input type="checkbox" id="remember" name="remember" style="vertical-align: middle;">
                 Remember Me
               </label>
-              <a href="/" class="display-6">
-                <img src="../../resource/icon/redirect.png" alt="redirect">
-                return to home</a>
+
             </div>
 
-            <div class="login_sub_btn mt-5">
+            <div class="login_sub_btn mt-5 d-flex flex-column align-items-center">
               <button type="submit">Submit</button>
+              <a href="/" class="display-6 mt-3">
+                <!-- <img src="../../resource/icon/redirect.png" alt="redirect"> -->
+                return to home</a>
             </div>
 
         </div>

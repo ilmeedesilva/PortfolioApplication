@@ -24,12 +24,13 @@ const getMotto = () => {
           document
             .querySelector("#motto_page_save")
             .setAttribute("data-pk", data[0].id);
-        } 
-        else {
+        } else {
           var project = data[i];
           var imageEncoded = project.image;
           var image =
-            '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
+            '<img src="data:image/jpeg;base64,' +
+            imageEncoded +
+            '"class="img-fluid"/>';
 
           document.querySelector(".about_motto .about_motto_img").innerHTML =
             image;
@@ -43,27 +44,6 @@ const getMotto = () => {
     });
 };
 getMotto();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const getMotto = () => {
 //   fetch("../../db/getMotto.php")

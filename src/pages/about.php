@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/admin/admin.css">
     <link rel="stylesheet" href="../../css/loaders.css">
+
+
+    <style>
+        .img-fluid {
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,7 +42,7 @@
         <div class="main_section_wrapper mt_45 about_header_desc">
 
             <p>
-                <svg viewBox="0 0 200 50">
+                <!-- <svg viewBox="0 0 200 50">
                     <rect x=" 0" y="0" width="200" height="2" fill="#f2f2f2" />
                     <rect x="0" y="0" width="100" height="2" fill="#f0f0f0">
                         <animate attributeName="x" from="-20" to="200" dur="1s" repeatCount="indefinite" />
@@ -57,10 +64,10 @@
                         <animate attributeName="x" from="-20" to="200" dur="1.4s" repeatCount="indefinite" />
                     </rect>
 
-                </svg>
+                </svg> -->
             </p>
         </div>
-        <div class="section_wrapper about_vision">
+        <!-- <div class="section_wrapper about_vision">
             <div class="text_section about_vision_desc">
                 <h5>
                     Vision
@@ -70,21 +77,21 @@
                     enim molestias aut ipsam, v
                     oluptatum natus reiciendis eligendi a tempore voluptates numquam tempora. A sit ne
                     que dolore delectus!
-                </p>
-                <!-- <button>
+                </p> -->
+        <!-- <button>
                     Read More
                 </button> -->
 
-            </div>
+        <!-- </div>
 
             <div class="image_section about_vision_img">
                 <img src="../../resource/image/img_vision.jpg" title="Vision" alt="Vision">
             </div>
 
-        </div>
+        </div> -->
 
 
-        <div class="section_wrapper about_tagLine">
+        <!-- <div class="section_wrapper about_tagLine">
 
 
             <div class="image_section image_section_left about_tagLine_img">
@@ -101,40 +108,108 @@
                     enim molestias aut ipsam, v
                     oluptatum natus reiciendis eligendi a tempore voluptates numquam tempora. A sit ne
                     que dolore delectus!
-                </p>
-                <!-- <button>
+                </p> -->
+        <!-- <button>
                     Read More
                 </button> -->
-
+        <!-- 
             </div>
 
-        </div>
+        </div> -->
 
-        <div class="section_wrapper about_motto">
+        <!-- <div class="section_wrapper about_motto">
             <div class="text_section about_motto_desc">
                 <h5>
                     Motto
-                </h5>
-                <p>
+                </h5> -->
+        <!-- <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vitae, ea qui
                     enim molestias aut ipsam, v
                     oluptatum natus reiciendis eligendi a tempore voluptates numquam tempora. A sit ne
                     que dolore delectus!
-                </p>
-                <!-- <button>
+                </p> -->
+        <!-- <button>
                     Read More
                 </button> -->
-
+        <!-- 
             </div>
 
             <div class="image_section about_motto_img">
                 <img src="../../resource/image/img_motto.jpg" title="Motto" alt="Motto">
             </div>
 
-        </div>
+        </div> -->
+
+
+
 
 
     </div>
+
+
+    <div class="container-fluid">
+        <!-- First Section -->
+        <section class="container py-5">
+            <div class="row about_vision">
+                <div class="col-md-6 about_vision_img">
+                    <img src="https://via.placeholder.com/500x500" alt="Left Image" class="img-fluid">
+                </div>
+                <div class="col-md-6 about_vision_desc">
+                    <h5>Vision</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et felis vitae justo
+                        eleifend
+                        faucibus. Morbi tincidunt auctor purus a lacinia. Praesent vitae libero pharetra, aliquet
+                        velit
+                        eu, pharetra ante. Sed quis nunc ac eros aliquet efficitur eu a elit.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Second Section -->
+        <section class="container py-5">
+            <div class="row about_tagLine">
+                <div class="col-md-6 order-2 order-md-1 about_tagLine_desc">
+                    <h5>Header Text</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et felis vitae justo
+                        eleifend
+                        faucibus. Morbi tincidunt auctor purus a lacinia. Praesent vitae libero pharetra, aliquet
+                        velit
+                        eu, pharetra ante. Sed quis nunc ac eros aliquet efficitur eu a elit.</p>
+                </div>
+                <div class="col-md-6 order-1 order-md-2 about_tagLine_img">
+                    <img src="https://via.placeholder.com/500x500" alt="Right Image" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- Third Section -->
+        <section class="container py-5">
+            <div class="row about_motto">
+                <div class="col-md-6 about_motto_img">
+                    <img src="https://via.placeholder.com/500x500" alt="Left Image" class="img-fluid">
+                </div>
+                <div class="col-md-6 about_motto_desc">
+                    <h5>Motto</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et felis vitae justo
+                        eleifend
+                        faucibus. Morbi tincidunt auctor purus a lacinia. Praesent vitae libero pharetra, aliquet
+                        velit
+                        eu, pharetra ante. Sed quis nunc ac eros aliquet efficitur eu a elit.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
     <?php include('../../includes/footer.php'); ?>
     <script src="../../script/jquery-3.6.3.min.js"></script>
     <script src="../../script/pageLoader.js"></script>

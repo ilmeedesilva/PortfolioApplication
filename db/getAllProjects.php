@@ -1,7 +1,11 @@
 <?php
 require_once './dbconnection/dbConnection.php';
 
-$sql = "SELECT * FROM projects";
+
+$order = $_GET['order'] ?? 'desc';
+$limit = isset($_GET['limit']) ? intval($_GET['limit']) : '';
+
+$sql = "SELECT * FROM projects ORDER BY id $order";
 $result = mysqli_query($conn, $sql);
 $data = array();
 if (mysqli_num_rows($result) > 0) {

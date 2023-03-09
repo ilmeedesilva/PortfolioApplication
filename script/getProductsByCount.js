@@ -6,14 +6,18 @@ const getProductsByCount = (count) => {
       return response.json();
     })
     .then(function (data) {
-      for (var i = 0; i < count; i++) {
-        var project = data[i];
-        var projectName = project.projectName;
-        var date = project.date;
-        var descr = project.descr;
-        var imageEncoded = project.image;
-        var image = '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
-        var html = `<div class="blog_item" onclick="window.location.href=\'project-details.php?id=${project.id}'">
+      let showData = 0;
+      showData = data.length == 0 ? 0 : data.length < 3 ? data.length : count;
+      if (data) {
+        for (var i = 0; i < showData; i++) {
+          var project = data[i];
+          var projectName = project.projectName;
+          var date = project.date;
+          var descr = project.descr;
+          var imageEncoded = project.image;
+          var image =
+            '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
+          var html = `<div class="blog_item" onclick="window.location.href=\'project-details.php?id=${project.id}'">
             <div class="blog_img">
               ${image}
             </div>
@@ -27,8 +31,9 @@ const getProductsByCount = (count) => {
             </div>
           </div>`;
 
-        document.querySelector(".main_project_blog_container").innerHTML +=
-          html;
+          document.querySelector(".main_project_blog_container").innerHTML +=
+            html;
+        }
       }
     });
 };

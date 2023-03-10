@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/navigation.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/loaders.css">
+    <link rel="stylesheet" href="../../css/loadingBanner.css">
 </head>
 
 <body>
@@ -27,13 +28,20 @@
 
         </div>
         <div class="page_main_img">
-            <img class="img1" src="../../resource/image/projects.jpg" title="About Projects" alt="About Projects">
+            <div class="loading-banner"></div>
         </div>
     </div>
     <div class="main_section_wrapper">
         <div class="project section_wrapper">
             <div class="page_top_desc project_header_desc">
                 <p>
+                <div class="loading-txt-wrapper mb-3">
+                    <div class="loading-txt"></div>
+                    <div class="loading-txt"></div>
+                    <div class="loading-txt"></div>
+                    <div class="loading-txt"></div>
+                    <div class="loading-txt"></div>
+                </div>
                 </p>
             </div>
             <div class="filter_options">
@@ -46,11 +54,28 @@
             </div>
 
             <div class="content_bottom project_item_wrapper">
+                <div class="container project_loding_container">
+                    <div class="row flex-column flex-md-row">
+                        <div class="col mb-3">
+                            <div class="loading-banner"></div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="loading-banner"></div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="loading-banner"></div>
+                        </div>
+                    </div>
+
+                </div>
                 <div class="container blog_container">
 
                 </div>
             </div>
         </div>
+
+
+
 
     </div>
     <?php include('../../includes/footer.php'); ?>

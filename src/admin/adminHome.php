@@ -225,6 +225,59 @@ if (!isset($_GET['page'])) {
                 </section>
             </div>
         </div>
+
+
+        <!-- update home cover image -->
+
+        <div class="collapse_section">
+            <div class="collapse_section_header">
+                <h4>Update Home Cover Image</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body">
+                <div class="project_crud_wrapper">
+                    <div class="selected_img_view">
+                    </div>
+                    <div class="project_img_wrapper">
+                        <div class="img_upload_header_txt">
+                            <p>Upload Cover Image</p>
+                        </div>
+                        <div class="image_uploader_wrapper img_uploader_label_input_wrapper">
+                            <label for="image_upload_icon">
+                                <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
+                            </label>
+                            <input type="file" id="image-upload" name="image-upload" accept="image/*">
+                            <p>Click the icon to upload image</p>
+                            <p class="error_txt add_new_home_cover_img_err"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="project-name">Header Text</label>
+                            <input type="text" name="service" placeholder="Enter header text">
+                            <p class="error_txthome_cover_header_text_error"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="description" placeholder="Enter project description here..." rows="3"
+                                cols="30"></textarea>
+                            <p class="error_txt home_cover_desc_error"></p>
+                        </div>
+                    </div>
+                    <div class="save-container form_control">
+                        <button id="save" class="primary_btn home_cover_save_btn">Save</button>
+                        <button class="clear_btn home_cover_clear_btn">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
         <!--Update Update Contact Info-->
         <div class="collapse_section">
             <div class="collapse_section_header">

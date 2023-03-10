@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/Home.css">
   <link rel="stylesheet" href="../../css/loaders.css">
+  <link rel="stylesheet" href="../../css/loadingBanner.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -50,6 +51,7 @@
       </div>
       <div class="banner_img_section">
         <!-- <img src="" alt="Image"> -->
+
       </div>
     </div>
   </div>
@@ -62,6 +64,7 @@
       <div class="row about_home_Wrapper">
         <div class="col-lg-4 col-md-12 col-12 about_home_img">
           <div class="about-img section_appear">
+            <div class="loading-banner"></div>
           </div>
         </div>
         <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5 section_appear about_text">
@@ -222,7 +225,20 @@
       </div> -->
 
       <div class="main_project_blog_container section_appear">
-
+        <!-- <div class="loading-banner"></div> -->
+        <div class="container-fluid">
+          <div class="row flex-column flex-md-row">
+            <div class="col mb-3">
+              <div class="loading-banner"></div>
+            </div>
+            <div class="col mb-3">
+              <div class="loading-banner"></div>
+            </div>
+            <div class="col mb-3">
+              <div class="loading-banner"></div>
+            </div>
+          </div>
+        </div>
 
       </div>
       <!-- <div class="row">
@@ -266,7 +282,7 @@
 
       </div> -->
       <div class="btn-wrapper">
-        <a href="project.php" class="primary_btn cta_btn">View More</a>
+        <a href="project.php" class="primary_btn cta_btn pj_viewMore">View More</a>
       </div>
   </section>
   <?php include('../../includes/footer.php'); ?>

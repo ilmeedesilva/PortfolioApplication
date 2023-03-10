@@ -8,6 +8,7 @@
   z-index: 40;
   height: 50px;
   opacity: 1;
+  overflow: hidden;
   transition: 500ms all ease;
 }
 .top_navigation {
@@ -80,7 +81,7 @@
   }
   .top_nav_right ul {
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 59px;
     right: -250px;
     width: 250px;

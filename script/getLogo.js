@@ -68,9 +68,7 @@ const getLogo = () => {
           var imageEncoded = project.image;
           var image =
             '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
-          $(".top_nav_left").html(
-            '<a href="../../src/pages/home.php">' + image
-          );
+          $(".top_nav_left").html('<a href="../../index.php">' + image);
           $(".footer_content_logo_img").html(image);
         }
       }

@@ -1,5 +1,7 @@
 const getAbout = () => {
-  document.querySelector(".loading-txt-wrapper").style.display = "block";
+  if (document.querySelector(".loading-txt-wrapper")) {
+    document.querySelector(".loading-txt-wrapper").style.display = "block";
+  }
   fetch("../../db/getAbout.php")
     .then(function (response) {
       return response.json();
@@ -25,8 +27,14 @@ const getAbout = () => {
           document
             .querySelector("#about_cover_page_save")
             .setAttribute("data-pk", data[0].id);
-        } else if (window.location.href.includes("home")) {
-          document.querySelector(".loading-txt-wrapper").style.display = "none";
+        } else if (
+          window.location.pathname === "/" ||
+          window.location.href.indexOf("index.php") > -1
+        ) {
+          if (document.querySelector(".loading-txt-wrapper")) {
+            document.querySelector(".loading-txt-wrapper").style.display =
+              "none";
+          }
           let displayDescription1 = data[0].description
             .substring(0, 500)
             .concat("...");
@@ -46,7 +54,10 @@ const getAbout = () => {
 
           document.querySelector(".about_header .about_banner_img").innerHTML =
             image;
-          document.querySelector(".loading-txt-wrapper").style.display = "none";
+          if (document.querySelector(".loading-txt-wrapper")) {
+            document.querySelector(".loading-txt-wrapper").style.display =
+              "none";
+          }
           document.querySelector(".about_header_desc p").innerHTML =
             data[0].description;
           document.querySelector(".about_desc_footer").innerHTML =
@@ -66,6 +77,8 @@ const getAbout = () => {
     });
 };
 getAbout();
+
+console.log("window.location.href - ", window.location.href);
 
 // const getAbout = () => {
 //   fetch("../../db/getAbout.php")

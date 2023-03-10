@@ -1,5 +1,7 @@
 const getProject = () => {
-  document.querySelector(".loading-txt-wrapper").style.display = "block";
+  if (document.querySelector(".loading-txt-wrapper")) {
+    document.querySelector(".loading-txt-wrapper").style.display = "block";
+  }
   fetch("../../db/getProjects.php")
     .then(function (response) {
       return response.json();
@@ -34,14 +36,19 @@ const getProject = () => {
           document.querySelector(
             ".project_img_wrapper .page_main_img"
           ).innerHTML = image;
-          document.querySelector(".loading-txt-wrapper").style.display = "none";
+          if (document.querySelector(".loading-txt-wrapper")) {
+            document.querySelector(".loading-txt-wrapper").style.display =
+              "none";
+          }
           document.querySelector(".project_header_desc p").innerHTML =
             data[0].description;
         }
       }
     })
     .catch((err) => {
-      document.querySelector(".loading-txt-wrapper").style.display = "none";
+      if (document.querySelector(".loading-txt-wrapper")) {
+        document.querySelector(".loading-txt-wrapper").style.display = "none";
+      }
       alert(err);
     });
 };

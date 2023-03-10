@@ -1,5 +1,5 @@
 const getProducts = (type) => {
-  document.querySelector(".blog_container").innerHTML = "";
+  $(".blog_container").html("");
   console.log("type- ", type);
   let url = "../../db/getAllProjects.php";
   if (type === "all") {
@@ -8,7 +8,8 @@ const getProducts = (type) => {
   } else if (type === "oldest") {
     url += "?order=asc&limit=10";
   }
-
+  $(".filter_options").hide();
+  $(".project_item_wrapper .project_loding_container").show();
   fetch(url)
     .then(function (response) {
       return response.json();
@@ -52,17 +53,22 @@ const getProducts = (type) => {
                           </div>\
                         </div>\
                       </div>";
-        document.querySelector(".blog_container").innerHTML += html;
+        $(".filter_options").show();
+        $(".project_item_wrapper .project_loding_container").hide();
+        $(".blog_container").append(html);
       }
+    })
+    .catch((err) => {
+      $(".project_item_wrapper .project_loding_container").hide();
+      alert(err);
     });
 };
+
 getProducts("all");
 
 if (window.location.href.includes("/project")) {
-  document
-    .querySelector("select[name='filertOps']")
-    .addEventListener("change", () => {
-      console.log("clicked");
-      getProducts(document.querySelector("select[name='filertOps']").value);
-    });
+  $('select[name="filertOps"]').on("change", () => {
+    console.log("clicked");
+    getProducts($('select[name="filertOps"]').val());
+  });
 }

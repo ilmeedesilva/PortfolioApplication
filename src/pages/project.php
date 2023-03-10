@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/navigation.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/loaders.css">
+    <link rel="stylesheet" href="../../css/loadingBanner.css">
 </head>
 
 <body>
@@ -46,11 +47,28 @@
             </div>
 
             <div class="content_bottom project_item_wrapper">
+                <div class="container project_loding_container">
+                    <div class="row flex-column flex-md-row">
+                        <div class="col mb-3">
+                            <div class="loading-banner"></div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="loading-banner"></div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="loading-banner"></div>
+                        </div>
+                    </div>
+
+                </div>
                 <div class="container blog_container">
 
                 </div>
             </div>
         </div>
+
+
+
 
     </div>
     <?php include('../../includes/footer.php'); ?>

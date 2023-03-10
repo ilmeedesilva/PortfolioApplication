@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/admin/admin.css">
     <link rel="stylesheet" href="../../css/loaders.css">
-
+    <link rel="stylesheet" href="../../css/loadingBanner.css">
 
     <style>
         .img-fluid {
@@ -67,82 +67,6 @@
                 </svg> -->
             </p>
         </div>
-        <!-- <div class="section_wrapper about_vision">
-            <div class="text_section about_vision_desc">
-                <h5>
-                    Vision
-                </h5>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vitae, ea qui
-                    enim molestias aut ipsam, v
-                    oluptatum natus reiciendis eligendi a tempore voluptates numquam tempora. A sit ne
-                    que dolore delectus!
-                </p> -->
-        <!-- <button>
-                    Read More
-                </button> -->
-
-        <!-- </div>
-
-            <div class="image_section about_vision_img">
-                <img src="../../resource/image/img_vision.jpg" title="Vision" alt="Vision">
-            </div>
-
-        </div> -->
-
-
-        <!-- <div class="section_wrapper about_tagLine">
-
-
-            <div class="image_section image_section_left about_tagLine_img">
-                <img src="../../resource/image/img_tagline.jpg" title="Tagline" alt="Tagline">
-            </div>
-
-
-            <div class="text_section text_section_right about_tagLine_desc">
-                <h5>
-                    TagLine
-                </h5>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vitae, ea qui
-                    enim molestias aut ipsam, v
-                    oluptatum natus reiciendis eligendi a tempore voluptates numquam tempora. A sit ne
-                    que dolore delectus!
-                </p> -->
-        <!-- <button>
-                    Read More
-                </button> -->
-        <!-- 
-            </div>
-
-        </div> -->
-
-        <!-- <div class="section_wrapper about_motto">
-            <div class="text_section about_motto_desc">
-                <h5>
-                    Motto
-                </h5> -->
-        <!-- <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vitae, ea qui
-                    enim molestias aut ipsam, v
-                    oluptatum natus reiciendis eligendi a tempore voluptates numquam tempora. A sit ne
-                    que dolore delectus!
-                </p> -->
-        <!-- <button>
-                    Read More
-                </button> -->
-        <!-- 
-            </div>
-
-            <div class="image_section about_motto_img">
-                <img src="../../resource/image/img_motto.jpg" title="Motto" alt="Motto">
-            </div>
-
-        </div> -->
-
-
-
-
 
     </div>
 
@@ -152,7 +76,9 @@
         <section class="container py-5">
             <div class="row about_vision">
                 <div class="col-md-6 about_vision_img">
-                    <img src="https://via.placeholder.com/500x500" alt="Left Image" class="img-fluid">
+                    <div class="col mb-3">
+                        <div class="loading-banner"></div>
+                    </div>
                 </div>
                 <div class="col-md-6 about_vision_desc">
                     <h5>Vision</h5>
@@ -167,6 +93,7 @@
 
         <!-- Second Section -->
         <section class="container py-5">
+
             <div class="row about_tagLine">
                 <div class="col-md-6 order-2 order-md-1 about_tagLine_desc">
                     <h5>TagLine</h5>
@@ -177,7 +104,9 @@
                         eu, pharetra ante. Sed quis nunc ac eros aliquet efficitur eu a elit.</p>
                 </div>
                 <div class="col-md-6 order-1 order-md-2 about_tagLine_img">
-                    <img src="https://via.placeholder.com/500x500" alt="Right Image" class="img-fluid">
+                    <div class="col mb-3">
+                        <div class="loading-banner"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -186,7 +115,9 @@
         <section class="container py-5">
             <div class="row about_motto">
                 <div class="col-md-6 about_motto_img">
-                    <img src="https://via.placeholder.com/500x500" alt="Left Image" class="img-fluid">
+                    <div class="col mb-3">
+                        <div class="loading-banner"></div>
+                    </div>
                 </div>
                 <div class="col-md-6 about_motto_desc">
                     <h5>Motto</h5>

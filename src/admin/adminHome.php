@@ -480,7 +480,7 @@ if (!isset($_GET['page'])) {
             </div>
             <div class="collapse_section_body">
                 <div class="project_crud_wrapper">
-                    <div class="selected_img_view">
+                    <div class="selected_img_view selected_img_view_new_service">
                     </div>
                     <div class="project_img_wrapper">
                         <div class="img_upload_header_txt">
@@ -490,23 +490,23 @@ if (!isset($_GET['page'])) {
                             <label for="image_upload_icon">
                                 <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
                             </label>
-                            <input type="file" id="image-upload" name="image-upload" accept="image/*">
+                            <input type="file" id="image-upload-new-service" name="image-upload_new_servic" accept="image/*">
                             <p>Click the icon to upload image</p>
-                            <p class="error_txt add_new_project_img_err"></p>
+                            <p class="error_txt add_new_service_img_err"></p>
                         </div>
                     </div>
 
                     <div class="form-container">
                         <div class="form-group">
                             <label for="project-name">Service</label>
-                            <input type="text" name="service" placeholder="Enter service">
-                            <p class="error_txt service_error"></p>
+                            <input type="text" name="service" id = "new-service-name" placeholder="Enter service">
+                            <p class="error_txt new_service_error"></p>
                         </div>
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <textarea id="description" placeholder="Enter project description here..." rows="3"
+                            <textarea id="new-service-description" placeholder="Enter project description here..." rows="3"
                                 cols="30"></textarea>
-                            <p class="error_txt desc_error"></p>
+                            <p class="error_txt desc_error_new_service"></p>
                         </div>
                     </div>
                     <div class="save-container form_control">
@@ -795,6 +795,7 @@ if (!isset($_GET['page'])) {
     <!-- <script src="../../script/logout.js"></script> -->
     <script src="../../script/setCallToActionBanner.js"></script>
     <script src="../../script/getCallToActionBanner.js"></script>
+    <script src="../../script/addNewService.js"></script>
 
 </body>
 

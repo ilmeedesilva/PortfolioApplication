@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/Home.css">
   <link rel="stylesheet" href="./css/loaders.css">
+  <link rel="stylesheet" href="./css/loadingBanner.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -22,6 +23,7 @@
   <?php include('./includes/navigation.php'); ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
   </script>
+
 
   <!--start carousel-->
   <!-- <div id="carousel" class="carousel slide" data-bs-ride="carousel ">
@@ -44,14 +46,13 @@
     <div class="banner_content_wrapper">
       <div class="banner_text_section">
         <h2>Hi I'm Ilmee</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla mollitia vero officiis
-          laboriosam
-          vitae dolor eaque et unde, consequatur suscipit! Ullam hic molestias eveniet autem unde officia
-          illum aut.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla mollitia vero officiis laboriosam
+          vitae dolor eaque et unde, consequatur suscipit! Ullam hic molestias eveniet autem unde officia illum aut.</p>
         <button class="primary_btn main-btn">Learn More</button>
       </div>
       <div class="banner_img_section">
         <!-- <img src="" alt="Image"> -->
+
       </div>
     </div>
   </div>
@@ -64,21 +65,18 @@
       <div class="row about_home_Wrapper">
         <div class="col-lg-4 col-md-12 col-12 about_home_img">
           <div class="about-img section_appear">
+            <div class="loading-banner"></div>
           </div>
         </div>
         <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5 section_appear about_text">
           <div class="about-text sub-heading">
             <h5>Welcome</h5>
             <h2>About Me</h2>
-            <p class="about_desc_home">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut
-              labore et dolore
+            <p class="about_desc_home">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur
-              sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-              laborum.</p>
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+              sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <a href="about.php" class="primary_btn">Learn More</a>
           </div>
         </div>
@@ -122,8 +120,7 @@
             <div class="section-header text-center sub-heading">
               <h5>Our Services</h5>
               <h2>Services provide for you.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do eiusmod tempor
-                incididunt ut
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do eiusmod tempor incididunt ut
                 labore
                 et dolore magna aliqua.</p>
             </div>
@@ -136,8 +133,7 @@
           <div class="service_item_icon"><i class="bi bi-x-diamond"></i></div>
           <div class="service_item_desc">
             <h4>Service item #01</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo error, facere perferendis min
-            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo error, facere perferendis min</p>
           </div>
         </div>
 
@@ -145,8 +141,7 @@
           <div class="service_item_icon"><i class="bi bi-x-diamond"></i></div>
           <div class="service_item_desc">
             <h4>Service item #01</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo error, facere perferendis min
-            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo error, facere perferendis min</p>
           </div>
         </div>
 
@@ -157,8 +152,7 @@
           <div class="service_item_icon"> <i class="bi bi-layers"></i></div>
           <div class="service_item_desc">
             <h4>Service item #01</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo error, facere perferendis min
-            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo error, facere perferendis min</p>
           </div>
         </div>
 
@@ -168,8 +162,7 @@
           <div class="service_item_icon"><i class="bi bi-display"></i></div>
           <div class="service_item_desc">
             <h4>Service item #01</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo error, facere perferendis min
-            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo error, facere perferendis min</p>
           </div>
         </div>
       </div>
@@ -223,8 +216,7 @@
           <div class="section-header text-center sub-heading">
             <h5>My completed Project</h5>
             <h2>Recent Works</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />tempor incididunt ut labore et
-              dolore
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />tempor incididunt ut labore et dolore
               magna aliqua.</p>
           </div>
         </div>
@@ -234,7 +226,20 @@
       </div> -->
 
       <div class="main_project_blog_container section_appear">
-
+        <!-- <div class="loading-banner"></div> -->
+        <div class="container-fluid">
+          <div class="row flex-column flex-md-row">
+            <div class="col mb-3">
+              <div class="loading-banner"></div>
+            </div>
+            <div class="col mb-3">
+              <div class="loading-banner"></div>
+            </div>
+            <div class="col mb-3">
+              <div class="loading-banner"></div>
+            </div>
+          </div>
+        </div>
 
       </div>
       <!-- <div class="row">
@@ -278,7 +283,7 @@
 
       </div> -->
       <div class="btn-wrapper">
-        <a href="project.php" class="primary_btn cta_btn">View More</a>
+        <a href="project.php" class="primary_btn cta_btn pj_viewMore">View More</a>
       </div>
   </section>
   <?php include('./includes/footer.php'); ?>

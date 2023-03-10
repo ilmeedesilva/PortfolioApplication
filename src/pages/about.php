@@ -34,7 +34,9 @@
 
         </div>
         <div class="about_banner_img">
-            <img class="img1" src="../../resource/image/img_about.jpg" title="About us" alt="About us">
+
+            <div class="loading-banner"></div>
+
         </div>
     </div>
     <div class="main_section_wrapper">
@@ -42,29 +44,13 @@
         <div class="main_section_wrapper mt_45 about_header_desc">
 
             <p>
-                <!-- <svg viewBox="0 0 200 50">
-                    <rect x=" 0" y="0" width="200" height="2" fill="#f2f2f2" />
-                    <rect x="0" y="0" width="100" height="2" fill="#f0f0f0">
-                        <animate attributeName="x" from="-20" to="200" dur="1s" repeatCount="indefinite" />
-                    </rect>
-                    <rect x="0" y="4" width="200" height="2" fill="#f2f2f2" />
-                    <rect x="0" y="4" width="100" height="2" fill="#f0f0f0">
-                        <animate attributeName="x" from="-20" to="200" dur="1.1s" repeatCount="indefinite" />
-                    </rect>
-                    <rect x="0" y="8" width="200" height="2" fill="#f2f2f2" />
-                    <rect x="0" y="8" width="100" height="2" fill="#f0f0f0">
-                        <animate attributeName="x" from="-20" to="200" dur="1.2s" repeatCount="indefinite" />
-                    </rect>
-                    <rect x=" 0" y="12" width="200" height="2" fill="#f2f2f2" />
-                    <rect x="0" y="12" width="100" height="2" fill="#f0f0f0">
-                        <animate attributeName="x" from="-20" to="200" dur="1.3s" repeatCount="indefinite" />
-                    </rect>
-                    <rect x="0" y="16" width="200" height="5" fill="#f2f2f2" />
-                    <rect x="0" y="16" width="100" height="5" fill="#f0f0f0">
-                        <animate attributeName="x" from="-20" to="200" dur="1.4s" repeatCount="indefinite" />
-                    </rect>
-
-                </svg> -->
+            <div class="loading-txt-wrapper mb-3">
+                <div class="loading-txt"></div>
+                <div class="loading-txt"></div>
+                <div class="loading-txt"></div>
+                <div class="loading-txt"></div>
+                <div class="loading-txt"></div>
+            </div>
             </p>
         </div>
 

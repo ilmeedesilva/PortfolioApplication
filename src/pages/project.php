@@ -28,13 +28,20 @@
 
         </div>
         <div class="page_main_img">
-            <img class="img1" src="../../resource/image/projects.jpg" title="About Projects" alt="About Projects">
+            <div class="loading-banner"></div>
         </div>
     </div>
     <div class="main_section_wrapper">
         <div class="project section_wrapper">
             <div class="page_top_desc project_header_desc">
                 <p>
+                <div class="loading-txt-wrapper mb-3">
+                    <div class="loading-txt"></div>
+                    <div class="loading-txt"></div>
+                    <div class="loading-txt"></div>
+                    <div class="loading-txt"></div>
+                    <div class="loading-txt"></div>
+                </div>
                 </p>
             </div>
             <div class="filter_options">

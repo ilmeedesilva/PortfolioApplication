@@ -1,7 +1,9 @@
 const visionPageDescriptionInput = document.getElementById(
   "vision_page_description"
 );
-const visionCoverImgInput = document.getElementById("vision_cover_image-upload");
+const visionCoverImgInput = document.getElementById(
+  "vision_cover_image-upload"
+);
 const selectedVisionCoverImgView = document.querySelector(
   ".selected_img_vision_view"
 );
@@ -14,7 +16,6 @@ const visionPageDescErrorMessages = document.querySelector(
 const updateVisionPageSave = document.getElementById("vision_page_save");
 
 selectedVisionCoverImgView.style.display = "none";
-
 
 visionCoverImgInput.addEventListener("change", () => {
   const file = visionCoverImgInput.files[0];
@@ -42,7 +43,7 @@ visionCoverImgInput.addEventListener("change", () => {
             } else {
               uploadVisionImageCoverError.textContent =
                 "Please select an image with a width greater than 100px.";
-                selectedVisionCoverImgView.style.display = "none";
+              selectedVisionCoverImgView.style.display = "none";
             }
           };
           img.src = reader.result;
@@ -78,10 +79,12 @@ updateVisionPageSave.addEventListener("click", () => {
     !image.type.includes("jpeg") &&
     !image.type.includes("png")
   ) {
-    uploadVisionImageCoverError.textContent = "*Please select a JPEG or PNG image";
+    uploadVisionImageCoverError.textContent =
+      "*Please select a JPEG or PNG image";
     isInvalidIMG = true;
   } else if (image && image.size > 1000000) {
-    uploadVisionImageCoverError.textContent = "*The image must be less than 1MB";
+    uploadVisionImageCoverError.textContent =
+      "*The image must be less than 1MB";
     isInvalidIMG = true;
   } else {
     uploadVisionImageCoverError.textContent = "";
@@ -96,7 +99,12 @@ updateVisionPageSave.addEventListener("click", () => {
     visionPageDescErrorMessages.textContent = "";
   }
 
-  if (vision_update_id && description && visionPageDescErrorMessages.textContent=="" && !isInvalidIMG) {
+  if (
+    vision_update_id &&
+    description &&
+    visionPageDescErrorMessages.textContent == "" &&
+    !isInvalidIMG
+  ) {
     if (image) {
       const formData = new FormData();
       formData.append("description", description);
@@ -168,30 +176,7 @@ updateVisionPageSave.addEventListener("click", () => {
         console.error("Error:", error);
       });
   }
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
 
 // const visionInput = document.querySelector(
 //   '.vision_uploader_wrapper input[type="file"]'
@@ -244,7 +229,7 @@ updateVisionPageSave.addEventListener("click", () => {
 //     err_desc_vision.innerHTML = "*Description cannot be empty";
 //   } else if (descVision.value.length <= 99 || descVision.value.length > 500) {
 //     err_desc_vision.innerHTML =
-//       "*Vision Description should contain more than 100 characters and less than 500 characters";}  
+//       "*Vision Description should contain more than 100 characters and less than 500 characters";}
 //   else {
 //     err_desc_vision.innerHTML = "";
 //   }

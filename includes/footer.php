@@ -41,14 +41,15 @@
             <div class="footer_content_center">
                 <div class="wrapper_nav">
                     <ul>
-                        <li><a href="home.php">Home</a></li>
+                        <li><a href="../../index.php">Home</a></li>
                         <li><a href="project.php">Projects</a></li>
                         <li><a href="about.php">About</a></li>
                         <li><a href="contact.php">Contact</a></li>
                     </ul>
                 </div>
                 <div class="wrapper_about">
-                    <p class="about_desc_footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim provident quidem molestias? Velit,
+                    <p class="about_desc_footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim provident
+                        quidem molestias? Velit,
                         neque placeat, optio, ipsum libero numquam tempora repellendus voluptate aliquam necessitatibus
                         obcaecati? Cupiditate natus consectetur odit repellat.</p>
                 </div>

@@ -169,7 +169,7 @@
         <section class="container py-5">
             <div class="row about_tagLine">
                 <div class="col-md-6 order-2 order-md-1 about_tagLine_desc">
-                    <h5>Header Text</h5>
+                    <h5>TagLine</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et felis vitae justo
                         eleifend
                         faucibus. Morbi tincidunt auctor purus a lacinia. Praesent vitae libero pharetra, aliquet

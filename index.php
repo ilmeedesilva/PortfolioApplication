@@ -290,6 +290,7 @@
   <script src="./script/getCallToActionBanner.js"></script>
   <script src="./script/getProductsByCount.js"></script>
   <script src="./script/getHomeCover.js"></script>
+  <script src="./script/getAllServices.js"></script>
 
 </body>
 

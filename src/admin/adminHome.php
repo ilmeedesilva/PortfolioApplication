@@ -122,12 +122,12 @@ if (!isset($_GET['page'])) {
             <div class="form_container social_media_form_container">
                 <div class="image_wrapper">
                     <div class="group_lb_img">
-                        <label for="">previous Image</label>
+                        <label for="">Previous Image</label>
                         <div class="img_box prev_img prev_social_img">
                         </div>
                     </div>
                     <div class="group_lb_img">
-                        <label for="" class="group_lb_img_pos_ab">upload Image</label>
+                        <label for="" class="group_lb_img_pos_ab">Upload Image</label>
                         <input type="file" accept="image/*" class="image_uploader uploader_edit_social_media_icon">
                         <p class="error_txt uploader_edit_social_media_icon_error"></p>
                     </div>
@@ -151,9 +151,23 @@ if (!isset($_GET['page'])) {
             <div class="services_form_wrapper">
                 <section class="upload">
                     <div class="form_Container">
+                        <div class="image_wrapper">
+                            <div class="group_lb_img">
+                                <label for="">Previous Image</label>
+                                <div class="img_box prev_img prev_service_img">
+
+                                </div>
+                            </div>
+                            <div class="group_lb_img">
+                                <label for="" class="group_lb_img_pos_ab service_lb_img">Upload Image</label>
+                                <input type="file" accept="image/*" name="serviceItemImgInput"
+                                    class="image_uploader uploader_edit_service">
+                                <p class="error_txt uploader_edit_service_error"></p>
+                            </div>
+                        </div>
                         <div class="form_wrappe group_inputs edit_service">
                             <div class="box">
-                                <label for="edit_title">Title:
+                                <label for="edit_title">Service:
                                     <input type="text" name="edit_title" id="edit_title" placeholder="Enter title">
                                     <p class="error_txt edittitle_error"></p>
                             </div>
@@ -451,13 +465,13 @@ if (!isset($_GET['page'])) {
                         <div class="form_wrappe group_inputs">
                             <div class="box">
                                 <label for="address">Title:
-                                    <input type="text" name="title" placeholder="Enter title">
+                                    <input type="text" name="title" placeholder="Enter title" id="update-service-title">
                                     <p class="error_txt title_error"></p>
                             </div>
                             <div class="box">
                                 <label for="descr">Description:</label><br>
                                 <textarea name="servicesdesc" cols="30" rows="3"
-                                    placeholder="Type your description here..."></textarea>
+                                    placeholder="Type your description here..." id="update-service-desc"></textarea>
                                 <p class="error_txt desc_error"></p>
                             </div>
                         </div>
@@ -498,13 +512,13 @@ if (!isset($_GET['page'])) {
                     <div class="form-container">
                         <div class="form-group">
                             <label for="project-name">Service</label>
-                            <input type="text" name="service" id="new-service-name" placeholder="Enter service">
+                            <input type="text" name="addservice" id="new-service-name" placeholder="Enter service">
                             <p class="error_txt new_service_error"></p>
                         </div>
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <textarea id="new-service-description" placeholder="Enter project description here..."
-                                rows="3" cols="30"></textarea>
+                            <textarea id="new-service-description" name="serviceDesc"
+                                placeholder="Enter project description here..." rows="3" cols="30"></textarea>
                             <p class="error_txt desc_error_new_service"></p>
                         </div>
                     </div>
@@ -792,6 +806,7 @@ if (!isset($_GET['page'])) {
     <script src="../../script/getCompanyName.js"></script>
     <script src="../../script/setHomeCoverImage.js"></script>
     <script src="../../script/getHomeCover.js"></script>
+    <script src="../../script/getServiceTitleDescription.js"></script>
 
 </body>
 

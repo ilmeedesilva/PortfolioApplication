@@ -107,8 +107,8 @@
           <div class="col-md-12">
             <div class="section-header text-center sub-heading">
               <h5>Our Services</h5>
-              <h2>Services provide for you.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do eiusmod tempor incididunt ut
+              <h2 class="service-title">Services provide for you.</h2>
+              <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do eiusmod tempor incididunt ut
                 labore
                 et dolore magna aliqua.</p>
             </div>
@@ -290,6 +290,8 @@
   <script src="./script/getCallToActionBanner.js"></script>
   <script src="./script/getProductsByCount.js"></script>
   <script src="./script/getHomeCover.js"></script>
+  <script src="./script/getAllServices.js"></script>
+  <script src="./script/getServiceTitleDescription.js"></script>
 
 </body>
 

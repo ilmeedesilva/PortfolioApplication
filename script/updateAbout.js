@@ -123,9 +123,9 @@ updateAboutPageSave.addEventListener("click", () => {
 
   if (description.trim() === "") {
     aboutPageDescErrorMessages.textContent = "*Please enter a description";
-  } else if (description.length <= 199 || description.length > 1000) {
+  } else if (description.length <= 199 || description.length > 500) {
     aboutPageDescErrorMessages.textContent =
-      "*The description must be at least 200 characters long";
+      "*The description must be at least 200 characters long and less than 500 characters";
   } else {
     aboutPageDescErrorMessages.textContent = "";
   }

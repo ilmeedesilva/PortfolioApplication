@@ -28,7 +28,8 @@ const selectedDeleteProjectdata = (project, type) => {
   let deleteimage =
     '<img src="data:image/jpeg;base64,' + deleteimageEncoded + '"/>';
 
-  document.querySelector(".image_wrapper .img_box").innerHTML = deleteimage;
+  document.querySelector(".image_wrapper .prev_service_img").innerHTML =
+    deleteimage;
 
   document.querySelector(".popup_form_wrapper").classList.remove("hide");
 

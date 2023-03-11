@@ -305,6 +305,7 @@
   <script src="./script/getHomeAboutImage.js"></script>
   <script src="./script/getCallToActionBanner.js"></script>
   <script src="./script/getProductsByCount.js"></script>
+  <script src="./script/getHomeCover.js"></script>
 
 </body>
 

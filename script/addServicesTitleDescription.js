@@ -22,14 +22,20 @@ save_btn.addEventListener("click", (e) => {
         title_error.innerHTML = "*Title cannot be empty";
     } else if (!title_input.value.match(/^[a-zA-Z\s]+$/)) {
         title_error.innerHTML = "*Title should not contain numbers";
-    } else {
+    } else if (title_input.value.length < 10 || title_input.value.length > 50) {
+      title_error.innerHTML = "*The Title must be at least 10 characters long and less than 50 characters";
+    } 
+    else {
         title_error.innerHTML = "";
     }
   
     // Description
     if (!desc_input.value) {
         desc_error.innerHTML = "*Description cannot be empty";
-      } else {
+      }else if (desc_input.value.length < 50 || desc_input.value.length > 100) {
+        desc_error.innerHTML = "*The Description must be at least 50 characters long and less than 100 characters";
+      }  
+      else {
         desc_error.innerHTML = "";
       }
   

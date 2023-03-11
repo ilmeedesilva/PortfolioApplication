@@ -236,7 +236,7 @@ if (!isset($_GET['page'])) {
             </div>
             <div class="collapse_section_body">
                 <div class="project_crud_wrapper">
-                    <div class="selected_img_view">
+                    <div class="selected_img_view selected_home_cover_img_view">
                     </div>
                     <div class="project_img_wrapper">
                         <div class="img_upload_header_txt">
@@ -246,7 +246,7 @@ if (!isset($_GET['page'])) {
                             <label for="image_upload_icon">
                                 <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
                             </label>
-                            <input type="file" id="image-upload" name="image-upload" accept="image/*">
+                            <input type="file" id="home-cover-image-upload" name="image-upload" accept="image/*">
                             <p>Click the icon to upload image</p>
                             <p class="error_txt add_new_home_cover_img_err"></p>
                         </div>
@@ -255,12 +255,12 @@ if (!isset($_GET['page'])) {
                     <div class="form-container">
                         <div class="form-group">
                             <label for="project-name">Header Text</label>
-                            <input type="text" name="service" placeholder="Enter header text">
-                            <p class="error_txthome_cover_header_text_error"></p>
+                            <input type="text" name="service" id="header-text" placeholder="Enter header text">
+                            <p class="error_txt home_cover_header_text_error"></p>
                         </div>
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <textarea id="description" placeholder="Enter project description here..." rows="3"
+                            <textarea id="cover-description" placeholder="Enter project description here..." rows="3"
                                 cols="30"></textarea>
                             <p class="error_txt home_cover_desc_error"></p>
                         </div>
@@ -796,6 +796,8 @@ if (!isset($_GET['page'])) {
     <script src="../../script/setCallToActionBanner.js"></script>
     <script src="../../script/getCallToActionBanner.js"></script>
     <script src="../../script/addNewService.js"></script>
+    <script src="../../script/setHomeCoverImage.js"></script>
+    <script src="../../script/getHomeCover.js"></script>
 
 </body>
 

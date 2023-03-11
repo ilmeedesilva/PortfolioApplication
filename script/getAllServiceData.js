@@ -11,8 +11,8 @@ const getAllServicesData = () => {
       services.forEach((service) => {
         const editrow = edittableBody.insertRow();
 
-        editrow.insertCell().textContent = service.title;
-        editrow.insertCell().textContent = service.description;
+        editrow.insertCell().textContent = service.serviceName;
+        editrow.insertCell().textContent = service.descr;
 
         const editBtn = document.createElement("button");
         editBtn.classList.add("editt_btn");
@@ -28,8 +28,9 @@ const getAllServicesData = () => {
         editBtn.addEventListener("click", () => {
           const selectedService = {
             id: service.id,
-            title: service.title,
-            description: service.description,
+            serviceName: service.serviceName,
+            descr: service.descr,
+            image: service.image,
           };
 
           document
@@ -48,8 +49,9 @@ const getAllServicesData = () => {
             .classList.remove("hide");
           const selectedService = {
             id: service.id,
-            title: service.title,
-            description: service.description,
+            serviceName: service.serviceName,
+            descr: service.descr,
+            image: service.image,
           };
           document.querySelector(".social_media_form_container").style.display =
             "none";

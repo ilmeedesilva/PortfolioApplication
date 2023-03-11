@@ -12,7 +12,7 @@ if (isset($data['id'])) {
 }
 
 
-$sql = $conn->prepare("DELETE FROM services WHERE id = ?");
+$sql = $conn->prepare("DELETE FROM addnewservices WHERE id = ?");
 $sql->bind_param("i", $id);
 if ($sql->execute()) {
     echo json_encode(array('success' => true));

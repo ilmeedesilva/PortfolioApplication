@@ -1,7 +1,9 @@
 const serviceNameInput = document.getElementById("new-service-name");
 const descriptionInput = document.getElementById("new-service-description");
 const imageInput = document.getElementById("image-upload-new-service");
-const selectedImgView = document.querySelector(".selected_img_view_new_service");
+const selectedImgView = document.querySelector(
+  ".selected_img_view_new_service"
+);
 const addNewServiceImgErr = document.querySelector(".add_new_service_img_err");
 const addNewServiceNameErr = document.querySelector(".new_service_error");
 const addNewServiceDescErr = document.querySelector(".desc_error_new_service");
@@ -13,11 +15,10 @@ const clear_button_service = document.querySelector(".add_service_clear_btn");
 selectedImgView.style.display = "none";
 
 const clearAddNewInputFields = () => {
-
-  serviceNameInput.value="";
-  descriptionInput.value="";
-  imageInput.value="";
-  selectedImgView.value="";
+  serviceNameInput.value = "";
+  descriptionInput.value = "";
+  imageInput.value = "";
+  selectedImgView.value = "";
 };
 
 imageInput.addEventListener("change", () => {
@@ -53,11 +54,9 @@ saveButtonService.addEventListener("click", () => {
   if (serviceName.trim() === "") {
     serviceNameInput.nextElementSibling.textContent =
       "*Please enter a service name";
-  } 
-  else {
+  } else {
     serviceNameInput.nextElementSibling.textContent = "";
   }
-
 
   if (description.trim() === "") {
     descriptionInput.nextElementSibling.textContent =

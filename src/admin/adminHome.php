@@ -122,7 +122,7 @@ if (!isset($_GET['page'])) {
             <div class="form_container social_media_form_container">
                 <div class="image_wrapper">
                     <div class="group_lb_img">
-                        <label for="">previus Image</label>
+                        <label for="">previous Image</label>
                         <div class="img_box prev_img prev_social_img">
                         </div>
                     </div>
@@ -182,7 +182,7 @@ if (!isset($_GET['page'])) {
     <div class="admin_settings_wrapper">
 
 
-
+        <!--Update Company Name-->
         <div class="collapse_section">
             <div class="collapse_section_header">
                 <h4>Update Company Name</h4>
@@ -799,6 +799,8 @@ if (!isset($_GET['page'])) {
     <script src="../../script/setCallToActionBanner.js"></script>
     <script src="../../script/getCallToActionBanner.js"></script>
     <script src="../../script/addNewService.js"></script>
+    <script src="../../script/companyName.js"></script>
+    <script src="../../script/getCompanyName.js"></script>
 
 </body>
 

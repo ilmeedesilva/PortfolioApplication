@@ -1,7 +1,7 @@
 <?php
 require_once './dbconnection/dbConnection.php';
 
-$sql = "SELECT * FROM services";
+$sql = "SELECT * FROM addnewservices";
 $result = mysqli_query($conn, $sql);
 
 $data = array();

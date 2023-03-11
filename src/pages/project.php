@@ -17,6 +17,8 @@
 
 <body>
     <div class="loader"></div>
+    <!-- <div class="circle-border-loader"></div> -->
+
     <?php
     include "../../includes/navigation.php";
     ?>

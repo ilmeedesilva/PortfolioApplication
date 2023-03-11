@@ -46,8 +46,13 @@
   }
 }
 
+<<<<<<< Updated upstream
 /*New Loader*/
 /* *{
+=======
+/* loader
+*{
+>>>>>>> Stashed changes
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -62,13 +67,20 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< Updated upstream
 } */
 
 /* .loader {
+=======
+}
+
+.circle-border-loader{
+>>>>>>> Stashed changes
   width: 80px;
   height: 80px;
   border: 5px solid #fff;
   border-radius: 50%;
+<<<<<<< Updated upstream
   border-top: 5px solid rgba(25, 152, 75, 0.9);
   animation: loader 25s linear infinite;
 }
@@ -86,4 +98,13 @@ body{
     transform: rotate(360dge);
   }
 >>>>>>> b95b38e5ad2aafdc702eabdaa767ee59f8ee4ed5
+=======
+  border-top: 5px solid rgba(25,152,75,0.9);
+  animation: loader 2s linear infinite;
+}
+
+@keyframes loader{
+  form{transform: rotate(0)};
+    to{transform:rotate(360dge);}
+>>>>>>> Stashed changes
 } */

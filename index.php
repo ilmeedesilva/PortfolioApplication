@@ -24,34 +24,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
   </script>
 
-
-  <!--start carousel-->
-  <!-- <div id="carousel" class="carousel slide" data-bs-ride="carousel ">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="../../resource\image\img5.jpg" class="d-block w-100" alt="Banner1">
-        <div class="carousel-caption">
-          <h4>Find the perfect own <i>Design</i></h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
-          <a href="#" class="btn-banner mt3">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-
-
   <div class="main_banner banner-wrapper">
     <div class="banner_content_wrapper">
       <div class="banner_text_section">
         <h2>Hi I'm Ilmee</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla mollitia vero officiis laboriosam
           vitae dolor eaque et unde, consequatur suscipit! Ullam hic molestias eveniet autem unde officia illum aut.</p>
-        <button class="primary_btn main-btn">Learn More</button>
+        <button class="primary_btn main-btn" onclick="window.location.href='/src/pages/about.php'">Learn More</button>
       </div>
       <div class="banner_img_section">
-        <!-- <img src="" alt="Image"> -->
+
 
       </div>
     </div>

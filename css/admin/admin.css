@@ -111,6 +111,10 @@
   margin: 0 auto;
 }
 
+.admin_report_wrapper {
+  width: 800px !important;
+}
+
 .collapse_section {
   width: 1000px;
   margin: 16px;

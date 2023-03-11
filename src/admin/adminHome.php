@@ -182,6 +182,33 @@ if (!isset($_GET['page'])) {
     <div class="admin_settings_wrapper">
 
 
+
+        <div class="collapse_section">
+            <div class="collapse_section_header">
+                <h4>Update Company Name</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body">
+
+
+                <div class="form-group">
+                    <label for="project-name">Company Name</label>
+                    <input type="text" name="service" placeholder="Enter company name">
+                    <p class="error_txt company_name_text_error"></p>
+                </div>
+
+                <div class="wrapper">
+                    <div class="column col_2">
+                        <button class="select-image logo_save_btn">Save</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
         <div class="collapse_section">
             <div class="collapse_section_header">
                 <h4>Update Company Logo</h4>
@@ -194,19 +221,9 @@ if (!isset($_GET['page'])) {
                         <div class="selected_cover_img_view selected_logo_img_view">
                         </div>
                     </div>
-
                     <div class="Container">
-
-
-
                         <div class="wrapper">
                             <div class="img-area column col_1">
-
-
-
-
-
-
                                 <div class="img_uploader">
                                     <label for="" class="img_uploader_wrapper logo_uploader_wrapper">
                                         <input type="file" accept="image/*" class="image_uploader"
@@ -490,7 +507,8 @@ if (!isset($_GET['page'])) {
                             <label for="image_upload_icon">
                                 <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
                             </label>
-                            <input type="file" id="image-upload-new-service" name="image-upload_new_servic" accept="image/*">
+                            <input type="file" id="image-upload-new-service" name="image-upload_new_servic"
+                                accept="image/*">
                             <p>Click the icon to upload image</p>
                             <p class="error_txt add_new_service_img_err"></p>
                         </div>
@@ -499,13 +517,13 @@ if (!isset($_GET['page'])) {
                     <div class="form-container">
                         <div class="form-group">
                             <label for="project-name">Service</label>
-                            <input type="text" name="service" id = "new-service-name" placeholder="Enter service">
+                            <input type="text" name="service" id="new-service-name" placeholder="Enter service">
                             <p class="error_txt new_service_error"></p>
                         </div>
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <textarea id="new-service-description" placeholder="Enter project description here..." rows="3"
-                                cols="30"></textarea>
+                            <textarea id="new-service-description" placeholder="Enter project description here..."
+                                rows="3" cols="30"></textarea>
                             <p class="error_txt desc_error_new_service"></p>
                         </div>
                     </div>

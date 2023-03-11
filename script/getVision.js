@@ -78,7 +78,7 @@ const getVision = () => {
       }
     },
     error: function (xhr, status, error) {
-      alert(error);
+      console.log(error);
     },
   });
 };

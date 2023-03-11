@@ -107,7 +107,7 @@ const getMotto = () => {
       }
     },
     error: function (err) {
-      alert(err);
+      console.log(err);
     },
   });
 };

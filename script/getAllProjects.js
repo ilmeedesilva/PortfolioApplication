@@ -59,7 +59,7 @@ const getProducts = (type) => {
     })
     .catch((err) => {
       $(".project_loding_container").hide();
-      alert(err);
+      console.log(err);
     });
 };
 

@@ -64,7 +64,7 @@ const getProject = () => {
       if (document.querySelector(".loading-txt-wrapper")) {
         document.querySelector(".loading-txt-wrapper").style.display = "none";
       }
-      alert(err);
+      console.log(err);
     });
 };
 getProject();

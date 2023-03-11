@@ -131,14 +131,22 @@ submit_button.addEventListener("click", (e) => {
       }
     }
 
-    if (
-      (openingHours.value && !closingHours.value) ||
-      (!openingHours.value && closingHours.value)
-    ) {
+    if (!openingHours.value && !closingHours.value)
+    {
       openingHoursError.innerHTML =
-        "*Please select both opening and closing hours";
+        "*Please select an opening hour";
       closingHoursError.innerHTML =
-        "*Please select both opening and closing hours";
+        "*Please select a closing hour";
+    }
+    else if(openingHours.value && !closingHours.value)
+    {
+      closingHoursError.innerHTML =
+        "*Please select a closing hour";
+    }
+    else if(!openingHours.value && closingHours.value)
+    {
+      openingHoursError.innerHTML =
+        "*Please select an opening hour";
     } else if (openingHours.value >= closingHours.value) {
       openingHoursError.innerHTML =
         "*Opening hours must be before closing hours";
@@ -153,6 +161,7 @@ submit_button.addEventListener("click", (e) => {
       !streetNo_error.innerHTML &&
       !streetName_error.innerHTML &&
       !city_error.innerHTML &&
+      !email_error.innerHTML &&
       !country_error.innerHTML &&
       !phone1_error.innerHTML &&
       !phone2_error.innerHTML &&

@@ -62,7 +62,7 @@ const getProductsByCount = (count) => {
           var imageEncoded = project.image;
           var image =
             '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
-          var html = `<div class="blog_item" onclick="window.location.href=\'project-details.php?id=${project.id}'">
+          var html = `<div class="blog_item" onclick="window.location.href=\'/src/pages/project-details.php?id=${project.id}'">
             <div class="blog_img">
               ${image}
             </div>

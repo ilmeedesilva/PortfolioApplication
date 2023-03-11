@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Protfolio</title>
+  <title>Home</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" type="text/css" href="./css/navigation.css">
   <link rel="stylesheet" type="text/css" href="./css/footer.css">
@@ -63,7 +63,7 @@
               <div class="loading-txt ld_75"></div>
             </div>
             </p>
-            <a href="about.php" class="primary_btn">Learn More</a>
+            <a href="/src/pages/about.php" class="primary_btn">Learn More</a>
           </div>
         </div>
       </div>
@@ -89,7 +89,7 @@
         </div>
         <div class="cta-col col_2">
           <div class="btn-holder">
-            <a href="contact.php" class="primary_btn cta_btn">Hire Me</a>
+            <a href="/src/pages/contact.php" class="primary_btn cta_btn">Hire Me</a>
           </div>
         </div>
       </div>
@@ -245,54 +245,16 @@
           </div>
 
         </div>
-        <!-- <div class="row">
-        <div class="col-12 col-md-12 col-lg-4 ">
-          <div class="card text-center">
-            <div class="project-body">
-              <img src="../../resource\image\proj1.jpg">
-              <div class="content-wrapper">
-                <h3 class="box-title">Project 1</h3>
-                <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut
-                  labore et dolore magna aliqua.</p>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-12 col-md-12 col-lg-4">
-          <div class="card text-center">
-            <div class="project-body">
-              <img src="../../resource\image\proj2.jpg">
-              <div class="content-wrapper">
-                <h3 class="box-title">Project 2</h3>
-                <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut
-                  labore et dolore magna aliqua.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-12 col-lg-4">
-          <div class="card text-center">
-            <div class="project-body">
-              <img src="../../resource\image\proj3..jpg">
-              <div class="content-wrapper">
-                <h3 class="box-title">Project 3</h3>
-                <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut
-                  labore et dolore magna aliqua.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div> -->
         <div class="btn-wrapper">
-          <a href="project.php" class="primary_btn cta_btn pj_viewMore">View More</a>
+          <a href="/src/pages/project.php" class="primary_btn cta_btn pj_viewMore">View More</a>
         </div>
     </section>
     <?php include('./includes/footer.php'); ?>
     <!--End  My Project-->
-    <script src="./script/pageLoader.js"></script>
     <script src="./script/jquery-3.6.3.min.js"></script>
+    <script src="../../script/getCompanyName.js"></script>
+    <script src="./script/pageLoader.js"></script>
     <script src="./script/navigation.js"> </script>
     <script src="./script/mobileNav.js"></script>
     <script src="./script/getLogo.js"> </script>

@@ -48,7 +48,6 @@ const getVision = () => {
     type: "GET",
     dataType: "json",
     success: function (data) {
-      console.log("data - ", data);
       for (var i = 0; i < data.length; i++) {
         if (window.location.href.includes("admin")) {
           if (data[0].image) {

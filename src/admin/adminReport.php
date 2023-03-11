@@ -57,15 +57,24 @@ if (!isset($_GET['page'])) {
 
 
             <div class="col">
-                <div class="main_banner banner-wrapper">
-                    <div class="banner_content_wrapper">
-                        <div class="banner_text_section">
-                            <h2>Hi I'm Ilmee</h2>
+                <div class="main_banner banner-wrapper"
+                    style="border-radius: 12px;background-position: center;background-size: cover;background-repeat: no-repeat;">
+                    <div class="banner_content_wrapper" style="
+    margin: 0 30px;
+    color: #ffffff;padding: 35px;
+">
+                        <div class="banner_text_section" style="
+    max-width: 400px;
+    height: 110px;
+    overflow: hidden;
+">
+                            <h2 style="
+    font-weight: 700;">Hi I'm Ilmee</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla mollitia vero
                                 officiis laboriosam
                                 vitae dolor eaque et unde, consequatur suscipit! Ullam hic molestias eveniet autem unde
                                 officia illum aut.</p>
-                            <button class="primary_btn main-btn">Learn More</button>
+                            <!-- <button class="primary_btn main-btn">Learn More</button> -->
                         </div>
                         <div class="banner_img_section">
                         </div>
@@ -73,6 +82,19 @@ if (!isset($_GET['page'])) {
                 </div>
             </div>
         </div>
+
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="banner" style="background-image: url('your-image-url');">
+                        <div class="banner-content">
+                            <h2>Your Heading</h2>
+                            <p>Your Text</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
 
 
         <div class="row mt-5">
@@ -118,7 +140,7 @@ if (!isset($_GET['page'])) {
 
 
 
-
+    <script src="../../script/getHomeCover.js"></script>
     <script src="../../script/pageLoader.js"></script>
     <script src="../../script/getAbout.js"></script>
     <script src="../../script/getProject.js"></script>

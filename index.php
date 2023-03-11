@@ -108,7 +108,8 @@
             <div class="section-header text-center sub-heading">
               <h5>Our Services</h5>
               <h2 class="service-title">Services provide for you.</h2>
-              <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do eiusmod tempor incididunt ut
+              <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do
+                eiusmod tempor incididunt ut
                 labore
                 et dolore magna aliqua.</p>
             </div>
@@ -117,7 +118,21 @@
       </div>
 
       <div class="services_items_wrapper">
-        <div class="service_item">
+
+        <div class="container-fluid">
+          <div class="row flex-column flex-md-row">
+            <div class="col mb-3">
+              <div class="loading-banner"></div>
+            </div>
+            <div class="col mb-3">
+              <div class="loading-banner"></div>
+            </div>
+            <div class="col mb-3">
+              <div class="loading-banner"></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="service_item">
           <div class="service_item_icon"><i class="bi bi-x-diamond"></i></div>
           <div class="service_item_desc">
             <h4>Service item #01</h4>
@@ -153,9 +168,9 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo error, facere perferendis min</p>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <!-- <div class="row">
+        <!-- <div class="row">
         <div class="col-12 col-md-12 col-lg-4">
           <div class="card text-center">
             <div class="box-body">
@@ -192,45 +207,45 @@
           </div>
         </div>
       </div> -->
+      </div>
     </div>
-  </div>
-  <!--End service section-->
+    <!--End service section-->
 
-  <!--Start My Project-->
-  <section id="Project" class="project section-padding section_appear">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="section-header text-center sub-heading">
-            <h5>My completed Project</h5>
-            <h2>Recent Works</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />tempor incididunt ut labore et dolore
-              magna aliqua.</p>
+    <!--Start My Project-->
+    <section id="Project" class="project section-padding section_appear">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center sub-heading">
+              <h5>My completed Project</h5>
+              <h2>Recent Works</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />tempor incididunt ut labore et dolore
+                magna aliqua.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- <div class="main_project_blog_container">
+        <!-- <div class="main_project_blog_container">
 
       </div> -->
 
-      <div class="main_project_blog_container section_appear">
-        <!-- <div class="loading-banner"></div> -->
-        <div class="container-fluid">
-          <div class="row flex-column flex-md-row">
-            <div class="col mb-3">
-              <div class="loading-banner"></div>
-            </div>
-            <div class="col mb-3">
-              <div class="loading-banner"></div>
-            </div>
-            <div class="col mb-3">
-              <div class="loading-banner"></div>
+        <div class="main_project_blog_container section_appear">
+          <!-- <div class="loading-banner"></div> -->
+          <div class="container-fluid">
+            <div class="row flex-column flex-md-row">
+              <div class="col mb-3">
+                <div class="loading-banner"></div>
+              </div>
+              <div class="col mb-3">
+                <div class="loading-banner"></div>
+              </div>
+              <div class="col mb-3">
+                <div class="loading-banner"></div>
+              </div>
             </div>
           </div>
-        </div>
 
-      </div>
-      <!-- <div class="row">
+        </div>
+        <!-- <div class="row">
         <div class="col-12 col-md-12 col-lg-4 ">
           <div class="card text-center">
             <div class="project-body">
@@ -270,28 +285,28 @@
         </div>
 
       </div> -->
-      <div class="btn-wrapper">
-        <a href="project.php" class="primary_btn cta_btn pj_viewMore">View More</a>
-      </div>
-  </section>
-  <?php include('./includes/footer.php'); ?>
-  <!--End  My Project-->
-  <script src="./script/pageLoader.js"></script>
-  <script src="./script/jquery-3.6.3.min.js"></script>
-  <script src="./script/navigation.js"> </script>
-  <script src="./script/mobileNav.js"></script>
-  <script src="./script/getLogo.js"> </script>
-  <script src="./script/home.js"> </script>
-  <script src="./script/getContactInfo.js"></script>
-  <script src="./script/getAllSocialMedias.js"></script>
-  <!-- <script src="../../script/loaders.js"></script> -->
-  <script src="./script/getAbout.js"></script>
-  <script src="./script/getHomeAboutImage.js"></script>
-  <script src="./script/getCallToActionBanner.js"></script>
-  <script src="./script/getProductsByCount.js"></script>
-  <script src="./script/getHomeCover.js"></script>
-  <script src="./script/getAllServices.js"></script>
-  <script src="./script/getServiceTitleDescription.js"></script>
+        <div class="btn-wrapper">
+          <a href="project.php" class="primary_btn cta_btn pj_viewMore">View More</a>
+        </div>
+    </section>
+    <?php include('./includes/footer.php'); ?>
+    <!--End  My Project-->
+    <script src="./script/pageLoader.js"></script>
+    <script src="./script/jquery-3.6.3.min.js"></script>
+    <script src="./script/navigation.js"> </script>
+    <script src="./script/mobileNav.js"></script>
+    <script src="./script/getLogo.js"> </script>
+    <script src="./script/home.js"> </script>
+    <script src="./script/getContactInfo.js"></script>
+    <script src="./script/getAllSocialMedias.js"></script>
+    <!-- <script src="../../script/loaders.js"></script> -->
+    <script src="./script/getAbout.js"></script>
+    <script src="./script/getHomeAboutImage.js"></script>
+    <script src="./script/getCallToActionBanner.js"></script>
+    <script src="./script/getProductsByCount.js"></script>
+    <script src="./script/getHomeCover.js"></script>
+    <script src="./script/getAllServices.js"></script>
+    <script src="./script/getServiceTitleDescription.js"></script>
 
 </body>
 

@@ -93,6 +93,7 @@
     <script src="../../script/mobileNav.js"></script>
     <script src="../../script/getProject.js"></script>
     <script src="../../script/getAbout.js"></script>
+    <script src="../../script/getAllSocialMedias.js"></script>
 </body>
 
 </html>

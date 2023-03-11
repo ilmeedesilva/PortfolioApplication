@@ -136,6 +136,7 @@
     <script src="../../script/getVision.js"></script>
     <script src="../../script/getTagLine.js"></script>
     <script src="../../script/getMotto.js"></script>
+    <script src="../../script/getAllSocialMedias.js"></script>
 </body>
 
 </html>

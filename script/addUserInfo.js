@@ -74,7 +74,13 @@ submit_button.addEventListener("click", (e) => {
   // Name
   if (!name_input.value) {
     name_error.innerHTML = "*Name cannot be empty";
-  } else if (!name_input.value.match(/^[a-zA-Z\s]+$/)) {
+  } else if (
+    name_input.value.length < 4 ||
+    name_input.value.length > 15
+  ) {
+    name_error.innerHTML = "*Name must contain 4 to 15 charcters";
+  }
+  else if (!name_input.value.match(/^[a-zA-Z\s]+$/)) {
     name_error.innerHTML = "*Name should not contain numbers";
   } else {
     name_error.innerHTML = "";

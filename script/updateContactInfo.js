@@ -131,14 +131,22 @@ submit_button.addEventListener("click", (e) => {
       }
     }
 
-    if (
-      (openingHours.value && !closingHours.value) ||
-      (!openingHours.value && closingHours.value)
-    ) {
+    if (!openingHours.value && !closingHours.value)
+    {
       openingHoursError.innerHTML =
-        "*Please select both opening and closing hours";
+        "*Please select an opening hour";
       closingHoursError.innerHTML =
-        "*Please select both opening and closing hours";
+        "*Please select a closing hour";
+    }
+    else if(openingHours.value && !closingHours.value)
+    {
+      closingHoursError.innerHTML =
+        "*Please select a closing hour";
+    }
+    else if(!openingHours.value && closingHours.value)
+    {
+      openingHoursError.innerHTML =
+        "*Please select an opening hour";
     } else if (openingHours.value >= closingHours.value) {
       openingHoursError.innerHTML =
         "*Opening hours must be before closing hours";
@@ -153,13 +161,13 @@ submit_button.addEventListener("click", (e) => {
       !streetNo_error.innerHTML &&
       !streetName_error.innerHTML &&
       !city_error.innerHTML &&
+      !email_error.innerHTML &&
       !country_error.innerHTML &&
       !phone1_error.innerHTML &&
       !phone2_error.innerHTML &&
       !openingHoursError.innerHTML &&
       !closingHoursError.innerHTML
     ) {
-      console.log("email_input.value - ", email_input.value);
       fetch("../../db/updatCcontactInfo.php", {
         method: "POST",
         headers: {
@@ -168,7 +176,7 @@ submit_button.addEventListener("click", (e) => {
         body: `street_no=${streetNo_input.value}&street_name=${street_name_input.value}&city_no=${city_input.value}&country=${country_input.value}&email=${email_input.value}&phone1=${phone1_input.value}&phone2=${phone2_input.value}&opening_hr=${openingHours.value}&closing_hr=${closingHours.value}`,
       })
         .then((data) => {
-          displayPopUp(data);
+          displayPopUp(data.status === 200 ? "success" : "failed");
         })
         .catch((error) => {
           console.error("Request failed:", error);

@@ -111,6 +111,10 @@
   margin: 0 auto;
 }
 
+.admin_report_wrapper {
+  width: 800px !important;
+}
+
 .collapse_section {
   width: 1000px;
   margin: 16px;
@@ -1037,4 +1041,25 @@ form.slider_update textarea {
 }
 
 @media (max-width: 1330px) {
+}
+.prev_service_img {
+  overflow: hidden;
+}
+
+.prev_service_img img {
+  width: 100%;
+  height: 100%;
+}
+.service_lb_img {
+  position: absolute !important;
+  top: -106px !important;
+  right: 49px !important;
+  width: 103px !important;
+}
+.uploader_edit_service {
+  position: absolute !important;
+  opacity: 10 !important;
+  top: -84px !important;
+  right: 0 !important;
+  width: 158px !important;
 }

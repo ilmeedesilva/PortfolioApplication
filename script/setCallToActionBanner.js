@@ -94,20 +94,20 @@ saveButton.addEventListener("click", () => {
 
   if (mainTitleName.trim() === "") {
     ctaMainTitleInput.nextElementSibling.textContent =
-      "*Please enter a project name";
-  } else if (mainTitleName.length < 8) {
+      "*Please enter a main title";
+  } else if (mainTitleName.length < 8 || mainTitleName.length > 50) {
     ctaMainTitleInput.nextElementSibling.textContent =
-      "*The project name must be at least 8 characters long";
+      "*The main title must be at least 8 characters long and less than 50 characters";
   } else {
     ctaMainTitleInput.nextElementSibling.textContent = "";
   }
 
   if (subTitleName.trim() === "") {
     ctaSubTitleInput.nextElementSibling.textContent =
-      "*Please enter a project name";
-  } else if (mainTitleName.length < 8) {
+      "*Please enter the sub title";
+  } else if (subTitleName.length < 10 || subTitleName.length >100) {
     ctaSubTitleInput.nextElementSibling.textContent =
-      "*The project name must be at least 8 characters long";
+      "*The sub title must be at least 10 characters long and less than 100 characters";
   } else {
     ctaSubTitleInput.nextElementSibling.textContent = "";
   }

@@ -1,13 +1,15 @@
 .main_banner {
   width: 100%;
-  height: calc(100vh - 60px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-size: cover;
-  background-image: url(../resource/image/masthead.jpg),
-    linear-gradient(#666666b8, #0e0d0d21);
-  background-blend-mode: overlay;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background: #484848;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .banner_content_wrapper {
@@ -47,6 +49,7 @@ button.primary_btn.main-btn:hover {
   color: #fff;
   text-shadow: -1px -1px 5px black;
   text-align: justify;
+  overflow: hidden;
 }
 
 .banner_img_section {

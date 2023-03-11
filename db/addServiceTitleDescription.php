@@ -8,7 +8,7 @@ if (mysqli_num_rows($result) == 0) {
     CREATE TABLE services 
     ( id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(50) NOT NULL,
-    description VARCHAR(100) NOT NULL,
+    description VARCHAR(500) NOT NULL,
     created_date DATE DEFAULT CURRENT_TIMESTAMP )";
     mysqli_query($conn, $createServicesTableSql);
 }
@@ -34,7 +34,7 @@ require_once './dbconnection/dbConnectionClose.php';
 CREATE TABLE services 
     ( id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(50) NOT NULL,
-    description VARCHAR(100) NOT NULL,
+    description VARCHAR(500) NOT NULL,
     created_date DATE DEFAULT CURRENT_TIMESTAMP )"
 
 -->

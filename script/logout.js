@@ -4,18 +4,19 @@ const logoutYes = document.querySelector(".btnYes");
 const logoutNo = document.querySelector(".btnNo");
 
 logoutBtn.addEventListener("click", () => {
-  console.log("logoutBtn");
   logoutDiv.classList.remove("deactive");
   document.querySelector("body").style.overflow = "hidden";
 });
 
-logoutYes.addEventListener("click", () => {
-  document.location.href = "../pages/home.php";
+logoutYes.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.location.href = "/";
   logoutDiv.classList.add("deactive");
   document.querySelector("body").style.overflow = "";
 });
 
-logoutNo.addEventListener("click", () => {
+logoutNo.addEventListener("click", (e) => {
+  e.preventDefault();
   logoutDiv.classList.add("deactive");
   document.querySelector("body").style.overflow = "";
 });

@@ -122,12 +122,12 @@ if (!isset($_GET['page'])) {
             <div class="form_container social_media_form_container">
                 <div class="image_wrapper">
                     <div class="group_lb_img">
-                        <label for="">previus Image</label>
+                        <label for="">Previous Image</label>
                         <div class="img_box prev_img prev_social_img">
                         </div>
                     </div>
                     <div class="group_lb_img">
-                        <label for="" class="group_lb_img_pos_ab">upload Image</label>
+                        <label for="" class="group_lb_img_pos_ab">Upload Image</label>
                         <input type="file" accept="image/*" class="image_uploader uploader_edit_social_media_icon">
                         <p class="error_txt uploader_edit_social_media_icon_error"></p>
                     </div>
@@ -151,9 +151,23 @@ if (!isset($_GET['page'])) {
             <div class="services_form_wrapper">
                 <section class="upload">
                     <div class="form_Container">
+                        <div class="image_wrapper">
+                            <div class="group_lb_img">
+                                <label for="">Previous Image</label>
+                                <div class="img_box prev_img prev_service_img">
+
+                                </div>
+                            </div>
+                            <div class="group_lb_img">
+                                <label for="" class="group_lb_img_pos_ab service_lb_img">Upload Image</label>
+                                <input type="file" accept="image/*" name="serviceItemImgInput"
+                                    class="image_uploader uploader_edit_service">
+                                <p class="error_txt uploader_edit_service_error"></p>
+                            </div>
+                        </div>
                         <div class="form_wrappe group_inputs edit_service">
                             <div class="box">
-                                <label for="edit_title">Title:
+                                <label for="edit_title">Service:
                                     <input type="text" name="edit_title" id="edit_title" placeholder="Enter title">
                                     <p class="error_txt edittitle_error"></p>
                             </div>
@@ -182,6 +196,30 @@ if (!isset($_GET['page'])) {
     <div class="admin_settings_wrapper">
 
 
+        <!--Update Company Name-->
+        <div class="collapse_section">
+            <div class="collapse_section_header">
+                <h4>Update Company Name</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body">
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="company-name">Company Name</label>
+                        <input type="text" name="companyName" id="new-company-name" placeholder="Enter company name">
+                        <p class="error_txt company_name_error"></p>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="column col_2">
+                        <button class="select-image logo_save_btn">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="collapse_section">
             <div class="collapse_section_header">
                 <h4>Update Company Logo</h4>
@@ -194,19 +232,9 @@ if (!isset($_GET['page'])) {
                         <div class="selected_cover_img_view selected_logo_img_view">
                         </div>
                     </div>
-
                     <div class="Container">
-
-
-
                         <div class="wrapper">
                             <div class="img-area column col_1">
-
-
-
-
-
-
                                 <div class="img_uploader">
                                     <label for="" class="img_uploader_wrapper logo_uploader_wrapper">
                                         <input type="file" accept="image/*" class="image_uploader"
@@ -225,6 +253,54 @@ if (!isset($_GET['page'])) {
                 </section>
             </div>
         </div>
+
+
+        <!-- update home cover image -->
+
+        <div class="collapse_section">
+            <div class="collapse_section_header">
+                <h4>Update Home Cover Image</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body">
+                <div class="project_crud_wrapper">
+                    <div class="selected_img_view selected_home_cover_img_view">
+                    </div>
+                    <div class="project_img_wrapper">
+                        <div class="img_upload_header_txt">
+                            <p>Upload Cover Image</p>
+                        </div>
+                        <div class="image_uploader_wrapper img_uploader_label_input_wrapper">
+                            <label for="image_upload_icon">
+                                <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
+                            </label>
+                            <input type="file" id="home-cover-image-upload" name="image-upload" accept="image/*">
+                            <p>Click the icon to upload image</p>
+                            <p class="error_txt add_new_home_cover_img_err"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="project-name">Header Text</label>
+                            <input type="text" name="service" id="header-text" placeholder="Enter header text">
+                            <p class="error_txt home_cover_header_text_error"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="cover-description" placeholder="Enter project description here..." rows="3"
+                                cols="30"></textarea>
+                            <p class="error_txt home_cover_desc_error"></p>
+                        </div>
+                    </div>
+                    <div class="save-container form_control">
+                        <button id="save" class="primary_btn home_cover_save_btn">Save</button>
+                        <button class="clear_btn home_cover_clear_btn">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--Update Update Contact Info-->
         <div class="collapse_section">
             <div class="collapse_section_header">
@@ -292,18 +368,7 @@ if (!isset($_GET['page'])) {
                                 <p class="error_txt closing_hrs_error"></p>
                             </div>
                         </div>
-
-
-
-
-
-
-
-
                         <div class="column btn-col">
-
-
-
                             <div class="column btn-col form_control">
                                 <button class="primary_btn contact_info_save_btn">Save</button>
                                 <!-- <button class="clear_btn add_contactInfo_clear_btn">Clear</button> -->
@@ -400,13 +465,13 @@ if (!isset($_GET['page'])) {
                         <div class="form_wrappe group_inputs">
                             <div class="box">
                                 <label for="address">Title:
-                                    <input type="text" name="title" placeholder="Enter title">
+                                    <input type="text" name="title" placeholder="Enter title" id="update-service-title">
                                     <p class="error_txt title_error"></p>
                             </div>
                             <div class="box">
                                 <label for="descr">Description:</label><br>
                                 <textarea name="servicesdesc" cols="30" rows="3"
-                                    placeholder="Type your description here..."></textarea>
+                                    placeholder="Type your description here..." id="update-service-desc"></textarea>
                                 <p class="error_txt desc_error"></p>
                             </div>
                         </div>
@@ -427,7 +492,7 @@ if (!isset($_GET['page'])) {
             </div>
             <div class="collapse_section_body">
                 <div class="project_crud_wrapper">
-                    <div class="selected_img_view">
+                    <div class="selected_img_view selected_img_view_new_service">
                     </div>
                     <div class="project_img_wrapper">
                         <div class="img_upload_header_txt">
@@ -437,23 +502,24 @@ if (!isset($_GET['page'])) {
                             <label for="image_upload_icon">
                                 <img src="../../resource/icon/uploadIcon.png" alt="Upload Image">
                             </label>
-                            <input type="file" id="image-upload" name="image-upload" accept="image/*">
+                            <input type="file" id="image-upload-new-service" name="image-upload_new_servic"
+                                accept="image/*">
                             <p>Click the icon to upload image</p>
-                            <p class="error_txt add_new_project_img_err"></p>
+                            <p class="error_txt add_new_service_img_err"></p>
                         </div>
                     </div>
 
                     <div class="form-container">
                         <div class="form-group">
                             <label for="project-name">Service</label>
-                            <input type="text" name="service" placeholder="Enter service">
-                            <p class="error_txt service_error"></p>
+                            <input type="text" name="addservice" id="new-service-name" placeholder="Enter service">
+                            <p class="error_txt new_service_error"></p>
                         </div>
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <textarea id="description" placeholder="Enter project description here..." rows="3"
-                                cols="30"></textarea>
-                            <p class="error_txt desc_error"></p>
+                            <textarea id="new-service-description" name="serviceDesc"
+                                placeholder="Enter project description here..." rows="3" cols="30"></textarea>
+                            <p class="error_txt desc_error_new_service"></p>
                         </div>
                     </div>
                     <div class="save-container form_control">
@@ -550,19 +616,12 @@ if (!isset($_GET['page'])) {
                         <div class="selected_cover_img_view selected_about_img_view">
                         </div>
                     </div>
-
                     <div class="Container">
 
 
 
                         <div class="wrapper">
                             <div class="img-area column col_1">
-
-
-
-
-
-
                                 <div class="img_uploader">
                                     <label for="" class="img_uploader_wrapper about_img_uploader_wrapper">
                                         <input type="file" accept="image/*" class="image_uploader"
@@ -742,6 +801,12 @@ if (!isset($_GET['page'])) {
     <!-- <script src="../../script/logout.js"></script> -->
     <script src="../../script/setCallToActionBanner.js"></script>
     <script src="../../script/getCallToActionBanner.js"></script>
+    <script src="../../script/addNewService.js"></script>
+    <script src="../../script/companyName.js"></script>
+    <script src="../../script/getCompanyName.js"></script>
+    <script src="../../script/setHomeCoverImage.js"></script>
+    <script src="../../script/getHomeCover.js"></script>
+    <script src="../../script/getServiceTitleDescription.js"></script>
 
 </body>
 

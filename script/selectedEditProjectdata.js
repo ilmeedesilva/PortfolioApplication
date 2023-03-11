@@ -87,15 +87,18 @@ const handleEditProject = (e, project, type) => {
   }
   if (!editRowHeader.value) {
     newHeaderError.innerHTML = "*Project Title cannot be empty";
-  } else if (editRowHeader.value.length < 10) {
+  } else if (
+    editRowHeader.value.length < 8 ||
+    editRowHeader.value.length > 20
+  ) {
     newHeaderError.innerHTML =
-      "*Project Title must have more than 10 characters";
+      "*The project name must be between 8 to 20 characters";
   } else {
     newHeaderError.innerHTML = "";
   }
-  if (editRowDesc.value.length < 20) {
+  if (editRowDesc.value.length < 20 || editRowDesc.value.length > 200) {
     newDescError.innerHTML =
-      "*Project description must have more than 20 characters";
+      "*The description must be between 20 to 200 characters";
   } else {
     newDescError.innerHTML = "";
   }

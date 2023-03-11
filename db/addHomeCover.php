@@ -1,28 +1,28 @@
 <?php
 require_once './dbconnection/dbConnection.php';
 
-$checkCallToActionTableExist = "SHOW TABLES LIKE 'callToAction'";
-$result = mysqli_query($conn, $checkCallToActionTableExist);
+$checkHomeCoverTableExist = "SHOW TABLES LIKE 'homeCover'";
+$result = mysqli_query($conn, $checkHomeCoverTableExist);
 if (mysqli_num_rows($result) == 0) {
-    $createCallToActionTableSql = "
-    CREATE TABLE callToAction (
+    $createHomeCoverTableSql = "
+    CREATE TABLE homeCover (
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        mainTitle VARCHAR(50) NOT NULL,
-        subTitle VARCHAR(100) NOT NULL,
+        headerText VARCHAR(100) NOT NULL,
+        description VARCHAR(500) NOT NULL,
         image LONGTEXT NOT NULL
     )";
-    mysqli_query($conn, $createCallToActionTableSql);
+    mysqli_query($conn, $createHomeCoverTableSql);
 }
 
-$mainTitle = $_POST['mainTitle'];
-$subTitle = $_POST['subTitle'];
+$headerText = $_POST['headerText'];
+$description = $_POST['description'];
 $image = $_FILES['image']['tmp_name'];
 $imageName = $_FILES['image']['name'];
 
 $imageData = file_get_contents($image);
 $imageEncoded = base64_encode($imageData);
 
-$sql = "INSERT INTO callToAction (mainTitle, subTitle, image) VALUES ('$mainTitle', '$subTitle', '$imageEncoded')";
+$sql = "INSERT INTO homeCover (headerText, description, image) VALUES ('$headerText', '$description', '$imageEncoded')";
 
 if (mysqli_query($conn, $sql)) {
     echo "success";
@@ -35,9 +35,9 @@ require_once './dbconnection/dbConnectionClose.php';
 ?>
 
 
-<!-- CREATE TABLE callToAction (
+<!-- CREATE TABLE homeCover (
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        mainTitle VARCHAR(50) NOT NULL,
-        subTitle VARCHAR(100) NOT NULL,
+        headerText VARCHAR(100) NOT NULL,
+        description VARCHAR(500) NOT NULL,
         image LONGTEXT NOT NULL
     )"; -->

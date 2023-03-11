@@ -43,7 +43,11 @@ const isLoading = (status) => {
 
   const loader = document.querySelector(".loader");
   loader.appendChild(loaderWrapper);
+<<<<<<< HEAD
   // loader.innerHTML = "<div class='loader'></div>";
+=======
+  // loader.innerHTML = "<div class="circular-border-loader"></div>";
+>>>>>>> b95b38e5ad2aafdc702eabdaa767ee59f8ee4ed5
 
   status ? (loader.style.display = "block") : (loader.style.display = "none");
 };

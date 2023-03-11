@@ -68,7 +68,9 @@ const getVision = () => {
           var project = data[i];
           var imageEncoded = project.image;
           var image =
-            '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
+            '<img src="data:image/jpeg;base64,' +
+            imageEncoded +
+            '"class="img-fluid"/>';
 
           $(".about_vision .about_vision_img").html(image);
           $(".about_vision_desc p").html(data[0].description);
@@ -76,7 +78,7 @@ const getVision = () => {
       }
     },
     error: function (xhr, status, error) {
-      alert(error);
+      console.log(error);
     },
   });
 };

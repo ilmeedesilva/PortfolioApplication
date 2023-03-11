@@ -12,7 +12,7 @@
 <body>
     <div class="top_navigation">
         <div class="top_nav_left">
-            <a href="../../src/pages/home.php">
+            <a href="../../index.php">
                 <svg width="95" height="60">
                     <defs>
                         <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
@@ -34,7 +34,7 @@
                 <span></span>
             </div>
             <ul>
-                <li><a href="../../src/pages/home.php">Home</a></li>
+                <li><a href="../../index.php">Home</a></li>
                 <li><a href="../../src/pages/project.php">Project</a></li>
                 <li><a href="../../src/pages/about.php">About</a></li>
                 <li><a href="../../src/admin/login.php">Extra</a></li>

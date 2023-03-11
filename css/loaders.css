@@ -62,18 +62,28 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.loader{
+/* .loader {
   width: 80px;
   height: 80px;
   border: 5px solid #fff;
   border-radius: 50%;
-  border-top: 5px solid rgba(25,152,75,0.9);
+  border-top: 5px solid rgba(25, 152, 75, 0.9);
   animation: loader 25s linear infinite;
 }
 
+<<<<<<< HEAD
 @keyframes loader{
   form{transform: rotate(0)};
     to{transform:rotate(360dge);}
+=======
+@keyframes loader {
+  form {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360dge);
+  }
+>>>>>>> b95b38e5ad2aafdc702eabdaa767ee59f8ee4ed5
 } */

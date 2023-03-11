@@ -1,5 +1,15 @@
-const getProducts = () => {
-  fetch("../../db/getAllProjects.php")
+const getProducts = (type) => {
+  $(".blog_container").html("");
+  let url = "../../db/getAllProjects.php";
+  if (type === "all") {
+  } else if (type === "recent") {
+    url += "?order=desc&limit=10";
+  } else if (type === "oldest") {
+    url += "?order=asc&limit=10";
+  }
+  $(".filter_options").hide();
+  $(".project_loding_container").show();
+  fetch(url)
     .then(function (response) {
       return response.json();
     })
@@ -42,8 +52,22 @@ const getProducts = () => {
                           </div>\
                         </div>\
                       </div>";
-        document.querySelector(".blog_container").innerHTML += html;
+        $(".filter_options").show();
+        $(".project_loding_container").hide();
+        $(".blog_container").append(html);
       }
+    })
+    .catch((err) => {
+      $(".project_loding_container").hide();
+      console.log(err);
     });
 };
-getProducts();
+
+getProducts("all");
+
+if (window.location.href.includes("/project")) {
+  $('select[name="filertOps"]').on("change", () => {
+    console.log("clicked");
+    getProducts($('select[name="filertOps"]').val());
+  });
+}

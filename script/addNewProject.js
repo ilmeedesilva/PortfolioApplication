@@ -178,10 +178,10 @@ $("#save").on("click", () => {
 
   if (projectName.trim() === "") {
     projectNameInput.next().text("*Please enter a project name");
-  } else if (projectName.length < 8) {
+  } else if (projectName.length < 8 || projectName.length > 20) {
     projectNameInput
       .next()
-      .text("*The project name must be at least 8 characters long");
+      .text("*The project name must be between 8 to 20 characters");
   } else {
     projectNameInput.next().text("");
   }
@@ -196,10 +196,10 @@ $("#save").on("click", () => {
 
   if (description.trim() === "") {
     descriptionInput.next().text("*Please enter a description");
-  } else if (description.length < 10) {
+  } else if (description.length < 10 || description.length > 200) {
     descriptionInput
       .next()
-      .text("*The description must be at least 10 characters long");
+      .text("*The description must be between 20 to 200 characters");
   } else {
     descriptionInput.next().text("");
   }

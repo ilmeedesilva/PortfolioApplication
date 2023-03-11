@@ -3,9 +3,7 @@ const logoInput = document.querySelector(
 );
 const logoClick = document.querySelector(".logo_uploader_wrapper");
 
-const selectedLogoImgView = document.querySelector(
-  ".selected_logo_img_view"
-);
+const selectedLogoImgView = document.querySelector(".selected_logo_img_view");
 
 selectedLogoImgView.style.display = "none";
 
@@ -19,8 +17,6 @@ logoInput.addEventListener("change", () => {
     selectedLogoImgView.style.display = "none";
   }
 });
-
-
 
 const clearInputFields = () => {};
 
@@ -92,6 +88,9 @@ logoClick.addEventListener("click", (e) => {
 
 document.querySelector(".logo_save_btn").addEventListener("click", (e) => {
   e.preventDefault();
+
+  console.log("click");
+
   if (!logoInput.value) {
     document.querySelector(".error_logo").innerHTML = "*Please select an image";
   } else {

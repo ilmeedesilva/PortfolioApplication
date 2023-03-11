@@ -134,6 +134,49 @@ if (!isset($_GET['page'])) {
 
 
 
+        <div class="mt-5 text-center">
+            <h5>Users List</h5>
+        </div>
+        <div class="table_wrapper">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="text-align: center;">Name</th>
+                        <th style="text-align: center;">User Name</th>
+                        <th style="text-align: center;">Email</th>
+                        <th style="text-align: center;">Contact No</th>
+                    </tr>
+                </thead>
+                <tbody class="project_table_body user_edit_table_body">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-5 text-center">
+            <h5>E-mails</h5>
+        </div>
+        <div class="table_wrapper">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="text-align: center;">Name</th>
+                        <th style="text-align: center;">Email</th>
+                        <th style="text-align: center;">Contact No</th>
+                        <th style="text-align: center;">Message</th>
+                        <th style="text-align: center;">Recived Date</th>
+                    </tr>
+                </thead>
+                <tbody class="project_table_body mail_edit_table_body">
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+
+
     </div>
 
 
@@ -144,6 +187,7 @@ if (!isset($_GET['page'])) {
     <script src="../../script/pageLoader.js"></script>
     <script src="../../script/getAbout.js"></script>
     <script src="../../script/getProject.js"></script>
+    <script src="../../script/getAllReportData.js"></script>
 
 
 </body>

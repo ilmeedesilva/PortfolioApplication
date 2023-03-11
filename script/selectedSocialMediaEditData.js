@@ -80,7 +80,7 @@ const handleEditProject = (e, social, type) => {
   );
   const currentDate = new Date();
 
-  if (!editSocialRowName.value.trim() === "") {
+  if (editSocialRowName.value.trim() === "") {
     editSocialMediaNameError.innerHTML = "*social media Name cannot be empty";
   } else {
     editSocialMediaNameError.innerHTML = "";

@@ -41,7 +41,7 @@ const getTagLine = () => {
       }
     })
     .catch((err) => {
-      alert(err);
+      console.log(err);
     });
 };
 getTagLine();

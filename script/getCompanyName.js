@@ -17,7 +17,7 @@ const getCompanyName = () => {
       }
     })
     .catch((err) => {
-      alert(err);
+      console.log(err);
     });
 };
 getCompanyName();

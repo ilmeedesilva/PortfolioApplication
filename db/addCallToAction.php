@@ -7,8 +7,8 @@ if (mysqli_num_rows($result) == 0) {
     $createCallToActionTableSql = "
     CREATE TABLE callToAction (
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        mainTitle VARCHAR(300) NOT NULL,
-        subTitle VARCHAR(300) NOT NULL,
+        mainTitle VARCHAR(50) NOT NULL,
+        subTitle VARCHAR(100) NOT NULL,
         image LONGTEXT NOT NULL
     )";
     mysqli_query($conn, $createCallToActionTableSql);
@@ -37,7 +37,7 @@ require_once './dbconnection/dbConnectionClose.php';
 
 <!-- CREATE TABLE callToAction (
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        mainTitle VARCHAR(300) NOT NULL,
-        subTitle VARCHAR(300) NOT NULL,
+        mainTitle VARCHAR(50) NOT NULL,
+        subTitle VARCHAR(100) NOT NULL,
         image LONGTEXT NOT NULL
     )"; -->

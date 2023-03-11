@@ -10,7 +10,7 @@ logoutBtn.addEventListener("click", () => {
 
 logoutYes.addEventListener("click", (e) => {
   e.preventDefault();
-  document.location.href = "../pages/home.php";
+  document.location.href = "/";
   logoutDiv.classList.add("deactive");
   document.querySelector("body").style.overflow = "";
 });

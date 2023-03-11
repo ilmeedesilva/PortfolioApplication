@@ -788,10 +788,12 @@ if (!isset($_GET['page'])) {
     <script src="../../script/setCallToActionBanner.js"></script>
     <script src="../../script/getCallToActionBanner.js"></script>
     <script src="../../script/addNewService.js"></script>
-    <script src="../../script/setHomeCoverImage.js"></script>
-    <script src="../../script/getHomeCover.js"></script>
+<<<<<<<<< Temporary merge branch 1
     <script src="../../script/companyName.js"></script>
     <script src="../../script/getCompanyName.js"></script>
+=========
+    <script src="../../script/setHomeCoverImage.js"></script>
+    <script src="../../script/getHomeCover.js"></script>
 
 </body>
 

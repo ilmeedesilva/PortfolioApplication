@@ -354,18 +354,7 @@ if (!isset($_GET['page'])) {
                                 <p class="error_txt closing_hrs_error"></p>
                             </div>
                         </div>
-
-
-
-
-
-
-
-
                         <div class="column btn-col">
-
-
-
                             <div class="column btn-col form_control">
                                 <button class="primary_btn contact_info_save_btn">Save</button>
                                 <!-- <button class="clear_btn add_contactInfo_clear_btn">Clear</button> -->

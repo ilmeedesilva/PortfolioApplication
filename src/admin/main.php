@@ -57,6 +57,9 @@ if (!isset($_SESSION['logged_userName'])) {
                 <a href="main.php?page=user" <?php echo isset($_GET['page']) && $_GET['page'] == 'user' ? 'class="admin_link_active"' : '' ?>>
                     <li> <img src="../../resource/icon/user.png" alt="project icon"><span> User</span></li>
                 </a>
+                <a href="main.php?page=report" <?php echo isset($_GET['page']) && $_GET['page'] == 'report' ? 'class="admin_link_active"' : '' ?>>
+                    <li> <img src="../../resource/icon/report.png" alt="project icon"><span> Report</span></li>
+                </a>
             </ul>
             <div class="log_out logout_wrapper">
                 <ul>
@@ -91,9 +94,9 @@ if (!isset($_SESSION['logged_userName'])) {
                     case 'mail':
                         include 'adminMail.php';
                         break;
-                    // case 'logout':
-                    //     include '../pages/home.php';
-                    //     break;
+                    case 'report':
+                        include 'adminReport.php';
+                        break;
                     default:
                         include 'adminHome.php';
                         break;

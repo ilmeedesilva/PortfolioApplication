@@ -8,7 +8,26 @@ const getAbout = () => {
     })
     .then(function (data) {
       for (var i = 0; i < data.length; i++) {
-        if (window.location.href.includes("admin")) {
+        if (window.location.href.includes("report")) {
+          var project = data[i];
+          var imageEncoded = project.image;
+          var image =
+            '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
+
+          // let displayDescription2 = data[0].description
+          //   .substring(0, 500)
+          //   .concat("...");
+
+          document.querySelector(".about_banner_img").innerHTML = image;
+          if (document.querySelector(".loading-txt-wrapper")) {
+            // document.querySelector(".loading-txt-wrapper").style.display =
+            //   "none";
+          }
+          // document.querySelector(".about_header_desc p").innerHTML =
+          //   data[0].description;
+          // document.querySelector(".about_desc_footer").innerHTML =
+          //   displayDescription2;
+        } else if (window.location.href.includes("admin")) {
           if (data[0].image) {
             document.querySelector(".selected_img_about_view").style.display =
               "block";
@@ -72,13 +91,14 @@ const getAbout = () => {
       }
     })
     .catch((err) => {
-      document.querySelector(".loading-txt-wrapper").style.display = "none";
+      if (document.querySelector(".loading-txt-wrapper")) {
+        document.querySelector(".loading-txt-wrapper").style.display = "none";
+      }
+
       alert(err);
     });
 };
 getAbout();
-
-console.log("window.location.href - ", window.location.href);
 
 // const getAbout = () => {
 //   fetch("../../db/getAbout.php")

@@ -53,21 +53,23 @@
                 </select><br>
             </div>
 
-            <div class="content_bottom project_item_wrapper">
-                <div class="container project_loding_container">
-                    <div class="row flex-column flex-md-row">
-                        <div class="col mb-3">
-                            <div class="loading-banner"></div>
-                        </div>
-                        <div class="col mb-3">
-                            <div class="loading-banner"></div>
-                        </div>
-                        <div class="col mb-3">
-                            <div class="loading-banner"></div>
-                        </div>
-                    </div>
 
+            <div class="project_loding_container container">
+                <div class="row flex-column flex-md-row">
+                    <div class="col mb-3">
+                        <div class="loading-banner"></div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="loading-banner"></div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="loading-banner"></div>
+                    </div>
                 </div>
+            </div>
+
+            <div class="content_bottom project_item_wrapper">
+
                 <div class="container blog_container">
 
                 </div>

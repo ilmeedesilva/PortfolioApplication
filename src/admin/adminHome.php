@@ -212,7 +212,7 @@ if (!isset($_GET['page'])) {
                 </div>
                 <div class="wrapper">
                     <div class="column col_2">
-                        <button class="select-image logo_save_btn">Save</button>
+                        <button class="select-image company_save_btn">Save</button>
                     </div>
                 </div>
             </div>

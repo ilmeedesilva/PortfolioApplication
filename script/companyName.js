@@ -1,7 +1,7 @@
 const companyName_input = document.querySelector('input[name="companyName"]');
 const name_error = document.querySelector(".company_name_error");
 
-const save_button = document.querySelector(".logo_save_btn");
+const save_button = document.querySelector(".company_save_btn");
 
 save_button.addEventListener("click", (e) => {
   e.preventDefault();

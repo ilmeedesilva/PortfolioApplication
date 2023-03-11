@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Protfolio</title>
+  <title>Home</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" type="text/css" href="./css/navigation.css">
   <link rel="stylesheet" type="text/css" href="./css/footer.css">
@@ -17,9 +17,7 @@
 </head>
 
 <body>
-
   <div class="loader"></div>
-
   <?php include('./includes/navigation.php'); ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
   </script>
@@ -63,7 +61,7 @@
               <div class="loading-txt ld_75"></div>
             </div>
             </p>
-            <a href="about.php" class="primary_btn">Learn More</a>
+            <a href="/src/pages/about.php" class="primary_btn">Learn More</a>
           </div>
         </div>
       </div>
@@ -89,7 +87,7 @@
         </div>
         <div class="cta-col col_2">
           <div class="btn-holder">
-            <a href="contact.php" class="primary_btn cta_btn">Hire Me</a>
+            <a href="/src/pages/contact.php" class="primary_btn cta_btn">Hire Me</a>
           </div>
         </div>
       </div>
@@ -108,7 +106,8 @@
             <div class="section-header text-center sub-heading">
               <h5>Our Services</h5>
               <h2 class="service-title">Services provide for you.</h2>
-              <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do eiusmod tempor incididunt ut
+              <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do
+                eiusmod tempor incididunt ut
                 labore
                 et dolore magna aliqua.</p>
             </div>
@@ -117,7 +116,21 @@
       </div>
 
       <div class="services_items_wrapper">
-        <div class="service_item">
+
+        <div class="container-fluid">
+          <div class="row flex-column flex-md-row">
+            <div class="col mb-3">
+              <div class="loading-banner"></div>
+            </div>
+            <div class="col mb-3">
+              <div class="loading-banner"></div>
+            </div>
+            <div class="col mb-3">
+              <div class="loading-banner"></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="service_item">
           <div class="service_item_icon"><i class="bi bi-x-diamond"></i></div>
           <div class="service_item_desc">
             <h4>Service item #01</h4>
@@ -153,9 +166,9 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo error, facere perferendis min</p>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <!-- <div class="row">
+        <!-- <div class="row">
         <div class="col-12 col-md-12 col-lg-4">
           <div class="card text-center">
             <div class="box-body">
@@ -192,106 +205,68 @@
           </div>
         </div>
       </div> -->
+      </div>
     </div>
-  </div>
-  <!--End service section-->
+    <!--End service section-->
 
-  <!--Start My Project-->
-  <section id="Project" class="project section-padding section_appear">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="section-header text-center sub-heading">
-            <h5>My completed Project</h5>
-            <h2>Recent Works</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />tempor incididunt ut labore et dolore
-              magna aliqua.</p>
+    <!--Start My Project-->
+    <section id="Project" class="project section-padding section_appear">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center sub-heading">
+              <h5>My completed Project</h5>
+              <h2>Recent Works</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />tempor incididunt ut labore et dolore
+                magna aliqua.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- <div class="main_project_blog_container">
+        <!-- <div class="main_project_blog_container">
 
       </div> -->
 
-      <div class="main_project_blog_container section_appear">
-        <!-- <div class="loading-banner"></div> -->
-        <div class="container-fluid">
-          <div class="row flex-column flex-md-row">
-            <div class="col mb-3">
-              <div class="loading-banner"></div>
-            </div>
-            <div class="col mb-3">
-              <div class="loading-banner"></div>
-            </div>
-            <div class="col mb-3">
-              <div class="loading-banner"></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <!-- <div class="row">
-        <div class="col-12 col-md-12 col-lg-4 ">
-          <div class="card text-center">
-            <div class="project-body">
-              <img src="../../resource\image\proj1.jpg">
-              <div class="content-wrapper">
-                <h3 class="box-title">Project 1</h3>
-                <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut
-                  labore et dolore magna aliqua.</p>
+        <div class="main_project_blog_container section_appear">
+          <!-- <div class="loading-banner"></div> -->
+          <div class="container-fluid">
+            <div class="row flex-column flex-md-row">
+              <div class="col mb-3">
+                <div class="loading-banner"></div>
+              </div>
+              <div class="col mb-3">
+                <div class="loading-banner"></div>
+              </div>
+              <div class="col mb-3">
+                <div class="loading-banner"></div>
               </div>
             </div>
           </div>
+
         </div>
 
-        <div class="col-12 col-md-12 col-lg-4">
-          <div class="card text-center">
-            <div class="project-body">
-              <img src="../../resource\image\proj2.jpg">
-              <div class="content-wrapper">
-                <h3 class="box-title">Project 2</h3>
-                <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut
-                  labore et dolore magna aliqua.</p>
-              </div>
-            </div>
-          </div>
+        <div class="btn-wrapper">
+          <a href="/src/pages/project.php" class="primary_btn cta_btn pj_viewMore">View More</a>
         </div>
-        <div class="col-12 col-md-12 col-lg-4">
-          <div class="card text-center">
-            <div class="project-body">
-              <img src="../../resource\image\proj3..jpg">
-              <div class="content-wrapper">
-                <h3 class="box-title">Project 3</h3>
-                <p class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut
-                  labore et dolore magna aliqua.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div> -->
-      <div class="btn-wrapper">
-        <a href="project.php" class="primary_btn cta_btn pj_viewMore">View More</a>
-      </div>
-  </section>
-  <?php include('./includes/footer.php'); ?>
-  <!--End  My Project-->
-  <script src="./script/pageLoader.js"></script>
-  <script src="./script/jquery-3.6.3.min.js"></script>
-  <script src="./script/navigation.js"> </script>
-  <script src="./script/mobileNav.js"></script>
-  <script src="./script/getLogo.js"> </script>
-  <script src="./script/home.js"> </script>
-  <script src="./script/getContactInfo.js"></script>
-  <script src="./script/getAllSocialMedias.js"></script>
-  <!-- <script src="../../script/loaders.js"></script> -->
-  <script src="./script/getAbout.js"></script>
-  <script src="./script/getHomeAboutImage.js"></script>
-  <script src="./script/getCallToActionBanner.js"></script>
-  <script src="./script/getProductsByCount.js"></script>
-  <script src="./script/getHomeCover.js"></script>
-  <script src="./script/getAllServices.js"></script>
-  <script src="./script/getServiceTitleDescription.js"></script>
+    </section>
+    <?php include('./includes/footer.php'); ?>
+    <!--End  My Project-->
+    <script src="./script/jquery-3.6.3.min.js"></script>
+    <script src="../../script/getCompanyName.js"></script>
+    <script src="./script/pageLoader.js"></script>
+    <script src="./script/navigation.js"> </script>
+    <script src="./script/mobileNav.js"></script>
+    <script src="./script/getLogo.js"> </script>
+    <script src="./script/home.js"> </script>
+    <script src="./script/getContactInfo.js"></script>
+    <script src="./script/getAllSocialMedias.js"></script>
+    <!-- <script src="../../script/loaders.js"></script> -->
+    <script src="./script/getAbout.js"></script>
+    <script src="./script/getHomeAboutImage.js"></script>
+    <script src="./script/getCallToActionBanner.js"></script>
+    <script src="./script/getProductsByCount.js"></script>
+    <script src="./script/getHomeCover.js"></script>
+    <script src="./script/getAllServices.js"></script>
+    <script src="./script/getServiceTitleDescription.js"></script>
 
 </body>
 

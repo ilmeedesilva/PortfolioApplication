@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/project.css">
@@ -83,8 +83,9 @@
 
     </div>
     <?php include('../../includes/footer.php'); ?>
-    <script src="../../script/pageLoader.js"></script>
     <script src="../../script/jquery-3.6.3.min.js"></script>
+    <script src="../../script/getCompanyName.js"></script>
+    <script src="../../script/pageLoader.js"></script>
     <script src="../../script/navigation.js">
     </script>
     <script src="../../script/getAllProjects.js">
@@ -95,6 +96,7 @@
     <script src="../../script/mobileNav.js"></script>
     <script src="../../script/getProject.js"></script>
     <script src="../../script/getAbout.js"></script>
+    <script src="../../script/getAllSocialMedias.js"></script>
 </body>
 
 </html>

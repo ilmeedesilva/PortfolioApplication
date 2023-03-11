@@ -7,8 +7,19 @@ const getProject = () => {
       return response.json();
     })
     .then(function (data) {
-      for (var i = 0; i < data.length; i++) {
-        if (window.location.href.includes("admin")) {
+      for (let i = 0; i < data.length; i++) {
+        if (window.location.href.includes("report")) {
+          let project = data[i];
+          let imageEncoded = project.image;
+          let image =
+            '<img src="data:image/jpeg;base64,' +
+            imageEncoded +
+            '" class="img-fluid" alt="project cover image ' +
+            project.id +
+            '" />';
+
+          document.querySelector(".project_main_img").innerHTML = image;
+        } else if (window.location.href.includes("admin")) {
           if (data[0].image) {
             document.querySelector(".selected_cover_img_view").style.display =
               "block";
@@ -28,10 +39,14 @@ const getProject = () => {
             .querySelector("#project_page_save")
             .setAttribute("data-pk", data[0].id);
         } else {
-          var project = data[i];
-          var imageEncoded = project.image;
-          var image =
-            '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
+          let project = data[i];
+          let imageEncoded = project.image;
+          let image =
+            '<img src="data:image/jpeg;base64,' +
+            imageEncoded +
+            '" class="img-fluid" alt="project cover image ' +
+            project.id +
+            '" />';
 
           document.querySelector(
             ".project_img_wrapper .page_main_img"

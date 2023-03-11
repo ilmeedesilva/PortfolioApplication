@@ -1,6 +1,5 @@
 const getProducts = (type) => {
   $(".blog_container").html("");
-  console.log("type- ", type);
   let url = "../../db/getAllProjects.php";
   if (type === "all") {
   } else if (type === "recent") {
@@ -9,7 +8,7 @@ const getProducts = (type) => {
     url += "?order=asc&limit=10";
   }
   $(".filter_options").hide();
-  $(".project_item_wrapper .project_loding_container").show();
+  $(".project_loding_container").show();
   fetch(url)
     .then(function (response) {
       return response.json();
@@ -54,12 +53,12 @@ const getProducts = (type) => {
                         </div>\
                       </div>";
         $(".filter_options").show();
-        $(".project_item_wrapper .project_loding_container").hide();
+        $(".project_loding_container").hide();
         $(".blog_container").append(html);
       }
     })
     .catch((err) => {
-      $(".project_item_wrapper .project_loding_container").hide();
+      $(".project_loding_container").hide();
       alert(err);
     });
 };

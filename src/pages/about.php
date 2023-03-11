@@ -31,12 +31,9 @@
             <h5>ABOUT</h5>
         </div>
         <div class="gray_wrapper">
-
         </div>
         <div class="about_banner_img">
-
             <div class="loading-banner"></div>
-
         </div>
     </div>
     <div class="main_section_wrapper">

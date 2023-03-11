@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <div class="footer_wrapper">
         <div class="footer_content">
 

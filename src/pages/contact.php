@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="../../css/contact.css">
     <link rel="stylesheet" type="text/css" href="../../css/navigation.css">
     <link rel="stylesheet" href="../../css/style.css">
@@ -95,8 +95,9 @@
     </div>
 
     <?php include('../../includes/footer.php'); ?>
-    <script src="../../script/pageLoader.js"></script>
     <script src="../../script/jquery-3.6.3.min.js"></script>
+    <script src="../../script/getCompanyName.js"></script>
+    <script src="../../script/pageLoader.js"></script>
     <script src="../../script/navigation.js">
     </script>
     <script src="../../script/mobileNav.js"></script>

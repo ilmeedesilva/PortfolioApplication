@@ -50,7 +50,7 @@ const getLogo = () => {
     dataType: "json",
     success: function (data) {
       isLoading(false);
-      for (var i = 0; i < data.length; i++) {
+      for (let i = 0; i < data.length; i++) {
         if (window.location.href.includes("admin")) {
           if (data[0].image) {
             $(".selected_logo_img_view").css("display", "block");
@@ -64,12 +64,20 @@ const getLogo = () => {
           }
           // $(".logo_save_btn").attr("data-pk", data[0].id);
         } else {
-          var project = data[i];
-          var imageEncoded = project.image;
-          var image =
+          let project = data[i];
+          let imageEncoded = project.image;
+          let image =
             '<img src="data:image/jpeg;base64,' + imageEncoded + '"/>';
           $(".top_nav_left").html('<a href="../../index.php">' + image);
           $(".footer_content_logo_img").html(image);
+
+          let favicon = document.querySelector('link[rel="shortcut icon"]');
+          if (!favicon) {
+            favicon = document.createElement("link");
+            favicon.setAttribute("rel", "shortcut icon");
+            document.head.appendChild(favicon);
+          }
+          favicon.setAttribute("href", "data:image/png;base64," + imageEncoded);
         }
       }
     },

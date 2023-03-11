@@ -1,8 +1,8 @@
 const getCompanyName = () => {
-  isLoading(true);
+  // isLoading(true);
   fetch("../../db/getCompanyName.php")
     .then(function (response) {
-      isLoading(false);
+      // isLoading(false);
       return response.json();
     })
     .then(function (data) {
@@ -12,7 +12,7 @@ const getCompanyName = () => {
             '.form-container input[name="companyName"]'
           ).value = data[0].companyName;
         } else {
-          //   document.querySelector("").innerHTML = data[0].companyName;
+          document.title = `${data[0].companyName} | ${document.title}`;
         }
       }
     })

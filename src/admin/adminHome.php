@@ -189,21 +189,18 @@ if (!isset($_GET['page'])) {
                 <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
             </div>
             <div class="collapse_section_body">
-
-
-                <div class="form-group">
-                    <label for="project-name">Company Name</label>
-                    <input type="text" name="service" placeholder="Enter company name">
-                    <p class="error_txt company_name_text_error"></p>
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="company-name">Company Name</label>
+                        <input type="text" name="companyName" id="new-company-name" placeholder="Enter company name">
+                        <p class="error_txt company_name_error"></p>
+                    </div>
                 </div>
-
                 <div class="wrapper">
                     <div class="column col_2">
                         <button class="select-image logo_save_btn">Save</button>
                     </div>
                 </div>
-
-
             </div>
         </div>
 
@@ -289,11 +286,6 @@ if (!isset($_GET['page'])) {
                 </div>
             </div>
         </div>
-
-
-
-
-
 
         <!--Update Update Contact Info-->
         <div class="collapse_section">
@@ -621,19 +613,12 @@ if (!isset($_GET['page'])) {
                         <div class="selected_cover_img_view selected_about_img_view">
                         </div>
                     </div>
-
                     <div class="Container">
 
 
 
                         <div class="wrapper">
                             <div class="img-area column col_1">
-
-
-
-
-
-
                                 <div class="img_uploader">
                                     <label for="" class="img_uploader_wrapper about_img_uploader_wrapper">
                                         <input type="file" accept="image/*" class="image_uploader"

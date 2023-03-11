@@ -30,7 +30,7 @@ save_btn.addEventListener("click", (e) => {
   // Description
   if (!desc_input.value) {
     desc_error.innerHTML = "*Description cannot be empty";
-  } else if (desc_input.value.length < 50 || desc_input.value.length > 100) {
+  } else if (desc_input.value.length < 50 || desc_input.value.length > 500) {
     desc_error.innerHTML =
       "*The Description must be at least 50 characters long and less than 100 characters";
   } else {

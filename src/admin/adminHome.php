@@ -465,13 +465,13 @@ if (!isset($_GET['page'])) {
                         <div class="form_wrappe group_inputs">
                             <div class="box">
                                 <label for="address">Title:
-                                    <input type="text" name="title" placeholder="Enter title">
+                                    <input type="text" name="title" placeholder="Enter title" id="update-service-title">
                                     <p class="error_txt title_error"></p>
                             </div>
                             <div class="box">
                                 <label for="descr">Description:</label><br>
                                 <textarea name="servicesdesc" cols="30" rows="3"
-                                    placeholder="Type your description here..."></textarea>
+                                    placeholder="Type your description here..." id="update-service-desc"></textarea>
                                 <p class="error_txt desc_error"></p>
                             </div>
                         </div>
@@ -806,6 +806,7 @@ if (!isset($_GET['page'])) {
     <script src="../../script/getCompanyName.js"></script>
     <script src="../../script/setHomeCoverImage.js"></script>
     <script src="../../script/getHomeCover.js"></script>
+    <script src="../../script/getServiceTitleDescription.js"></script>
 
 </body>
 

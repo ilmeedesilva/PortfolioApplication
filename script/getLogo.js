@@ -75,7 +75,7 @@ const getLogo = () => {
     },
     error: function (err) {
       console.log(err);
-      alert(err);
+      // alert(err);
     },
   });
 };

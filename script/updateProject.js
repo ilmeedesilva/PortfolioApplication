@@ -51,10 +51,13 @@ submit_button_project.addEventListener("click", (e) => {
   }
   if (!descProject.value) {
     err_desc_project.innerHTML = "*Description cannot be empty";
-  }else if (descProject.value.length <= 199 || descProject.value.length > 1000) {
+  } else if (
+    descProject.value.length <= 199 ||
+    descProject.value.length > 1000
+  ) {
     err_desc_project.innerHTML =
-      "*Project Description should contain more than 200 characters and less than 1000 characters";}
-   else {
+      "*Project Description should contain more than 200 characters and less than 1000 characters";
+  } else {
     err_desc_project.innerHTML = "";
   }
   if (!err_desc_project.innerHTML && !err_img_project.innerHTML) {
@@ -73,7 +76,7 @@ submit_button_project.addEventListener("click", (e) => {
         displayPopUp(result);
       })
       .catch((error) => {
-        alert(error);
+        console.log(error);
       });
   }
 });

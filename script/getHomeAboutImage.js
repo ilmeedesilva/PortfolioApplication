@@ -33,7 +33,7 @@ const getHomeAboutImage = () => {
     },
     error: function (err) {
       $(".about-img .loading-banner").css("display", "none");
-      alert(err);
+      console.log(err);
     },
   });
 };

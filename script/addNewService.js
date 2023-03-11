@@ -53,7 +53,10 @@ saveButtonService.addEventListener("click", () => {
   if (serviceName.trim() === "") {
     serviceNameInput.nextElementSibling.textContent =
       "*Please enter a service name";
-  } 
+  } else if (serviceName.length < 5 || serviceName.length > 150) {
+    serviceNameInput.nextElementSibling.textContent =
+      "*The service name must be at least 5 characters long and less than 50 characters";
+  }
   else {
     serviceNameInput.nextElementSibling.textContent = "";
   }

@@ -80,7 +80,9 @@
 
       <div class="cta-content">
         <div class="cta-col col_1">
-          <div class="col-content">
+          <div class="col-content" style="
+    overflow: hidden;
+">
             <h2 class="title text-light cta_main_title">Want to work with me?</h6>
               <p class="cta_sub_title">Always feel Free to Contact & Hire me</p>
           </div>
@@ -287,6 +289,7 @@
   <script src="./script/getHomeAboutImage.js"></script>
   <script src="./script/getCallToActionBanner.js"></script>
   <script src="./script/getProductsByCount.js"></script>
+  <script src="./script/getHomeCover.js"></script>
 
 </body>
 

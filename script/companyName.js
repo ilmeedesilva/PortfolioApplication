@@ -26,7 +26,7 @@ save_button.addEventListener("click", (e) => {
         displayPopUp(result);
       })
       .catch((error) => {
-        alert(error);
+        console.log(error);
       });
   }
 });

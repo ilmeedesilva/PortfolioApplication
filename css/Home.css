@@ -5,8 +5,9 @@
   justify-content: space-between;
   align-items: center;
   background-size: cover;
-  background-image: url(../resource/image/masthead.jpg),
-    linear-gradient(#666666b8, #0e0d0d21);
+  /* background-image: url(../resource/image/masthead.jpg), */
+  /* linear-gradient(#666666b8, #0e0d0d21); */
+  background: #484848;
   background-blend-mode: overlay;
 }
 
@@ -47,6 +48,7 @@ button.primary_btn.main-btn:hover {
   color: #fff;
   text-shadow: -1px -1px 5px black;
   text-align: justify;
+  overflow: hidden;
 }
 
 .banner_img_section {

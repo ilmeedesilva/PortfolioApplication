@@ -19,13 +19,13 @@ function removeActiveNavLink() {
 //   });
 // });
 
-// window.onscroll = function () {
-//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//     topNavigation.classList.add("top_navigation_scroll");
-//   } else {
-//     topNavigation.classList.remove("top_navigation_scroll");
-//   }
-// };
+window.onscroll = function () {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    topNavigation.classList.add("top_navigation_scroll");
+  } else {
+    topNavigation.classList.remove("top_navigation_scroll");
+  }
+};
 
 // const activeLink = localStorage.getItem("activeLink");
 

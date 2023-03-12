@@ -1,4 +1,3 @@
-console.log("window.location.href - ", window.location.href);
 const getHomeCover = () => {
   if (!window.location.href.includes("report")) isLoading(true);
   fetch("../../db/getHomeCover.php")

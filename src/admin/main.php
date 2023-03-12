@@ -51,6 +51,9 @@ if (!isset($_SESSION['logged_userName'])) {
                 <a href="main.php?page=about" <?php echo isset($_GET['page']) && $_GET['page'] == 'about' ? 'class="admin_link_active"' : '' ?>>
                     <li> <img src="../../resource/icon/about.png" alt="project icon"><span> About</span></li>
                 </a>
+                <a href="main.php?page=contact" <?php echo isset($_GET['page']) && $_GET['page'] == 'contact' ? 'class="admin_link_active"' : '' ?>>
+                    <li> <img src="../../resource/icon/contact-us.png" alt="project icon"><span> Contact</span></li>
+                </a>
                 <a href="main.php?page=mail" <?php echo isset($_GET['page']) && $_GET['page'] == 'mail' ? 'class="admin_link_active"' : '' ?>>
                     <li> <img src="../../resource/icon/email.png" alt="project icon"><span> Mail</span></li>
                 </a>
@@ -85,9 +88,9 @@ if (!isset($_SESSION['logged_userName'])) {
                     case 'about':
                         include 'adminAbout.php';
                         break;
-                    // case 'extra':
-                    //     include 'extra.php';
-                    //     break;
+                    case 'contact':
+                        include 'adminContact.php';
+                        break;
                     case 'user':
                         include 'adminUser.php';
                         break;

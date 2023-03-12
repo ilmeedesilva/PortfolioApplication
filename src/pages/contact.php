@@ -27,7 +27,7 @@
 
         </div>
         <div class="page_main_img">
-            <img class="img1" src="../../resource/image/contact-banner.jpeg" title="Contact us" alt="Contact us">
+            <!-- <img class="img1" src="../../resource/image/contact-banner.jpeg" title="Contact us" alt="Contact us"> -->
         </div>
     </div>
     <div class="status_popup_wrapper popup_hide">
@@ -107,6 +107,7 @@
     <script src="../../script/getContactInfo.js"></script>
     <script src="../../script/getAbout.js"></script>
     <script src="../../script/getAllSocialMedias.js"></script>
+    <script src="../../script/getContactBanner.js"></script>
 </body>
 
 </html>

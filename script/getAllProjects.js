@@ -67,7 +67,6 @@ getProducts("all");
 
 if (window.location.href.includes("/project")) {
   $('select[name="filertOps"]').on("change", () => {
-    console.log("clicked");
     getProducts($('select[name="filertOps"]').val());
   });
 }

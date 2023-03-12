@@ -210,7 +210,7 @@
     <!--End service section-->
 
     <!--Start My Project-->
-    <section id="Project" class="project section-padding section_appear">
+    <section id="Project" class="project section-padding section_appear mt-5">
       <div class="container">
         <div class="row">
           <div class="col-md-12">

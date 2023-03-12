@@ -30,7 +30,6 @@ const clear_button = document.querySelector(".add_newsocialmedia_clear_btn");
 newSocialMediaSelectedImgView.style.display = "none";
 
 const clearSocialMediaFields = () => {
-
   newSocialMediaImageInput.value = "";
   newSocialMediaLinkName.value = "";
   newSocialMediaLink.value = "";
@@ -114,8 +113,6 @@ newSocialMediaSaveButton.addEventListener("click", () => {
 
 clear_button.addEventListener("click", (e) => {
   e.preventDefault();
-
-  console.log("clicked");
 
   newSocialMediaImageInput.value = "";
   newSocialMediaLinkName.value = "";

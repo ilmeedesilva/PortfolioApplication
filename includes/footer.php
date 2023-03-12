@@ -41,9 +41,9 @@
                 <div class="wrapper_nav">
                     <ul>
                         <li><a href="../../index.php">Home</a></li>
-                        <li><a href="project.php">Projects</a></li>
-                        <li><a href="about.php">About</a></li>
-                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="../../src/pages/project.php">Projects</a></li>
+                        <li><a href="../../src/pages/about.php">About</a></li>
+                        <li><a href="../../src/pages/contact.php">Contact</a></li>
                     </ul>
                 </div>
                 <div class="wrapper_about">

@@ -25,7 +25,7 @@ session_start();
       <div class="login_form_content">
 
         <div class="login_form_header mt-5">
-          <h5>WELCOME TO SYSTEM NAME</h5>
+          <h5>WELCOME </h5>
           <h6>SIGN IN HERE</h6>
         </div>
 
@@ -78,9 +78,10 @@ session_start();
   </div>
   </div>
 
-
+  <script src="../../script/getCompanyName.js"></script>
   <script src="../../script/login/formChanges.js" charset="utf-8"></script>
   <script src="../../script/login/loginSubmit.js" charset="utf-8"></script>
+
 </body>
 
 </html>

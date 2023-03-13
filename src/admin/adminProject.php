@@ -52,7 +52,7 @@ if (!isset($_GET['page'])) {
                 <div class="image_wrapper">
                     <div class="group_lb_img">
                         <label for="">previus Image</label>
-                        <div class="img_box prev_img">
+                        <div class="img_box prev_img project_prev_img">
 
                         </div>
                     </div>

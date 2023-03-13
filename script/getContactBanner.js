@@ -1,5 +1,3 @@
-console.log(window.location.href);
-
 const getContactBanner = () => {
   if (document.querySelector(".loading-txt-wrapper")) {
     document.querySelector(".loading-txt-wrapper").style.display = "block";

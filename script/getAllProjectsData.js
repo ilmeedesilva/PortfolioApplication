@@ -13,9 +13,10 @@ const hideloadingPorjectData = () => {
 };
 
 const getAllProjectsData = () => {
-  while (edittableBody.firstChild) {
-    edittableBody.removeChild(edittableBody.firstChild);
+  if (edittableBody.hasChildNodes()) {
+    edittableBody.innerHTML = "";
   }
+
   loadingPorjectData();
   isLoading(true);
   fetch("../../db/getAllProjects.php")

@@ -113,9 +113,6 @@ const handleEditProject = (e, project, type) => {
   const editDate = editRowDate.value.trim();
   const editDesc = editRowDesc.value.trim();
 
-  console.log("editHeader - ", editHeader);
-  console.log("editDate - ", editDate);
-  console.log("editDesc - ", editDesc);
   if (
     editHeader === project.projectName.trim() &&
     editDate === project.date &&
@@ -125,64 +122,65 @@ const handleEditProject = (e, project, type) => {
       "Please fill all fields and make sure they are different from the original data"
     );
     return;
-  }
-  if (
-    !uploadedEditProjectImgError.innerHTML &&
-    !newDateError.innerHTML &&
-    !newHeaderError.innerHTML &&
-    !newDescError.innerHTML &&
-    type === "Edit"
-  ) {
-    if (file) {
-      const data = new FormData();
-      data.append("project_id", project.id);
-      data.append("image", file);
-      data.append("project_name", editHeader);
-      data.append("date", editDate);
-      data.append("descr", editDesc);
-      console.log("project.id - ", project.id);
+  } else {
+    if (
+      !uploadedEditProjectImgError.innerHTML &&
+      !newDateError.innerHTML &&
+      !newHeaderError.innerHTML &&
+      !newDescError.innerHTML &&
+      type === "Edit"
+    ) {
+      if (file) {
+        const data = new FormData();
+        data.append("project_id", project.id);
+        data.append("image", file);
+        data.append("project_name", editHeader);
+        data.append("date", editDate);
+        data.append("descr", editDesc);
+        console.log("project.id - ", project.id);
 
-      fetch("../../db/putProjectData.php", {
-        method: "POST",
-        body: data,
-      })
-        .then((response) => {
-          if (response.status === 200) {
-            alert("Data saved successfully");
-            getAllProjectsData();
-          } else {
-            alert("Failed to save data");
-          }
+        fetch("../../db/putProjectData.php", {
+          method: "POST",
+          body: data,
         })
-        .catch((error) => {
-          console.log(error);
-          alert("Failed to save data");
-        });
-    } else {
-      const data = new FormData();
-      data.append("project_id", project.id);
-      // data.append("image", editRowIMGUploder.files[0]);
-      data.append("project_name", editHeader);
-      data.append("date", editDate);
-      data.append("descr", editDesc);
-      console.log("project.id - ", project.id);
+          .then((response) => {
+            if (response.status === 200) {
+              alert("Data saved successfully");
+              getAllProjectsData();
+            } else {
+              alert("Failed to save data");
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+            alert("Failed to save data");
+          });
+      } else {
+        const data = new FormData();
+        data.append("project_id", project.id);
+        // data.append("image", editRowIMGUploder.files[0]);
+        data.append("project_name", editHeader);
+        data.append("date", editDate);
+        data.append("descr", editDesc);
+        console.log("project.id - ", project.id);
 
-      fetch("../../db/putProjectData.php", {
-        method: "POST",
-        body: data,
-      })
-        .then((response) => {
-          if (response.status === 200) {
-            alert("Data saved successfully");
-            getAllProjectsData();
-          } else {
-            alert("Failed to save data");
-          }
+        fetch("../../db/putProjectData.php", {
+          method: "POST",
+          body: data,
         })
-        .catch((error) => {
-          console.log(error);
-          alert("Failed to save data");
-        });
+          .then((response) => {
+            if (response.status === 200) {
+              alert("Data saved successfully");
+              getAllProjectsData();
+            } else {
+              alert("Failed to save data");
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+            alert("Failed to save data");
+          });
+      }
     }
   }
 };

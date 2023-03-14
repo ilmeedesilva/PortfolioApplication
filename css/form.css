@@ -36,12 +36,18 @@ select {
   resize: none;
 }
 
-.allCheckBox input{
+input[type="checkbox"] {
+  width: auto;
+  padding: 8px;
+  -webkit-appearance: auto;
+  appearance: auto;
+}
+
+.allCheckBox input {
   width: 8px !important;
   height: 8px !important;
   border-radius: 15px;
 }
-
 
 input:focus-visible {
   border: 1px solid #f4f6fc !important;

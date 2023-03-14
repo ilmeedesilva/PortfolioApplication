@@ -69,7 +69,10 @@ uploadedEditProjectImg.addEventListener("change", function () {
 
 const handleEditProject = (e, project, type) => {
   e.preventDefault();
-
+  console.log(
+    "editRowHeader - ",
+    editRowHeader.value.length < 8 || editRowHeader.value.length > 20
+  );
   const newHeaderError = document.querySelector(
     ".edit_project_header_error_txt"
   );
@@ -89,10 +92,10 @@ const handleEditProject = (e, project, type) => {
     newHeaderError.innerHTML = "*Project Title cannot be empty";
   } else if (
     editRowHeader.value.length < 8 ||
-    editRowHeader.value.length > 20
+    editRowHeader.value.length > 30
   ) {
     newHeaderError.innerHTML =
-      "*The project name must be between 8 to 20 characters";
+      "*The project name must be between 8 to 30 characters";
   } else {
     newHeaderError.innerHTML = "";
   }
@@ -119,70 +122,65 @@ const handleEditProject = (e, project, type) => {
       "Please fill all fields and make sure they are different from the original data"
     );
     return;
-  }
-  console.log("file - ", file);
-  console.log(
-    "uploadedEditProjectImgError.innerHTML  - ",
-    uploadedEditProjectImgError.innerHTML
-  );
+  } else {
+    if (
+      !uploadedEditProjectImgError.innerHTML &&
+      !newDateError.innerHTML &&
+      !newHeaderError.innerHTML &&
+      !newDescError.innerHTML &&
+      type === "Edit"
+    ) {
+      if (file) {
+        const data = new FormData();
+        data.append("project_id", project.id);
+        data.append("image", file);
+        data.append("project_name", editHeader);
+        data.append("date", editDate);
+        data.append("descr", editDesc);
+        console.log("project.id - ", project.id);
 
-  if (
-    !uploadedEditProjectImgError.innerHTML &&
-    !newDateError.innerHTML &&
-    !newHeaderError.innerHTML &&
-    !newDescError.innerHTML &&
-    type === "Edit"
-  ) {
-    if (file) {
-      const data = new FormData();
-      data.append("project_id", project.id);
-      data.append("image", file);
-      data.append("project_name", editHeader);
-      data.append("date", editDate);
-      data.append("descr", editDesc);
-      console.log("project.id - ", project.id);
-
-      fetch("../../db/putProjectData.php", {
-        method: "POST",
-        body: data,
-      })
-        .then((response) => {
-          if (response.status === 200) {
-            alert("Data saved successfully");
-            getAllProjectsData();
-          } else {
-            alert("Failed to save data");
-          }
+        fetch("../../db/putProjectData.php", {
+          method: "POST",
+          body: data,
         })
-        .catch((error) => {
-          console.log(error);
-          alert("Failed to save data");
-        });
-    } else {
-      const data = new FormData();
-      data.append("project_id", project.id);
-      // data.append("image", editRowIMGUploder.files[0]);
-      data.append("project_name", editHeader);
-      data.append("date", editDate);
-      data.append("descr", editDesc);
-      console.log("project.id - ", project.id);
-
-      fetch("../../db/putProjectData.php", {
-        method: "POST",
-        body: data,
-      })
-        .then((response) => {
-          if (response.status === 200) {
-            alert("Data saved successfully");
-            getAllProjectsData();
-          } else {
+          .then((response) => {
+            if (response.status === 200) {
+              alert("Data saved successfully");
+              getAllProjectsData();
+            } else {
+              alert("Failed to save data");
+            }
+          })
+          .catch((error) => {
+            console.log(error);
             alert("Failed to save data");
-          }
+          });
+      } else {
+        const data = new FormData();
+        data.append("project_id", project.id);
+        // data.append("image", editRowIMGUploder.files[0]);
+        data.append("project_name", editHeader);
+        data.append("date", editDate);
+        data.append("descr", editDesc);
+        console.log("project.id - ", project.id);
+
+        fetch("../../db/putProjectData.php", {
+          method: "POST",
+          body: data,
         })
-        .catch((error) => {
-          console.log(error);
-          alert("Failed to save data");
-        });
+          .then((response) => {
+            if (response.status === 200) {
+              alert("Data saved successfully");
+              getAllProjectsData();
+            } else {
+              alert("Failed to save data");
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+            alert("Failed to save data");
+          });
+      }
     }
   }
 };

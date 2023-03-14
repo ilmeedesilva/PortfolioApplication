@@ -82,14 +82,15 @@ const handleEditUser = (e, user) => {
   } else {
     if (!editUserName.value.match(/^[A-Za-z][A-Za-z]+\d*$|^[a-z]\d\d+$/)) {
       username_error.innerHTML = "*First 2 characters must be letters";
-    }
-    else if (editUserName.value.length < 4 || editUserName.value.length > 15) {
+    } else if (
+      editUserName.value.length < 4 ||
+      editUserName.value.length > 15
+    ) {
       username_error.innerHTML = "*User name must contain 4 to 15 charcters";
     } else {
       username_error.innerHTML = "";
     }
   }
-
 
   const editname = editName.value.trim();
   const editusername = editUserName.value.trim();
@@ -105,30 +106,41 @@ const handleEditUser = (e, user) => {
     alert(
       "Please fill all fields and make sure they are different from the original data"
     );
+
     return;
+  } else {
+    if (
+      username_error.textContent ||
+      contactno_error.textContent ||
+      email_error.textContent ||
+      name_error.textContent
+    ) {
+    } else {
+      const data = new FormData();
+      data.append("edit_id", user.id);
+      data.append("edit_name", editname);
+      data.append("edit_user_name", editusername);
+      data.append("edit_contactNo", editcontactno);
+      data.append("edit_email", editemail);
+
+      fetch("../../db/putUserData.php", {
+        method: "POST",
+        body: data,
+      })
+        .then((response) => {
+          console.log(response);
+          if (response.status === 200) {
+            alert("Data saved successfully");
+            getAllUsersData();
+          } else {
+            alert("Failed to save data");
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+          alert("Failed to save data");
+        });
+    }
   }
-
-  const data = new FormData();
-  data.append("id", user.id);
-  data.append("uname", editname);
-  data.append("username", editusername);
-  data.append("contactno", editcontactno);
-  data.append("email", editemail);
-
-  fetch("../../db/putUserData.php", {
-    method: "POST",
-    body: data,
-  })
-    .then((response) => {
-      if (response.status === 200) {
-        alert("Data saved successfully");
-      } else {
-        alert("Failed to save data");
-      }
-    })
-    .catch((error) => {
-      console.log(error);
-      alert("Failed to save data");
-    });
 };
 //reader.readAsDataURL(file);

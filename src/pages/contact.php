@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/contact.css">
     <link rel="stylesheet" type="text/css" href="../../css/navigation.css">
     <link rel="stylesheet" href="../../css/style.css">
@@ -29,7 +31,7 @@
 
         </div>
         <div class="page_main_img">
-            <img class="img1" src="../../resource/image/contact-banner.jpeg" title="Contact us" alt="Contact us">
+            <!-- <img class="img1" src="../../resource/image/contact-banner.jpeg" title="Contact us" alt="Contact us"> -->
         </div>
     </div>
     <div class="status_popup_wrapper popup_hide">
@@ -109,6 +111,7 @@
     <script src="../../script/getContactInfo.js"></script>
     <script src="../../script/getAbout.js"></script>
     <script src="../../script/getAllSocialMedias.js"></script>
+    <script src="../../script/getContactBanner.js"></script>
 </body>
 
 </html>

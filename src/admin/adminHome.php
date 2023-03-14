@@ -642,6 +642,46 @@ if (!isset($_GET['page'])) {
         </div>
 
 
+
+
+        <!-- Display options -->
+
+        <div class="collapse_section">
+            <div class="collapse_section_header">
+                <h4>Display Options</h4>
+                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
+            </div>
+            <div class="collapse_section_body">
+                <section>
+
+                    <div class="section-general">
+                        <h6>General</h6>
+                        <div class="general_items">
+                            <form>
+                                <div class="general_items_wrapper">
+                                    <label for="">Display Company Name in Navigation</label>
+                                    <input type="checkbox" name="gender" value="male">
+                                </div>
+                                <div class="general_items_wrapper">
+                                    <label for="">Display Company in Navigation</label>
+                                    <input type="checkbox" name="gender" value="male">
+                                </div>
+
+
+
+
+
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                </section>
+            </div>
+        </div>
+
+
         <!--Update slider-->
         <!-- <div class="collapse_section">
             <div class="collapse_section_header">

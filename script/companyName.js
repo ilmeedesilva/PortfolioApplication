@@ -16,16 +16,18 @@ save_button.addEventListener("click", (e) => {
   if (!name_error.innerHTML) {
     const formData = new FormData();
     formData.append("companyName", companyName_input.value);
-
+    save_button.disabled = true;
     fetch("../../db/companyName.php", {
       method: "POST",
       body: formData,
     })
       .then((response) => response.text())
       .then((result) => {
+        save_button.disabled = false;
         displayPopUp(result);
       })
       .catch((error) => {
+        save_button.disabled = false;
         console.log(error);
       });
   }

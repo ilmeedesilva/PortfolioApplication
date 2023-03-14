@@ -69,7 +69,10 @@ uploadedEditProjectImg.addEventListener("change", function () {
 
 const handleEditProject = (e, project, type) => {
   e.preventDefault();
-
+  console.log(
+    "editRowHeader - ",
+    editRowHeader.value.length < 8 || editRowHeader.value.length > 20
+  );
   const newHeaderError = document.querySelector(
     ".edit_project_header_error_txt"
   );
@@ -89,10 +92,10 @@ const handleEditProject = (e, project, type) => {
     newHeaderError.innerHTML = "*Project Title cannot be empty";
   } else if (
     editRowHeader.value.length < 8 ||
-    editRowHeader.value.length > 20
+    editRowHeader.value.length > 30
   ) {
     newHeaderError.innerHTML =
-      "*The project name must be between 8 to 20 characters";
+      "*The project name must be between 8 to 30 characters";
   } else {
     newHeaderError.innerHTML = "";
   }
@@ -110,6 +113,9 @@ const handleEditProject = (e, project, type) => {
   const editDate = editRowDate.value.trim();
   const editDesc = editRowDesc.value.trim();
 
+  console.log("editHeader - ", editHeader);
+  console.log("editDate - ", editDate);
+  console.log("editDesc - ", editDesc);
   if (
     editHeader === project.projectName.trim() &&
     editDate === project.date &&
@@ -120,12 +126,6 @@ const handleEditProject = (e, project, type) => {
     );
     return;
   }
-  console.log("file - ", file);
-  console.log(
-    "uploadedEditProjectImgError.innerHTML  - ",
-    uploadedEditProjectImgError.innerHTML
-  );
-
   if (
     !uploadedEditProjectImgError.innerHTML &&
     !newDateError.innerHTML &&

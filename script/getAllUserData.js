@@ -2,8 +2,8 @@ const edittableBody = document.querySelector(".user_edit_table_body");
 //const deletetableBody = document.querySelector(".user_delete_table_body");
 
 const getAllUsersData = () => {
-  while (edittableBody.firstChild) {
-    edittableBody.removeChild(edittableBody.firstChild);
+  if (edittableBody.hasChildNodes()) {
+    edittableBody.innerHTML = "";
   }
   fetch("../../db/getAllUsers.php")
     .then((response) => response.json())

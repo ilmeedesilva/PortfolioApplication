@@ -10,9 +10,21 @@ logoutBtn.addEventListener("click", () => {
 
 logoutYes.addEventListener("click", (e) => {
   e.preventDefault();
-  document.location.href = "/";
+  // document.location.href = "/";
   logoutDiv.classList.add("deactive");
   document.querySelector("body").style.overflow = "";
+
+  const xhr = new XMLHttpRequest();
+  xhr.open("POST", "../../db/logout.php");
+  xhr.onload = function () {
+    window.location.href = "../../src/admin/login.php";
+  };
+  xhr.send();
+
+  document.cookie =
+    "PHPSESSID=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  sessionStorage.clear();
+  localStorage.clear();
 });
 
 logoutNo.addEventListener("click", (e) => {

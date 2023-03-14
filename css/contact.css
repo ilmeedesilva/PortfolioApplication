@@ -100,3 +100,18 @@
 .img1 {
   width: 100%;
 }
+
+@media (max-width: 1124px) {
+  .contact_wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contact_wrapper .form_wrapper {
+    width: auto;
+  }
+  .details_container {
+    margin-top: 16px;
+    margin-left: 0;
+  }
+}

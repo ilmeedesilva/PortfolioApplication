@@ -23,14 +23,12 @@ const submit_button = document.querySelector(".add_user_save_btn");
 const clear_button = document.querySelector(".add_user_clear_btn");
 
 const clearAddUserInputFields = () => {
-
-  name_input.value="";
-  email_input.value="";
-  contactno_input.value="";
-  username_input.value="";
-  pwd_input.value="";
-  confirmpwd_input.value="";
-  
+  name_input.value = "";
+  email_input.value = "";
+  contactno_input.value = "";
+  username_input.value = "";
+  pwd_input.value = "";
+  confirmpwd_input.value = "";
 };
 
 const displayPopUp = (res) => {
@@ -74,13 +72,9 @@ submit_button.addEventListener("click", (e) => {
   // Name
   if (!name_input.value) {
     name_error.innerHTML = "*Name cannot be empty";
-  } else if (
-    name_input.value.length < 4 ||
-    name_input.value.length > 15
-  ) {
+  } else if (name_input.value.length < 4 || name_input.value.length > 15) {
     name_error.innerHTML = "*Name must contain 4 to 15 charcters";
-  }
-  else if (!name_input.value.match(/^[a-zA-Z\s]+$/)) {
+  } else if (!name_input.value.match(/^[a-zA-Z\s]+$/)) {
     name_error.innerHTML = "*Name should not contain numbers";
   } else {
     name_error.innerHTML = "";
@@ -116,7 +110,7 @@ submit_button.addEventListener("click", (e) => {
       username_input.value.length < 4 ||
       username_input.value.length > 15
     ) {
-      username_error.innerHTML = "*User name must contain 4 to 15 charcters";
+      username_error.innerHTML = "*User name must contain 4 to 25 charcters";
     } else {
       username_error.innerHTML = "";
     }

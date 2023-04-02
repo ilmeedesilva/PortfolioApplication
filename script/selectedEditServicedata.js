@@ -15,7 +15,8 @@ const editDescription = document.querySelector('textarea[name="edit_desc"]');
 const deletBtnEditRow = document.querySelector(
   ".pop_up_edit_save_cancel_wrapper .delete_edit_service_save"
 );
-
+let ServicePrevUserID;
+let isValid = true;
 const selectedEditServicedata = (service, type) => {
   let editimageEncoded = service.image;
   let editimage =
@@ -41,9 +42,18 @@ const selectedEditServicedata = (service, type) => {
 
   deletBtnEditRow.classList.remove("delete_btn");
   deletBtnEditRow.innerHTML = "SAVE";
-  deletBtnEditRow.addEventListener("click", (e) =>
-    handleEditService(e, service, type)
-  );
+
+  deletBtnEditRow.addEventListener("click", (e) => {
+    if (
+      deletBtnEditRow.getAttribute("data-id") === service.id &&
+      (ServicePrevUserID !== deletBtnEditRow.getAttribute("data-id") ||
+        !isValid)
+    ) {
+      handleEditService(e, service, type);
+      ServicePrevUserID = service.id;
+      return true;
+    }
+  });
 };
 
 const uploadedEditServiceImg = document.querySelector(".uploader_edit_service");
@@ -68,7 +78,7 @@ uploadedEditServiceImg.addEventListener("change", function () {
     uploadedEditServiceImgError.innerHTML = "*File type must be JPG or PNG";
     return;
   }
-  v.innerHTML = "";
+  uploadedEditServiceImgError.innerHTML = "";
 });
 
 const handleEditService = (e, service, type) => {
@@ -91,18 +101,29 @@ const handleEditService = (e, service, type) => {
     desc_error.innerHTML = "";
   }
 
+  if (
+    uploadedEditServiceImgError.textContent ||
+    title_error.textContent ||
+    desc_error.textContent
+  ) {
+    console.log("erro || ");
+    isValid = false;
+  }
+
   const editImageEncoded = service.image;
   const file = uploadedEditServiceImg.files[0];
   const edit_Title = editTitle.value.trim();
   const edit_Description = editDescription.value.trim();
-
+  console.log(" file = ", file);
   if (
     edit_Title === service.serviceName.trim() &&
-    edit_Description === service.descr.trim()
+    edit_Description === service.descr.trim() &&
+    !file
   ) {
     alert(
       "Please fill all fields and make sure they are different from the original data"
     );
+    isValid = false;
     return;
   }
 
@@ -112,6 +133,7 @@ const handleEditService = (e, service, type) => {
     !desc_error.innerHTML &&
     type === "Edit"
   ) {
+    isValid = true;
     if (file) {
       const data = new FormData();
       data.append("id", parseInt(service.id));
@@ -119,19 +141,19 @@ const handleEditService = (e, service, type) => {
       data.append("addservice", editTitle.value);
       data.append("serviceDesc", editDescription.value);
 
-      // console.log(" service.id - ", service.id);
-      // console.log(" editTitle.value - ", editTitle.value);
-      // console.log(" editDescription.value - ", editDescription.value);
-
       fetch("../../db/putServiceData.php", {
         method: "POST",
         body: data,
       })
         .then((response) => {
-          console.log("response - ", response);
           if (response.status === 200) {
             alert("Data saved successfully");
+            prevUserID = "";
+            hideElements();
             getAllServicesData();
+            editRowDeletBtn.hasAttribute("data-id")
+              ? editRowDeletBtn.removeAttribute("data-id")
+              : null;
           } else {
             alert("Failed to save data");
           }
@@ -143,7 +165,6 @@ const handleEditService = (e, service, type) => {
     } else {
       const data = new FormData();
       data.append("id", parseInt(service.id));
-      // data.append("image", file);
       data.append("addservice", editTitle.value);
       data.append("serviceDesc", editDescription.value);
 
@@ -152,9 +173,10 @@ const handleEditService = (e, service, type) => {
         body: data,
       })
         .then((response) => {
-          console.log("response - ", response);
           if (response.status === 200) {
             alert("Data saved successfully");
+            ServicePrevUserID = "";
+            hideElements();
             getAllServicesData();
           } else {
             alert("Failed to save data");

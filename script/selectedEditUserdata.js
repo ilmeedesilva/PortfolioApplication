@@ -16,15 +16,41 @@ const editRowDeletBtn = document.querySelector(
   ".popup_form .pop_up_edit_save_cancel_wrapper .primary_btn"
 );
 
-const selectedEditUserdata = (user, type) => {
+let prevUser = {};
+let isValid = true;
+
+const isSameObjectWithoutID = (obj2) => {
+  if (Object.keys(prevUser).length === 0) {
+    return true;
+  }
+  if (Object.keys(prevUser).length !== Object.keys(obj2).length) {
+    return true;
+  }
+
+  for (let key in prevUser) {
+    if (key !== "id" && prevUser[key] !== obj2[key]) {
+      return true;
+    }
+  }
+
+  return false;
+};
+let prevUserID;
+const selectedEditUserdata = (user, type, id) => {
   document.querySelector(".popup_form_wrapper").classList.remove("hide");
   document.querySelector(".reset_user_password").classList.remove("hide");
+  document.querySelector(".reset_btn").dataset.myAttribute = user.id;
   document.querySelector(".reset_btn").classList.add("hide");
   document.querySelector(".crud_btn").classList.remove("hide");
   editName.readOnly = false;
   editUserName.readOnly = false;
   editEmail.readOnly = false;
   editContactNo.readOnly = false;
+
+  editName.value = "";
+  editUserName.value = "";
+  editEmail.value = "";
+  editContactNo.value = "";
 
   editName.value = user.name;
   editUserName.value = user.user_name;
@@ -33,10 +59,23 @@ const selectedEditUserdata = (user, type) => {
 
   editRowDeletBtn.classList.remove("delete_btn");
   editRowDeletBtn.innerHTML = "SAVE";
-  editRowDeletBtn.addEventListener("click", (e) => handleEditUser(e, user));
+  editRowDeletBtn.classList.add("update_user");
+
+  editRowDeletBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (
+      editRowDeletBtn.getAttribute("data-id") === user.id &&
+      (prevUserID !== editRowDeletBtn.getAttribute("data-id") || !isValid)
+    ) {
+      handleEditUser(e, user);
+      prevUserID = user.id;
+      return true;
+    }
+  });
 };
 
 const handleEditUser = (e, user) => {
+  e.preventDefault();
   const name_error = document.querySelector(".editname_error");
 
   const email_error = document.querySelector(".editemail_error");
@@ -45,13 +84,13 @@ const handleEditUser = (e, user) => {
 
   const username_error = document.querySelector(".editusername_error");
 
-  e.preventDefault();
-
   // Name
   if (!editName.value) {
     name_error.innerHTML = "*Name cannot be empty";
+    isValid = false;
   } else if (!editName.value.match(/^[a-zA-Z\s]+$/)) {
     name_error.innerHTML = "*Name should not contain numbers";
+    isValid = false;
   } else {
     name_error.innerHTML = "";
   }
@@ -59,10 +98,12 @@ const handleEditUser = (e, user) => {
   // Email
   if (!editEmail.value) {
     email_error.innerHTML = "*Email cannot be empty";
+    isValid = false;
   } else if (
     !editEmail.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)
   ) {
     email_error.innerHTML = "*Enter a valid email address";
+    isValid = false;
   } else {
     email_error.innerHTML = "";
   }
@@ -70,8 +111,10 @@ const handleEditUser = (e, user) => {
   // Contact no
   if (!editContactNo.value) {
     contactno_error.innerHTML = "*Contact number cannot be empty";
+    isValid = false;
   } else if (!editContactNo.value.match(/^\d{10}$/)) {
     contactno_error.innerHTML = "*Enter a valid contact number";
+    isValid = false;
   } else {
     contactno_error.innerHTML = "";
   }
@@ -79,14 +122,17 @@ const handleEditUser = (e, user) => {
   // User Name
   if (!editUserName.value) {
     username_error.innerHTML = "*User name cannot be empty";
+    isValid = false;
   } else {
     if (!editUserName.value.match(/^[A-Za-z][A-Za-z]+\d*$|^[a-z]\d\d+$/)) {
       username_error.innerHTML = "*First 2 characters must be letters";
+      isValid = false;
     } else if (
       editUserName.value.length < 4 ||
       editUserName.value.length > 15
     ) {
       username_error.innerHTML = "*User name must contain 4 to 15 charcters";
+      isValid = false;
     } else {
       username_error.innerHTML = "";
     }
@@ -106,7 +152,7 @@ const handleEditUser = (e, user) => {
     alert(
       "Please fill all fields and make sure they are different from the original data"
     );
-
+    isValid = false;
     return;
   } else {
     if (
@@ -115,7 +161,9 @@ const handleEditUser = (e, user) => {
       email_error.textContent ||
       name_error.textContent
     ) {
+      isValid = false;
     } else {
+      isValid = true;
       const data = new FormData();
       data.append("edit_id", user.id);
       data.append("edit_name", editname);
@@ -128,10 +176,19 @@ const handleEditUser = (e, user) => {
         body: data,
       })
         .then((response) => {
-          console.log(response);
           if (response.status === 200) {
             alert("Data saved successfully");
             getAllUsersData();
+            prevUser = {
+              id: user.id,
+              name: editname,
+              user_name: editusername,
+              email: editemail,
+              contactNo: editcontactno,
+            };
+            hideElements();
+            prevUserID = "";
+            return;
           } else {
             alert("Failed to save data");
           }

@@ -14,7 +14,8 @@ const editRowDesc = document.querySelector(
 const editRowDeletBtn = document.querySelector(
   ".popup_form .pop_up_edit_save_cancel_wrapper .primary_btn"
 );
-
+let prevUserID;
+let isValid = true;
 const selectedEditProjectdata = (project, type) => {
   let editimageEncoded = project.image;
   let editimage =
@@ -37,9 +38,18 @@ const selectedEditProjectdata = (project, type) => {
 
   editRowDeletBtn.classList.remove("delete_btn");
   editRowDeletBtn.innerHTML = "SAVE";
-  editRowDeletBtn.addEventListener("click", (e) =>
-    handleEditProject(e, project, type)
-  );
+  editRowDeletBtn.removeEventListener("click", handleEditProject);
+  editRowDeletBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (
+      editRowDeletBtn.getAttribute("data-id") === project.id &&
+      (prevUserID !== editRowDeletBtn.getAttribute("data-id") || !isValid)
+    ) {
+      handleEditProject(e, project, type);
+      prevUserID = project.id;
+      return true;
+    }
+  });
 };
 
 const uploadedEditProjectImg = document.querySelector(".uploader_edit_project");
@@ -69,10 +79,6 @@ uploadedEditProjectImg.addEventListener("change", function () {
 
 const handleEditProject = (e, project, type) => {
   e.preventDefault();
-  console.log(
-    "editRowHeader - ",
-    editRowHeader.value.length < 8 || editRowHeader.value.length > 20
-  );
   const newHeaderError = document.querySelector(
     ".edit_project_header_error_txt"
   );
@@ -106,6 +112,15 @@ const handleEditProject = (e, project, type) => {
     newDescError.innerHTML = "";
   }
 
+  if (
+    uploadedEditProjectImgError.textContent ||
+    newDateError.textContent ||
+    newHeaderError.textContent ||
+    newDescError.textContent
+  ) {
+    isValid = false;
+  }
+
   const editImageEncoded = project.image;
   const file = uploadedEditProjectImg.files[0];
 
@@ -130,6 +145,7 @@ const handleEditProject = (e, project, type) => {
       !newDescError.innerHTML &&
       type === "Edit"
     ) {
+      isValid = true;
       if (file) {
         const data = new FormData();
         data.append("project_id", project.id);
@@ -137,8 +153,6 @@ const handleEditProject = (e, project, type) => {
         data.append("project_name", editHeader);
         data.append("date", editDate);
         data.append("descr", editDesc);
-        console.log("project.id - ", project.id);
-
         fetch("../../db/putProjectData.php", {
           method: "POST",
           body: data,
@@ -146,6 +160,7 @@ const handleEditProject = (e, project, type) => {
           .then((response) => {
             if (response.status === 200) {
               alert("Data saved successfully");
+
               getAllProjectsData();
             } else {
               alert("Failed to save data");
@@ -171,6 +186,8 @@ const handleEditProject = (e, project, type) => {
           .then((response) => {
             if (response.status === 200) {
               alert("Data saved successfully");
+              prevUserID = "";
+              hideElements();
               getAllProjectsData();
             } else {
               alert("Failed to save data");

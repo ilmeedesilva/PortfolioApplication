@@ -25,7 +25,7 @@
   <div class="main_banner banner-wrapper">
     <div class="banner_content_wrapper">
       <div class="banner_text_section">
-        <h2>Hi I'm Ilmee</h2>
+        <h2></h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla mollitia vero officiis laboriosam
           vitae dolor eaque et unde, consequatur suscipit! Ullam hic molestias eveniet autem unde officia illum aut.</p>
         <button class="primary_btn main-btn" onclick="window.location.href='/src/pages/about.php'">Learn More</button>

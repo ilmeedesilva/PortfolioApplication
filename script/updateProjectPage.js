@@ -12,26 +12,21 @@ const projectPageDescErrorMessages = document.querySelector(
   ".update_project_desc_error"
 );
 const updateProjectPageSave = document.getElementById("project_page_save");
-
+console.log("updateProjectPageSave");
 selectedProjectCoverImgView.style.display = "none";
-
 projectCoverImgInput.addEventListener("change", () => {
   const file = projectCoverImgInput.files[0];
   const reader = new FileReader();
 
-  // Check if a file was selected
   if (file) {
-    // Check if the file type is JPG, JPEG, or PNG
     if (
       file.type === "image/jpeg" ||
       file.type === "image/jpg" ||
       file.type === "image/png"
     ) {
-      // Check if the file size is less than 1MB
       if (file.size <= 1048576) {
         reader.readAsDataURL(file);
         reader.onload = () => {
-          // Create a new image object and set the onload event handler
           const img = new Image();
           img.onload = () => {
             if (img.width > 300) {
@@ -63,10 +58,8 @@ projectCoverImgInput.addEventListener("change", () => {
 
 updateProjectPageSave.addEventListener("click", () => {
   const Project_update_id = updateProjectPageSave.getAttribute("data-pk");
-  // errorMessages.forEach((errorMessage) => {
   uploadImageCoverError.textContent = "";
   projectPageDescErrorMessages.textContent = "";
-  // });
 
   const description = projectPageDescriptionInput.value;
   const image = projectCoverImgInput.files[0];
@@ -115,11 +108,6 @@ updateProjectPageSave.addEventListener("click", () => {
         .then((result) => {
           console.log("result = ", result);
           displayPopUp(result);
-          // if (result.includes("success")) {
-
-          // } else {
-          //   alert("Failed to save data");
-          // }
         })
         .catch((error) => {
           console.error("Error:", error);
@@ -135,11 +123,6 @@ updateProjectPageSave.addEventListener("click", () => {
         .then((response) => response.text())
         .then((result) => {
           displayPopUp(result);
-          // if (result.includes("success")) {
-
-          // } else {
-          //   alert("Failed to save data");
-          // }
         })
         .catch((error) => {
           console.error("Error:", error);
@@ -163,11 +146,6 @@ updateProjectPageSave.addEventListener("click", () => {
       .then((response) => response.text())
       .then((result) => {
         displayPopUp(result);
-        // if (result.includes("success")) {
-
-        // } else {
-        //   alert("Failed to save data");
-        // }
       })
       .catch((error) => {
         console.error("Error:", error);

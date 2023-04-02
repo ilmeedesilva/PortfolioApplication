@@ -26,7 +26,7 @@ const updateSelectedFileProject = (doc) => {
     document.querySelector(".error_img_project").innerHTML = "";
   }
 };
-
+console.log("project cover");
 projectClick.addEventListener("click", (e) => {
   e.preventDefault();
 

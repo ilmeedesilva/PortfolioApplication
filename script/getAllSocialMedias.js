@@ -4,13 +4,16 @@ const socialMediaModifyTBBody = document.querySelector(
 
 const getAllSocialMedias = () => {
   if (window.location.href.includes("admin")) {
-    while (socialMediaModifyTBBody.firstChild) {
-      socialMediaModifyTBBody.removeChild(socialMediaModifyTBBody.firstChild);
+    if (socialMediaModifyTBBody.hasChildNodes()) {
+      socialMediaModifyTBBody.innerHTML = "";
     }
   }
   fetch("../../db/getAllSocialMedias.php")
     .then((response) => response.json())
     .then((medias) => {
+      if (socialMediaModifyTBBody && socialMediaModifyTBBody.hasChildNodes()) {
+        socialMediaModifyTBBody.innerHTML = "";
+      }
       medias.forEach((media) => {
         if (window.location.href.includes("admin")) {
           const editrow = socialMediaModifyTBBody.insertRow();
@@ -30,13 +33,13 @@ const getAllSocialMedias = () => {
           editrow.insertCell().appendChild(btndiv);
 
           editBtn.addEventListener("click", () => {
+            editRowDeletBtn.setAttribute("data-id", media.id);
             const selectedUser = {
               id: media.id,
               name: media.socialMediaLinkName,
               link: media.socialMediaLink,
               image: media.image,
             };
-
             document
               .querySelector(".popup_form_wrapper")
               .classList.remove("hide");

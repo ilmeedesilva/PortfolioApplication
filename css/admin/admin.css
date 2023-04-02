@@ -476,6 +476,17 @@ textarea::placeholder {
 .select-image:hover {
   background: #005dd1;
 }
+
+.primary_btn:disabled {
+  cursor: not-allowed;
+  background-color: #93d6e3 !important;
+}
+
+.company_save_btn:disabled {
+  cursor: not-allowed;
+  background-color: #93d6e3 !important;
+}
+
 input#file {
   text-align: center;
   margin: 0px auto;
@@ -759,6 +770,7 @@ form.slider_update textarea {
 }
 
 .mail_body {
+  position: relative;
   display: flex;
   min-height: 100px;
   background-color: #f8f8f8;
@@ -769,6 +781,30 @@ form.slider_update textarea {
 .mail_body_hidden {
   display: none;
   transition: height 1s;
+}
+
+.msg_delete_btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 12px;
+  right: 10px;
+  box-shadow: 0px 1px 2px 0px #dad9d9;
+  padding: 4px;
+  border-radius: 50px;
+  border: #c1c1c1;
+  cursor: pointer;
+  transition: 500ms all ease-in-out;
+}
+
+.msg_delete_btn:hover {
+  transform: scale(1.2);
+}
+
+.msg_delete_btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .empty {

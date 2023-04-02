@@ -7,7 +7,6 @@ const selectedImgView = document.querySelector(
 const addNewServiceImgErr = document.querySelector(".add_new_service_img_err");
 const addNewServiceNameErr = document.querySelector(".new_service_error");
 const addNewServiceDescErr = document.querySelector(".desc_error_new_service");
-// const errorMessages = document.querySelectorAll(".error-msg");
 
 const saveButtonService = document.querySelector(".add_service_save_btn");
 const clear_button_service = document.querySelector(".add_service_clear_btn");
@@ -18,7 +17,11 @@ const clearAddNewInputFields = () => {
   serviceNameInput.value = "";
   descriptionInput.value = "";
   imageInput.value = "";
+  selectedImgView.style.backgroundImage = "none";
   selectedImgView.value = "";
+  addNewServiceImgErr.textContent = "";
+  addNewServiceNameErr.textContent = "";
+  addNewServiceDescErr.textContent = "";
 };
 
 imageInput.addEventListener("change", () => {
@@ -33,10 +36,6 @@ imageInput.addEventListener("change", () => {
 });
 
 saveButtonService.addEventListener("click", () => {
-  // errorMessages.forEach((errorMessage) => {
-  //   errorMessage.textContent = "";
-  // });
-
   const serviceName = serviceNameInput.value;
   const description = descriptionInput.value;
   const image = imageInput.files[0];
@@ -80,25 +79,22 @@ saveButtonService.addEventListener("click", () => {
     formData.append("serviceName", serviceName);
     formData.append("descr", description);
     formData.append("image", image);
-
+    saveButtonService.disabled = true;
     fetch("../../db/addNewService.php", {
       method: "POST",
       body: formData,
     })
       .then((response) => response.text())
       .then((result) => {
+        if (result.includes("success")) {
+          getAllServicesData();
+          clearAddNewInputFields();
+        }
         displayPopUp(result);
-
-        getAllServicesData();
-
-        clearAddNewInputFields();
-        // if (result.includes("success")) {
-
-        // } else {
-        //   alert("Failed to save data");
-        // }
+        saveButtonService.disabled = false;
       })
       .catch((error) => {
+        saveButtonService.disabled = false;
         console.error("Error:", error);
       });
   }
@@ -107,10 +103,5 @@ saveButtonService.addEventListener("click", () => {
 clear_button_service.addEventListener("click", (e) => {
   e.preventDefault();
 
-  //console.log("clicked");
-
-  serviceNameInput.value = "";
-  descriptionInput.value = "";
-  imageInput.value = "";
-  selectedImgView.value = "";
+  clearAddNewInputFields();
 });

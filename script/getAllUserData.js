@@ -1,5 +1,4 @@
 const edittableBody = document.querySelector(".user_edit_table_body");
-//const deletetableBody = document.querySelector(".user_delete_table_body");
 
 const getAllUsersData = () => {
   if (edittableBody.hasChildNodes()) {
@@ -8,15 +7,9 @@ const getAllUsersData = () => {
   fetch("../../db/getAllUsers.php")
     .then((response) => response.json())
     .then((users) => {
+      edittableBody.innerHTML = "";
       users.forEach((user) => {
-        //const delrow = deletetableBody.insertRow();
-
         const editrow = edittableBody.insertRow();
-
-        // delrow.insertCell().textContent = user.uname;
-        // delrow.insertCell().textContent = user.username;
-        // delrow.insertCell().textContent = user.email;
-        // delrow.insertCell().textContent = user.contactno;
 
         editrow.insertCell().textContent = user.uname;
         editrow.insertCell().textContent = user.username;
@@ -24,7 +17,9 @@ const getAllUsersData = () => {
         editrow.insertCell().textContent = user.contactno;
 
         const editBtn = document.createElement("button");
+        editBtn.setAttribute("data-id", user.id);
         editBtn.classList.add("editt_btn");
+
         const deleteBtn = document.createElement("button");
         deleteBtn.classList.add("deletee_btn");
 
@@ -34,8 +29,11 @@ const getAllUsersData = () => {
         btndiv.appendChild(deleteBtn);
         editrow.insertCell().appendChild(btndiv);
 
-        editBtn.addEventListener("click", () => {
-          const selectedUser = {
+        editBtn.addEventListener("click", (e) => {
+          const currentId = e.target.getAttribute("data-id");
+          editRowDeletBtn.setAttribute("data-id", user.id);
+          let selectedUser = {};
+          selectedUser = {
             id: user.id,
             name: user.uname,
             user_name: user.username,
@@ -47,10 +45,13 @@ const getAllUsersData = () => {
             .querySelector(".popup_form_wrapper")
             .classList.remove("hide");
 
-          selectedEditUserdata(selectedUser, "Edit");
+          if (currentId == user.id) {
+            selectedEditUserdata(selectedUser, "Edit", currentId);
+          }
         });
 
         deleteBtn.addEventListener("click", () => {
+          editRowDeletBtn.setAttribute("data-id", user.id);
           const selectedUser = {
             id: user.id,
             name: user.uname,

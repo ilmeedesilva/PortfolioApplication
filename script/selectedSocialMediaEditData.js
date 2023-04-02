@@ -17,6 +17,9 @@ const editSocialImgIploader = document.querySelector(
   ".uploader_edit_social_media_icon"
 );
 
+let socialPrevUserID;
+let isValidSocial = true;
+
 const selectedSocialMediaEditData = (social, type) => {
   let editimageEncoded = social.image;
   let editimage =
@@ -37,9 +40,17 @@ const selectedSocialMediaEditData = (social, type) => {
 
   editRowDeletBtn.classList.remove("delete_btn");
   editRowDeletBtn.innerHTML = "SAVE";
-  editRowDeletBtn.addEventListener("click", (e) =>
-    handleEditProject(e, social, type)
-  );
+  editRowDeletBtn.addEventListener("click", (e) => {
+    if (
+      editRowDeletBtn.getAttribute("data-id") === social.id &&
+      (socialPrevUserID !== editRowDeletBtn.getAttribute("data-id") ||
+        !isValidSocial)
+    ) {
+      handleEditProject(e, social, type);
+      socialPrevUserID = social.id;
+      return;
+    }
+  });
 };
 
 const uploadedEditSocialImg = document.querySelector(
@@ -101,10 +112,13 @@ const handleEditProject = (e, social, type) => {
 
   const editImageEncoded = social.image;
   const file = uploadedEditSocialImg.files[0];
-
-  console.log("editSocialRowName.value - ", editSocialRowName.value);
-  console.log("editSocialRowLink.value - ", editSocialRowLink.value);
-  console.log("social.id - ", social.id);
+  if (
+    uploadedEditProjectImgError.textContent ||
+    editSocialMediaNameError.textContent ||
+    editSocialMediaLinkError.textContent
+  ) {
+    isValidSocial = false;
+  }
 
   if (
     !uploadedEditProjectImgError.innerHTML &&
@@ -112,6 +126,7 @@ const handleEditProject = (e, social, type) => {
     !editSocialMediaLinkError.innerHTML &&
     type === "Edit"
   ) {
+    isValidSocial = true;
     if (file) {
       const data = new FormData();
       data.append("project_id", social.id);
@@ -126,6 +141,10 @@ const handleEditProject = (e, social, type) => {
         .then((response) => {
           if (response.status === 200) {
             alert("Data saved successfully");
+            hideElements();
+            editRowDeletBtn.hasAttribute("data-id")
+              ? editRowDeletBtn.removeAttribute("data-id")
+              : null;
             getAllSocialMedias();
           } else {
             alert("Failed to save data");
@@ -138,7 +157,6 @@ const handleEditProject = (e, social, type) => {
     } else {
       const data = new FormData();
       data.append("project_id", social.id);
-      // data.append("image", editSocialImgIploader.files[0]);
       data.append("socialMediaName", editSocialRowName.value);
       data.append("socialMediaLink", editSocialRowLink.value);
 
@@ -147,9 +165,9 @@ const handleEditProject = (e, social, type) => {
         body: data,
       })
         .then((response) => {
-          console.log("response - ", response);
           if (response.status === 200) {
             alert("Data saved successfully");
+            hideElements();
             getAllSocialMedias();
           } else {
             alert("Failed to save data");

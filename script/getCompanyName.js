@@ -17,6 +17,11 @@ const getCompanyName = () => {
             ).value = data[0].companyName;
           }
         } else {
+          if (document.querySelector(".banner_text_section h2")) {
+            document.querySelector(".banner_text_section h2").innerHTML =
+              data[0].companyName;
+          }
+
           document.title = `${data[0].companyName} | ${document.title}`;
         }
       }

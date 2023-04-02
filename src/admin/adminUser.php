@@ -87,14 +87,14 @@ if (!isset($_GET['page'])) {
                     <div class="form_wrappe  group_inputs reset_password hide">
                         <div class="box">
                             <label for="email">New Password:
-                                <input type="text" name="newPassword" id="newPassword"
+                                <input type="password" name="newPassword" id="newPassword"
                                     placeholder="enter a new password in here">
                                 <p class="error_txt new_password_error"></p>
 
                         </div>
                         <div class="box">
                             <label for="email">Confirm Password:
-                                <input type="text" name="confPassowrd" id="confPassowrd"
+                                <input type="password" name="confPassowrd" id="confPassowrd"
                                     placeholder="Confirm password in here">
                                 <p class="error_txt confirm_password_error"></p>
 
@@ -203,28 +203,6 @@ if (!isset($_GET['page'])) {
 
 
 
-        <!-- <div class="collapse_section">
-            <div class="collapse_section_header">
-                <h4>Users List</h4>
-                <img src="../../resource/icon/right-arrow.png" alt="arrow" srcset="">
-            </div>
-            <div class="collapse_section_body">
-                <div class="table_wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>User Name</th>
-                                <th>Email</th>
-                                <th>Contact No</th>
-                            </tr>
-                        </thead>
-                        <tbody class="project_table_body user_delete_table_body">
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div> -->
     </div>
 
 

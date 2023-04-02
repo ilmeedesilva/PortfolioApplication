@@ -1,14 +1,9 @@
 const edittableBody = document.querySelector(".project_edit_table_body");
-//const deletetableBody = document.querySelector(".project_delete_table_body");
 const loadingPorjectData = () => {
   edittableBody.innerHTML = "Loading...";
 };
 
 const hideloadingPorjectData = () => {
-  // const spinner = edittableBody.querySelector(".loading_tb");
-  // if (spinner) {
-  //   edittableBody.removeChild(spinner);
-  // }
   edittableBody.innerHTML = "";
 };
 
@@ -30,12 +25,7 @@ const getAllProjectsData = () => {
         edittableBody.innerHTML = "<p>No Data</p>";
       } else {
         projects.forEach((project) => {
-          //const delrow = deletetableBody.insertRow();
           const editrow = edittableBody.insertRow();
-
-          // delrow.insertCell().textContent = project.projectName;
-          // delrow.insertCell().textContent = project.descr;
-          // delrow.insertCell().textContent = project.date;
 
           editrow.insertCell().textContent = project.projectName;
           editrow.insertCell().textContent = project.descr;
@@ -51,8 +41,8 @@ const getAllProjectsData = () => {
           btndiv.appendChild(editBtn);
           btndiv.appendChild(deleteBtn);
           editrow.insertCell().appendChild(btndiv);
-
           editBtn.addEventListener("click", () => {
+            editRowDeletBtn.setAttribute("data-id", project.id);
             const selectedProject = {
               id: project.id,
               projectName: project.projectName,

@@ -1,13 +1,13 @@
 const edittableBody = document.querySelector(".service_edit_table_body");
 
 const getAllServicesData = () => {
-  while (edittableBody.firstChild) {
-    edittableBody.removeChild(edittableBody.firstChild);
+  if (edittableBody.hasChildNodes()) {
+    edittableBody.innerHTML = "";
   }
-
   fetch("../../db/getAllServices.php")
     .then((response) => response.json())
     .then((services) => {
+      edittableBody.innerHTML = "";
       services.forEach((service) => {
         const editrow = edittableBody.insertRow();
 
@@ -26,6 +26,7 @@ const getAllServicesData = () => {
         editrow.insertCell().appendChild(btndiv);
 
         editBtn.addEventListener("click", () => {
+          deletBtnEditRow.setAttribute("data-id", service.id);
           const selectedService = {
             id: service.id,
             serviceName: service.serviceName,

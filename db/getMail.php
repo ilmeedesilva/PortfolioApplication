@@ -15,7 +15,7 @@ if (mysqli_num_rows($result) == 0) {
     mysqli_query($conn, $createContactUserTableSql);
 }
 
-$sql = "SELECT name, email, phone, message FROM contactUser";
+$sql = "SELECT * FROM contactuser ORDER BY created_date DESC";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

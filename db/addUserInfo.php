@@ -11,7 +11,7 @@ if (mysqli_num_rows($result) == 0) {
     email VARCHAR(40) NOT NULL,
     contactno VARCHAR(10) NOT NULL,
     username VARCHAR(15) NOT NULL,
-    upassword VARCHAR(20) NOT NULL,
+    upassword VARCHAR(255) NOT NULL,
     created_date DATE DEFAULT CURRENT_TIMESTAMP )";
     mysqli_query($conn, $createAddUserInfoTableSql);
 }
@@ -21,9 +21,10 @@ $email = $_POST["email"];
 $contactno = $_POST["contactNo"];
 $username = $_POST["user_name"];
 $pwd = $_POST["password"];
+$hashed_pwd = password_hash($pwd, PASSWORD_DEFAULT);
 
-$sql = "INSERT INTO adduserinfo (uname, email, contactno, username, upassword)
-VALUES ('$name', '$email', '$contactno', '$username', '$pwd')";
+$sql = "INSERT INTO addUserInfo (uname, email, contactno, username, upassword)
+VALUES ('$name', '$email', '$contactno', '$username', '$hashed_pwd')";
 
 if (mysqli_query($conn, $sql)) {
     echo "success";

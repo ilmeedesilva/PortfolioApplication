@@ -18,19 +18,21 @@ const submit_button = document.querySelector(".save_btn");
 const popupmodel = document.querySelector(".status_popup_wrapper");
 
 const clearInputFields = () => {
-  name_input.innerHTML = "";
-  email_input.innerHTML = "";
-  tel_input.innerHTML = "";
-  msg_input.innerHTML = "";
+  name_input.value = "";
+  email_input.value = "";
+  tel_input.value = "";
+  msg_input.value = "";
 };
 
 const displayPopUp = (res) => {
+  console.log("res - ", res);
   const header1 = document.querySelector(".status_descrip h6");
   const detail = document.querySelector(".status_descrip p");
   const background = document.querySelector(".status_popup_wrapper");
   const icon = document.querySelector(".status_popup_wrapper .status_icon img");
 
   if ("success") {
+    console.log("form success");
     background.style.backgroundColor = "#75cf0f";
     icon.src = "../../resource/icon/success.png";
     header1.innerHTML = "SUCCESS";
